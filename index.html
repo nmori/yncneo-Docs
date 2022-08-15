@@ -22,10 +22,6 @@
         
         <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
         
-          
-          
-          <meta name="theme-color" content="#4051b5">
-        
       
       
     
@@ -35,8 +31,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mochiy+Pop+P+One:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Mochiy Pop P One";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BIZ+UDPGothic:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"BIZ UDPGothic";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -53,12 +49,16 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="blue">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -105,6 +105,37 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="ライトモードに切り替えます。" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="ダークモードに切り替えます。" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="オートモードに切り替えます。"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="オートモードに切り替えます。" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -233,7 +264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="startup_en.md" class="md-nav__link">
+      <a href="cs_en.md" class="md-nav__link">
         最速で英語翻訳をだす
       </a>
     </li>
@@ -247,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="startup_obs.md" class="md-nav__link">
+      <a href="cs_obs.md" class="md-nav__link">
         OBS Studioできれいに出す
       </a>
     </li>
@@ -261,8 +292,36 @@
   
   
     <li class="md-nav__item">
-      <a href="startup_onecomme.md" class="md-nav__link">
-        わんコメ連携
+      <a href="cs_colab_discord.md" class="md-nav__link">
+        コラボ字幕(Discord経由)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="cs_colab_udtalk.md" class="md-nav__link">
+        コラボ字幕(UDトーク経由)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="cs_streamdeck.md" class="md-nav__link">
+        StreamDeckで操作する
       </a>
     </li>
   
@@ -309,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="startup_basic.md" class="md-nav__link">
+      <a href="startup_basic/" class="md-nav__link">
         標準設定項目
       </a>
     </li>
@@ -323,7 +382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="startup_option.md" class="md-nav__link">
+      <a href="startup_option/" class="md-nav__link">
         オプション設定
       </a>
     </li>
@@ -1477,6 +1536,54 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12">
+          技術者向け
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="技術者向け" data-md-level="1">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          技術者向け
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tech.md" class="md-nav__link">
+        連携について
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1515,6 +1622,10 @@
 <p>従来より設定項目を極力絞り、応答性も素早くした軽量設計になっています。</p>
 <p>プラグインという形をとっているので、必要な機能のみONにすることで、拡張性と素早さのバランスがとれるようになっています。</p>
 <p>もちろん、プラグインを使わなくても上記の翻訳は可能ですし、翻訳させない使い方でもOK。読み上げやDiscordへの文章転送だけに使うことも可能です。</p>
+<div class="admonition warn">
+<p class="admonition-title">このドキュメントについて</p>
+<p>現在執筆中であり、表示できないページが混在しています。</p>
+</div>
 
   <hr>
 <div class="md-source-file">
