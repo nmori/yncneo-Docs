@@ -13,7 +13,7 @@
     
     
       
-        <title>ダウンロード - ゆかりねっとコネクターNEO</title>
+        <title>できること - ゆかりねっとコネクターNEO</title>
       
     
     
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ダウンロード
+              できること
             
           </span>
         </div>
@@ -165,6 +165,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../download/" class="md-nav__link">
+        ダウンロード
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -177,24 +192,9 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        ダウンロード
-      </a>
-      
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../spec/" class="md-nav__link">
         できること
       </a>
+      
     </li>
   
 
@@ -1172,51 +1172,68 @@
                 
 
 
-<h1 id="_1">安定版</h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>更新は、配信直前などを避けて、再調整などができる「ゆとりのある時」に実施してください。</p>
-</div>
-<p><a href="https://machanbazaar.com/wp-content/uploads/2022/07/YNCneo_v1.9574.zip">ゆかりねっとコネクターNEO_v1.9574</a></p>
+<h1 id="_1">何ができるか？</h1>
+<p>ゆかりねっとコネクターは次のことをサポートします。</p>
+<ul>
+<li>音声認識（との繋ぎ）</li>
+<li>翻訳</li>
+<li>字幕表示</li>
+<li>周辺ツールへの出力</li>
+</ul>
+<h1 id="_2">具体的仕様</h1>
 <table>
 <thead>
 <tr>
-<th align="left">タイトル</th>
-<th align="left">内容</th>
+<th align="left">項目</th>
+<th align="left">可否</th>
+<th align="left">補足</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Discord(BOT)</td>
-<td align="left">話者の会話が混ざって表示されるケースの修正</td>
-</tr>
-</tbody>
-</table>
-<h1 id="_2">開発版</h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>改善や不具合修正などをいち早く実施していますが、開発中なので不安定な部分もあるかもしれません。ニーズに応じてご利用ください</p>
-</div>
-<p><a href="https://machanbazaar.com/wp-content/uploads/2022/08/YNCneo_v1.9585.zip">ゆかりねっとコネクターNEO_v1.9585</a></p>
-<table>
-<thead>
-<tr>
-<th align="left">タイトル</th>
-<th align="left">内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">プラグイン追加</td>
-<td align="left">OBS WebSocket連携（v5）</td>
+<td align="left">多言語翻訳</td>
+<td align="left">〇</td>
+<td align="left">母国語＋４か国語まで</td>
 </tr>
 <tr>
-<td align="left">メンテナンスツール</td>
-<td align="left">Windows側ログを解析する機能を追加</td>
+<td align="left">翻訳エンジン</td>
+<td align="left">状況による</td>
+<td align="left">●Microsoft翻訳エンジン<br>●Google翻訳エンジン<br>●Amazon翻訳エンジン<br>●IBM 翻訳エンジン<br>●NAVER Papago翻訳エンジン<br>●Google翻訳ライブラリ<br>●共用翻訳サーバ(lexcon）</td>
 </tr>
 <tr>
-<td align="left">OBS WebSocket連携v5</td>
-<td align="left">OBS v28と連携できるように実装追加</td>
+<td align="left">音声認識</td>
+<td align="left">〇</td>
+<td align="left">●UDトーク<br>●ブラウザ音声認識<br>●ブラウザ音声認識(ガムベックさん開発)<br>●オフライン音声認識ライブラリ</td>
+</tr>
+<tr>
+<td align="left">ゆかりねっと連携</td>
+<td align="left">〇</td>
+<td align="left">●ゆかりねっとプラグイン併用モード<br>●ブラウザエミュレート</td>
+</tr>
+<tr>
+<td align="left">OBS連携</td>
+<td align="left">〇</td>
+<td align="left">OBS Studio用 WebSocket v4/v5対応</td>
+</tr>
+<tr>
+<td align="left">読み上げ</td>
+<td align="left">〇</td>
+<td align="left">プラグインを使えば可能<br>●A.I.Voice<br>●CeVIO/CeVIO AI<br>●AITalk3<br>●VOICEVOX<br>●COEIROINK on VOICEVOX<br>●LMRoid<br>●SAPI5<br>●VOICEROID2</td>
+</tr>
+<tr>
+<td align="left">表示形式</td>
+<td align="left">〇</td>
+<td align="left">●テロップ<br>●リスト<br>●多言語<br>●コラボ<br>●VRオーバーレイ<br>●リスト<br>●テロップ相当<br>●ゲーム風<br>●コラボレイアウト<br>●わんコメテンプレ<br>●VRオーバーレイ</td>
+</tr>
+<tr>
+<td align="left">辞書・ルビ</td>
+<td align="left">〇</td>
+<td align="left">プラグインで実現</td>
+</tr>
+<tr>
+<td align="left">FANBOX支援</td>
+<td align="left">〇</td>
+<td align="left">支援しなくても利用はできます。<br>支援するとみんなで支える翻訳サーバがつかえるようになります</td>
 </tr>
 </tbody>
 </table>
@@ -1251,7 +1268,7 @@
     <nav class="md-footer__inner md-grid" aria-label="フッター" >
       
         
-        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="前: 概要" rel="prev">
+        <a href="../download/" class="md-footer__link md-footer__link--prev" aria-label="前: ダウンロード" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1260,26 +1277,11 @@
               <span class="md-footer__direction">
                 前
               </span>
-              概要
+              ダウンロード
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../spec/" class="md-footer__link md-footer__link--next" aria-label="次: できること" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                次
-              </span>
-              できること
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
