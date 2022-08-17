@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.3.1, mkdocs-material-8.4.0" name="generator"/>
-<title>できること - ゆかりねっとコネクターNEO</title>
+<title>わんコメ系API - ゆかりねっとコネクターNEO</title>
 <link href="../assets/stylesheets/main.69437709.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -22,7 +22,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#api">
           コンテンツにスキップ
         </a>
 </div>
@@ -46,7 +46,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              できること
+              わんコメ系API
             
           </span>
 </div>
@@ -122,9 +122,8 @@
         ダウンロード
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../spec/">
         できること
       </a>
 </li>
@@ -663,8 +662,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" id="__nav_12" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" id="__nav_12" type="checkbox"/>
 <label class="md-nav__link" for="__nav_12">
           技術者向け
           <span class="md-nav__icon md-icon"></span>
@@ -685,10 +684,38 @@
         プラグイン系API
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../tech_api_plugin_oc/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          わんコメ系API
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         わんコメ系API
       </a>
+<nav aria-label="目次" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#http">
+    発話の受信(HTTP)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#websocket">
+    発話の受信(WebSocket)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    通信ポートの特定
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -702,75 +729,216 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="目次" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#http">
+    発話の受信(HTTP)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#websocket">
+    発話の受信(WebSocket)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    通信ポートの特定
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1">何ができるか？<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
-<p>ゆかりねっとコネクターは次のことをサポートします。
-<a class="glightbox" href="../images/totalmap.png"><img alt="Image title" src="../images/totalmap.png"/></a></p>
+<h1 id="api">わんコメ互換APIについて<a class="headerlink" href="#api" title="Permanent link">¶</a></h1>
+<div class="admonition info">
+<p class="admonition-title">内容について</p>
+<p>この内容はサービス改良の中で予告なく改定されることがあります</p>
+</div>
+<div class="admonition tech">
+<p class="admonition-title">通信先</p>
 <ul>
-<li>音声認識（との繋ぎ）</li>
-<li>翻訳</li>
-<li>字幕表示</li>
-<li>周辺ツールへの出力</li>
+<li>ゆかりねっとコネクターNEOのWebポートに送付してください。デフォルトは <code>15520</code> です。</li>
 </ul>
-<h1 id="_2">具体的仕様<a class="headerlink" href="#_2" title="Permanent link">¶</a></h1>
+</div>
+<h2 id="http">発話の受信(HTTP)<a class="headerlink" href="#http" title="Permanent link">¶</a></h2>
+<ul>
+<li>発話結果をJSONとして受け取れます。</li>
+</ul>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>特になし</li>
+</ul>
+</div>
+<ul>
+<li>送付方式：GET</li>
+<li>送付先 :　http://127.0.0.1:15520/comment.json</li>
+<li>ポート番号は後述のレジストリから取得してください</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Query</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="w">    </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">        </span><span class="s2">"comments"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">            </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">                </span><span class="s2">"data"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">                    </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"ed9ab6fd-151f-462b-bc4e-c894561c3f97"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">                    </span><span class="s2">"userId"</span><span class="o">:</span><span class="w"> </span><span class="s2">"8141cf31-1685-4e88-97ce-9ae92981174b"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">                    </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"nao"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">                    </span><span class="s2">"profileImage"</span><span class="o">:</span><span class="w"> </span><span class="s2">"/image/nao.png"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">                    </span><span class="s2">"badges"</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span><span class="w"></span>
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">                    </span><span class="s2">"hasGift"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">                    </span><span class="s2">"comment"</span><span class="o">:</span><span class="w"> </span><span class="s2">"&lt;span class=\"origin\"&gt;テストです&lt;/span&gt;⁣⁣&lt;span class=\"t\"&gt;&lt;span class=\"par\"&gt;(&lt;/span&gt;It's a test&lt;span class=\"par\"&gt;)&lt;/span&gt;&lt;/span&gt;⁣⁣"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">                    </span><span class="s2">"timestamp"</span><span class="o">:</span><span class="w"> </span><span class="mf">1660709231.1491292</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">                    </span><span class="s2">"displayName"</span><span class="o">:</span><span class="w"> </span><span class="s2">"nao"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">                    </span><span class="s2">"isFirstTime"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">                </span><span class="p">},</span><span class="w"></span>
+<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">                </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"00000000-0000-0000-0000-000000000000"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">                </span><span class="s2">"service"</span><span class="o">:</span><span class="w"> </span><span class="s2">"YNC_Plugin_DirectInput"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">                </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"#"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">                </span><span class="s2">"url"</span><span class="o">:</span><span class="w"> </span><span class="s2">""</span><span class="w"></span>
+<a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">            </span><span class="p">}</span><span class="w"></span>
+<a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">        </span><span class="p">],</span><span class="w"></span>
+<a href="#__codelineno-0-22" id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">        </span><span class="s2">"listeners"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-0-23" id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">            </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"00000000-0000-0000-0000-000000000000"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-24" id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">            </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"#"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-25" id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">            </span><span class="s2">"url"</span><span class="o">:</span><span class="w"> </span><span class="s2">"#"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-26" id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">            </span><span class="s2">"write"</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-27" id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="w">            </span><span class="s2">"speech"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-28" id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="w">            </span><span class="s2">"enabled"</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-29" id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="w">            </span><span class="s2">"color"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-0-30" id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="w">                </span><span class="s2">"r"</span><span class="o">:</span><span class="w"> </span><span class="mf">32</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-31" id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="w">                </span><span class="s2">"g"</span><span class="o">:</span><span class="w"> </span><span class="mf">32</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-32" id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="w">                </span><span class="s2">"b"</span><span class="o">:</span><span class="w"> </span><span class="mf">32</span><span class="w"></span>
+<a href="#__codelineno-0-33" id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="w">            </span><span class="p">},</span><span class="w"></span>
+<a href="#__codelineno-0-34" id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="w">            </span><span class="s2">"translate"</span><span class="o">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-35" id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="w">            </span><span class="s2">"type"</span><span class="o">:</span><span class="w"> </span><span class="s2">"YNC"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-36" id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="w">            </span><span class="s2">"listeners"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<a href="#__codelineno-0-37" id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="w">                </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-0-38" id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="w">                    </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"8141cf31-1685-4e88-97ce-9ae92981174b"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-39" id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="w">                    </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"nao"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-40" id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="w">                    </span><span class="s2">"profileImage"</span><span class="o">:</span><span class="w"> </span><span class="s2">"/image/nao.png"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-41" id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="w">                    </span><span class="s2">"badges"</span><span class="o">:</span><span class="w"> </span><span class="p">{},</span><span class="w"></span>
+<a href="#__codelineno-0-42" id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="w">                    </span><span class="s2">"firstCommentTime"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-43" id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="w">                    </span><span class="s2">"lastCommentTime"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-44" id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="w">                    </span><span class="s2">"count"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-0-45" id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="w">                    </span><span class="s2">"giftCount"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="w"></span>
+<a href="#__codelineno-0-46" id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="w">                </span><span class="p">}</span><span class="w"></span>
+<a href="#__codelineno-0-47" id="__codelineno-0-47" name="__codelineno-0-47"></a><span class="w">            </span><span class="p">]</span><span class="w"></span>
+<a href="#__codelineno-0-48" id="__codelineno-0-48" name="__codelineno-0-48"></a><span class="w">        </span><span class="p">}</span><span class="w"></span>
+<a href="#__codelineno-0-49" id="__codelineno-0-49" name="__codelineno-0-49"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</input></div>
+<ul>
+<li>成功すると 上記JSONを得られます。</li>
+<li>統計データなどはダミー値です。</li>
+<li>メッセージは <code>comment</code> に入ります。翻訳がある場合は <code>class t</code> に入ります。</li>
+<li>新たなメッセージか、更新されたかは、 <code>id</code> で判断してください。</li>
+</ul>
+<h2 id="websocket">発話の受信(WebSocket)<a class="headerlink" href="#websocket" title="Permanent link">¶</a></h2>
+<ul>
+<li>発話結果をJSONとして受け取れます。</li>
+</ul>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>わんコメ仕様テンプレプラグインがONになっていること</li>
+</ul>
+</div>
+<ul>
+<li>送付方式：GET</li>
+<li>送付先 :　ws://127.0.0.1:54000/ </li>
+<li>ポート番号は後述のレジストリから取得してください</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Query</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="w">    </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">        </span><span class="s2">"type"</span><span class="o">:</span><span class="w"> </span><span class="s2">"comments"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">        </span><span class="s2">"data"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">            </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">                </span><span class="s2">"data"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">                    </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"a43e07a3-5b8c-4274-8d16-624edf383824"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">                    </span><span class="s2">"userId"</span><span class="o">:</span><span class="w"> </span><span class="s2">"8141cf31-1685-4e88-97ce-9ae92981174b"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">                    </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"nao"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">                    </span><span class="s2">"profileImage"</span><span class="o">:</span><span class="w"> </span><span class="s2">"http://127.0.0.1:15520/image/nao.png"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">                    </span><span class="s2">"badges"</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span><span class="w"></span>
+<a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">                    </span><span class="s2">"hasGift"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">                    </span><span class="s2">"comment"</span><span class="o">:</span><span class="w"> </span><span class="s2">"&lt;span class=\"origin\"&gt;123&lt;/span&gt;⁣⁣&lt;span class=\"t\"&gt;&lt;span class=\"par\"&gt;(&lt;/span&gt;123 \n&lt;span class=\"par\"&gt;)&lt;/span&gt;&lt;/span&gt;⁣⁣"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-13" id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">                    </span><span class="s2">"timestamp"</span><span class="o">:</span><span class="w"> </span><span class="mf">1660715431.4722717</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-14" id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">                    </span><span class="s2">"displayName"</span><span class="o">:</span><span class="w"> </span><span class="s2">"nao"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-15" id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">                    </span><span class="s2">"isFirstTime"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<a href="#__codelineno-1-16" id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">                </span><span class="p">},</span><span class="w"></span>
+<a href="#__codelineno-1-17" id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">                </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"a43e07a3-5b8c-4274-8d16-624edf383824"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-18" id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">                </span><span class="s2">"service"</span><span class="o">:</span><span class="w"> </span><span class="s2">"YNC_Plugin_DirectInput"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-19" id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="w">                </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"#"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-1-20" id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="w">                </span><span class="s2">"url"</span><span class="o">:</span><span class="w"> </span><span class="s2">""</span><span class="w"></span>
+<a href="#__codelineno-1-21" id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="w">            </span><span class="p">}</span><span class="w"></span>
+<a href="#__codelineno-1-22" id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="w">        </span><span class="p">]</span><span class="w"></span>
+<a href="#__codelineno-1-23" id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</input></div>
+<ul>
+<li>音声認識がおこなわれるたびに上記JSONがテキストメッセージとして送信されます。</li>
+<li>メッセージは <code>comment</code> に入ります。翻訳がある場合は <code>class t</code> に入ります。</li>
+<li>新たなメッセージか、更新されたかは、 <code>id</code> で判断してください。</li>
+</ul>
+<h2 id="_1">通信ポートの特定<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<ul>
+<li>通信ポートはレジストリから取得できます</li>
+</ul>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>ポートを開放したときに更新されます</li>
+</ul>
+</div>
+<ul>
+<li>レジストリ位置：HKCU\Software\YukarinetteConnectorNeo\OneCommeServer</li>
+</ul>
 <table>
 <thead>
 <tr>
-<th align="left">項目</th>
-<th align="left">可否</th>
-<th align="left">補足</th>
+<th align="left">名前</th>
+<th align="left">型</th>
+<th align="left">意味</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">多言語翻訳</td>
-<td align="left">〇</td>
-<td align="left">母国語＋４か国語まで</td>
+<td align="left">WebSocket</td>
+<td align="left">DWord32</td>
+<td align="left">WebSocketポート番号</td>
 </tr>
+</tbody>
+</table>
+<ul>
+<li>レジストリ位置：HKCU\Software\YukarinetteConnectorNeo</li>
+</ul>
+<table>
+<thead>
 <tr>
-<td align="left">翻訳エンジン</td>
-<td align="left">状況による</td>
-<td align="left">●Microsoft翻訳エンジン<br/>●Google翻訳エンジン<br/>●Amazon翻訳エンジン<br/>●IBM 翻訳エンジン<br/>●NAVER Papago翻訳エンジン<br/>●Google翻訳ライブラリ<br/>●共用翻訳サーバ(lexcon）</td>
+<th align="left">名前</th>
+<th align="left">型</th>
+<th align="left">意味</th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<td align="left">音声認識</td>
-<td align="left">〇</td>
-<td align="left">●UDトーク<br/>●ブラウザ音声認識<br/>●ブラウザ音声認識(ガムベックさん開発)<br/>●オフライン音声認識ライブラリ</td>
-</tr>
-<tr>
-<td align="left">ゆかりねっと連携</td>
-<td align="left">〇</td>
-<td align="left">●ゆかりねっとプラグイン併用モード<br/>●ブラウザエミュレート</td>
-</tr>
-<tr>
-<td align="left">OBS連携</td>
-<td align="left">〇</td>
-<td align="left">OBS Studio用 WebSocket v4/v5対応</td>
-</tr>
-<tr>
-<td align="left">読み上げ</td>
-<td align="left">〇</td>
-<td align="left">プラグインを使えば可能<br/>●A.I.Voice<br/>●CeVIO/CeVIO AI<br/>●AITalk3<br/>●VOICEVOX<br/>●COEIROINK on VOICEVOX<br/>●LMRoid<br/>●SAPI5<br/>●VOICEROID2</td>
-</tr>
-<tr>
-<td align="left">表示形式</td>
-<td align="left">〇</td>
-<td align="left">●多言語<br/>●VRオーバーレイ<br/>●リスト<br/>●ゲーム風<br/>●コラボレイアウト<br/>●わんコメテンプレ</td>
-</tr>
-<tr>
-<td align="left">辞書・ルビ</td>
-<td align="left">〇</td>
-<td align="left">プラグインで実現</td>
-</tr>
-<tr>
-<td align="left">FANBOX支援</td>
-<td align="left">〇</td>
-<td align="left">支援しなくても利用はできます。<br/>支援するとみんなで支える翻訳サーバがつかえるようになります</td>
+<td align="left">HTTP</td>
+<td align="left">DWord32</td>
+<td align="left">HTTPポート番号</td>
 </tr>
 </tbody>
 </table>
@@ -789,7 +957,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="フッター" class="md-footer__inner md-grid">
-<a aria-label="前: ダウンロード" class="md-footer__link md-footer__link--prev" href="../download/" rel="prev">
+<a aria-label="前: プラグイン系API" class="md-footer__link md-footer__link--prev" href="../tech_api_plugin/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -798,21 +966,8 @@
 <span class="md-footer__direction">
                 前
               </span>
-              ダウンロード
+              プラグイン系API
             </div>
-</div>
-</a>
-<a aria-label="次: 最速で英語翻訳をだす" class="md-footer__link md-footer__link--next" href="../cs/cs_en/" rel="next">
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                次
-              </span>
-              最速で英語翻訳をだす
-            </div>
-</div>
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
 </div>
 </a>
 </nav>
