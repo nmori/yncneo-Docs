@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.3.1, mkdocs-material-8.4.0" name="generator"/>
-<title>レイアウト - ゆかりねっとコネクターNEO</title>
+<title>本体内蔵API - ゆかりねっとコネクターNEO</title>
 <link href="../../assets/stylesheets/main.69437709.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -22,7 +22,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#neoapi">
           コンテンツにスキップ
         </a>
 </div>
@@ -46,7 +46,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              レイアウト
+              本体内蔵API
             
           </span>
 </div>
@@ -172,8 +172,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
 <label class="md-nav__link" for="__nav_5">
           設定について
           <span class="md-nav__icon md-icon"></span>
@@ -185,62 +185,19 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../startup_basic/">
+<a class="md-nav__link" href="../../startup/startup_basic/">
         標準設定項目
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../startup_option/">
+<a class="md-nav__link" href="../../startup/startup_option/">
         オプション設定
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          レイアウト
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../startup/startup_layout/">
         レイアウト
       </a>
-<nav aria-label="目次" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-    多言語
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-    リスト
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-    ゲームメッセージ風
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_5">
-    多言語（縁取りくっきり)
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_6">
-    ゲーム風（横ならべ)
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_7">
-    トークセッション
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -730,8 +687,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" id="__nav_13" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" id="__nav_13" type="checkbox"/>
 <label class="md-nav__link" for="__nav_13">
           技術者向け
           <span class="md-nav__icon md-icon"></span>
@@ -742,18 +699,46 @@
           技術者向け
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tech/tech_api_neo/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          本体内蔵API
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         本体内蔵API
       </a>
+<nav aria-label="目次" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    入力の受付
+  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../tech/tech_api_plugin/">
+<a class="md-nav__link" href="#_2">
+    認識のミュート
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    プラグインコマンド
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tech_api_plugin/">
         プラグイン系API
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../tech/tech_api_plugin_oc/">
+<a class="md-nav__link" href="../tech_api_plugin_oc/">
         わんコメ系API
       </a>
 </li>
@@ -775,33 +760,18 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    入力の受付
+  </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
-    多言語
+    認識のミュート
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
-    リスト
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-    ゲームメッセージ風
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_5">
-    多言語（縁取りくっきり)
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_6">
-    ゲーム風（横ならべ)
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_7">
-    トークセッション
+    プラグインコマンド
   </a>
 </li>
 </ul>
@@ -811,48 +781,114 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1">レイアウトについて<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
-<p>標準で用意しているレイアウトはいくつかあります。
-お好みのレイアウトを配信ソフトに取り込むことで簡単に字幕が出せます。</p>
-<h2 id="_2">多言語<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" href="../images/startup_layout1.png"><img alt="多言語" src="../images/startup_layout1.png"/></a></p>
+<h1 id="neoapi">NEO実装APIについて<a class="headerlink" href="#neoapi" title="Permanent link">¶</a></h1>
+<div class="admonition info">
+<p class="admonition-title">内容について</p>
+<p>この内容はサービス改良の中で予告なく改定されることがあります</p>
+</div>
+<div class="admonition tech">
+<p class="admonition-title">通信先</p>
 <ul>
-<li>縦に言語が並ぶ配列です。言語は最大５つ並べられます。</li>
-<li>設定により、色や言語表示、枠を消すことができます。</li>
+<li>ゆかりねっとコネクターNEOのWebポートに送付してください。デフォルトは <code>15520</code> です。</li>
 </ul>
-<h2 id="_3">リスト<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" href="../images/startup_layout2.png"><img alt="リスト" src="../images/startup_layout2.png"/></a></p>
+</div>
+<h2 id="_1">入力の受付<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <ul>
-<li>文章がスクロールして出ていく方式です。</li>
-<li>たくさん話しちゃう方は、こちらのほうが視認性を確保できます。</li>
-<li>文字サイズ、区切り線の有無や色は設定で変更できます。</li>
-<li>保持時間の設定をすると、過去の文章を消すことができます。</li>
+<li>外部ツールから指定された文字を文字入力として受け付けます。</li>
 </ul>
-<h2 id="_4">ゲームメッセージ風<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" href="../images/startup_layout3.png"><img alt="ゲームメッセージ風" src="../images/startup_layout3.png"/></a></p>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
 <ul>
-<li>ゲームのようなウィンドウに文字が表示されます。</li>
+<li>特になし</li>
 </ul>
-<h2 id="_5">多言語（縁取りくっきり)<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" href="../images/startup_layout4.png"><img alt="多言語2" src="../images/startup_layout4.png"/></a></p>
+</div>
 <ul>
-<li>縦に言語が並ぶ配列です。言語は最大５つ並べられます。</li>
-<li>縁取りをくっきりさせるため、投影手法を変えています</li>
-<li>OBSなどに取り込みやすい画面です。</li>
-<li>この手法ではフォントサイズを大きくしすぎると、ふちにヒゲがでてしまいます。</li>
+<li>送付方式：GET</li>
+<li>送付先 : /api/input</li>
 </ul>
-<h2 id="_6">ゲーム風（横ならべ)<a class="headerlink" href="#_6" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" href="../images/startup_layout5.png"><img alt="多言語2" src="../images/startup_layout5.png"/></a></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Query</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/input?text=あいうえお</span><span class="w"></span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</input></div>
 <ul>
-<li>ゲーム風レイアウトをつかって言語を横にならべられます。</li>
+<li>成功すると ok が返ってきます。</li>
 </ul>
-<h2 id="_7">トークセッション<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" href="../images/startup_layout6.png"><img alt="トーク" src="../images/startup_layout6.png"/></a></p>
+<h2 id="_2">認識のミュート<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <ul>
-<li>コラボレーションなどの時に使います。</li>
-<li>顔、名前、文章がでます。話者が２名以上になると枠が増えます。</li>
-<li>保持時間の設定で枠や文字の動作が変わります。</li>
-<li>保持時間を最大化すると、消去動作をしなくなります。</li>
+<li>すべての入力をシャットアウトします</li>
+</ul>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>特になし</li>
+</ul>
+</div>
+<ul>
+<li>送付方式：GET</li>
+<li>送付先 : /api/mute-**</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Mute On</label><label for="__tabbed_2_2">Mute off</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/mute-on</span><span class="w"></span>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/mute-off</span><span class="w"></span>
+<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</input></input></div>
+<ul>
+<li>成功すると ok が返ってきます。</li>
+</ul>
+<h2 id="_3">プラグインコマンド<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<ul>
+<li>プラグイン特有のコマンドを送付します</li>
+</ul>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>プラグイン自体が対応していること</li>
+</ul>
+</div>
+<ul>
+<li>送付方式：GET</li>
+<li>送付先 : /api/command</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">クエリ</th>
+<th align="left">意味</th>
+<th align="left">例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">target</td>
+<td align="left">送付先プラグイン識別名</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">command</td>
+<td align="left">命令文字列</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>成功すると ok が返ってきます。</li>
 </ul>
 <hr/>
 <div class="md-source-file">
@@ -869,7 +905,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="フッター" class="md-footer__inner md-grid">
-<a aria-label="前: オプション設定" class="md-footer__link md-footer__link--prev" href="../startup_option/" rel="prev">
+<a aria-label="前: 開発履歴" class="md-footer__link md-footer__link--prev" href="../../qa/history/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -878,17 +914,17 @@
 <span class="md-footer__direction">
                 前
               </span>
-              オプション設定
+              開発履歴
             </div>
 </div>
 </a>
-<a aria-label="次: 支援の概要" class="md-footer__link md-footer__link--next" href="../../support/support_summary/" rel="next">
+<a aria-label="次: プラグイン系API" class="md-footer__link md-footer__link--next" href="../tech_api_plugin/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 次
               </span>
-              支援の概要
+              プラグイン系API
             </div>
 </div>
 <div class="md-footer__button md-icon">
