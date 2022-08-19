@@ -1119,7 +1119,6 @@
 </div>
 <ul>
 <li>送付方式：HTTPの場合はPOST、WSの場合はテキスト</li>
-<li>キューをクリアするため、現在発話動作に入っているものは読み上げします。</li>
 </ul>
 <div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio"><input id="__tabbed_6_2" name="__tabbed_6" type="radio"><input id="__tabbed_6_3" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="__tabbed_6_1">Request</label><label for="__tabbed_6_2">Response(OK)</label><label for="__tabbed_6_3">Response(NG)</label></div>
 <div class="tabbed-content">
@@ -1158,6 +1157,27 @@
 </div>
 </div>
 </input></input></input></div>
+<table>
+<thead>
+<tr>
+<th align="left">名前</th>
+<th align="left">型</th>
+<th align="left">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">System</td>
+<td align="left">String</td>
+<td align="left">NEO本体のバージョン</td>
+</tr>
+<tr>
+<td align="left">Plugin</td>
+<td align="left">String</td>
+<td align="left">翻訳/発話連携サーバプラグイン</td>
+</tr>
+</tbody>
+</table>
 <h3 id="_7">通信ポートの特定<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
 <ul>
 <li>通信ポートはレジストリから取得できます</li>
