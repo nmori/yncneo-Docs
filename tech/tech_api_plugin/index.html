@@ -750,6 +750,16 @@
     発話の強制停止
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+    バージョンの取得
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+    通信ポートの特定
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -809,6 +819,16 @@
     発話の強制停止
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+    バージョンの取得
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+    通信ポートの特定
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -833,6 +853,7 @@
 <ul>
 <li>翻訳/発話連携サーバプラグインをONにしていること</li>
 <li>翻訳１の翻訳エンジンを選定していること（これが使われます）</li>
+<li>送信先ポートはレジストリから取得します</li>
 </ul>
 </div>
 <h3 id="1">翻訳（１言語）<a class="headerlink" href="#1" title="Permanent link">¶</a></h3>
@@ -1092,12 +1113,91 @@
 </div>
 </div>
 </input></input></input></div>
+<h3 id="_6">バージョンの取得<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
+<div class="admonition tips">
+<p class="admonition-title">対応プラグインバージョン: v1.4a以上</p>
+</div>
+<ul>
+<li>送付方式：HTTPの場合はPOST、WSの場合はテキスト</li>
+<li>キューをクリアするため、現在発話動作に入っているものは読み上げします。</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio"><input id="__tabbed_6_2" name="__tabbed_6" type="radio"><input id="__tabbed_6_3" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="__tabbed_6_1">Request</label><label for="__tabbed_6_2">Response(OK)</label><label for="__tabbed_6_3">Response(NG)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-16-2" id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="w">    </span><span class="nx">operation</span><span class="o">:</span><span class="w"> </span><span class="s1">'version'</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-16-3" id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="w">    </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<a href="#__codelineno-16-4" id="__codelineno-16-4" name="__codelineno-16-4"></a><span class="w">        </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-16-5" id="__codelineno-16-5" name="__codelineno-16-5"></a><span class="w">            </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s1">'0000-0000-0000-0000'</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-16-6" id="__codelineno-16-6" name="__codelineno-16-6"></a><span class="w">        </span><span class="p">}</span><span class="w"></span>
+<a href="#__codelineno-16-7" id="__codelineno-16-7" name="__codelineno-16-7"></a><span class="w">    </span><span class="p">]</span><span class="w"></span>
+<a href="#__codelineno-16-8" id="__codelineno-16-8" name="__codelineno-16-8"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-17-2" id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="w">    </span><span class="nx">operation</span><span class="o">:</span><span class="w"> </span><span class="s1">'version'</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-17-3" id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="w">    </span><span class="nx">status</span><span class="o">:</span><span class="w"> </span><span class="s1">'success'</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-17-4" id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="w">    </span><span class="nx">version</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<a href="#__codelineno-17-5" id="__codelineno-17-5" name="__codelineno-17-5"></a><span class="w">        </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-17-6" id="__codelineno-17-6" name="__codelineno-17-6"></a><span class="w">            </span><span class="nx">System</span><span class="o">:</span><span class="w"> </span><span class="s1">'1.959'</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-17-7" id="__codelineno-17-7" name="__codelineno-17-7"></a><span class="w">            </span><span class="nx">Plugin</span><span class="o">:</span><span class="w"> </span><span class="s1">'1.4a'</span><span class="w"></span>
+<a href="#__codelineno-17-8" id="__codelineno-17-8" name="__codelineno-17-8"></a><span class="w">        </span><span class="p">}</span><span class="w"></span>
+<a href="#__codelineno-17-9" id="__codelineno-17-9" name="__codelineno-17-9"></a><span class="w">    </span><span class="p">]</span><span class="w"></span>
+<a href="#__codelineno-17-10" id="__codelineno-17-10" name="__codelineno-17-10"></a><span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s1">'0000-0000-0000-0000'</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-17-11" id="__codelineno-17-11" name="__codelineno-17-11"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-18-2" id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="w">    </span><span class="nx">operation</span><span class="o">:</span><span class="w"> </span><span class="s1">'version'</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-18-3" id="__codelineno-18-3" name="__codelineno-18-3"></a><span class="w">    </span><span class="nx">status</span><span class="o">:</span><span class="w"> </span><span class="s1">'failure'</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-18-4" id="__codelineno-18-4" name="__codelineno-18-4"></a><span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s1">'0000-0000-0000-0000'</span><span class="w"></span>
+<a href="#__codelineno-18-5" id="__codelineno-18-5" name="__codelineno-18-5"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</input></input></input></div>
+<h3 id="_7">通信ポートの特定<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<ul>
+<li>通信ポートはレジストリから取得できます</li>
+</ul>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>ポートを開放したときに更新されます</li>
+</ul>
+</div>
+<ul>
+<li>レジストリ位置：HKCU\Software\YukarinetteConnectorNeo\TransServer</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">名前</th>
+<th align="left">型</th>
+<th align="left">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">WebSocket</td>
+<td align="left">DWord32</td>
+<td align="left">WebSocketポート番号</td>
+</tr>
+<tr>
+<td align="left">HTTP</td>
+<td align="left">DWord32</td>
+<td align="left">HTTPポート番号</td>
+</tr>
+</tbody>
+</table>
 <hr/>
 <div class="md-source-file">
 <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 18, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 19, 2022</span>
 </small>
 </div>
 </article>
