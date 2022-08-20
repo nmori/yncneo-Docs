@@ -1,0 +1,914 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.3.1, mkdocs-material-8.4.0" name="generator"/>
+<title>アップデート通知 - ゆかりねっとコネクターNEO</title>
+<link href="../../assets/stylesheets/main.69437709.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=BIZ+UDPGothic:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"BIZ UDPGothic";--md-code-font:"Roboto Mono"}</style>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="blue" data-md-color-primary="blue" data-md-color-scheme="" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#_1">
+          コンテンツにスキップ
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="ヘッダー" class="md-header__inner md-grid">
+<a aria-label="ゆかりねっとコネクターNEO" class="md-header__button md-logo" data-md-component="logo" href="../.." title="ゆかりねっとコネクターNEO">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            ゆかりねっとコネクターNEO
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              アップデート通知
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="ライトモードに切り替えます。" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="blue" data-md-color-scheme="" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_3" hidden="" title="ライトモードに切り替えます。">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"></path></svg>
+</label>
+<input aria-label="ダークモードに切り替えます。" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="blue" data-md-color-scheme="default" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="ダークモードに切り替えます。">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+<input aria-label="オートモードに切り替えます。" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="blue" data-md-color-scheme="slate" id="__palette_3" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="オートモードに切り替えます。">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="検索" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="検索" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="クリア" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            検索を初期化
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="ナビゲーション" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="ゆかりねっとコネクターNEO" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="ゆかりねっとコネクターNEO">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    ゆかりねっとコネクターNEO
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        概要
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../download/">
+        ダウンロード
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../spec/">
+        できること
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          攻略手順(チートシート)
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="攻略手順(チートシート)" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          攻略手順(チートシート)
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cs/cs_en/">
+        最速で英語翻訳をだす
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cs/cs_obs/">
+        OBS Studioできれいに出す
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cs/cs_colab_discord/">
+        コラボ字幕(Discord経由)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cs/cs_colab_udtalk/">
+        コラボ字幕(UDトーク経由)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cs/cs_colab_rd/">
+        コラボ字幕(画面共有編)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cs/cs_streamdeck/">
+        StreamDeckで操作する
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
+          設定について
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="設定について" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          設定について
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../startup/startup_basic/">
+        標準設定項目
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../startup/startup_option/">
+        オプション設定
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../startup/startup_layout/">
+        レイアウト
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../startup/startup_gas/">
+        GASの設定
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6">
+          支援について
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="支援について" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          支援について
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../support/support_summary/">
+        支援の概要
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../support/support_howto/">
+        支援の仕方
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../support/support_enabled/">
+        支援機能の有効化
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7">
+          設計思想と仕組み
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="設計思想と仕組み" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+          設計思想と仕組み
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/talk_quality/">
+        言葉の精度向上方法
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../design/plugin_rule/">
+        プラグインの動作
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8">
+          プラグイン
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="プラグイン" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+          プラグイン
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../enabled/">
+        有効化
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_2" id="__nav_8_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_2">
+          読み上げ
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="読み上げ" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_2">
+<span class="md-nav__icon md-icon"></span>
+          読み上げ
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_bouyomi/">
+        棒読みちゃん連携
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_softalk/">
+        Softalk読み上げ
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_playvoice/">
+        読み上げ
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_3" id="__nav_8_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_3">
+          サウンド
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="サウンド" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_3">
+<span class="md-nav__icon md-icon"></span>
+          サウンド
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_MediaPlayer/">
+        動画再生
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_playsound/">
+        音源再生
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_4" id="__nav_8_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_4">
+          認識の修正
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="認識の修正" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_4">
+<span class="md-nav__icon md-icon"></span>
+          認識の修正
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_dictionary/">
+        辞書
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_regexp/">
+        正規表現
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_5" id="__nav_8_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_5">
+          見た目の補正
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="見た目の補正" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_5">
+<span class="md-nav__icon md-icon"></span>
+          見た目の補正
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_ConvertString/">
+        文字変換
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_forcestyle/">
+        強制整形
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_ruby/">
+        ルビ付与
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_6" id="__nav_8_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_6">
+          表示関連
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="表示関連" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_6">
+<span class="md-nav__icon md-icon"></span>
+          表示関連
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_browser/">
+        内蔵ブラウザ
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_LyricAssist/">
+        歌詞支援
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_photopickup/">
+        フォト読み込み
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_viewextend/">
+        表示拡張(スタンプ)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_7" id="__nav_8_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_7">
+          Windows連携
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Windows連携" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_7">
+<span class="md-nav__icon md-icon"></span>
+          Windows連携
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_clipboard/">
+        クリップボード連携
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_midiinput/">
+        MIDI入力
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_8" id="__nav_8_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_8">
+          配信システム
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="配信システム" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_8">
+<span class="md-nav__icon md-icon"></span>
+          配信システム
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_commentgen/">
+        コメジェネ連携
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_OBSFile/">
+        配信ソフト向けテキスト出力
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_OBS/">
+        OBS連携 WSv4
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_OBS5/">
+        OBS連携 WSv5
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_9" id="__nav_8_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_9">
+          アプリ連携
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="アプリ連携" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_9">
+<span class="md-nav__icon md-icon"></span>
+          アプリ連携
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_OCTemplateGen/">
+        わんコメテンプレ連携
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_transSrv/">
+        翻訳・発話連携
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_vcas/">
+        バーチャルキャスト連携
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_vanii/">
+        VaNiiツール連携
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_vrchat_osc/">
+        VRChat OSC連携
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_vroverlay/">
+        VRオーバーレイ
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_vmc/">
+        ばもきゃ連携
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_MTGCard/">
+        MTGカード支援
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_10" id="__nav_8_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_10">
+          サイト連携
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="サイト連携" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_10">
+<span class="md-nav__icon md-icon"></span>
+          サイト連携
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_dicord/">
+        Discord BOT連携
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_dicordwebhook/">
+        Discord Webhook連携
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_twitch/">
+        Twitchチャット連携
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_youtube/">
+        YouTube Live字幕送信
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_youtubetimecode/">
+        YouTubeタイムコード生成
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_zoom/">
+        ZOOM連携
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_11" id="__nav_8_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_11">
+          つかいやすさ向上
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="つかいやすさ向上" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_11">
+<span class="md-nav__icon md-icon"></span>
+          つかいやすさ向上
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_directinput/">
+        直接入力
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_InputAssist/">
+        入力支援
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_startup/">
+        起動支援
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          アップデート通知
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        アップデート通知
+      </a>
+<nav aria-label="目次" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    このプラグインで出来ること
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    有効化
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    設定
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+    更新が来た場合
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_exporter/">
+        ファイル出力
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9">
+          アンバサダープログラム
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="アンバサダープログラム" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+          アンバサダープログラム
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ambasador/ambasador_gen1/">
+        1期生
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../supporter/supporter/">
+        担当・サポータ
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../system_info/">
+        活用に関する補足・注意点
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" id="__nav_12" type="checkbox"/>
+<label class="md-nav__link" for="__nav_12">
+          困ったときは
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="困ったときは" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_12">
+<span class="md-nav__icon md-icon"></span>
+          困ったときは
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../qa/faq/">
+        よくある質問
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../qa/reinstall/">
+        再インストール
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../qa/report/">
+        不具合を発見した時
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../qa/before_help/">
+        ヘルプを頼む前に
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../qa/history/">
+        開発履歴
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_13" id="__nav_13" type="checkbox"/>
+<label class="md-nav__link" for="__nav_13">
+          技術者向け
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="技術者向け" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_13">
+<span class="md-nav__icon md-icon"></span>
+          技術者向け
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tech/tech_api_neo/">
+        本体内蔵API
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tech/tech_api_plugin/">
+        プラグイン系API
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../tech/tech_api_plugin_oc/">
+        わんコメ系API
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="目次" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    このプラグインで出来ること
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    有効化
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    設定
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+    更新が来た場合
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>アップデート通知</h1>
+<div class="admonition info">
+<p class="admonition-title">前提条件</p>
+<ul>
+<li>特になし</li>
+</ul>
+</div>
+<h2 id="_1">このプラグインで出来ること<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<ul>
+<li>ソフトウェアの更新時期をお知らせします</li>
+</ul>
+<h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<p><a class="glightbox" href="../images/plugin_update_p1.png"><img alt="direct" src="../images/plugin_update_p1.png"/></a></p>
+<ul>
+<li>プラグインを使うチェックをONにしてください。</li>
+</ul>
+<h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<p><a class="glightbox" href="../images/plugin_update_p2.png"><img alt="direct" src="../images/plugin_update_p2.png"/></a></p>
+<ul>
+<li>通知してほしいタイミングを「更新チャネル」で設定します</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">通常は安定板で問題ありません</p>
+<ul>
+<li>安定版は様子を見ながらバージョンが上がっていきます。</li>
+<li>不都合があるときに、問題解消のため開発版を使う手はあります</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">とにかく開発版はペースが速いです</p>
+<ul>
+<li>リクエストがおおいので、毎日更新されるときもあります。</li>
+<li>あまり通知が必要なければ、開発版じゃないほうがよいかもしれません</li>
+<li>いち早く最新機能や、他のツールとの連携不具合にメスを入れているバージョンとなります</li>
+</ul>
+</div>
+<h2 id="_4">更新が来た場合<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<ul>
+<li>起動時にバージョンアップするか聞かれます。</li>
+<li>はいを押すと、上書きアップデートを行う画面に移行します。</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">バージョンアップは配信前を避けましょう</p>
+<ul>
+<li>トラブルが起きない保証はないので、リカバリーできる時間があるときに行いましょう</li>
+<li>問題が発生したときは<a href="../../qa/reinstall/">再インストール</a>をお試しください</li>
+</ul>
+</div>
+<hr/>
+<div class="md-source-file">
+<small>
+    
+      最終更新日:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 20, 2022</span>
+</small>
+</div>
+</article>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="フッター" class="md-footer__inner md-grid">
+<a aria-label="前: 起動支援" class="md-footer__link md-footer__link--prev" href="../plugin_startup/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                前
+              </span>
+              起動支援
+            </div>
+</div>
+</a>
+<a aria-label="次: ファイル出力" class="md-footer__link md-footer__link--next" href="../plugin_exporter/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                次
+              </span>
+              ファイル出力
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+</html>
