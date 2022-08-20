@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.3.1, mkdocs-material-8.4.0" name="generator"/>
-<title>OBS連携 WSv5 - ゆかりねっとコネクターNEO</title>
+<title>ゆかりねっとと繋ぐ - ゆかりねっとコネクターNEO</title>
 <link href="../../assets/stylesheets/main.69437709.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -46,7 +46,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              OBS連携 WSv5
+              ゆかりねっとと繋ぐ
             
           </span>
 </div>
@@ -127,8 +127,8 @@
         できること
       </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
 <label class="md-nav__link" for="__nav_4">
           攻略手順(チートシート)
           <span class="md-nav__icon md-icon"></span>
@@ -140,22 +140,59 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../cs/cs_en/">
+<a class="md-nav__link" href="../cs_en/">
         最速で英語翻訳をだす
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../cs/cs_obs/">
+<a class="md-nav__link" href="../cs_obs/">
         OBS Studioできれいに出す
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../cs/cs_yukari/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          ゆかりねっとと繋ぐ
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         ゆかりねっとと繋ぐ
       </a>
+<nav aria-label="目次" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    攻略チートシートについて
+  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../cs/cs_streamdeck/">
+<a class="md-nav__link" href="#_2">
+    ゆかりねっととつなぐ
+  </a>
+<nav aria-label="ゆかりねっととつなぐ" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#case1-neo">
+    Case.1 ゆかりねっとの音声認識をつかってNEOを連携
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#case2-neo">
+    Case.2 NEOの音声認識をつかってゆかりねっとを連携
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cs_streamdeck/">
         StreamDeckで操作する
       </a>
 </li>
@@ -172,17 +209,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../cs/cs_colab_discord/">
+<a class="md-nav__link" href="../cs_colab_discord/">
         Discord経由でコラボ
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../cs/cs_colab_udtalk/">
+<a class="md-nav__link" href="../cs_colab_udtalk/">
         UDトーク経由でコラボ
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../cs/cs_colab_rd/">
+<a class="md-nav__link" href="../cs_colab_rd/">
         画面共有でコラボ
       </a>
 </li>
@@ -282,8 +319,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" id="__nav_8" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" id="__nav_8" type="checkbox"/>
 <label class="md-nav__link" for="__nav_8">
           プラグイン
           <span class="md-nav__icon md-icon"></span>
@@ -295,7 +332,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../enabled/">
+<a class="md-nav__link" href="../../plugin/enabled/">
         有効化
       </a>
 </li>
@@ -312,17 +349,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_bouyomi/">
+<a class="md-nav__link" href="../../plugin/plugin_bouyomi/">
         棒読みちゃん連携
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_softalk/">
+<a class="md-nav__link" href="../../plugin/plugin_softalk/">
         Softalk読み上げ
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_playvoice/">
+<a class="md-nav__link" href="../../plugin/plugin_playvoice/">
         読み上げ
       </a>
 </li>
@@ -342,12 +379,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_MediaPlayer/">
+<a class="md-nav__link" href="../../plugin/plugin_MediaPlayer/">
         動画再生
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_playsound/">
+<a class="md-nav__link" href="../../plugin/plugin_playsound/">
         音源再生
       </a>
 </li>
@@ -367,12 +404,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_dictionary/">
+<a class="md-nav__link" href="../../plugin/plugin_dictionary/">
         辞書
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_regexp/">
+<a class="md-nav__link" href="../../plugin/plugin_regexp/">
         正規表現
       </a>
 </li>
@@ -392,17 +429,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_ConvertString/">
+<a class="md-nav__link" href="../../plugin/plugin_ConvertString/">
         文字変換
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_forcestyle/">
+<a class="md-nav__link" href="../../plugin/plugin_forcestyle/">
         強制整形
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_ruby/">
+<a class="md-nav__link" href="../../plugin/plugin_ruby/">
         ルビ付与
       </a>
 </li>
@@ -422,22 +459,22 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_browser/">
+<a class="md-nav__link" href="../../plugin/plugin_browser/">
         内蔵ブラウザ
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_LyricAssist/">
+<a class="md-nav__link" href="../../plugin/plugin_LyricAssist/">
         歌詞支援
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_photopickup/">
+<a class="md-nav__link" href="../../plugin/plugin_photopickup/">
         フォト読み込み
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_viewextend/">
+<a class="md-nav__link" href="../../plugin/plugin_viewextend/">
         表示拡張(スタンプ)
       </a>
 </li>
@@ -457,20 +494,20 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_clipboard/">
+<a class="md-nav__link" href="../../plugin/plugin_clipboard/">
         クリップボード連携
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_midiinput/">
+<a class="md-nav__link" href="../../plugin/plugin_midiinput/">
         MIDI入力
       </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_8" id="__nav_8_8" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_8" id="__nav_8_8" type="checkbox"/>
 <label class="md-nav__link" for="__nav_8_8">
           配信システム
           <span class="md-nav__icon md-icon"></span>
@@ -482,66 +519,24 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_commentgen/">
+<a class="md-nav__link" href="../../plugin/plugin_commentgen/">
         コメジェネ連携
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_OBSFile/">
+<a class="md-nav__link" href="../../plugin/plugin_OBSFile/">
         配信ソフト向けテキスト出力
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_OBS/">
+<a class="md-nav__link" href="../../plugin/plugin_OBS/">
         OBS連携 WSv4
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          OBS連携 WSv5
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../plugin/plugin_OBS5/">
         OBS連携 WSv5
       </a>
-<nav aria-label="目次" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-    このプラグインで出来ること
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-    有効化
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-    設定
-  </a>
-<nav aria-label="設定" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#obs">
-    OBSシーン切り替え設定の作り方
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-    使うとき
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -559,42 +554,42 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_OCTemplateGen/">
+<a class="md-nav__link" href="../../plugin/plugin_OCTemplateGen/">
         わんコメテンプレ連携
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_transSrv/">
+<a class="md-nav__link" href="../../plugin/plugin_transSrv/">
         翻訳・発話連携
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_vcas/">
+<a class="md-nav__link" href="../../plugin/plugin_vcas/">
         バーチャルキャスト連携
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_vanii/">
+<a class="md-nav__link" href="../../plugin/plugin_vanii/">
         VaNiiツール連携
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_vrchat_osc/">
+<a class="md-nav__link" href="../../plugin/plugin_vrchat_osc/">
         VRChat OSC連携
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_vroverlay/">
+<a class="md-nav__link" href="../../plugin/plugin_vroverlay/">
         VRオーバーレイ
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_vmc/">
+<a class="md-nav__link" href="../../plugin/plugin_vmc/">
         ばもきゃ連携
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_MTGCard/">
+<a class="md-nav__link" href="../../plugin/plugin_MTGCard/">
         MTGカード支援
       </a>
 </li>
@@ -614,32 +609,32 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_dicord/">
+<a class="md-nav__link" href="../../plugin/plugin_dicord/">
         Discord BOT連携
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_dicordwebhook/">
+<a class="md-nav__link" href="../../plugin/plugin_dicordwebhook/">
         Discord Webhook連携
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_twitch/">
+<a class="md-nav__link" href="../../plugin/plugin_twitch/">
         Twitchチャット連携
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_youtube/">
+<a class="md-nav__link" href="../../plugin/plugin_youtube/">
         YouTube Live字幕送信
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_youtubetimecode/">
+<a class="md-nav__link" href="../../plugin/plugin_youtubetimecode/">
         YouTubeタイムコード生成
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_zoom/">
+<a class="md-nav__link" href="../../plugin/plugin_zoom/">
         ZOOM連携
       </a>
 </li>
@@ -659,27 +654,27 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_directinput/">
+<a class="md-nav__link" href="../../plugin/plugin_directinput/">
         直接入力
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_InputAssist/">
+<a class="md-nav__link" href="../../plugin/plugin_InputAssist/">
         入力支援
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_startup/">
+<a class="md-nav__link" href="../../plugin/plugin_startup/">
         起動支援
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_update/">
+<a class="md-nav__link" href="../../plugin/plugin_update/">
         アップデート通知
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_exporter/">
+<a class="md-nav__link" href="../../plugin/plugin_exporter/">
         ファイル出力
       </a>
 </li>
@@ -805,32 +800,27 @@
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_1">
-    このプラグインで出来ること
+    攻略チートシートについて
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
-    有効化
+    ゆかりねっととつなぐ
+  </a>
+<nav aria-label="ゆかりねっととつなぐ" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#case1-neo">
+    Case.1 ゆかりねっとの音声認識をつかってNEOを連携
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-    設定
-  </a>
-<nav aria-label="設定" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#obs">
-    OBSシーン切り替え設定の作り方
+<a class="md-nav__link" href="#case2-neo">
+    Case.2 NEOの音声認識をつかってゆかりねっとを連携
   </a>
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-    使うとき
-  </a>
 </li>
 </ul>
 </nav>
@@ -839,203 +829,109 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>OBS連携 WSv5</h1>
+<h1>ゆかりねっとと繋ぐ</h1>
+<h2 id="_1">攻略チートシートについて<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<ul>
+<li>このチートシートはテーマを絞ってガイドする「攻略本」的なものです。</li>
+</ul>
+<h2 id="_2">ゆかりねっととつなぐ<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <div class="admonition info">
 <p class="admonition-title">前提条件</p>
 <ul>
-<li><a href="https://github.com/obsproject/obs-studio/releases/download/">OBS Studio v28</a>以降を使用していること</li>
-<li><a href="https://github.com/obsproject/obs-websocket/releases/download/">OBS WebSocket v5</a>が入っていること</li>
+<li><a href="http://www.okayulu.moe/">ゆかりねっと</a> v1.0.8 がうごいていること<br/>
+※音声認識し字幕を表示するだけであれば、ゆかりねっとコネクターNEOだけで実現できます。<br/>
+　その場合は、この連携設定は不要です。</li>
 </ul>
 </div>
-<h2 id="_1">このプラグインで出来ること<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
-<ul>
-<li>OBS Studioの字幕レイアウトを直接書き換えることで字幕をきれいに表示できます</li>
-</ul>
-<h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" href="../images/plugin_obs5_p1.png"><img alt="ファイル" src="../images/plugin_obs5_p1.png"/></a></p>
-<ul>
-<li>プラグインを使うチェックをONにしてください。</li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">OBS WebSocket 4の環境ではこのプラグインは使えません</p>
-<ul>
-<li>OBSの通信仕様が大きく変わったためです。バージョンを確認して使ってください。</li>
-</ul>
-</div>
-<h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" href="../images/plugin_obs_p2.png"><img alt="設定" src="../images/plugin_obs_p2.png"/></a></p>
-<table>
-<thead>
-<tr>
-<th align="left">設定</th>
-<th align="left">意味</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">通信先</td>
-<td align="left">字幕を送付したいOBSを指定します。<br/>※ポート番号はバージョンによって<code>4440</code>・<code>4444</code>とばらつきがあるのでOBSで確認してください</td>
-</tr>
-<tr>
-<td align="left">パスワード</td>
-<td align="left">パスワードを設定していれば入れます</td>
-</tr>
-<tr>
-<td align="left">送信先</td>
-<td align="left">指定した文字列を超えた場合にクロップ処理をします</td>
-</tr>
-<tr>
-<td align="left">ソース名＋…</td>
-<td align="left">話者毎にテキストを分ける場合に指定します</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition tips">
-<p class="admonition-title">ソース名の先頭が一致するすべてのソースに送付</p>
-<ul>
-<li>シーンをいくつかに分けていて複数のソースに字幕を送る場合に使用します。</li>
-</ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">設定例</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ul>
-<li><code>日本語1</code> <code>日本語2</code>というソースがあり、すべてに送る場合<ul>
-<li>母国語に <code>日本語</code>と指定</li>
-<li>ソース名の先頭が一致するすべてのソースに送付をONに</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</input></div>
-</div>
-<p><a class="glightbox" href="../images/plugin_obs_p3.png"><img alt="設定" src="../images/plugin_obs_p3.png"/></a></p>
-<table>
-<thead>
-<tr>
-<th align="left">設定</th>
-<th align="left">意味</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">書き出し先</td>
-<td align="left">配信ソフトに読み込ませるためのテキストファイルを置く場所を指定します</td>
-</tr>
-<tr>
-<td align="left">改行を入れなおす</td>
-<td align="left">文字数毎に改行を入れます</td>
-</tr>
-<tr>
-<td align="left">長い文字列に処理をする</td>
-<td align="left">指定した文字列を超えた場合にクロップ処理をします</td>
-</tr>
-<tr>
-<td align="left">指定した行数を超えたら省く</td>
-<td align="left">処理した結果指定行数を超えたら、末尾の「指定した行数」を表示します</td>
-</tr>
-<tr>
-<td align="left">改行を省く</td>
-<td align="left">処理を始める前に、最初に改行を省きます</td>
-</tr>
-<tr>
-<td align="left">処理内容</td>
-<td align="left">条件に当てはまる場合に改行を入れるか、省く（クロップ）するかを選びます</td>
-</tr>
-<tr>
-<td align="left">字幕ミュート状態を連動</td>
-<td align="left">配信をONにしたときに字幕ミュートを解除し、配信OFFと同時に字幕をミュートします</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition tips">
-<p class="admonition-title">字幕のミュートについて</p>
-<ul>
-<li>配信後に字幕が見えていると都合が悪い場合に使います。<br/> 例）配信＋Discord画面共有などをしている場合</li>
-<li>意図せず認識結果が他者に見えることを防止します</li>
-</ul>
-</div>
-<p><a class="glightbox" href="../images/plugin_obs_p4.png"><img alt="設定" src="../images/plugin_obs_p4.png"/></a></p>
-<table>
-<thead>
-<tr>
-<th align="left">設定</th>
-<th align="left">意味</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">クローズドキャプション</td>
-<td align="left">OBSにクローズドキャプション信号として字幕をおくります</td>
-</tr>
-<tr>
-<td align="left">OBSsシーン切り替え</td>
-<td align="left">特定のキーワードが含まれていたらシーンを切り替える指示をだします</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition tips">
-<p class="admonition-title">クローズドキャプションについて</p>
-<ul>
-<li>配信サイトが対応している場合に機能します。</li>
-<li>現段階で対応が確認できているのは <code>YouTube</code>や<code>Twitch</code>になります。</li>
-<li>YouTubeの場合は、配信設定の字幕のところで 「608/607」を有効にします。
-<a class="glightbox" href="../images/plugin_obs_p5.png"><img alt="設定" src="../images/plugin_obs_p5.png"/></a></li>
-<li>Twitchの場合は、特に設定不要で反映されます。</li>
-<li>字幕が表出するタイミング、維持する時間などは配信サイトに一任されます。</li>
-</ul>
-</div>
-<h3 id="obs">OBSシーン切り替え設定の作り方<a class="headerlink" href="#obs" title="Permanent link">¶</a></h3>
 <div class="admonition info">
-<p class="admonition-title">編集方法</p>
+<p class="admonition-title">謝辞</p>
 <ul>
-<li>Excel もしくは メモ帳で実施します。</li>
+<li>連携先ソフトウェアの開発者は<a href="http://www.okayulu.moe/">おかゆぅ様</a>です。</li>
 </ul>
 </div>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Case1:Excelの場合</label><label for="__tabbed_2_2">Case2:メモ帳の場合</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<table>
-<thead>
-<tr>
-<th align="left"></th>
-<th align="left">A</th>
-<th align="left">B</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">1</td>
-<td align="left">これで今日の配信はおしまい</td>
-<td align="left">終了シーン</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>
-<p>Excelでデータを作ります。</p>
-</li>
-<li>
-<p>CSVファイルとして保存します。</p>
-</li>
-</ol>
-<p><a class="glightbox" href="../images/plugin_mediaplayer_p5.png"><img alt="Excel2" src="../images/plugin_mediaplayer_p5.png"/></a></p>
-</div>
-<div class="tabbed-block">
-<ol>
-<li>下記のようなファイルを作ります。</li>
-</ol>
-<p><div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nx">これで今日の配信はおしまい</span><span class="p">,</span><span class="nx">終了シーン</span><span class="w"></span>
-</code></pre></div>
-2. CSV（UTF8エンコード)で保存します。</p>
-<p><a class="glightbox" href="../images/plugin_mediaplayer_p4.png"><img alt="notepad" src="../images/plugin_mediaplayer_p4.png"/></a></p>
-</div>
-</div>
-</input></input></div>
-<h2 id="_4">使うとき<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">うまく動かないときのレポートについて</p>
 <ul>
-<li>プラグイン画面で「OBSに接続」をおします。</li>
-<li>音声認識と同時に字幕が転送されます。</li>
+<li>本件について、おかゆぅ様に直接問い合わせをしないでください。</li>
+</ul>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Caseの選定</p>
+<ul>
+<li>Case1、Case2「どちらか１つ」をえらんでください。</li>
+<li>両方設定すると、字幕がループしうまく動かない原因になります</li>
+</ul>
+</div>
+<h3 id="case1-neo">Case.1 ゆかりねっとの音声認識をつかってNEOを連携<a class="headerlink" href="#case1-neo" title="Permanent link">¶</a></h3>
+<div class="admonition info">
+<p class="admonition-title">このケースを選ぶのは、こういうとき</p>
+<ul>
+<li>ゆかりねっとの音声認識を優先して使いたい</li>
+<li>今の構成を崩したくない</li>
+</ul>
+</div>
+<ul>
+<li>ゆかりねっとの音声認識結果をゆかりねっとコネクターNEOに流すには、プラグインが必要です。</li>
+<li>プラグインをゆかりねっとに入れます。</li>
+</ul>
+<p><a class="glightbox" href="../images/cs_yukari_p1.png"><img alt="yukari" src="../images/cs_yukari_p1.png"/></a></p>
+<ul>
+<li>ゆかりねっとを起動し、プラグインを有効化します。</li>
+</ul>
+<p><a class="glightbox" href="../images/cs_yukari_p2.png"><img alt="yukari" src="../images/cs_yukari_p2.png"/></a></p>
+<ul>
+<li>ゆかりねっとコネクターNEOを起動し、音声入力を選択します。</li>
+</ul>
+<p><a class="glightbox" href="../images/cs_yukari_p3.png"><img alt="yukari" src="../images/cs_yukari_p3.png"/></a></p>
+<ul>
+<li>うまくつながれば接続完了になります</li>
+</ul>
+<p><a class="glightbox" href="../images/cs_yukari_p4.png"><img alt="yukari" src="../images/cs_yukari_p4.png"/></a></p>
+<div class="admonition warning">
+<p class="admonition-title">うまく動かないとき</p>
+<ul>
+<li>PC内の他のアプリが通信ポートをふさいでいることがあります。</li>
+<li>再起動したり、常駐ソフトを終了させてみると改善することがあります。</li>
+</ul>
+</div>
+<ul>
+<li>ゆかりねっとの音声認識をONにします</li>
+</ul>
+<p><a class="glightbox" href="../images/cs_yukari_p5.png"><img alt="yukari" src="../images/cs_yukari_p5.png"/></a></p>
+<ul>
+<li>これで、発話するたびにNEOの方で翻訳・表示が行われます</li>
+</ul>
+<h3 id="case2-neo">Case.2 NEOの音声認識をつかってゆかりねっとを連携<a class="headerlink" href="#case2-neo" title="Permanent link">¶</a></h3>
+<div class="admonition info">
+<p class="admonition-title">このケースを選ぶのは、こういうとき</p>
+<ul>
+<li>ゆかりねっとコネクターNEOの音声認識を優先して使いたい</li>
+</ul>
+</div>
+<ul>
+<li>
+<p>ゆかりねっとを起動します。</p>
+</li>
+<li>
+<p>ゆかりねっとのブラウザ設定欄にゆかりねっとコネクターNEOを指定します</p>
+</li>
+</ul>
+<p><a class="glightbox" href="../images/cs_yukari_p6.png"><img alt="yukari" src="../images/cs_yukari_p6.png"/></a></p>
+<ul>
+<li>ゆかりねっとの音声認識をONにします</li>
+</ul>
+<p><a class="glightbox" href="../images/cs_yukari_p7.png"><img alt="yukari" src="../images/cs_yukari_p7.png"/></a></p>
+<ul>
+<li>
+<p>このタイミングでゆかりねっとコネクターNEOが起動します。</p>
+</li>
+<li>
+<p>その後、音声入力元の設定をします。</p>
+</li>
+</ul>
+<p><a class="glightbox" href="../images/cs_yukari_p8.png"><img alt="yukari" src="../images/cs_yukari_p8.png"/></a></p>
+<ul>
+<li>設定が終わったら、音声認識をONにします<br/>これで、発話するたびにNEOの方で翻訳・表示が行われます</li>
 </ul>
 <hr/>
 <div class="md-source-file">
@@ -1052,7 +948,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="フッター" class="md-footer__inner md-grid">
-<a aria-label="前: OBS連携 WSv4" class="md-footer__link md-footer__link--prev" href="../plugin_OBS/" rel="prev">
+<a aria-label="前: OBS Studioできれいに出す" class="md-footer__link md-footer__link--prev" href="../cs_obs/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -1061,17 +957,17 @@
 <span class="md-footer__direction">
                 前
               </span>
-              OBS連携 WSv4
+              OBS Studioできれいに出す
             </div>
 </div>
 </a>
-<a aria-label="次: わんコメテンプレ連携" class="md-footer__link md-footer__link--next" href="../plugin_OCTemplateGen/" rel="next">
+<a aria-label="次: StreamDeckで操作する" class="md-footer__link md-footer__link--next" href="../cs_streamdeck/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 次
               </span>
-              わんコメテンプレ連携
+              StreamDeckで操作する
             </div>
 </div>
 <div class="md-footer__button md-icon">
