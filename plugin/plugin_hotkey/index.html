@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.3.1, mkdocs-material-8.4.2" name="generator"/>
-<title>直接入力 - ゆかりねっとコネクターNEO</title>
+<title>ホットキー - ゆかりねっとコネクターNEO</title>
 <link href="../../assets/stylesheets/main.69437709.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -46,7 +46,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              直接入力
+              ホットキー
             
           </span>
 </div>
@@ -469,8 +469,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_7" id="__nav_9_7" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_7" id="__nav_9_7" type="checkbox"/>
 <label class="md-nav__link" for="__nav_9_7">
           Windows連携
           <span class="md-nav__icon md-icon"></span>
@@ -491,10 +491,48 @@
         MIDI入力
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_hotkey/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          ホットキー
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         ホットキー
       </a>
+<nav aria-label="目次" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    このプラグインで出来ること
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    有効化
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    設定
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+    使うとき
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+    特性等
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -634,8 +672,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_11" id="__nav_9_11" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_11" id="__nav_9_11" type="checkbox"/>
 <label class="md-nav__link" for="__nav_9_11">
           つかいやすさ向上
           <span class="md-nav__icon md-icon"></span>
@@ -646,38 +684,10 @@
           つかいやすさ向上
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          直接入力
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_directinput/">
         直接入力
       </a>
-<nav aria-label="目次" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-    このプラグインで出来ること
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-    有効化
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-    設定
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../plugin_InputAssist/">
@@ -839,6 +849,16 @@
     設定
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+    使うとき
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+    特性等
+  </a>
+</li>
 </ul>
 </nav>
 </div>
@@ -846,34 +866,78 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>直接入力</h1>
+<h1>ホットキー</h1>
 <div class="admonition info">
 <p class="admonition-title">前提条件</p>
 <ul>
-<li>特になし</li>
+<li>ゆかりねっとコネクターNEO v2.0より使用可能</li>
 </ul>
 </div>
 <h2 id="_1">このプラグインで出来ること<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <ul>
-<li>キーボード入力を受け付けます</li>
+<li>言葉に反応してキーボード信号を送出できます</li>
+<li>キーをうまく使うと、モーションソフトなどに表情信号が送れます</li>
 </ul>
-<div class="admonition info">
-<p class="admonition-title">こういう時に使おう</p>
-<ul>
-<li>翻訳の調整や「どうしても認識しない文字を入れる」ときに使いましょう</li>
-</ul>
-</div>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" href="../images/plugin_directinput_p1.png"><img alt="direct" src="../images/plugin_directinput_p1.png"/></a></p>
+<p><a class="glightbox" href="../images/plugin_hotkey_p1.png"><img alt="再生" src="../images/plugin_hotkey_p1.png"/></a></p>
 <ul>
 <li>プラグインを使うチェックをONにしてください。</li>
 </ul>
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" href="../images/plugin_directinput_p2.png"><img alt="direct" src="../images/plugin_directinput_p2.png"/></a></p>
+<p><a class="glightbox" href="../images/plugin_hotkey_p2.png"><img alt="再生" src="../images/plugin_hotkey_p2.png"/></a></p>
+<table>
+<thead>
+<tr>
+<th align="left">設定</th>
+<th align="left">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">モード</td>
+<td align="left">一致条件を決めます</td>
+</tr>
+<tr>
+<td align="left">起動ワード</td>
+<td align="left">条件（発火条件）を決めます</td>
+</tr>
+<tr>
+<td align="left">送付キー</td>
+<td align="left">キーの組み合わせを指定します</td>
+</tr>
+<tr>
+<td align="left">文字差し替え</td>
+<td align="left">再生したあと、文字を差し替えます。<br/>（字幕や後続のプラグインに渡す文字が差し替えられます)</td>
+</tr>
+<tr>
+<td align="left">読み上げ文字</td>
+<td align="left">差し替える文字を指定します。</td>
+</tr>
+<tr>
+<td align="left">後処理</td>
+<td align="left">チェックを打つと、字幕を出してから処理をします</td>
+</tr>
+<tr>
+<td align="left">TTS無効化</td>
+<td align="left">この条件に当てはまった場合、読み上げプラグインで読み上げ動作をしません</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">送付キー</p>
 <ul>
-<li>ウィンドウが出ます。</li>
-<li>ウィンドウサイズに伴って文字サイズなども大きくなります</li>
-<li>文字を入力し、エンターもしくは送信で文字をおくることができます</li>
+<li>Microsoftの<a href="https://docs.microsoft.com/ja-jp/dotnet/api/system.windows.forms.sendkeys.send?view=windowsdesktop-6.0">キー表現</a>に従ってください。</li>
+<li>キーによってはうまくいかないものがあります。</li>
+<li>例）{ENTER}とかくと、エンターを送出します</li>
+</ul>
+</div>
+<h2 id="_4">使うとき<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<ol>
+<li>音声認識をすれば自動的に処理されます。</li>
+</ol>
+<h2 id="_5">特性等<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
+<ul>
+<li>エンターキーなどを扱う場合は、意図しない決定が起こる場合があるので使い方に気を付けて下さい。</li>
 </ul>
 <hr/>
 <div class="md-source-file">
@@ -890,7 +954,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="フッター" class="md-footer__inner md-grid">
-<a aria-label="前: ZOOM連携" class="md-footer__link md-footer__link--prev" href="../plugin_zoom/" rel="prev">
+<a aria-label="前: MIDI入力" class="md-footer__link md-footer__link--prev" href="../plugin_midiinput/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -899,17 +963,17 @@
 <span class="md-footer__direction">
                 前
               </span>
-              ZOOM連携
+              MIDI入力
             </div>
 </div>
 </a>
-<a aria-label="次: 入力支援" class="md-footer__link md-footer__link--next" href="../plugin_InputAssist/" rel="next">
+<a aria-label="次: コメジェネ連携" class="md-footer__link md-footer__link--next" href="../plugin_commentgen/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 次
               </span>
-              入力支援
+              コメジェネ連携
             </div>
 </div>
 <div class="md-footer__button md-icon">
