@@ -820,6 +820,11 @@
     発話の受信(WebSocket)
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#websocket_1">
+    発話の受信(WebSocket,シンプル)
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -951,6 +956,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#websocket">
     発話の受信(WebSocket)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#websocket_1">
+    発話の受信(WebSocket,シンプル)
   </a>
 </li>
 </ul>
@@ -1203,8 +1213,8 @@
 </div>
 <ul>
 <li>送付方式：Websocket Text</li>
-<li>送付先 :　ws://127.0.0.1:55501/ </li>
-<li>ポート番号は述のレジストリから取得してください</li>
+<li>送付先 :　ws://127.0.0.1:50000/ </li>
+<li>ポート番号は前述のレジストリから取得してください</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">パラメータについて</p>
@@ -1320,12 +1330,103 @@
 </div>
 </div>
 </input></div>
+<h2 id="websocket_1">発話の受信(WebSocket,シンプル)<a class="headerlink" href="#websocket_1" title="Permanent link">¶</a></h2>
+<ul>
+<li>表示用のデータをJSONとして受け取れます。</li>
+</ul>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>ゆかりねっとコネクターNEO v2.0～</li>
+</ul>
+</div>
+<ul>
+<li>送付方式：Websocket Text</li>
+<li>送付先 :　ws://127.0.0.1:50000/text</li>
+<li>ポート番号は前述のレジストリから取得してください</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">パラメータについて</p>
+<ul>
+<li>前述のAPIと異なり、内容がかなり絞られています</li>
+</ul>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio"><input id="__tabbed_6_2" name="__tabbed_6" type="radio"><input id="__tabbed_6_3" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="__tabbed_6_1">Query</label><label for="__tabbed_6_2">意味</label><label for="__tabbed_6_3">特性</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="w">    </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">    </span><span class="s2">"textList"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">        </span><span class="s2">"ja"</span><span class="o">:</span><span class="w"> </span><span class="s2">"今日はよい天気です"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">        </span><span class="s2">"en"</span><span class="o">:</span><span class="w"> </span><span class="s2">"Good weather today"</span><span class="w"></span>
+<a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w">    </span><span class="p">},</span><span class="w"></span>
+<a href="#__codelineno-6-6" id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="w">    </span><span class="s2">"fixedText"</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-6-7" id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="w">    </span><span class="s2">"talkerID"</span><span class="o">:</span><span class="w"> </span><span class="s2">"8141cf31-1685-4e88-97ce-9ae92981174b"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-6-8" id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="w">    </span><span class="s2">"talkerName"</span><span class="o">:</span><span class="w"> </span><span class="s2">"なお"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-6-9" id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="w">    </span><span class="s2">"MessageID"</span><span class="o">:</span><span class="w"> </span><span class="s2">"f72e0ee4-a8f1-4bfa-8a0c-773d348b8375"</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-6-10" id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="w">    </span><span class="s2">"isAlreadyShown"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<a href="#__codelineno-6-11" id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="w">    </span><span class="s2">"isDeleted"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<a href="#__codelineno-6-12" id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>タグ</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>textList</td>
+<td>発話もしくは翻訳文のリスト（keyは言語名、dataは文章)</td>
+</tr>
+<tr>
+<td>fixedText</td>
+<td>文章が確定したか</td>
+</tr>
+<tr>
+<td>talkerID</td>
+<td>発話者のユニークなID</td>
+</tr>
+<tr>
+<td>talkerName</td>
+<td>発話者名</td>
+</tr>
+<tr>
+<td>MessageID</td>
+<td>この発話に対するユニークなID</td>
+</tr>
+<tr>
+<td>isAlreadyShown</td>
+<td>既に表示(確定）されたことがあるか</td>
+</tr>
+<tr>
+<td>isDeleted</td>
+<td>文章が取り消されているか</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>途中経過を送るかどうかは、見た目の微調整にある「過程を送る」に左右されます。</li>
+<li>未確定の状態（発話途中）はfixedText=falseで送られます</li>
+<li>確定した場合、まず母国語が確定した時点で一度送付されます。この時点ではほかの翻訳文は空欄です。</li>
+<li>その後、翻訳が確定したら、その文が送付されます。</li>
+<li>翻訳はエンジンや設定によって並列処理しているので何度か通知が来ます。</li>
+<li>基本的にはMessageIDで文章を個体識別し、最新の文章を採用してください。</li>
+<li>編集者により文が取り消された場合、isDeleted=trueとなります。</li>
+</ul>
+</div>
+</div>
+</input></input></input></div>
 <hr/>
 <div class="md-source-file">
 <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 4, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 6, 2022</span>
 </small>
 </div>
 </article>
