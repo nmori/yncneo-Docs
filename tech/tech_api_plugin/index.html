@@ -568,13 +568,13 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5_8" id="__nav_2_5_8" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_5_8">
-          配信システム
+          配信（OBS・コメント)
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="配信システム" class="md-nav" data-md-level="3">
+<nav aria-label="配信（OBS・コメント)" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_2_5_8">
 <span class="md-nav__icon md-icon"></span>
-          配信システム
+          配信（OBS・コメント)
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -650,6 +650,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../plugin/plugin_MTGCard/">
         MTGカード支援
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../plugin/plugin_httpcall/">
+        HTTPコール
       </a>
 </li>
 </ul>
@@ -756,6 +761,11 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="../tech_option_neo/">
+        起動オプション
+      </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../tech_api_neo/">
         本体内蔵API
       </a>
@@ -830,12 +840,54 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_9">
+    歌詞プラグイン
+  </a>
+<nav aria-label="歌詞プラグイン" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+    遠隔操作
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#osc">
+    OSCプラグイン
+  </a>
+<nav aria-label="OSCプラグイン" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#osc_1">
+    OSCメッセージの遠隔発火
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#http">
+    HTTPコールプラグイン
+  </a>
+<nav aria-label="HTTPコールプラグイン" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#http_1">
+    HTTPメッセージの遠隔発火
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_11">
     共通項目
   </a>
 <nav aria-label="共通項目" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_10">
+<a class="md-nav__link" href="#_12">
     通信ポートの特定
   </a>
 </li>
@@ -918,6 +970,11 @@
         不具合を発見した時
       </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../qa/troubleshooting/">
+        こんなときは
+      </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -990,12 +1047,54 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_9">
+    歌詞プラグイン
+  </a>
+<nav aria-label="歌詞プラグイン" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+    遠隔操作
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#osc">
+    OSCプラグイン
+  </a>
+<nav aria-label="OSCプラグイン" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#osc_1">
+    OSCメッセージの遠隔発火
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#http">
+    HTTPコールプラグイン
+  </a>
+<nav aria-label="HTTPコールプラグイン" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#http_1">
+    HTTPメッセージの遠隔発火
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_11">
     共通項目
   </a>
 <nav aria-label="共通項目" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_10">
+<a class="md-nav__link" href="#_12">
     通信ポートの特定
   </a>
 </li>
@@ -1203,9 +1302,9 @@
 </div>
 </input></input></input></div>
 <ul>
-<li>要求時は、翻訳してほしい言語を指定します。</li>
-<li>返答時には、推定した言語と翻訳した文が来ます。</li>
-<li>statusがfailureの場合は、処理に失敗しています。</li>
+<li>要求時は、発話してほしいボイスキャラクターを指定するとその音源で話そうとします。</li>
+<li>statusがfailureの場合は、プラグインが無効な場合など要求が出せなかった場合にでます。</li>
+<li>statusがsendedの場合、要求自体はだせたという意味で、発話が完了したわけではありません。</li>
 </ul>
 <h3 id="_4">音声話者リスト<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
 <ul>
@@ -1366,25 +1465,117 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="7:4"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio"><input id="__tabbed_7_2" name="__tabbed_7" type="radio"><input id="__tabbed_7_3" name="__tabbed_7" type="radio"><input id="__tabbed_7_4" name="__tabbed_7" type="radio"><div class="tabbed-labels"><label for="__tabbed_7_1">１行前に移動</label><label for="__tabbed_7_2">１行後に移動</label><label for="__tabbed_7_3">カーソル行を送信</label><label for="__tabbed_7_4">カーソル行を送り次の行に移動</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/command?target=Plugin_InputAssist&amp;command=prev</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_InputAssist&amp;command=prev</span><span class="w"></span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/command?target=Plugin_InputAssist&amp;command=next</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_InputAssist&amp;command=next</span><span class="w"></span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-21-1" id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/command?target=Plugin_InputAssist&amp;command=send</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-21-1" id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_InputAssist&amp;command=send</span><span class="w"></span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/command?target=Plugin_InputAssist&amp;command=sendnext</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_InputAssist&amp;command=sendnext</span><span class="w"></span>
 </code></pre></div>
 </div>
 </div>
 </input></input></input></input></div>
-<h2 id="_9">共通項目<a class="headerlink" href="#_9" title="Permanent link">¶</a></h2>
-<h3 id="_10">通信ポートの特定<a class="headerlink" href="#_10" title="Permanent link">¶</a></h3>
+<h2 id="_9">歌詞プラグイン<a class="headerlink" href="#_9" title="Permanent link">¶</a></h2>
+<ul>
+<li>ゆかりねっとコネクターNEOの文字入力を支援します</li>
+</ul>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>入力支援プラグインをONにしていること</li>
+<li>送信先ポートはレジストリから取得します</li>
+</ul>
+</div>
+<h3 id="_10">遠隔操作<a class="headerlink" href="#_10" title="Permanent link">¶</a></h3>
+<ul>
+<li>送付方式：HTTP(GET)</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:4"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio"><input id="__tabbed_8_2" name="__tabbed_8" type="radio"><input id="__tabbed_8_3" name="__tabbed_8" type="radio"><input id="__tabbed_8_4" name="__tabbed_8" type="radio"><div class="tabbed-labels"><label for="__tabbed_8_1">再生</label><label for="__tabbed_8_2">一時停止</label><label for="__tabbed_8_3">停止</label><label for="__tabbed_8_4">ファイルロード</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-23-1" id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_LyricAssist&amp;command=play</span><span class="w"></span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-24-1" id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/ommand?target=Plugin_LyricAssist&amp;command=pause</span><span class="w"></span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-25-1" id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_LyricAssist&amp;command=stop</span><span class="w"></span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><code>sukiyuki.stl</code> を読み込む場合
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-26-1" id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_LyricAssist&amp;command=load&amp;file=d:/sukiyuki.stl</span><span class="w"></span>
+</code></pre></div></li>
+</ul>
+</div>
+</div>
+</input></input></input></input></div>
+<h2 id="osc">OSCプラグイン<a class="headerlink" href="#osc" title="Permanent link">¶</a></h2>
+<ul>
+<li>指定したOSCメッセージを送付します。</li>
+</ul>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>OSCプラグインをONにしていること</li>
+<li>送信先ポートはレジストリから取得します</li>
+<li>OSCプラグイン v1.5以上で有効</li>
+</ul>
+</div>
+<h3 id="osc_1">OSCメッセージの遠隔発火<a class="headerlink" href="#osc_1" title="Permanent link">¶</a></h3>
+<ul>
+<li>送付方式：HTTP(GET)</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:1"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio"><div class="tabbed-labels"><label for="__tabbed_9_1">実行</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>送信タグ名 <code>EyeClose</code> を送りたい場合
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-27-1" id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_VRChat_OSC&amp;command=exec&amp;tag=EyeClose</span><span class="w"></span>
+</code></pre></div></li>
+</ul>
+</div>
+</div>
+</input></div>
+<h2 id="http">HTTPコールプラグイン<a class="headerlink" href="#http" title="Permanent link">¶</a></h2>
+<ul>
+<li>指定したHTTP呼び出し(GET)を送付します。</li>
+</ul>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>HTTPプラグインをONにしていること</li>
+<li>送信先ポートはレジストリから取得します</li>
+<li>ゆかりねっとコネクターNEO v2.0～で有効</li>
+</ul>
+</div>
+<h3 id="http_1">HTTPメッセージの遠隔発火<a class="headerlink" href="#http_1" title="Permanent link">¶</a></h3>
+<ul>
+<li>送付方式：HTTP(GET)</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:1"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio"/><div class="tabbed-labels"><label for="__tabbed_10_1">実行</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>送信タグ名 <code>CALL</code> を送りたい場合
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-28-1" id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_HTTPCall&amp;command=exec&amp;tag=CALL</span><span class="w"></span>
+</code></pre></div></li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="_11">共通項目<a class="headerlink" href="#_11" title="Permanent link">¶</a></h2>
+<h3 id="_12">通信ポートの特定<a class="headerlink" href="#_12" title="Permanent link">¶</a></h3>
 <ul>
 <li>通信ポートはレジストリから取得できます</li>
 </ul>
@@ -1423,7 +1614,7 @@
 <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 10, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 11, 2022</span>
 </small>
 </div>
 </article>

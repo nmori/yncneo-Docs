@@ -568,13 +568,13 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5_8" id="__nav_2_5_8" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_5_8">
-          配信システム
+          配信（OBS・コメント)
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="配信システム" class="md-nav" data-md-level="3">
+<nav aria-label="配信（OBS・コメント)" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_2_5_8">
 <span class="md-nav__icon md-icon"></span>
-          配信システム
+          配信（OBS・コメント)
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -664,6 +664,11 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
+    ルール
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
     使い方
   </a>
 </li>
@@ -683,6 +688,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../plugin_MTGCard/">
         MTGカード支援
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_httpcall/">
+        HTTPコール
       </a>
 </li>
 </ul>
@@ -789,6 +799,11 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../tech/tech_option_neo/">
+        起動オプション
+      </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../tech/tech_api_neo/">
         本体内蔵API
       </a>
@@ -871,6 +886,11 @@
         不具合を発見した時
       </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../qa/troubleshooting/">
+        こんなときは
+      </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -905,6 +925,11 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
+    ルール
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
     使い方
   </a>
 </li>
@@ -967,19 +992,15 @@
 <td align="left">文字列を数字(アスキーコード)として送ります</td>
 </tr>
 <tr>
+<td align="left">Send: Owner only</td>
+<td align="left">送信は、このゆかコネ利用者に限定します</td>
+</tr>
+<tr>
 <td align="left">ルール</td>
 <td align="left">音声認識文に特定の文字列を含む場合は、指定したアドレスにデータを送ります</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition info">
-<p class="admonition-title">パラメータの記述</p>
-<ul>
-<li>Boolean型でデータを送る場合は、<code>false</code> <code>true</code> で記述します</li>
-<li>配列で数字を送る場合は　<code>0x00 0x01</code> のようにスペース区切りで記述します</li>
-<li>浮動小数点で送付する場合は <code>1.0</code> のように小数で記述します</li>
-</ul>
-</div>
 <div class="admonition info">
 <p class="admonition-title">字幕の送付</p>
 <ul>
@@ -996,7 +1017,61 @@
 <li>翻訳送付については、翻訳１を採用します</li>
 </ul>
 </div>
-<h2 id="_4">使い方<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<h2 id="_4">ルール<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
+<ul>
+<li>ルールは、条件に一致したときにそのデータを送付することができる「仕掛け」です</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">設定</th>
+<th align="left">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">有効(Enabled)</td>
+<td align="left">この条件を有効化します</td>
+</tr>
+<tr>
+<td align="left">モード(Mode)</td>
+<td align="left">条件の判断モードを指定します</td>
+</tr>
+<tr>
+<td align="left">対象</td>
+<td align="left">対象にする言語を決めます（母国語、翻訳１～４）</td>
+</tr>
+<tr>
+<td align="left">起動フレーズ</td>
+<td align="left">判断に使う起動キーワードです</td>
+</tr>
+<tr>
+<td align="left">OSCアドレス</td>
+<td align="left">OSCに送るための送付先です 例）<code>/OSC1/OSC2</code></td>
+</tr>
+<tr>
+<td align="left">パラメータ</td>
+<td align="left">渡すパラメータを指定します。 true/false、 0x00～0xff、0.0～ 、文字列 を指定できます。スペース区切り。</td>
+</tr>
+<tr>
+<td align="left">対象者</td>
+<td align="left">話者名に指定文字が含まれているときに反応します。空欄の場合は全員が対象です</td>
+</tr>
+<tr>
+<td align="left">APIタグ</td>
+<td align="left">APIから呼び出すときにつかうタグ名です</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">パラメータの記述</p>
+<ul>
+<li>Boolean型でデータを送る場合は、<code>false</code> <code>true</code> で記述します</li>
+<li>配列で数字を送る場合は　<code>0x00 0x01</code> のようにスペース区切りで記述します</li>
+<li>浮動小数点で送付する場合は <code>1.0</code> のように小数で記述します</li>
+</ul>
+</div>
+<h2 id="_5">使い方<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
 <ol>
 <li>VRChatを起動します</li>
 <li>Openをおして通信を開始します</li>
@@ -1006,7 +1081,7 @@
 <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 10, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 11, 2022</span>
 </small>
 </div>
 </article>
