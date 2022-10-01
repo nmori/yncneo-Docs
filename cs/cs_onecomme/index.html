@@ -6,9 +6,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../../images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.3.1, mkdocs-material-8.5.3" name="generator"/>
+<meta content="mkdocs-1.4.0, mkdocs-material-8.5.5" name="generator"/>
 <title>わんコメとの連動 - ゆかりねっとコネクターNEO</title>
-<link href="../../assets/stylesheets/main.7a952b86.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/main.80dcb947.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=BIZ+UDPGothic:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -18,7 +18,15 @@
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-8VEJJC6B3D"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-8VEJJC6B3D",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-8VEJJC6B3D",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>html.glightbox-open { overflow: initial; height: 100%; }</style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gdesc-inner { font-size: 0.75rem; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="blue" data-md-color-scheme="" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
@@ -1191,14 +1199,14 @@
 </ul>
 </div>
 <h4 id="1">1.プラグインの有効化<a class="headerlink" href="#1" title="Permanent link">¶</a></h4>
-<p><a class="glightbox" href="../../plugin/images/plugin_transSrv_p1.png"><img alt="ファイル" src="../../plugin/images/plugin_transSrv_p1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../../plugin/images/plugin_transSrv_p1.png"><img alt="ファイル" src="../../plugin/images/plugin_transSrv_p1.png"/></a></p>
 <ul>
 <li>プラグインを使うチェックをONにしてください。</li>
 </ul>
 <h4 id="2">2.わんコメを起動し連動画面をだす<a class="headerlink" href="#2" title="Permanent link">¶</a></h4>
-<p><a class="glightbox" href="../images/cs_onecomme_p1.png"><img alt="yukari" src="../images/cs_onecomme_p1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p1.png"><img alt="yukari" src="../images/cs_onecomme_p1.png"/></a></p>
 <h4 id="3on">3.連携をONにする<a class="headerlink" href="#3on" title="Permanent link">¶</a></h4>
-<p><a class="glightbox" href="../images/cs_onecomme_p2.png"><img alt="yukari" src="../images/cs_onecomme_p2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p2.png"><img alt="yukari" src="../images/cs_onecomme_p2.png"/></a></p>
 <h4 id="4websocketws">4.通信をWebSocket（WS）に<a class="headerlink" href="#4websocketws" title="Permanent link">¶</a></h4>
 <div class="admonition tip">
 <p class="admonition-title">読み上げはHTTP/WSのみ</p>
@@ -1207,14 +1215,14 @@
 <li>WSのほうが応答スピードが速くなります</li>
 </ul>
 </div>
-<p><a class="glightbox" href="../images/cs_onecomme_p3.png"><img alt="yukari" src="../images/cs_onecomme_p3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p3.png"><img alt="yukari" src="../images/cs_onecomme_p3.png"/></a></p>
 <h4 id="5no">5.再読み込みをおしてポートNoを取得<a class="headerlink" href="#5no" title="Permanent link">¶</a></h4>
-<p><a class="glightbox" href="../images/cs_onecomme_p4.png"><img alt="yukari" src="../images/cs_onecomme_p4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p4.png"><img alt="yukari" src="../images/cs_onecomme_p4.png"/></a></p>
 <div class="admonition tip">
 <p class="admonition-title">ポート番号が取得できないとき</p>
 <ul>
 <li>ゆかりねっとコネクターNEOの翻訳/発話プラグイン→設定で表示される番号を入れます
-<a class="glightbox" href="../images/cs_onecomme_p5.png"><img alt="yukari" src="../images/cs_onecomme_p5.png"/></a></li>
+<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p5.png"><img alt="yukari" src="../images/cs_onecomme_p5.png"/></a></li>
 </ul>
 </div>
 <h4 id="6">6.動作テストをします<a class="headerlink" href="#6" title="Permanent link">¶</a></h4>
@@ -1237,7 +1245,7 @@
 <li>言語Noが 200番台の言語は、方言を含みます。翻訳エンジンによっては方言に対応していません。</li>
 </ul>
 </div>
-<p><a class="glightbox" href="../images/cs_onecomme_p6.png"><img alt="yukari" src="../images/cs_onecomme_p6.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p6.png"><img alt="yukari" src="../images/cs_onecomme_p6.png"/></a></p>
 <h4 id="7">7.翻訳を有効にします<a class="headerlink" href="#7" title="Permanent link">¶</a></h4>
 <ul>
 <li>翻訳を有効にします。</li>
@@ -1249,7 +1257,7 @@
 <li>翻訳が必要な方のみに設定すると翻訳総数を減らすことができます</li>
 </ul>
 </div>
-<p><a class="glightbox" href="../images/cs_onecomme_p7.png"><img alt="yukari" src="../images/cs_onecomme_p7.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p7.png"><img alt="yukari" src="../images/cs_onecomme_p7.png"/></a></p>
 <h3 id="case2">Case.2 コメントの読み上げ<a class="headerlink" href="#case2" title="Permanent link">¶</a></h3>
 <div class="admonition info">
 <p class="admonition-title">このケースを選ぶのは、こういうとき</p>
@@ -1258,16 +1266,16 @@
 </ul>
 </div>
 <h4 id="1_1">1.プラグインの有効化<a class="headerlink" href="#1_1" title="Permanent link">¶</a></h4>
-<p><a class="glightbox" href="../../plugin/images/plugin_transSrv_p1.png"><img alt="ファイル" src="../../plugin/images/plugin_transSrv_p1.png"/></a>
-<a class="glightbox" href="../../plugin/images/plugin_playvoice_p1.png"><img alt="ファイル" src="../../plugin/images/plugin_playvoice_p1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../../plugin/images/plugin_transSrv_p1.png"><img alt="ファイル" src="../../plugin/images/plugin_transSrv_p1.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../../plugin/images/plugin_playvoice_p1.png"><img alt="ファイル" src="../../plugin/images/plugin_playvoice_p1.png"/></a></p>
 <ul>
 <li>プラグインを使うチェックをONにしてください</li>
 <li>読み上げプラグインと翻訳プラグインが必要です</li>
 </ul>
 <h4 id="2_1">2.わんコメを起動し連動画面をだす<a class="headerlink" href="#2_1" title="Permanent link">¶</a></h4>
-<p><a class="glightbox" href="../images/cs_onecomme_p1.png"><img alt="yukari" src="../images/cs_onecomme_p1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p1.png"><img alt="yukari" src="../images/cs_onecomme_p1.png"/></a></p>
 <h4 id="3on_1">3.連携をONにする<a class="headerlink" href="#3on_1" title="Permanent link">¶</a></h4>
-<p><a class="glightbox" href="../images/cs_onecomme_p2.png"><img alt="yukari" src="../images/cs_onecomme_p2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p2.png"><img alt="yukari" src="../images/cs_onecomme_p2.png"/></a></p>
 <h4 id="4websocketws_1">4.通信をWebSocket（WS）に<a class="headerlink" href="#4websocketws_1" title="Permanent link">¶</a></h4>
 <div class="admonition tip">
 <p class="admonition-title">読み上げはWSのみ</p>
@@ -1275,35 +1283,35 @@
 <li>HTTP/HTTPSを選んでいるときは機能しません。</li>
 </ul>
 </div>
-<p><a class="glightbox" href="../images/cs_onecomme_p3.png"><img alt="yukari" src="../images/cs_onecomme_p3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p3.png"><img alt="yukari" src="../images/cs_onecomme_p3.png"/></a></p>
 <h4 id="5no_1">5.再読み込みをおしてポートNoを取得<a class="headerlink" href="#5no_1" title="Permanent link">¶</a></h4>
-<p><a class="glightbox" href="../images/cs_onecomme_p4.png"><img alt="yukari" src="../images/cs_onecomme_p4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p4.png"><img alt="yukari" src="../images/cs_onecomme_p4.png"/></a></p>
 <div class="admonition tip">
 <p class="admonition-title">ポート番号が取得できないとき</p>
 <ul>
 <li>ゆかりねっとコネクターNEOの翻訳/発話プラグイン→設定で表示される番号を入れます
-<a class="glightbox" href="../images/cs_onecomme_p5.png"><img alt="yukari" src="../images/cs_onecomme_p5.png"/></a></li>
+<a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p5.png"><img alt="yukari" src="../images/cs_onecomme_p5.png"/></a></li>
 </ul>
 </div>
 <h4 id="6on">6.読み上げをONにします<a class="headerlink" href="#6on" title="Permanent link">¶</a></h4>
-<p><a class="glightbox" href="../images/cs_onecomme_p8.png"><img alt="yukari" src="../images/cs_onecomme_p8.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p8.png"><img alt="yukari" src="../images/cs_onecomme_p8.png"/></a></p>
 <h4 id="7_1">7.話者リストを更新します<a class="headerlink" href="#7_1" title="Permanent link">¶</a></h4>
 <div class="admonition tip">
 <p class="admonition-title">取得がうまく動作しないとき</p>
 <ul>
 <li>ゆかりねっとコネクターNEOの翻訳/発話プラグイン→設定で表示される番号を入れます
-    <a class="glightbox" href="../images/cs_onecomme_p5.png"><img alt="yukari" src="../images/cs_onecomme_p5.png"/></a></li>
+    <a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p5.png"><img alt="yukari" src="../images/cs_onecomme_p5.png"/></a></li>
 <li>読み上げプラグインがOnになっていることを確認します</li>
 </ul>
 </div>
-<p><a class="glightbox" href="../images/cs_onecomme_p9.png"><img alt="yukari" src="../images/cs_onecomme_p9.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p9.png"><img alt="yukari" src="../images/cs_onecomme_p9.png"/></a></p>
 <h4 id="8">8.話者を選びます<a class="headerlink" href="#8" title="Permanent link">¶</a></h4>
-<p><a class="glightbox" href="../images/cs_onecomme_p10.png"><img alt="yukari" src="../images/cs_onecomme_p10.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p10.png"><img alt="yukari" src="../images/cs_onecomme_p10.png"/></a></p>
 <h4 id="9">9.発話テストをします<a class="headerlink" href="#9" title="Permanent link">¶</a></h4>
 <ul>
 <li>確認ができたら「保存」「X」で閉じます。</li>
 </ul>
-<p><a class="glightbox" href="../images/cs_onecomme_p11.png"><img alt="yukari" src="../images/cs_onecomme_p11.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_onecomme_p11.png"><img alt="yukari" src="../images/cs_onecomme_p11.png"/></a></p>
 <div class="admonition tip">
 <p class="admonition-title">そのほかの設定について</p>
 <ul>
@@ -1316,7 +1324,7 @@
 <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 27, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 1, 2022</span>
 </small>
 </div>
 </article>
@@ -1375,6 +1383,6 @@
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
-<script src="../../assets/javascripts/bundle.37e9125f.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "width": "100%", "height": "auto", "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script src="../../assets/javascripts/bundle.078830c0.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>
