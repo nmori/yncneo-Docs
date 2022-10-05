@@ -1038,8 +1038,8 @@
 <p class="admonition-title">前提条件</p>
 <ul>
 <li>配信にOBS Studioを使用している</li>
-<li>OBS Studio のバージョンは v27以上</li>
-<li>OBS WebSocket プラグインは Version 4.9.1</li>
+<li>OBS Studio のバージョンは v28以上</li>
+<li>OBS WebSocket プラグインは Version 5</li>
 <li>音声認識で字幕が出るところまではセットアップ完了済</li>
 </ul>
 </div>
@@ -1091,10 +1091,24 @@
 </tbody>
 </table>
 <h2 id="4">4.接続の設定をする<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_obs_p5.png"><img alt="接続メニュー" src="../images/cs_obs_p5.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../../plugin/images/plugin_obs_p2.png"><img alt="接続メニュー" src="../../plugin/images/plugin_obs_p2.png"/></a>
+|設定|意味|
+|:--|:---|
+|通信先|字幕を送付したいOBSを指定します。<br/>※ポート番号はバージョンによって<code>4440</code>・<code>4444</code>・<code>4455</code>とばらつきがあるのでOBSで確認してください|
+|パスワード|パスワードを設定していれば入れます|
+|送信先|指定した文字列を超えた場合にクロップ処理をします|
+|ソース名＋…|話者毎にテキストを分ける場合に指定します|</p>
+<div class="admonition top">
+<p class="admonition-title">OBS側の設定</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../../plugin/images/plugin_obs5_p2.png"><img alt="OBS" src="../../plugin/images/plugin_obs5_p2.png"/></a> </p>
+<ul>
+<li>ポート番号やパスワードなどはOBS側の設定とNEOの設定を一致させてください。</li>
+<li>設定値は自分で決めて一致させる形で構いません。</li>
+</ul>
+</div>
 <ul>
 <li>通信先は、通常 <code>127.0.0.1</code> もしくは <code>localhost</code>でOKです。</li>
-<li>通信ポートは 通常は <code>4440</code> です。</li>
+<li>通信ポートは 通常は <code>4455</code> です。</li>
 <li>パスワードを設定した場合はここに入力します。(パスワードはOBS Websocket側に入力したものと合わせます)</li>
 </ul>
 <p>設定が終わったら、OBSに接続をおして「接続されました」となることを確認します。</p>
@@ -1124,7 +1138,7 @@
 <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 4, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 5, 2022</span>
 </small>
 </div>
 </article>
