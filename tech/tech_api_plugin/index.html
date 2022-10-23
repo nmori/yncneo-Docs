@@ -948,6 +948,20 @@
 </nav>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#neosvr">
+    NeosVRプラグイン
+  </a>
+<nav aria-label="NeosVRプラグイン" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#neosvr_1">
+    NeosVRメッセージの遠隔発火
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#_12">
     共通項目
   </a>
@@ -1173,6 +1187,20 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_11">
     ウェブトリガーの遠隔発火
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#neosvr">
+    NeosVRプラグイン
+  </a>
+<nav aria-label="NeosVRプラグイン" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#neosvr_1">
+    NeosVRメッセージの遠隔発火
   </a>
 </li>
 </ul>
@@ -1687,6 +1715,32 @@
 <ul>
 <li>送信タグ名 <code>Trig1</code> を発火したい場合
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-29-1" id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_ClusterTrigger&amp;command=exec&amp;tag=Trig1</span><span class="w"></span>
+</code></pre></div></li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="neosvr">NeosVRプラグイン<a class="headerlink" href="#neosvr" title="Permanent link">¶</a></h2>
+<ul>
+<li>NeosVRと通信してトリガーをかけることができます。</li>
+</ul>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>NeosVRプラグインをONにしていること</li>
+<li>ゆかりねっとコネクターNEO v2.0～で有効</li>
+</ul>
+</div>
+<h3 id="neosvr_1">NeosVRメッセージの遠隔発火<a class="headerlink" href="#neosvr_1" title="Permanent link">¶</a></h3>
+<ul>
+<li>送付方式：HTTP(GET)</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:1"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio"/><div class="tabbed-labels"><label for="__tabbed_12_1">実行</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>送信タグ名 <code>CALL</code> を送りたい場合
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-30-1" id="__codelineno-30-1" name="__codelineno-30-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_NeosVR&amp;command=exec&amp;tag=CALL</span><span class="w"></span>
 </code></pre></div></li>
 </ul>
 </div>
