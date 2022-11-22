@@ -20,12 +20,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="blue" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -1060,17 +1063,17 @@
 <li>個別にインストールする必要はありません。</li>
 </ul>
 </div>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_obs_p1.png"><img alt="プラグインメニュー" src="../images/cs_obs_p1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cs_obs_p1.png"><img alt="プラグインメニュー" src="../images/cs_obs_p1.png"/></a></p>
 <ul>
 <li>OBSのツールメニューから、WebSocketのメニューを開きます。</li>
 </ul>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../../plugin/images/plugin_obs5_p2.png"><img alt="プラグインメニュー" src="../../plugin/images/plugin_obs5_p2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../plugin/images/plugin_obs5_p2.png"><img alt="プラグインメニュー" src="../../plugin/images/plugin_obs5_p2.png"/></a></p>
 <ul>
 <li>OBS WebSocketを有効にしてください。</li>
 <li>パスワードも必要に応じて設定します。（設定値は後ほど必要なので覚えておいて下さい）</li>
 </ul>
 <h2 id="2">2.字幕を出すためのテキストソースを作る<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_obs_p4.png"><img alt="テキストソース" src="../images/cs_obs_p4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cs_obs_p4.png"><img alt="テキストソース" src="../images/cs_obs_p4.png"/></a></p>
 <ul>
 <li>OBS Studioのソース画面で字幕を表示させるためのテキストソースを作ります。</li>
 <li>言語ごとに作る必要があるので、２言語出したい場合は、２つ作ります。</li>
@@ -1083,7 +1086,7 @@
 </ul>
 </div>
 <h2 id="3neo">3.ゆかりねっとコネクターNEOのプラグインを有効にする<a class="headerlink" href="#3neo" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../../plugin/images/plugin_obs5_p1.png"><img alt="プラグインメニュー" src="../../plugin/images/plugin_obs5_p1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../plugin/images/plugin_obs5_p1.png"><img alt="プラグインメニュー" src="../../plugin/images/plugin_obs5_p1.png"/></a></p>
 <ul>
 <li>プラグインのチェックを打って、有効にしてください。</li>
 <li>有効にすべきプラグインは、OBSのバージョンによって異なります。</li>
@@ -1103,7 +1106,7 @@
 </tbody>
 </table>
 <h2 id="4">4.接続の設定をする<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../../plugin/images/plugin_obs_p2.png"><img alt="接続メニュー" src="../../plugin/images/plugin_obs_p2.png"/></a>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../plugin/images/plugin_obs_p2.png"><img alt="接続メニュー" src="../../plugin/images/plugin_obs_p2.png"/></a>
 |設定|意味|
 |:--|:---|
 |通信先|字幕を送付したいOBSを指定します。<br/>※ポート番号はバージョンによって<code>4440</code>・<code>4444</code>・<code>4455</code>とばらつきがあるのでOBSで確認してください|
@@ -1112,7 +1115,7 @@
 |ソース名＋…|話者毎にテキストを分ける場合に指定します|</p>
 <div class="admonition top">
 <p class="admonition-title">OBS側の設定</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../../plugin/images/plugin_obs5_p2.png"><img alt="OBS" src="../../plugin/images/plugin_obs5_p2.png"/></a> </p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../plugin/images/plugin_obs5_p2.png"><img alt="OBS" src="../../plugin/images/plugin_obs5_p2.png"/></a> </p>
 <ul>
 <li>ポート番号やパスワードなどはOBS側の設定とNEOの設定を一致させてください。</li>
 <li>設定値は自分で決めて一致させる形で構いません。</li>
@@ -1132,12 +1135,12 @@
 </ul>
 </div>
 <h2 id="5">5.転送先の設定をする<a class="headerlink" href="#5" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_obs_p6.png"><img alt="転送先メニュー" src="../images/cs_obs_p6.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cs_obs_p6.png"><img alt="転送先メニュー" src="../images/cs_obs_p6.png"/></a></p>
 <ul>
 <li>転送先のソース名を選択します。うまく通信できていれば、プルダウンメニューの中にソース名があるので。選択するだけでOKです。</li>
 </ul>
 <h2 id="6obs">6.OBS側の見え方の設定<a class="headerlink" href="#6obs" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cs_obs_p7.png"><img alt="転送先メニュー" src="../images/cs_obs_p7.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cs_obs_p7.png"><img alt="転送先メニュー" src="../images/cs_obs_p7.png"/></a></p>
 <ul>
 <li>フォントの設定をします。縁取りなども、OBS側の設定で実施可能です。</li>
 </ul>
@@ -1150,7 +1153,7 @@
 <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 19, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 22, 2022</span>
 </small>
 </div>
 </article>
@@ -1210,5 +1213,5 @@
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
 <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

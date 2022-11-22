@@ -20,12 +20,15 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="blue" data-md-color-primary="blue" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -1114,20 +1117,20 @@
 <article class="md-content__inner md-typeset">
 <h1 id="_1">標準設定項目<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
 <p>ゆかりねっとコネクターを使うには、画面のメニューを上から順番に設定していくことで簡単に使うことができます。</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/startup_menu1.png"><img alt="メニュー" src="../images/startup_menu1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/startup_menu1.png"><img alt="メニュー" src="../images/startup_menu1.png"/></a></p>
 <div class="admonition note">
 <p class="admonition-title">メニューの使い方</p>
 <p>メニューは開いたり閉じたりすることができます。設定するときに１つずつ開いて作業すると今の手順がわかりやすくて便利です。</p>
 </div>
 <h2 id="_2">標準手順<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <h3 id="1">1.まず話者設定をしましょう<a class="headerlink" href="#1" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/startup_menu2.png"><img alt="話者" src="../images/startup_menu2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/startup_menu2.png"><img alt="話者" src="../images/startup_menu2.png"/></a></p>
 <ul>
 <li>あなたは話す言語を設定します。ゆかりねっとコネクターNEOは、この言語を基準に翻訳をするようになります。</li>
 <li>あなたの表示上の名前を設定します。これはコラボレーションなどを行うときの名前や、配信画面に表示される名前として使われます。</li>
 </ul>
 <h3 id="2">2.音声認識の種類を決めましょう<a class="headerlink" href="#2" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/startup_menu5.png"><img alt="音声設定" src="../images/startup_menu5.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/startup_menu5.png"><img alt="音声設定" src="../images/startup_menu5.png"/></a></p>
 <p>次に、音声認識に何を使うかをえらびます。一番簡単に使えるのはブラウザ音声認識になります。</p>
 <table>
 <thead>
@@ -1156,7 +1159,7 @@
 </tbody>
 </table>
 <h3 id="3">3.翻訳先の言語を決めましょう<a class="headerlink" href="#3" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/startup_menu4.png"><img alt="翻訳設定" src="../images/startup_menu4.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/startup_menu4.png"><img alt="翻訳設定" src="../images/startup_menu4.png"/></a></p>
 <ul>
 <li>言語は４つまで選べます。</li>
 <li>言語に合わせて翻訳エンジンも選んでください。</li>
@@ -1170,13 +1173,13 @@
 <p>翻訳エンジンは、「共用翻訳サーバ」以外は、個人で契約する必要があります。ただし、「みんなで支える翻訳支援」の仕組みがあり、そちらで支援いただくと多くの翻訳エンジンを利用することが可能になります。(その場合は支援版機能の有効化をしてください)</p>
 </div>
 <h3 id="4">4.設定を決めます<a class="headerlink" href="#4" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/startup_menu11.png"><img alt="レイアウト" src="../images/startup_menu11.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/startup_menu11.png"><img alt="レイアウト" src="../images/startup_menu11.png"/></a></p>
 <ul>
 <li>おすすめ設定を取り込みます。</li>
 <li>一般的には「多言語」が使われています</li>
 </ul>
 <h3 id="5">5.字幕の出し方を決めましょう<a class="headerlink" href="#5" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/startup_menu3.png"><img alt="レイアウト" src="../images/startup_menu3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/startup_menu3.png"><img alt="レイアウト" src="../images/startup_menu3.png"/></a></p>
 <ul>
 <li>レイアウトを選んで、右横のボタンをおします。</li>
 <li>この画面は後程、配信ソフトで取り込んで使います。</li>
@@ -1198,7 +1201,7 @@
 </div>
 <h2 id="_3">調整する場合<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <h3 id="1_1">1.フォントを決めましょう<a class="headerlink" href="#1_1" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/startup_menu6.png"><img alt="フォント設定" src="../images/startup_menu6.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/startup_menu6.png"><img alt="フォント設定" src="../images/startup_menu6.png"/></a></p>
 <p>文字を出すために使うフォントを決めます。フォントサイズ、フォント種類、配置（寄せ方）が設定できます。</p>
 <div class="admonition info">
 <p class="admonition-title">設定について</p>
@@ -1208,7 +1211,7 @@
 </ul>
 </div>
 <h3 id="2_1">2.色を決めましょう<a class="headerlink" href="#2_1" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/startup_menu7.png"><img alt="色設定" src="../images/startup_menu7.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/startup_menu7.png"><img alt="色設定" src="../images/startup_menu7.png"/></a></p>
 <ul>
 <li>フォントや背景などの色を決めます。</li>
 <li>枠を消したい場合などは、背景色と同じにするといいです。</li>
@@ -1220,7 +1223,7 @@
 </ul>
 </div>
 <h3 id="31">3.見え方を調整しましょう①<a class="headerlink" href="#31" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/startup_menu8.png"><img alt="見え方設定" src="../images/startup_menu8.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/startup_menu8.png"><img alt="見え方設定" src="../images/startup_menu8.png"/></a></p>
 <ul>
 <li>どのように見せたいか？を調整します。</li>
 </ul>
@@ -1346,7 +1349,7 @@
 </table>
 </div>
 <h3 id="42">4.見え方を調整しましょう②<a class="headerlink" href="#42" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/startup_menu10.png"><img alt="見え方設定" src="../images/startup_menu10.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/startup_menu10.png"><img alt="見え方設定" src="../images/startup_menu10.png"/></a></p>
 <ul>
 <li>どのように見せたいか？を調整します。</li>
 </ul>
@@ -1370,7 +1373,7 @@
 </table>
 <h2 id="_4">そのほか機能<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
 <h3 id="1_2">1.クイックボタン<a class="headerlink" href="#1_2" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/startup_menu9.png"><img alt="クイックボタン" src="../images/startup_menu9.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/startup_menu9.png"><img alt="クイックボタン" src="../images/startup_menu9.png"/></a></p>
 <ul>
 <li>左から順に説明します</li>
 </ul>
@@ -1417,7 +1420,7 @@
 <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 19, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 22, 2022</span>
 </small>
 </div>
 </article>
@@ -1477,5 +1480,5 @@
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
 <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
