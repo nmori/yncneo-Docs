@@ -267,26 +267,55 @@
 <a class="md-nav__link" href="#vrchat">
     VRChatのチャットにメッセージを送る
   </a>
-</li>
+<nav aria-label="VRChatのチャットにメッセージを送る" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#1osc">
-    1.OSCプラグインを有効にする
+<a class="md-nav__link" href="#1">
+    1.話す言語と自分の名前を決めます。
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#2vrchat">
-    2.VRChat を起動する
+<a class="md-nav__link" href="#2">
+    2.音声認識の種類を決めます
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#3">
-    3.送信を有効にする
+    ３.音声認識の種類を決めます
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#4">
-    4.音声認識させましょう
+    4.プロモーションコードをいれます
   </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5osc">
+    5.OSCプラグインを有効にする
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6vrchat">
+    6.VRChat を起動する
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7">
+    7.送信を有効にする
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#8vrchat">
+    8.VRChat側の設定を変える
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#9">
+    9.音声認識をする
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -534,13 +563,13 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6_4" id="__nav_2_6_4" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_6_4">
-          認識の修正
+          認識の修正や変換
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="認識の修正" class="md-nav" data-md-level="3">
+<nav aria-label="認識の修正や変換" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_2_6_4">
 <span class="md-nav__icon md-icon"></span>
-          認識の修正
+          認識の修正や変換
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -551,6 +580,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../plugin/plugin_regexp/">
         正規表現
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../plugin/plugin_nomlish/">
+        ノムリッシュ変換
       </a>
 </li>
 </ul>
@@ -1000,26 +1034,55 @@
 <a class="md-nav__link" href="#vrchat">
     VRChatのチャットにメッセージを送る
   </a>
-</li>
+<nav aria-label="VRChatのチャットにメッセージを送る" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#1osc">
-    1.OSCプラグインを有効にする
+<a class="md-nav__link" href="#1">
+    1.話す言語と自分の名前を決めます。
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#2vrchat">
-    2.VRChat を起動する
+<a class="md-nav__link" href="#2">
+    2.音声認識の種類を決めます
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#3">
-    3.送信を有効にする
+    ３.音声認識の種類を決めます
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#4">
-    4.音声認識させましょう
+    4.プロモーションコードをいれます
   </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5osc">
+    5.OSCプラグインを有効にする
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6vrchat">
+    6.VRChat を起動する
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7">
+    7.送信を有効にする
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#8vrchat">
+    8.VRChat側の設定を変える
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#9">
+    9.音声認識をする
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1040,39 +1103,68 @@
 <li>VRChat OSCプラグイン v1.3b以上がうごいていること</li>
 </ul>
 </div>
-<h2 id="1osc">1.OSCプラグインを有効にする<a class="headerlink" href="#1osc" title="Permanent link">¶</a></h2>
+<h3 id="1">1.話す言語と自分の名前を決めます。<a class="headerlink" href="#1" title="Permanent link">¶</a></h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cs_vrchat_p4.png"><img alt="プラグインメニュー" src="../images/cs_vrchat_p4.png"/></a></p>
+<h3 id="2">2.音声認識の種類を決めます<a class="headerlink" href="#2" title="Permanent link">¶</a></h3>
+<div class="admonition info">
+<p class="admonition-title">機能限定</p>
+<ul>
+<li>マイク入力のデバイス選択はブラウザの設定画面で　行います</li>
+</ul>
+</div>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cs_vrchat_p5.png"><img alt="プラグインメニュー" src="../images/cs_vrchat_p5.png"/></a></p>
+<h3 id="3">３.音声認識の種類を決めます<a class="headerlink" href="#3" title="Permanent link">¶</a></h3>
+<ul>
+<li>支援版翻訳の場合は、支援していないと使えません。
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cs_vrchat_p6.png"><img alt="プラグインメニュー" src="../images/cs_vrchat_p6.png"/></a></li>
+</ul>
+<h3 id="4">4.プロモーションコードをいれます<a class="headerlink" href="#4" title="Permanent link">¶</a></h3>
+<ul>
+<li>支援版翻訳の場合は、コードを入れることでアクティベートされます。</li>
+<li>おためし翻訳コードをお持ちの方は、ここに入れてください</li>
+<li>無料の翻訳エンジンを使う場合には、追加の設定（ＡＰＩキーや翻訳エンジン設定）を行う必要があります。</li>
+</ul>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cs_vrchat_p8.png"><img alt="プラグインメニュー" src="../images/cs_vrchat_p8.png"/></a></p>
+<h3 id="5osc">5.OSCプラグインを有効にする<a class="headerlink" href="#5osc" title="Permanent link">¶</a></h3>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../plugin/images/plugin_vrchat_osc_p1.png"><img alt="プラグインメニュー" src="../../plugin/images/plugin_vrchat_osc_p1.png"/></a></p>
-<h2 id="2vrchat">2.VRChat を起動する<a class="headerlink" href="#2vrchat" title="Permanent link">¶</a></h2>
+<h3 id="6vrchat">6.VRChat を起動する<a class="headerlink" href="#6vrchat" title="Permanent link">¶</a></h3>
 <ul>
 <li>VRChatはVRモードでもデスクトップモードでも構いません</li>
 <li>最新版にアップデートして試してください</li>
 <li>ゆかりねっとコネクターNEOが動いているPCで起動させます</li>
 </ul>
-<h2 id="3">3.送信を有効にする<a class="headerlink" href="#3" title="Permanent link">¶</a></h2>
+<h3 id="7">7.送信を有効にする<a class="headerlink" href="#7" title="Permanent link">¶</a></h3>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../plugin/images/plugin_vrchat_osc_p2.png"><img alt="プラグインメニュー" src="../../plugin/images/plugin_vrchat_osc_p2.png"/></a></p>
 <ul>
 <li>Openを押します。</li>
-<li>VRChat枠にある「Translation Language」をONにします</li>
+<li>VRChat枠にある「Ｎａｔｉｖe」と「Translate1」をONにします</li>
 <li>ゆかりねっとコネクターNEOの翻訳１の設定をしましょう。</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">機能限定</p>
 <ul>
-<li>22/9/5現在、VRChatは、Translation(英語)にのみ対応しています</li>
-<li>VRChatが対応次第、多国語が使えるようになります</li>
+<li>2022/12現在、多国語表示ができています。　</li>
+<li>文字が長くなると後ろが切れてしまうことがあります。</li>
 </ul>
 </div>
-<h2 id="4">4.音声認識させましょう<a class="headerlink" href="#4" title="Permanent link">¶</a></h2>
+<h3 id="8vrchat">8.VRChat側の設定を変える<a class="headerlink" href="#8vrchat" title="Permanent link">¶</a></h3>
+<ul>
+<li>リングメニューでOSC機能をＯＮにしてください</li>
+</ul>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cs_vrchat_p1.png"><img alt="プラグインメニュー" src="../images/cs_vrchat_p1.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cs_vrchat_p2.png"><img alt="プラグインメニュー" src="../images/cs_vrchat_p2.png"/></a>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cs_vrchat_p3.png"><img alt="プラグインメニュー" src="../images/cs_vrchat_p3.png"/></a></p>
+<div class="admonition info">
+<p class="admonition-title">機能設定</p>
+<ul>
+<li>VRChatメインメニューの設定で、ＣｈａｔＢｏｘの表示位置を設定できます</li>
+<li>見え方のカスタマイズは、個々に見る方が設定をします。(文字サイズや位置など）</li>
+</ul>
+</div>
+<h3 id="9">9.音声認識をする<a class="headerlink" href="#9" title="Permanent link">¶</a></h3>
 <ul>
 <li>認識すると、翻訳結果がVRChatで表示されます</li>
 </ul>
-<div class="admonition info">
-<p class="admonition-title">機能限定</p>
-<ul>
-<li>会話が長いと文が切れてしまいます。</li>
-<li>短めに話してみましょう。</li>
-</ul>
-</div>
 <hr/>
 <div class="md-source-file">
 <small>
