@@ -7,10 +7,12 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="音声認識型多言語翻訳字幕ツール「ゆかりねっとコネクターNEO」のドキュメントページです" name="description"/>
 <meta content="nao" name="author"/>
+<link href="../tech_api_plugin/" rel="prev"/>
+<link href="../../qa/history/" rel="next"/>
 <link href="../../images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.0.2" name="generator"/>
 <title>わんコメ系API - ゆかりねっとコネクターNEO</title>
-<link href="../../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/main.f56500e0.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=BIZ+UDPGothic:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -1032,55 +1034,55 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Query</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="w">    </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">        </span><span class="s2">"comments"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">            </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">                </span><span class="s2">"data"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">                    </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"ed9ab6fd-151f-462b-bc4e-c894561c3f97"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">                    </span><span class="s2">"userId"</span><span class="o">:</span><span class="w"> </span><span class="s2">"8141cf31-1685-4e88-97ce-9ae92981174b"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">                    </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"nao"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">                    </span><span class="s2">"profileImage"</span><span class="o">:</span><span class="w"> </span><span class="s2">"/image/nao.png"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">                    </span><span class="s2">"badges"</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span><span class="w"></span>
-<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">                    </span><span class="s2">"hasGift"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">                    </span><span class="s2">"comment"</span><span class="o">:</span><span class="w"> </span><span class="s2">"&lt;span class=\"origin\"&gt;テストです&lt;/span&gt;⁣⁣&lt;span class=\"t\"&gt;&lt;span class=\"par\"&gt;(&lt;/span&gt;It's a test&lt;span class=\"par\"&gt;)&lt;/span&gt;&lt;/span&gt;⁣⁣"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">                    </span><span class="s2">"timestamp"</span><span class="o">:</span><span class="w"> </span><span class="mf">1660709231.1491292</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">                    </span><span class="s2">"displayName"</span><span class="o">:</span><span class="w"> </span><span class="s2">"nao"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">                    </span><span class="s2">"isFirstTime"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
-<a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">                </span><span class="p">},</span><span class="w"></span>
-<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">                </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"00000000-0000-0000-0000-000000000000"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">                </span><span class="s2">"service"</span><span class="o">:</span><span class="w"> </span><span class="s2">"YNC_Plugin_DirectInput"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">                </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"#"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">                </span><span class="s2">"url"</span><span class="o">:</span><span class="w"> </span><span class="s2">""</span><span class="w"></span>
-<a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">            </span><span class="p">}</span><span class="w"></span>
-<a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">        </span><span class="p">],</span><span class="w"></span>
-<a href="#__codelineno-0-22" id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">        </span><span class="s2">"listeners"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-0-23" id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">            </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"00000000-0000-0000-0000-000000000000"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-24" id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">            </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"#"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-25" id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">            </span><span class="s2">"url"</span><span class="o">:</span><span class="w"> </span><span class="s2">"#"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-26" id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">            </span><span class="s2">"write"</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-27" id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="w">            </span><span class="s2">"speech"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-28" id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="w">            </span><span class="s2">"enabled"</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-29" id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="w">            </span><span class="s2">"color"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-0-30" id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="w">                </span><span class="s2">"r"</span><span class="o">:</span><span class="w"> </span><span class="mf">32</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-31" id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="w">                </span><span class="s2">"g"</span><span class="o">:</span><span class="w"> </span><span class="mf">32</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-32" id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="w">                </span><span class="s2">"b"</span><span class="o">:</span><span class="w"> </span><span class="mf">32</span><span class="w"></span>
-<a href="#__codelineno-0-33" id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="w">            </span><span class="p">},</span><span class="w"></span>
-<a href="#__codelineno-0-34" id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="w">            </span><span class="s2">"translate"</span><span class="o">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-35" id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="w">            </span><span class="s2">"type"</span><span class="o">:</span><span class="w"> </span><span class="s2">"YNC"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-36" id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="w">            </span><span class="s2">"listeners"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<a href="#__codelineno-0-37" id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="w">                </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-0-38" id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="w">                    </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"8141cf31-1685-4e88-97ce-9ae92981174b"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-39" id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="w">                    </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"nao"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-40" id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="w">                    </span><span class="s2">"profileImage"</span><span class="o">:</span><span class="w"> </span><span class="s2">"/image/nao.png"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-41" id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="w">                    </span><span class="s2">"badges"</span><span class="o">:</span><span class="w"> </span><span class="p">{},</span><span class="w"></span>
-<a href="#__codelineno-0-42" id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="w">                    </span><span class="s2">"firstCommentTime"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-43" id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="w">                    </span><span class="s2">"lastCommentTime"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-44" id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="w">                    </span><span class="s2">"count"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-0-45" id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="w">                    </span><span class="s2">"giftCount"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="w"></span>
-<a href="#__codelineno-0-46" id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="w">                </span><span class="p">}</span><span class="w"></span>
-<a href="#__codelineno-0-47" id="__codelineno-0-47" name="__codelineno-0-47"></a><span class="w">            </span><span class="p">]</span><span class="w"></span>
-<a href="#__codelineno-0-48" id="__codelineno-0-48" name="__codelineno-0-48"></a><span class="w">        </span><span class="p">}</span><span class="w"></span>
-<a href="#__codelineno-0-49" id="__codelineno-0-49" name="__codelineno-0-49"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="w">    </span><span class="p">{</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">        </span><span class="s2">"comments"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">            </span><span class="p">{</span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">                </span><span class="s2">"data"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">                    </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"ed9ab6fd-151f-462b-bc4e-c894561c3f97"</span><span class="p">,</span>
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">                    </span><span class="s2">"userId"</span><span class="o">:</span><span class="w"> </span><span class="s2">"8141cf31-1685-4e88-97ce-9ae92981174b"</span><span class="p">,</span>
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">                    </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"nao"</span><span class="p">,</span>
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">                    </span><span class="s2">"profileImage"</span><span class="o">:</span><span class="w"> </span><span class="s2">"/image/nao.png"</span><span class="p">,</span>
+<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">                    </span><span class="s2">"badges"</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">                    </span><span class="s2">"hasGift"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">                    </span><span class="s2">"comment"</span><span class="o">:</span><span class="w"> </span><span class="s2">"&lt;span class=\"origin\"&gt;テストです&lt;/span&gt;⁣⁣&lt;span class=\"t\"&gt;&lt;span class=\"par\"&gt;(&lt;/span&gt;It's a test&lt;span class=\"par\"&gt;)&lt;/span&gt;&lt;/span&gt;⁣⁣"</span><span class="p">,</span>
+<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">                    </span><span class="s2">"timestamp"</span><span class="o">:</span><span class="w"> </span><span class="mf">1660709231.1491292</span><span class="p">,</span>
+<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">                    </span><span class="s2">"displayName"</span><span class="o">:</span><span class="w"> </span><span class="s2">"nao"</span><span class="p">,</span>
+<a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">                    </span><span class="s2">"isFirstTime"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span>
+<a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">                </span><span class="p">},</span>
+<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">                </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"00000000-0000-0000-0000-000000000000"</span><span class="p">,</span>
+<a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">                </span><span class="s2">"service"</span><span class="o">:</span><span class="w"> </span><span class="s2">"YNC_Plugin_DirectInput"</span><span class="p">,</span>
+<a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">                </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"#"</span><span class="p">,</span>
+<a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">                </span><span class="s2">"url"</span><span class="o">:</span><span class="w"> </span><span class="s2">""</span>
+<a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">            </span><span class="p">}</span>
+<a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">        </span><span class="p">],</span>
+<a href="#__codelineno-0-22" id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">        </span><span class="s2">"listeners"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-0-23" id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">            </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"00000000-0000-0000-0000-000000000000"</span><span class="p">,</span>
+<a href="#__codelineno-0-24" id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">            </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"#"</span><span class="p">,</span>
+<a href="#__codelineno-0-25" id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">            </span><span class="s2">"url"</span><span class="o">:</span><span class="w"> </span><span class="s2">"#"</span><span class="p">,</span>
+<a href="#__codelineno-0-26" id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">            </span><span class="s2">"write"</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a href="#__codelineno-0-27" id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="w">            </span><span class="s2">"speech"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a href="#__codelineno-0-28" id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="w">            </span><span class="s2">"enabled"</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a href="#__codelineno-0-29" id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="w">            </span><span class="s2">"color"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-0-30" id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="w">                </span><span class="s2">"r"</span><span class="o">:</span><span class="w"> </span><span class="mf">32</span><span class="p">,</span>
+<a href="#__codelineno-0-31" id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="w">                </span><span class="s2">"g"</span><span class="o">:</span><span class="w"> </span><span class="mf">32</span><span class="p">,</span>
+<a href="#__codelineno-0-32" id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="w">                </span><span class="s2">"b"</span><span class="o">:</span><span class="w"> </span><span class="mf">32</span>
+<a href="#__codelineno-0-33" id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="w">            </span><span class="p">},</span>
+<a href="#__codelineno-0-34" id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="w">            </span><span class="s2">"translate"</span><span class="o">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+<a href="#__codelineno-0-35" id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="w">            </span><span class="s2">"type"</span><span class="o">:</span><span class="w"> </span><span class="s2">"YNC"</span><span class="p">,</span>
+<a href="#__codelineno-0-36" id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="w">            </span><span class="s2">"listeners"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a href="#__codelineno-0-37" id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="w">                </span><span class="p">{</span>
+<a href="#__codelineno-0-38" id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="w">                    </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"8141cf31-1685-4e88-97ce-9ae92981174b"</span><span class="p">,</span>
+<a href="#__codelineno-0-39" id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="w">                    </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"nao"</span><span class="p">,</span>
+<a href="#__codelineno-0-40" id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="w">                    </span><span class="s2">"profileImage"</span><span class="o">:</span><span class="w"> </span><span class="s2">"/image/nao.png"</span><span class="p">,</span>
+<a href="#__codelineno-0-41" id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="w">                    </span><span class="s2">"badges"</span><span class="o">:</span><span class="w"> </span><span class="p">{},</span>
+<a href="#__codelineno-0-42" id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="w">                    </span><span class="s2">"firstCommentTime"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span>
+<a href="#__codelineno-0-43" id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="w">                    </span><span class="s2">"lastCommentTime"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span>
+<a href="#__codelineno-0-44" id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="w">                    </span><span class="s2">"count"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span>
+<a href="#__codelineno-0-45" id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="w">                    </span><span class="s2">"giftCount"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span>
+<a href="#__codelineno-0-46" id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="w">                </span><span class="p">}</span>
+<a href="#__codelineno-0-47" id="__codelineno-0-47" name="__codelineno-0-47"></a><span class="w">            </span><span class="p">]</span>
+<a href="#__codelineno-0-48" id="__codelineno-0-48" name="__codelineno-0-48"></a><span class="w">        </span><span class="p">}</span>
+<a href="#__codelineno-0-49" id="__codelineno-0-49" name="__codelineno-0-49"></a><span class="w">    </span><span class="p">}</span>
 </code></pre></div>
 </div>
 </div>
@@ -1115,64 +1117,64 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Response(v3)</label><label for="__tabbed_2_2">Response(v4)</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="w">    </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">        </span><span class="s2">"type"</span><span class="o">:</span><span class="w"> </span><span class="s2">"comments"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">        </span><span class="s2">"data"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">            </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">                </span><span class="s2">"data"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">                    </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"a43e07a3-5b8c-4274-8d16-624edf383824"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">                    </span><span class="s2">"userId"</span><span class="o">:</span><span class="w"> </span><span class="s2">"8141cf31-1685-4e88-97ce-9ae92981174b"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">                    </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"nao"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">                    </span><span class="s2">"profileImage"</span><span class="o">:</span><span class="w"> </span><span class="s2">"http://127.0.0.1:15520/image/nao.png"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">                    </span><span class="s2">"badges"</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span><span class="w"></span>
-<a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">                    </span><span class="s2">"hasGift"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">                    </span><span class="s2">"comment"</span><span class="o">:</span><span class="w"> </span><span class="s2">"&lt;span class=\"origin\"&gt;123&lt;/span&gt;⁣⁣&lt;span class=\"t\"&gt;&lt;span class=\"par\"&gt;(&lt;/span&gt;123 \n&lt;span class=\"par\"&gt;)&lt;/span&gt;&lt;/span&gt;⁣⁣"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-1-13" id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">                    </span><span class="s2">"timestamp"</span><span class="o">:</span><span class="w"> </span><span class="mf">1660715431.4722717</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-1-14" id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">                    </span><span class="s2">"displayName"</span><span class="o">:</span><span class="w"> </span><span class="s2">"nao"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-1-15" id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">                    </span><span class="s2">"isFirstTime"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
-<a href="#__codelineno-1-16" id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">                </span><span class="p">},</span><span class="w"></span>
-<a href="#__codelineno-1-17" id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">                </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"a43e07a3-5b8c-4274-8d16-624edf383824"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-1-18" id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">                </span><span class="s2">"service"</span><span class="o">:</span><span class="w"> </span><span class="s2">"YNC_Plugin_DirectInput"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-1-19" id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="w">                </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"#"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-1-20" id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="w">                </span><span class="s2">"url"</span><span class="o">:</span><span class="w"> </span><span class="s2">""</span><span class="w"></span>
-<a href="#__codelineno-1-21" id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="w">            </span><span class="p">}</span><span class="w"></span>
-<a href="#__codelineno-1-22" id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="w">        </span><span class="p">]</span><span class="w"></span>
-<a href="#__codelineno-1-23" id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="w">    </span><span class="p">{</span>
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">        </span><span class="s2">"type"</span><span class="o">:</span><span class="w"> </span><span class="s2">"comments"</span><span class="p">,</span>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">        </span><span class="s2">"data"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">            </span><span class="p">{</span>
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">                </span><span class="s2">"data"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">                    </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"a43e07a3-5b8c-4274-8d16-624edf383824"</span><span class="p">,</span>
+<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">                    </span><span class="s2">"userId"</span><span class="o">:</span><span class="w"> </span><span class="s2">"8141cf31-1685-4e88-97ce-9ae92981174b"</span><span class="p">,</span>
+<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">                    </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"nao"</span><span class="p">,</span>
+<a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">                    </span><span class="s2">"profileImage"</span><span class="o">:</span><span class="w"> </span><span class="s2">"http://127.0.0.1:15520/image/nao.png"</span><span class="p">,</span>
+<a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">                    </span><span class="s2">"badges"</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
+<a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">                    </span><span class="s2">"hasGift"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">                    </span><span class="s2">"comment"</span><span class="o">:</span><span class="w"> </span><span class="s2">"&lt;span class=\"origin\"&gt;123&lt;/span&gt;⁣⁣&lt;span class=\"t\"&gt;&lt;span class=\"par\"&gt;(&lt;/span&gt;123 \n&lt;span class=\"par\"&gt;)&lt;/span&gt;&lt;/span&gt;⁣⁣"</span><span class="p">,</span>
+<a href="#__codelineno-1-13" id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">                    </span><span class="s2">"timestamp"</span><span class="o">:</span><span class="w"> </span><span class="mf">1660715431.4722717</span><span class="p">,</span>
+<a href="#__codelineno-1-14" id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">                    </span><span class="s2">"displayName"</span><span class="o">:</span><span class="w"> </span><span class="s2">"nao"</span><span class="p">,</span>
+<a href="#__codelineno-1-15" id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">                    </span><span class="s2">"isFirstTime"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span>
+<a href="#__codelineno-1-16" id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">                </span><span class="p">},</span>
+<a href="#__codelineno-1-17" id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">                </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"a43e07a3-5b8c-4274-8d16-624edf383824"</span><span class="p">,</span>
+<a href="#__codelineno-1-18" id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">                </span><span class="s2">"service"</span><span class="o">:</span><span class="w"> </span><span class="s2">"YNC_Plugin_DirectInput"</span><span class="p">,</span>
+<a href="#__codelineno-1-19" id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="w">                </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"#"</span><span class="p">,</span>
+<a href="#__codelineno-1-20" id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="w">                </span><span class="s2">"url"</span><span class="o">:</span><span class="w"> </span><span class="s2">""</span>
+<a href="#__codelineno-1-21" id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="w">            </span><span class="p">}</span>
+<a href="#__codelineno-1-22" id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="w">        </span><span class="p">]</span>
+<a href="#__codelineno-1-23" id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="w">    </span><span class="p">}</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="w">    </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="s2">"type"</span><span class="o">:</span><span class="w"> </span><span class="s2">"comments"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="s2">"data"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">        </span><span class="s2">"comments"</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span><span class="w"></span>
-<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">        </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"56e5b273-b216-4dfb-808d-3e4c448f115f"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">        </span><span class="s2">"service"</span><span class="o">:</span><span class="w"> </span><span class="s2">"YNC_Plugin_DirectInput"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">        </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"#"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">        </span><span class="s2">"url"</span><span class="o">:</span><span class="w"> </span><span class="s2">"about.blank"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-9" id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">        </span><span class="s2">"data"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-2-10" id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">            </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"56e5b273-b216-4dfb-808d-3e4c448f115f"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-11" id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">            </span><span class="s2">"liveId"</span><span class="o">:</span><span class="w"> </span><span class="s2">"e68e52bd-9c36-4aee-a2f4-e76c94ab0944"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-12" id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">            </span><span class="s2">"userId"</span><span class="o">:</span><span class="w"> </span><span class="s2">"e68e52bd-9c36-4aee-a2f4-e76c94ab0944"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-13" id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="w">            </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"なお"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-14" id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="w">            </span><span class="s2">"isOwner"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-15" id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="w">            </span><span class="s2">"isModerator"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-16" id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="w">            </span><span class="s2">"isMember"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-17" id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="w">            </span><span class="s2">"timestamp"</span><span class="o">:</span><span class="w"> </span><span class="mf">1662841943.4777987</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-18" id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="w">            </span><span class="s2">"badges"</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span><span class="w"></span>
-<a href="#__codelineno-2-19" id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="w">            </span><span class="s2">"hasGift"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-20" id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="w">            </span><span class="s2">"profileImage"</span><span class="o">:</span><span class="w"> </span><span class="s2">"http://127.0.0.1:15521/image/なお.png"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-21" id="__codelineno-2-21" name="__codelineno-2-21"></a><span class="w">            </span><span class="s2">"originalProfileImage"</span><span class="o">:</span><span class="w"> </span><span class="s2">"http://127.0.0.1:15521/image/なお.png"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-22" id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="w">            </span><span class="s2">"comment"</span><span class="o">:</span><span class="w"> </span><span class="s2">"123"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-23" id="__codelineno-2-23" name="__codelineno-2-23"></a><span class="w">            </span><span class="s2">"displayName"</span><span class="o">:</span><span class="w"> </span><span class="s2">"なお"</span><span class="p">,</span><span class="w"></span>
-<a href="#__codelineno-2-24" id="__codelineno-2-24" name="__codelineno-2-24"></a><span class="w">            </span><span class="s2">"isFirstTime"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
-<a href="#__codelineno-2-25" id="__codelineno-2-25" name="__codelineno-2-25"></a><span class="w">        </span><span class="p">},</span><span class="w"></span>
-<a href="#__codelineno-2-26" id="__codelineno-2-26" name="__codelineno-2-26"></a><span class="w">        </span><span class="s2">"meta"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a href="#__codelineno-2-27" id="__codelineno-2-27" name="__codelineno-2-27"></a><span class="w">            </span><span class="s2">"interval"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="w"></span>
-<a href="#__codelineno-2-28" id="__codelineno-2-28" name="__codelineno-2-28"></a><span class="w">        </span><span class="p">}</span><span class="w"></span>
-<a href="#__codelineno-2-29" id="__codelineno-2-29" name="__codelineno-2-29"></a><span class="w">        </span><span class="p">}],</span><span class="w"></span>
-<a href="#__codelineno-2-30" id="__codelineno-2-30" name="__codelineno-2-30"></a><span class="w">        </span><span class="s2">"options"</span><span class="o">:</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
-<a href="#__codelineno-2-31" id="__codelineno-2-31" name="__codelineno-2-31"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
-<a href="#__codelineno-2-32" id="__codelineno-2-32" name="__codelineno-2-32"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="w">    </span><span class="p">{</span>
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="s2">"type"</span><span class="o">:</span><span class="w"> </span><span class="s2">"comments"</span><span class="p">,</span>
+<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="s2">"data"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">        </span><span class="s2">"comments"</span><span class="o">:</span><span class="w"> </span><span class="p">[{</span>
+<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">        </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"56e5b273-b216-4dfb-808d-3e4c448f115f"</span><span class="p">,</span>
+<a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">        </span><span class="s2">"service"</span><span class="o">:</span><span class="w"> </span><span class="s2">"YNC_Plugin_DirectInput"</span><span class="p">,</span>
+<a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">        </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"#"</span><span class="p">,</span>
+<a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">        </span><span class="s2">"url"</span><span class="o">:</span><span class="w"> </span><span class="s2">"about.blank"</span><span class="p">,</span>
+<a href="#__codelineno-2-9" id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">        </span><span class="s2">"data"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-2-10" id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">            </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"56e5b273-b216-4dfb-808d-3e4c448f115f"</span><span class="p">,</span>
+<a href="#__codelineno-2-11" id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">            </span><span class="s2">"liveId"</span><span class="o">:</span><span class="w"> </span><span class="s2">"e68e52bd-9c36-4aee-a2f4-e76c94ab0944"</span><span class="p">,</span>
+<a href="#__codelineno-2-12" id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">            </span><span class="s2">"userId"</span><span class="o">:</span><span class="w"> </span><span class="s2">"e68e52bd-9c36-4aee-a2f4-e76c94ab0944"</span><span class="p">,</span>
+<a href="#__codelineno-2-13" id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="w">            </span><span class="s2">"name"</span><span class="o">:</span><span class="w"> </span><span class="s2">"なお"</span><span class="p">,</span>
+<a href="#__codelineno-2-14" id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="w">            </span><span class="s2">"isOwner"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a href="#__codelineno-2-15" id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="w">            </span><span class="s2">"isModerator"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a href="#__codelineno-2-16" id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="w">            </span><span class="s2">"isMember"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a href="#__codelineno-2-17" id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="w">            </span><span class="s2">"timestamp"</span><span class="o">:</span><span class="w"> </span><span class="mf">1662841943.4777987</span><span class="p">,</span>
+<a href="#__codelineno-2-18" id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="w">            </span><span class="s2">"badges"</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
+<a href="#__codelineno-2-19" id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="w">            </span><span class="s2">"hasGift"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a href="#__codelineno-2-20" id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="w">            </span><span class="s2">"profileImage"</span><span class="o">:</span><span class="w"> </span><span class="s2">"http://127.0.0.1:15521/image/なお.png"</span><span class="p">,</span>
+<a href="#__codelineno-2-21" id="__codelineno-2-21" name="__codelineno-2-21"></a><span class="w">            </span><span class="s2">"originalProfileImage"</span><span class="o">:</span><span class="w"> </span><span class="s2">"http://127.0.0.1:15521/image/なお.png"</span><span class="p">,</span>
+<a href="#__codelineno-2-22" id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="w">            </span><span class="s2">"comment"</span><span class="o">:</span><span class="w"> </span><span class="s2">"123"</span><span class="p">,</span>
+<a href="#__codelineno-2-23" id="__codelineno-2-23" name="__codelineno-2-23"></a><span class="w">            </span><span class="s2">"displayName"</span><span class="o">:</span><span class="w"> </span><span class="s2">"なお"</span><span class="p">,</span>
+<a href="#__codelineno-2-24" id="__codelineno-2-24" name="__codelineno-2-24"></a><span class="w">            </span><span class="s2">"isFirstTime"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span>
+<a href="#__codelineno-2-25" id="__codelineno-2-25" name="__codelineno-2-25"></a><span class="w">        </span><span class="p">},</span>
+<a href="#__codelineno-2-26" id="__codelineno-2-26" name="__codelineno-2-26"></a><span class="w">        </span><span class="s2">"meta"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-2-27" id="__codelineno-2-27" name="__codelineno-2-27"></a><span class="w">            </span><span class="s2">"interval"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span>
+<a href="#__codelineno-2-28" id="__codelineno-2-28" name="__codelineno-2-28"></a><span class="w">        </span><span class="p">}</span>
+<a href="#__codelineno-2-29" id="__codelineno-2-29" name="__codelineno-2-29"></a><span class="w">        </span><span class="p">}],</span>
+<a href="#__codelineno-2-30" id="__codelineno-2-30" name="__codelineno-2-30"></a><span class="w">        </span><span class="s2">"options"</span><span class="o">:</span><span class="w"> </span><span class="p">{}</span>
+<a href="#__codelineno-2-31" id="__codelineno-2-31" name="__codelineno-2-31"></a><span class="w">    </span><span class="p">}</span>
+<a href="#__codelineno-2-32" id="__codelineno-2-32" name="__codelineno-2-32"></a><span class="w">    </span><span class="p">}</span>
 </code></pre></div>
 </div>
 </div>
@@ -1236,7 +1238,7 @@
 <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2022年12月29日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年1月6日</span>
 </small>
 </div>
 </article>
@@ -1249,34 +1251,6 @@
           </a>
 </main>
 <footer class="md-footer">
-<nav aria-label="フッター" class="md-footer__inner md-grid">
-<a aria-label="前: プラグイン系API" class="md-footer__link md-footer__link--prev" href="../tech_api_plugin/" rel="prev">
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
-</div>
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                前
-              </span>
-              プラグイン系API
-            </div>
-</div>
-</a>
-<a aria-label="次: 開発履歴" class="md-footer__link md-footer__link--next" href="../../qa/history/" rel="next">
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                次
-              </span>
-              開発履歴
-            </div>
-</div>
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
-</div>
-</a>
-</nav>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">
@@ -1294,7 +1268,7 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
-<script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+<script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section"], "search": "../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.5cf534bf.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
