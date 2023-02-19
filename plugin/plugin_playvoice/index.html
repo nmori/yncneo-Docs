@@ -10,10 +10,10 @@
 <link href="../plugin_softalk/" rel="prev"/>
 <link href="../plugin_MediaPlayer/" rel="next"/>
 <link href="../../images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.4.2, mkdocs-material-9.0.12" name="generator"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.0.13" name="generator"/>
 <title>読み上げ - ゆかりねっとコネクターNEO</title>
-<link href="../../assets/stylesheets/main.0d440cfe.min.css" rel="stylesheet"/>
-<link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/main.ffa9267a.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=BIZ+UDPGothic:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"BIZ UDPGothic";--md-code-font:"Roboto Mono"}</style>
@@ -118,7 +118,7 @@
 </header>
 <div class="md-container" data-md-component="container">
 <nav aria-label="タブ" class="md-tabs" data-md-component="tabs">
-<div class="md-tabs__inner md-grid">
+<div class="md-grid">
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
 <a class="md-tabs__link" href="../..">
@@ -619,6 +619,11 @@
         ルビ付与
       </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_viewcompat/">
+        ゆかコネ互換
+      </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -750,11 +755,6 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_vcas/">
-        バーチャルキャスト連携
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../plugin_vanii/">
         VaNiiツール連携
       </a>
@@ -807,6 +807,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../plugin_cluster_wtrig/">
         clusterウェブトリガ
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_vcas/">
+        バーチャルキャスト連携
       </a>
 </li>
 <li class="md-nav__item">
@@ -1184,13 +1189,15 @@
 <div class="admonition tips">
 <p class="admonition-title">負荷が上がる場合があります</p>
 <ul>
-<li>VOICEVOXなど、GPUを使うソフトウェアの場合、PCに負荷がかかる場合があります</li>
+<li>VOICEVOXなど、GPUを使うソフトウェアの場合、PCに負荷がかかる場合があります。</li>
+<li>VOICEPEAKは生成処理が多く、若干待ち時間が長くかかります。</li>
 </ul>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">音声ソフトウェアがサポートする声が使えない場合があります</p>
 <ul>
 <li>起動時にVOICEVOXなどへ問い合わせ通信をしているため、後からVOICEVOXを起動すると音源が表示されない場合があります。</li>
+<li>COEIROINK のカスタムモデルを使う場合は、必ずCOEIROINKを先に立ち上げる必要があります。</li>
 </ul>
 </div>
 <div class="admonition success">
@@ -1203,7 +1210,7 @@
 <div class="admonition warning">
 <p class="admonition-title">音源を標準のフォルダ以外に導入すると動かない場合があります</p>
 <ul>
-<li>AIVoiceなどは、インストールフォルダを変更すると連動できないことがあります。</li>
+<li>A.I.Voiceなどは、インストールフォルダを変更すると連動できないことがあります。</li>
 </ul>
 </div>
 <h2 id="_7">条件変更<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
@@ -1283,6 +1290,59 @@
 <td>基本設定に反映</td>
 <td>このチェックがONの場合、通常つかわれる設定に反映します。<br/>（つまり、その後発話で採用される設定が書き換わることになります</td>
 </tr>
+<tr>
+<td>キーワード除去</td>
+<td>このチェックがONの場合、条件に設定されたキーワードを文から除去します。</td>
+</tr>
+<tr>
+<td>APIタグ</td>
+<td>HTTPコールや、VRChat連携時に使います。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>VRChatプラグインの左ジェスチャーと連携する場合には、APIタグと下記の文字が一対となります</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>APIタグ</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VRC:Neutral</td>
+<td>なにも指示していない状態</td>
+</tr>
+<tr>
+<td>VRC:Fist</td>
+<td>握りこぶし</td>
+</tr>
+<tr>
+<td>VRC:HandOpen</td>
+<td>手を開いた状態</td>
+</tr>
+<tr>
+<td>VRC:FingerPoint</td>
+<td>指さしポーズ</td>
+</tr>
+<tr>
+<td>VRC:Victory</td>
+<td>Vサイン</td>
+</tr>
+<tr>
+<td>VRC:RockNRoll</td>
+<td>電話ハンドサイン</td>
+</tr>
+<tr>
+<td>VRC:HandGun</td>
+<td>Lポーズ</td>
+</tr>
+<tr>
+<td>VRC:ThumbsUp</td>
+<td>親指ポーズ</td>
+</tr>
 </tbody>
 </table>
 <h2 id="_10">ブラウザ連携<a class="headerlink" href="#_10" title="Permanent link">¶</a></h2>
@@ -1302,7 +1362,7 @@
 <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年2月11日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年2月19日</span>
 </small>
 </div>
 </article>
@@ -1332,7 +1392,7 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
-<script src="../../assets/javascripts/bundle.4b2c34cd.min.js"></script>
+<script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
+<script src="../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
