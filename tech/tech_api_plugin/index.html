@@ -246,6 +246,11 @@
       </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../cs/cs_import_obs/">
+        配信ソフトに取り込む
+      </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../cs/cs_vrchat/">
         VRChatのチャットとつなぐ
       </a>
@@ -266,13 +271,13 @@
       </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_1_7" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_1_7" id="__nav_2_1_7_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_2_1_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_1_8" id="__nav_2_1_8_label" tabindex="0">
           コラボ字幕
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_1_7_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_2_1_7">
+<nav aria-expanded="false" aria-labelledby="__nav_2_1_8_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_1_8">
 <span class="md-nav__icon md-icon"></span>
           コラボ字幕
         </label>
@@ -945,6 +950,11 @@
     OSCの送信
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gpt">
+    GPTをつかった言葉の処理
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -1240,6 +1250,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#osc">
     OSCの送信
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gpt">
+    GPTをつかった言葉の処理
   </a>
 </li>
 </ul>
@@ -1915,6 +1930,54 @@
 <li>statusがfailureの場合は、プラグインが無効な場合など要求が出せなかった場合にでます。</li>
 <li>statusがsendedの場合、要求自体はだせたという意味です。</li>
 </ul>
+<h4 id="gpt">GPTをつかった言葉の処理<a class="headerlink" href="#gpt" title="Permanent link">¶</a></h4>
+<ul>
+<li>翻訳/発話連携サーバプラグインが開いているHTTPサーバもしくはWebSocketサーバに下記のリクエストを送付してください。</li>
+<li>送付方式：HTTPの場合はPOST、WSの場合はテキスト</li>
+<li>対応バージョン：v2.0.94～</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:3"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio"><input id="__tabbed_11_2" name="__tabbed_11" type="radio"><input id="__tabbed_11_3" name="__tabbed_11" type="radio"><div class="tabbed-labels"><label for="__tabbed_11_1">Request</label><label for="__tabbed_11_2">Response(OK)</label><label for="__tabbed_11_3">Response(NG)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-25-1" id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="p">{</span>
+<a href="#__codelineno-25-2" id="__codelineno-25-2" name="__codelineno-25-2"></a><span class="w">    </span><span class="s2">"operation"</span><span class="o">:</span><span class="w"> </span><span class="s2">"gpt"</span><span class="p">,</span>
+<a href="#__codelineno-25-3" id="__codelineno-25-3" name="__codelineno-25-3"></a><span class="w">    </span><span class="s2">"params"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a href="#__codelineno-25-4" id="__codelineno-25-4" name="__codelineno-25-4"></a><span class="w">        </span><span class="p">{</span>
+<a href="#__codelineno-25-5" id="__codelineno-25-5" name="__codelineno-25-5"></a><span class="w">            </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"0000-0000-0000-0000"</span><span class="p">,</span>
+<a href="#__codelineno-25-6" id="__codelineno-25-6" name="__codelineno-25-6"></a><span class="w">            </span><span class="s2">"command"</span><span class="o">:</span><span class="w"> </span><span class="s2">"question"</span><span class="p">,</span>
+<a href="#__codelineno-25-7" id="__codelineno-25-7" name="__codelineno-25-7"></a><span class="w">            </span><span class="s2">"premise"</span><span class="o">:</span><span class="w"> </span><span class="s2">"あなたはおじいさん役。"</span><span class="p">,</span>
+<a href="#__codelineno-25-8" id="__codelineno-25-8" name="__codelineno-25-8"></a><span class="w">            </span><span class="s2">"prompt"</span><span class="o">:</span><span class="w"> </span><span class="s2">"役割に合わせ発言せよ。「おはよう」"</span><span class="p">,</span>
+<a href="#__codelineno-25-9" id="__codelineno-25-9" name="__codelineno-25-9"></a><span class="w">            </span><span class="s2">"maxtokens"</span><span class="o">:</span><span class="w"> </span><span class="mf">1000</span><span class="p">,</span>
+<a href="#__codelineno-25-10" id="__codelineno-25-10" name="__codelineno-25-10"></a><span class="w">            </span><span class="s2">"temperature"</span><span class="o">:</span><span class="mf">0.5</span>
+<a href="#__codelineno-25-11" id="__codelineno-25-11" name="__codelineno-25-11"></a><span class="w">        </span><span class="p">}</span>
+<a href="#__codelineno-25-12" id="__codelineno-25-12" name="__codelineno-25-12"></a><span class="w">    </span><span class="p">]</span>
+<a href="#__codelineno-25-13" id="__codelineno-25-13" name="__codelineno-25-13"></a><span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-26-1" id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="p">{</span>
+<a href="#__codelineno-26-2" id="__codelineno-26-2" name="__codelineno-26-2"></a><span class="w">    </span><span class="nx">operation</span><span class="o">:</span><span class="w"> </span><span class="s1">'gpt'</span><span class="p">,</span>
+<a href="#__codelineno-26-3" id="__codelineno-26-3" name="__codelineno-26-3"></a><span class="w">    </span><span class="nx">status</span><span class="o">:</span><span class="w"> </span><span class="s1">'success'</span>
+<a href="#__codelineno-26-4" id="__codelineno-26-4" name="__codelineno-26-4"></a><span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s1">'0000-0000-0000-0000'</span><span class="p">,</span>
+<a href="#__codelineno-26-5" id="__codelineno-26-5" name="__codelineno-26-5"></a><span class="w">    </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s1">'「皆の者、おはよう」'</span><span class="w"> </span>
+<a href="#__codelineno-26-6" id="__codelineno-26-6" name="__codelineno-26-6"></a><span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-27-1" id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="p">{</span>
+<a href="#__codelineno-27-2" id="__codelineno-27-2" name="__codelineno-27-2"></a><span class="w">    </span><span class="nx">operation</span><span class="o">:</span><span class="w"> </span><span class="s1">'gpt'</span><span class="p">,</span>
+<a href="#__codelineno-27-3" id="__codelineno-27-3" name="__codelineno-27-3"></a><span class="w">    </span><span class="nx">status</span><span class="o">:</span><span class="w"> </span><span class="s1">'failure'</span>
+<a href="#__codelineno-27-4" id="__codelineno-27-4" name="__codelineno-27-4"></a><span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s1">'0000-0000-0000-0000'</span><span class="p">,</span>
+<a href="#__codelineno-27-5" id="__codelineno-27-5" name="__codelineno-27-5"></a><span class="w">    </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s1">''</span><span class="w"> </span>
+<a href="#__codelineno-27-6" id="__codelineno-27-6" name="__codelineno-27-6"></a><span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</input></input></input></div>
+<ul>
+<li>GPT3プラグイン自体が有効で、APIキーなどが設定済みであるときに使用可能です。</li>
+<li>statusがfailureの場合は、プラグインが無効な場合など要求が出せなかった場合にでます。</li>
+</ul>
 <h2 id="_12">入力支援<a class="headerlink" href="#_12" title="Permanent link">¶</a></h2>
 <ul>
 <li>ゆかりねっとコネクターNEOの文字入力を支援します</li>
@@ -1930,26 +1993,26 @@
 <ul>
 <li>送付方式：HTTP(GET)</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="11:4"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio"><input id="__tabbed_11_2" name="__tabbed_11" type="radio"><input id="__tabbed_11_3" name="__tabbed_11" type="radio"><input id="__tabbed_11_4" name="__tabbed_11" type="radio"/><div class="tabbed-labels"><label for="__tabbed_11_1">１行前に移動</label><label for="__tabbed_11_2">１行後に移動</label><label for="__tabbed_11_3">カーソル行を送信</label><label for="__tabbed_11_4">カーソル行を送り次の行に移動</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:4"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio"/><input id="__tabbed_12_2" name="__tabbed_12" type="radio"/><input id="__tabbed_12_3" name="__tabbed_12" type="radio"/><input id="__tabbed_12_4" name="__tabbed_12" type="radio"/><div class="tabbed-labels"><label for="__tabbed_12_1">１行前に移動</label><label for="__tabbed_12_2">１行後に移動</label><label for="__tabbed_12_3">カーソル行を送信</label><label for="__tabbed_12_4">カーソル行を送り次の行に移動</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-25-1" id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_InputAssist&amp;command=prev</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-28-1" id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_InputAssist&amp;command=prev</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-26-1" id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_InputAssist&amp;command=next</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-29-1" id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_InputAssist&amp;command=next</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-27-1" id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_InputAssist&amp;command=send</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-30-1" id="__codelineno-30-1" name="__codelineno-30-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_InputAssist&amp;command=send</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-28-1" id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_InputAssist&amp;command=sendnext</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-31-1" id="__codelineno-31-1" name="__codelineno-31-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_InputAssist&amp;command=sendnext</span>
 </code></pre></div>
 </div>
 </div>
-</input></input></input></div>
+</div>
 <h2 id="_14">歌詞プラグイン<a class="headerlink" href="#_14" title="Permanent link">¶</a></h2>
 <ul>
 <li>ゆかりねっとコネクターNEOの文字入力を支援します</li>
@@ -1965,24 +2028,24 @@
 <ul>
 <li>送付方式：HTTP(GET)</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="12:4"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio"/><input id="__tabbed_12_2" name="__tabbed_12" type="radio"/><input id="__tabbed_12_3" name="__tabbed_12" type="radio"/><input id="__tabbed_12_4" name="__tabbed_12" type="radio"/><div class="tabbed-labels"><label for="__tabbed_12_1">再生</label><label for="__tabbed_12_2">一時停止</label><label for="__tabbed_12_3">停止</label><label for="__tabbed_12_4">ファイルロード</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="13:4"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio"/><input id="__tabbed_13_2" name="__tabbed_13" type="radio"/><input id="__tabbed_13_3" name="__tabbed_13" type="radio"/><input id="__tabbed_13_4" name="__tabbed_13" type="radio"/><div class="tabbed-labels"><label for="__tabbed_13_1">再生</label><label for="__tabbed_13_2">一時停止</label><label for="__tabbed_13_3">停止</label><label for="__tabbed_13_4">ファイルロード</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-29-1" id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_LyricAssist&amp;command=play</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-32-1" id="__codelineno-32-1" name="__codelineno-32-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_LyricAssist&amp;command=play</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-30-1" id="__codelineno-30-1" name="__codelineno-30-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_LyricAssist&amp;command=pause</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-33-1" id="__codelineno-33-1" name="__codelineno-33-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_LyricAssist&amp;command=pause</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-31-1" id="__codelineno-31-1" name="__codelineno-31-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_LyricAssist&amp;command=stop</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-34-1" id="__codelineno-34-1" name="__codelineno-34-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_LyricAssist&amp;command=stop</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <ul>
 <li><code>sukiyuki.stl</code> を読み込む場合
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-32-1" id="__codelineno-32-1" name="__codelineno-32-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_LyricAssist&amp;command=load&amp;file=d:/sukiyuki.stl</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-35-1" id="__codelineno-35-1" name="__codelineno-35-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_LyricAssist&amp;command=load&amp;file=d:/sukiyuki.stl</span>
 </code></pre></div></li>
 </ul>
 </div>
@@ -2004,12 +2067,12 @@
 <ul>
 <li>送付方式：HTTP(GET)</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="13:1"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio"/><div class="tabbed-labels"><label for="__tabbed_13_1">実行</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="14:1"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio"/><div class="tabbed-labels"><label for="__tabbed_14_1">実行</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
 <li>送信タグ名 <code>EyeClose</code> を送りたい場合
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-33-1" id="__codelineno-33-1" name="__codelineno-33-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_VRChat_OSC&amp;command=exec&amp;tag=EyeClose</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-36-1" id="__codelineno-36-1" name="__codelineno-36-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_VRChat_OSC&amp;command=exec&amp;tag=EyeClose</span>
 </code></pre></div></li>
 </ul>
 </div>
@@ -2031,12 +2094,12 @@
 <ul>
 <li>送付方式：HTTP(GET)</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="14:1"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio"/><div class="tabbed-labels"><label for="__tabbed_14_1">実行</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="15:1"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio"/><div class="tabbed-labels"><label for="__tabbed_15_1">実行</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
 <li>送信タグ名 <code>CALL</code> を送りたい場合
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-34-1" id="__codelineno-34-1" name="__codelineno-34-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_HTTPCall&amp;command=exec&amp;tag=CALL</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-37-1" id="__codelineno-37-1" name="__codelineno-37-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_HTTPCall&amp;command=exec&amp;tag=CALL</span>
 </code></pre></div></li>
 </ul>
 </div>
@@ -2058,12 +2121,12 @@
 <ul>
 <li>送付方式：HTTP(GET)</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="15:1"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio"/><div class="tabbed-labels"><label for="__tabbed_15_1">実行</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="16:1"><input checked="checked" id="__tabbed_16_1" name="__tabbed_16" type="radio"/><div class="tabbed-labels"><label for="__tabbed_16_1">実行</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
 <li>送信タグ名 <code>Trig1</code> を発火したい場合
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-35-1" id="__codelineno-35-1" name="__codelineno-35-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_ClusterTrigger&amp;command=exec&amp;tag=Trig1</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-38-1" id="__codelineno-38-1" name="__codelineno-38-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_ClusterTrigger&amp;command=exec&amp;tag=Trig1</span>
 </code></pre></div></li>
 </ul>
 </div>
@@ -2084,12 +2147,12 @@
 <ul>
 <li>送付方式：HTTP(GET)</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="16:1"><input checked="checked" id="__tabbed_16_1" name="__tabbed_16" type="radio"/><div class="tabbed-labels"><label for="__tabbed_16_1">実行</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="17:1"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio"/><div class="tabbed-labels"><label for="__tabbed_17_1">実行</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
 <li>送信タグ名 <code>CALL</code> を送りたい場合
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-36-1" id="__codelineno-36-1" name="__codelineno-36-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_NeosVR&amp;command=exec&amp;tag=CALL</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-39-1" id="__codelineno-39-1" name="__codelineno-39-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_NeosVR&amp;command=exec&amp;tag=CALL</span>
 </code></pre></div>
 ```</li>
 </ul>
@@ -2111,12 +2174,12 @@
 <ul>
 <li>送付方式：HTTP(GET)</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="17:1"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio"/><div class="tabbed-labels"><label for="__tabbed_17_1">実行</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="18:1"><input checked="checked" id="__tabbed_18_1" name="__tabbed_18" type="radio"/><div class="tabbed-labels"><label for="__tabbed_18_1">実行</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
 <li>送信タグ名 <code>CALL</code> を送りたい場合
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-37-1" id="__codelineno-37-1" name="__codelineno-37-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_VtuberStudio&amp;command=exec&amp;tag=CALL</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-40-1" id="__codelineno-40-1" name="__codelineno-40-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_VtuberStudio&amp;command=exec&amp;tag=CALL</span>
 </code></pre></div></li>
 </ul>
 </div>
@@ -2127,7 +2190,7 @@
 <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年3月2日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年3月4日</span>
 </small>
 </div>
 </article>
