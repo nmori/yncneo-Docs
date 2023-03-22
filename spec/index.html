@@ -185,9 +185,31 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          できること
+          <span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
         できること
       </a>
+<nav aria-label="目次" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    具体的仕様
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    翻訳の種類について
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../download/">
@@ -971,6 +993,22 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="目次" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    具体的仕様
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+    翻訳の種類について
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -986,7 +1024,7 @@
 <li>字幕表示</li>
 <li>周辺ツールへの出力</li>
 </ul>
-<h1 id="_2">具体的仕様<a class="headerlink" href="#_2" title="Permanent link">¶</a></h1>
+<h2 id="_2">具体的仕様<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <table>
 <thead>
 <tr>
@@ -1024,7 +1062,7 @@
 <tr>
 <td align="left">読み上げ</td>
 <td align="left">〇</td>
-<td align="left">プラグインを使えば可能<br/>●<a href="https://aivoice.jp/">A.I.Voice</a><br/>●<a href="https://cevio.jp/">CeVIO</a>/<a href="https://cevio.jp/products_cevio_ai/">CeVIO AI</a><br/>●<a href="https://www.ai-j.jp/consumer/kantan3/">AITalk3</a><br/>●<a href="https://voicevox.hiroshiba.jp/">VOICEVOX</a><br/>●<a href="https://coeiroink.com/">COEIROINK on VOICEVOX</a><br/>●<a href="https://lmroidsoftware.wixsite.com/nhoshio">LMROID</a><br/>●<a href="https://www.sharevox.app/">SHAREVOIX</a><br/>●SAPI5<br/>●<a href="https://www.ah-soft.net/shopbrand/ct92/">VOICEROID2</a> <br/>●<a href="https://www.ah-soft.com/voice/6nare/">VOICEPEAK</a>(v1.1b2～)<br/>●<a href="https://booth.pm/ja/items/4374126">ITVOICE</a></td>
+<td align="left">プラグインを使えば可能<br/>●<a href="https://aivoice.jp/">A.I.Voice</a><br/>●<a href="https://cevio.jp/">CeVIO</a>/<a href="https://cevio.jp/products_cevio_ai/">CeVIO AI</a><br/>●<a href="https://www.ai-j.jp/consumer/kantan3/">AITalk3</a><br/>●<a href="https://voicevox.hiroshiba.jp/">VOICEVOX</a><br/>●<a href="https://coeiroink.com/">COEIROINK on VOICEVOX</a><br/>●<a href="https://lmroidsoftware.wixsite.com/nhoshio">LMROID</a><br/>●<a href="https://www.sharevox.app/">SHAREVOIX</a><br/>●SAPI5<br/>●<a href="https://www.ah-soft.net/shopbrand/ct92/">VOICEROID2</a> <br/>●<a href="https://www.ah-soft.com/voice/6nare/">VOICEPEAK</a>(v1.1b2～)<br/>●<a href="https://booth.pm/ja/items/4374126">ITVOICE</a>)<br/>●ブラウザで発話可能なWeb読み上げ音声</td>
 </tr>
 <tr>
 <td align="left">表示形式</td>
@@ -1041,9 +1079,14 @@
 <td align="left">〇</td>
 <td align="left">支援しなくても利用はできます。<br/>支援するとみんなで支える企業版翻訳サーバがつかえるようになります</td>
 </tr>
+<tr>
+<td align="left">ツール連携</td>
+<td align="left">〇</td>
+<td align="left">●<a href="https://onecomme.com/">わんコメ</a>(アスティさん)<br/>●<a href="http://www.okayulu.moe/">ゆかりねっと</a>(おかゆぅさん)<br/>●<a href="https://obsproject.com/ja/download">OBS Studio</a><br/>●<a href="https://seesaawiki.jp/fcg/">HTML5コメントジェネレータ</a>(kilinさん)<br/>●<a href="http://twinstraycat.kagome-kagome.com/commegene/commentgenerator_kai">HTML5コメントジェネレータ改</a>(彼岸扇花さん)<br/>●<a href="https://github.com/poslogithub/binary-dist/tree/main/mtga-commentary-automation">MTGA自動解説ツール</a>(ぽsさん)<br/>●<a href="https://vmc.info/">バーチャルモーションキャプチャー</a>(あきらさん)<br/>●<a href="https://chi.usamimi.info/Program/Application/BouyomiChan/">棒読みちゃん</a>(みちあきさん)<br/>●<a href="https://hgotoh.jp/wiki/doku.php/documents/voiceroid/assistantseika/assistantseika-001a">AssistantSeika</a>(ゆかコネNEOv2.0.112より対応)<br/>●<a href="https://www.vector.co.jp/soft/winnt/art/se412443.html">Softalk</a>(CNCCさん)<br/>●<a href="https://sabowl.sakura.ne.jp/gpsnmeajp/">VaNiiシリーズ</a>(gpsnmeajpさん)<br/>●<a href="https://denchisoft.com/">VTube Studio</a>(DenchiSoftさん)<br/>●<a href="https://hello.vrchat.com/">VRChat</a><br/>●<a href="https://virtualcast.jp/">VirtualCast</a><br/>●<a href="https://cluster.mu/">cluster</a><br/>●<a href="https://www.twitch.tv/">twitch</a><br/>●<a href="https://neos.com/">neos VR</a><br/>※上記は一例。他にもプラグイン等で実現例あり</td>
+</tr>
 </tbody>
 </table>
-<h1 id="_3">翻訳の種類について<a class="headerlink" href="#_3" title="Permanent link">¶</a></h1>
+<h2 id="_3">翻訳の種類について<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../support/images/support_countermap.jpg"><img alt="翻訳リスト" src="../support/images/support_countermap.jpg"/></a></p>
 <ul>
 <li>支援については、 <a href="../support/support_summary/">こちら</a>をご覧ください。</li>
@@ -1053,7 +1096,7 @@
 <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年3月19日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年3月22日</span>
 </small>
 </div>
 </article>
