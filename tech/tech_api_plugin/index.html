@@ -1005,6 +1005,34 @@
 </nav>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#obs-ws">
+    OBS WSプラグイン
+  </a>
+<nav aria-label="OBS WSプラグイン" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_18">
+    ソースに指定した字幕を表示する
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#obs-ws5">
+    OBS WS5プラグイン
+  </a>
+<nav aria-label="OBS WS5プラグイン" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_19">
+    ソースに指定した字幕を表示する
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#osc_1">
     OSCプラグイン
   </a>
@@ -1039,7 +1067,7 @@
 <nav aria-label="clusterウェブトリガープラグイン" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_18">
+<a class="md-nav__link" href="#_20">
     ウェブトリガーの遠隔発火
   </a>
 </li>
@@ -1331,6 +1359,34 @@
 </nav>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#obs-ws">
+    OBS WSプラグイン
+  </a>
+<nav aria-label="OBS WSプラグイン" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_18">
+    ソースに指定した字幕を表示する
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#obs-ws5">
+    OBS WS5プラグイン
+  </a>
+<nav aria-label="OBS WS5プラグイン" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_19">
+    ソースに指定した字幕を表示する
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#osc_1">
     OSCプラグイン
   </a>
@@ -1365,7 +1421,7 @@
 <nav aria-label="clusterウェブトリガープラグイン" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_18">
+<a class="md-nav__link" href="#_20">
     ウェブトリガーの遠隔発火
   </a>
 </li>
@@ -2216,6 +2272,58 @@
 </div>
 </div>
 </div>
+<h2 id="obs-ws">OBS WSプラグイン<a class="headerlink" href="#obs-ws" title="Permanent link">¶</a></h2>
+<ul>
+<li>指定した字幕ソースに文字を表示します。</li>
+</ul>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>OBS-WSプラグインをONにしていること</li>
+<li>OBS-WSプラグイン v2.1以上で有効</li>
+</ul>
+</div>
+<h3 id="_18">ソースに指定した字幕を表示する<a class="headerlink" href="#_18" title="Permanent link">¶</a></h3>
+<ul>
+<li>送付方式：HTTP(GET)</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="17:1"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio"/><div class="tabbed-labels"><label for="__tabbed_17_1">実行</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>ソース名 <code>字幕枠</code> に <code>あいうえお</code> と表示したい場合
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-39-1" id="__codelineno-39-1" name="__codelineno-39-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//127.0.0.1:15520/api/command?target=Plugin_OBS&amp;command=set&amp;text=あいうえお&amp;source=字幕枠</span>
+</code></pre></div></li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="obs-ws5">OBS WS5プラグイン<a class="headerlink" href="#obs-ws5" title="Permanent link">¶</a></h2>
+<ul>
+<li>指定した字幕ソースに文字を表示します。</li>
+</ul>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>OBS-WS5プラグインをONにしていること</li>
+<li>OBS-WS5プラグイン v2.3以上で有効</li>
+</ul>
+</div>
+<h3 id="_19">ソースに指定した字幕を表示する<a class="headerlink" href="#_19" title="Permanent link">¶</a></h3>
+<ul>
+<li>送付方式：HTTP(GET)</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="18:1"><input checked="checked" id="__tabbed_18_1" name="__tabbed_18" type="radio"/><div class="tabbed-labels"><label for="__tabbed_18_1">実行</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>ソース名 <code>字幕枠</code> に <code>あいうえお</code> と表示したい場合
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-40-1" id="__codelineno-40-1" name="__codelineno-40-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//127.0.0.1:15520/api/command?target=Plugin_OBS5&amp;command=set&amp;text=あいうえお&amp;source=字幕枠</span>
+</code></pre></div></li>
+</ul>
+</div>
+</div>
+</div>
 <h2 id="osc_1">OSCプラグイン<a class="headerlink" href="#osc_1" title="Permanent link">¶</a></h2>
 <ul>
 <li>指定したOSCメッセージを送付します。</li>
@@ -2232,12 +2340,12 @@
 <ul>
 <li>送付方式：HTTP(GET)</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="17:1"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio"/><div class="tabbed-labels"><label for="__tabbed_17_1">実行</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="19:1"><input checked="checked" id="__tabbed_19_1" name="__tabbed_19" type="radio"/><div class="tabbed-labels"><label for="__tabbed_19_1">実行</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
 <li>送信タグ名 <code>EyeClose</code> を送りたい場合
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-39-1" id="__codelineno-39-1" name="__codelineno-39-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_VRChat_OSC&amp;command=exec&amp;tag=EyeClose</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-41-1" id="__codelineno-41-1" name="__codelineno-41-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_VRChat_OSC&amp;command=exec&amp;tag=EyeClose</span>
 </code></pre></div></li>
 </ul>
 </div>
@@ -2259,12 +2367,12 @@
 <ul>
 <li>送付方式：HTTP(GET)</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="18:1"><input checked="checked" id="__tabbed_18_1" name="__tabbed_18" type="radio"/><div class="tabbed-labels"><label for="__tabbed_18_1">実行</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="20:1"><input checked="checked" id="__tabbed_20_1" name="__tabbed_20" type="radio"/><div class="tabbed-labels"><label for="__tabbed_20_1">実行</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
 <li>送信タグ名 <code>CALL</code> を送りたい場合
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-40-1" id="__codelineno-40-1" name="__codelineno-40-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_HTTPCall&amp;command=exec&amp;tag=CALL</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-42-1" id="__codelineno-42-1" name="__codelineno-42-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_HTTPCall&amp;command=exec&amp;tag=CALL</span>
 </code></pre></div></li>
 </ul>
 </div>
@@ -2282,16 +2390,16 @@
 <li>ゆかりねっとコネクターNEO v2.0～で有効</li>
 </ul>
 </div>
-<h3 id="_18">ウェブトリガーの遠隔発火<a class="headerlink" href="#_18" title="Permanent link">¶</a></h3>
+<h3 id="_20">ウェブトリガーの遠隔発火<a class="headerlink" href="#_20" title="Permanent link">¶</a></h3>
 <ul>
 <li>送付方式：HTTP(GET)</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="19:1"><input checked="checked" id="__tabbed_19_1" name="__tabbed_19" type="radio"/><div class="tabbed-labels"><label for="__tabbed_19_1">実行</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="21:1"><input checked="checked" id="__tabbed_21_1" name="__tabbed_21" type="radio"/><div class="tabbed-labels"><label for="__tabbed_21_1">実行</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
 <li>送信タグ名 <code>Trig1</code> を発火したい場合
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-41-1" id="__codelineno-41-1" name="__codelineno-41-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_ClusterTrigger&amp;command=exec&amp;tag=Trig1</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-43-1" id="__codelineno-43-1" name="__codelineno-43-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_ClusterTrigger&amp;command=exec&amp;tag=Trig1</span>
 </code></pre></div></li>
 </ul>
 </div>
@@ -2312,12 +2420,12 @@
 <ul>
 <li>送付方式：HTTP(GET)</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="20:1"><input checked="checked" id="__tabbed_20_1" name="__tabbed_20" type="radio"/><div class="tabbed-labels"><label for="__tabbed_20_1">実行</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="22:1"><input checked="checked" id="__tabbed_22_1" name="__tabbed_22" type="radio"/><div class="tabbed-labels"><label for="__tabbed_22_1">実行</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
 <li>送信タグ名 <code>CALL</code> を送りたい場合
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-42-1" id="__codelineno-42-1" name="__codelineno-42-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_NeosVR&amp;command=exec&amp;tag=CALL</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-44-1" id="__codelineno-44-1" name="__codelineno-44-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_NeosVR&amp;command=exec&amp;tag=CALL</span>
 </code></pre></div>
 ```</li>
 </ul>
@@ -2339,12 +2447,12 @@
 <ul>
 <li>送付方式：HTTP(GET)</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="21:1"><input checked="checked" id="__tabbed_21_1" name="__tabbed_21" type="radio"/><div class="tabbed-labels"><label for="__tabbed_21_1">実行</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="23:1"><input checked="checked" id="__tabbed_23_1" name="__tabbed_23" type="radio"/><div class="tabbed-labels"><label for="__tabbed_23_1">実行</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
 <li>送信タグ名 <code>CALL</code> を送りたい場合
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-43-1" id="__codelineno-43-1" name="__codelineno-43-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_VtuberStudio&amp;command=exec&amp;tag=CALL</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-45-1" id="__codelineno-45-1" name="__codelineno-45-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_VtuberStudio&amp;command=exec&amp;tag=CALL</span>
 </code></pre></div></li>
 </ul>
 </div>
@@ -2365,47 +2473,47 @@
 <ul>
 <li>送付方式：HTTP(GET)</li>
 </ul>
-<div class="tabbed-set tabbed-alternate" data-tabs="22:4"><input checked="checked" id="__tabbed_22_1" name="__tabbed_22" type="radio"/><input id="__tabbed_22_2" name="__tabbed_22" type="radio"/><input id="__tabbed_22_3" name="__tabbed_22" type="radio"/><input id="__tabbed_22_4" name="__tabbed_22" type="radio"/><div class="tabbed-labels"><label for="__tabbed_22_1">実行</label><label for="__tabbed_22_2">Request</label><label for="__tabbed_22_3">Response(OK)</label><label for="__tabbed_22_4">Response(NG)</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="24:4"><input checked="checked" id="__tabbed_24_1" name="__tabbed_24" type="radio"/><input id="__tabbed_24_2" name="__tabbed_24" type="radio"/><input id="__tabbed_24_3" name="__tabbed_24" type="radio"/><input id="__tabbed_24_4" name="__tabbed_24" type="radio"/><div class="tabbed-labels"><label for="__tabbed_24_1">実行</label><label for="__tabbed_24_2">Request</label><label for="__tabbed_24_3">Response(OK)</label><label for="__tabbed_24_4">Response(NG)</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
 <li>送信タグ名 <code>CALL</code> を送りたい場合
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-44-1" id="__codelineno-44-1" name="__codelineno-44-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_VtuberStudio&amp;command=exec&amp;tag=CALL</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-46-1" id="__codelineno-46-1" name="__codelineno-46-1"></a><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/command?target=Plugin_VtuberStudio&amp;command=exec&amp;tag=CALL</span>
 </code></pre></div></li>
 </ul>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-45-1" id="__codelineno-45-1" name="__codelineno-45-1"></a><span class="p">{</span>
-<a href="#__codelineno-45-2" id="__codelineno-45-2" name="__codelineno-45-2"></a><span class="w">    </span><span class="s2">"operation"</span><span class="o">:</span><span class="w"> </span><span class="s2">"gpt"</span><span class="p">,</span>
-<a href="#__codelineno-45-3" id="__codelineno-45-3" name="__codelineno-45-3"></a><span class="w">    </span><span class="s2">"params"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<a href="#__codelineno-45-4" id="__codelineno-45-4" name="__codelineno-45-4"></a><span class="w">        </span><span class="p">{</span>
-<a href="#__codelineno-45-5" id="__codelineno-45-5" name="__codelineno-45-5"></a><span class="w">            </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"0000-0000-0000-0000"</span><span class="p">,</span>
-<a href="#__codelineno-45-6" id="__codelineno-45-6" name="__codelineno-45-6"></a><span class="w">            </span><span class="s2">"command"</span><span class="o">:</span><span class="w"> </span><span class="s2">"question"</span><span class="p">,</span>
-<a href="#__codelineno-45-7" id="__codelineno-45-7" name="__codelineno-45-7"></a><span class="w">            </span><span class="s2">"premise"</span><span class="o">:</span><span class="w"> </span><span class="s2">"あなたはおじいさん役。"</span><span class="p">,</span>
-<a href="#__codelineno-45-8" id="__codelineno-45-8" name="__codelineno-45-8"></a><span class="w">            </span><span class="s2">"prompt"</span><span class="o">:</span><span class="w"> </span><span class="s2">"役割に合わせ発言せよ。「おはよう」"</span><span class="p">,</span>
-<a href="#__codelineno-45-9" id="__codelineno-45-9" name="__codelineno-45-9"></a><span class="w">            </span><span class="s2">"maxtokens"</span><span class="o">:</span><span class="w"> </span><span class="mf">1000</span><span class="p">,</span>
-<a href="#__codelineno-45-10" id="__codelineno-45-10" name="__codelineno-45-10"></a><span class="w">            </span><span class="s2">"temperature"</span><span class="o">:</span><span class="mf">0.5</span>
-<a href="#__codelineno-45-11" id="__codelineno-45-11" name="__codelineno-45-11"></a><span class="w">        </span><span class="p">}</span>
-<a href="#__codelineno-45-12" id="__codelineno-45-12" name="__codelineno-45-12"></a><span class="w">    </span><span class="p">]</span>
-<a href="#__codelineno-45-13" id="__codelineno-45-13" name="__codelineno-45-13"></a><span class="p">}</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-46-1" id="__codelineno-46-1" name="__codelineno-46-1"></a><span class="p">{</span>
-<a href="#__codelineno-46-2" id="__codelineno-46-2" name="__codelineno-46-2"></a><span class="w">    </span><span class="nx">operation</span><span class="o">:</span><span class="w"> </span><span class="s1">'gpt'</span><span class="p">,</span>
-<a href="#__codelineno-46-3" id="__codelineno-46-3" name="__codelineno-46-3"></a><span class="w">    </span><span class="nx">status</span><span class="o">:</span><span class="w"> </span><span class="s1">'success'</span>
-<a href="#__codelineno-46-4" id="__codelineno-46-4" name="__codelineno-46-4"></a><span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s1">'0000-0000-0000-0000'</span><span class="p">,</span>
-<a href="#__codelineno-46-5" id="__codelineno-46-5" name="__codelineno-46-5"></a><span class="w">    </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s1">'「皆の者、おはよう」'</span><span class="w"> </span>
-<a href="#__codelineno-46-6" id="__codelineno-46-6" name="__codelineno-46-6"></a><span class="p">}</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-47-1" id="__codelineno-47-1" name="__codelineno-47-1"></a><span class="p">{</span>
-<a href="#__codelineno-47-2" id="__codelineno-47-2" name="__codelineno-47-2"></a><span class="w">    </span><span class="nx">operation</span><span class="o">:</span><span class="w"> </span><span class="s1">'gpt'</span><span class="p">,</span>
-<a href="#__codelineno-47-3" id="__codelineno-47-3" name="__codelineno-47-3"></a><span class="w">    </span><span class="nx">status</span><span class="o">:</span><span class="w"> </span><span class="s1">'failure'</span>
-<a href="#__codelineno-47-4" id="__codelineno-47-4" name="__codelineno-47-4"></a><span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s1">'0000-0000-0000-0000'</span><span class="p">,</span>
-<a href="#__codelineno-47-5" id="__codelineno-47-5" name="__codelineno-47-5"></a><span class="w">    </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s1">''</span><span class="w"> </span>
-<a href="#__codelineno-47-6" id="__codelineno-47-6" name="__codelineno-47-6"></a><span class="p">}</span>
+<a href="#__codelineno-47-2" id="__codelineno-47-2" name="__codelineno-47-2"></a><span class="w">    </span><span class="s2">"operation"</span><span class="o">:</span><span class="w"> </span><span class="s2">"gpt"</span><span class="p">,</span>
+<a href="#__codelineno-47-3" id="__codelineno-47-3" name="__codelineno-47-3"></a><span class="w">    </span><span class="s2">"params"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a href="#__codelineno-47-4" id="__codelineno-47-4" name="__codelineno-47-4"></a><span class="w">        </span><span class="p">{</span>
+<a href="#__codelineno-47-5" id="__codelineno-47-5" name="__codelineno-47-5"></a><span class="w">            </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"0000-0000-0000-0000"</span><span class="p">,</span>
+<a href="#__codelineno-47-6" id="__codelineno-47-6" name="__codelineno-47-6"></a><span class="w">            </span><span class="s2">"command"</span><span class="o">:</span><span class="w"> </span><span class="s2">"question"</span><span class="p">,</span>
+<a href="#__codelineno-47-7" id="__codelineno-47-7" name="__codelineno-47-7"></a><span class="w">            </span><span class="s2">"premise"</span><span class="o">:</span><span class="w"> </span><span class="s2">"あなたはおじいさん役。"</span><span class="p">,</span>
+<a href="#__codelineno-47-8" id="__codelineno-47-8" name="__codelineno-47-8"></a><span class="w">            </span><span class="s2">"prompt"</span><span class="o">:</span><span class="w"> </span><span class="s2">"役割に合わせ発言せよ。「おはよう」"</span><span class="p">,</span>
+<a href="#__codelineno-47-9" id="__codelineno-47-9" name="__codelineno-47-9"></a><span class="w">            </span><span class="s2">"maxtokens"</span><span class="o">:</span><span class="w"> </span><span class="mf">1000</span><span class="p">,</span>
+<a href="#__codelineno-47-10" id="__codelineno-47-10" name="__codelineno-47-10"></a><span class="w">            </span><span class="s2">"temperature"</span><span class="o">:</span><span class="mf">0.5</span>
+<a href="#__codelineno-47-11" id="__codelineno-47-11" name="__codelineno-47-11"></a><span class="w">        </span><span class="p">}</span>
+<a href="#__codelineno-47-12" id="__codelineno-47-12" name="__codelineno-47-12"></a><span class="w">    </span><span class="p">]</span>
+<a href="#__codelineno-47-13" id="__codelineno-47-13" name="__codelineno-47-13"></a><span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-48-1" id="__codelineno-48-1" name="__codelineno-48-1"></a><span class="p">{</span>
+<a href="#__codelineno-48-2" id="__codelineno-48-2" name="__codelineno-48-2"></a><span class="w">    </span><span class="nx">operation</span><span class="o">:</span><span class="w"> </span><span class="s1">'gpt'</span><span class="p">,</span>
+<a href="#__codelineno-48-3" id="__codelineno-48-3" name="__codelineno-48-3"></a><span class="w">    </span><span class="nx">status</span><span class="o">:</span><span class="w"> </span><span class="s1">'success'</span>
+<a href="#__codelineno-48-4" id="__codelineno-48-4" name="__codelineno-48-4"></a><span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s1">'0000-0000-0000-0000'</span><span class="p">,</span>
+<a href="#__codelineno-48-5" id="__codelineno-48-5" name="__codelineno-48-5"></a><span class="w">    </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s1">'「皆の者、おはよう」'</span><span class="w"> </span>
+<a href="#__codelineno-48-6" id="__codelineno-48-6" name="__codelineno-48-6"></a><span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-49-1" id="__codelineno-49-1" name="__codelineno-49-1"></a><span class="p">{</span>
+<a href="#__codelineno-49-2" id="__codelineno-49-2" name="__codelineno-49-2"></a><span class="w">    </span><span class="nx">operation</span><span class="o">:</span><span class="w"> </span><span class="s1">'gpt'</span><span class="p">,</span>
+<a href="#__codelineno-49-3" id="__codelineno-49-3" name="__codelineno-49-3"></a><span class="w">    </span><span class="nx">status</span><span class="o">:</span><span class="w"> </span><span class="s1">'failure'</span>
+<a href="#__codelineno-49-4" id="__codelineno-49-4" name="__codelineno-49-4"></a><span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s1">'0000-0000-0000-0000'</span><span class="p">,</span>
+<a href="#__codelineno-49-5" id="__codelineno-49-5" name="__codelineno-49-5"></a><span class="w">    </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="s1">''</span><span class="w"> </span>
+<a href="#__codelineno-49-6" id="__codelineno-49-6" name="__codelineno-49-6"></a><span class="p">}</span>
 </code></pre></div>
 </div>
 </div>
@@ -2419,7 +2527,7 @@
 <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年3月25日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年3月26日</span>
 </small>
 </div>
 </article>
