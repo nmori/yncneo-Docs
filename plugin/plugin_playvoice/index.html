@@ -541,6 +541,21 @@
     読み上げしている文章の取り込み
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#recottestudio">
+    RecotteStudioプラグイン連携
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_12">
+    一括置換
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_13">
+    コントローラ設定
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -1106,6 +1121,21 @@
     読み上げしている文章の取り込み
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#recottestudio">
+    RecotteStudioプラグイン連携
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_12">
+    一括置換
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_13">
+    コントローラ設定
+  </a>
+</li>
 </ul>
 </nav>
 </div>
@@ -1120,6 +1150,14 @@
 <li>つかいたい音声ソフトウェアがインストールされていること</li>
 <li>音声ソフトウェアが正しく発声できる状態であること</li>
 <li>つかう音声ソフトウェアが立ち上がっていること</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">関連ツールについて</p>
+<ul>
+<li>RecotteStudio プラグイン、AssistantSeika、各音源と連携できるように設計しています</li>
+<li>連携部分については仕様を参考に実装しています</li>
+<li>うまくいかない件は各製作者様に直接問い合わせせず、Discordサポートｃｈでご質問ください</li>
 </ul>
 </div>
 <h2 id="_1">このプラグインで出来ること<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
@@ -1184,6 +1222,10 @@
 <td align="left">・英語が読めない音源では、それっぽい発音に置き換えます。<br/>正しく発音できないこともあります</td>
 </tr>
 <tr>
+<td align="left">音声コントローラ</td>
+<td align="left">使用する音声コントローラを選べます。<br/>・外部のコントローラとして、<a href="https://hgotoh.jp/wiki/doku.php/documents/voiceroid/assistantseika/assistantseika-001a">AssistantSeika</a>が利用できます。<br/>・外部コントローラを使う場合は、URL、ID、PassWordの設定を合わせてください<br/>・AssistantSeika連携：（ゆかコネNEO v2.0.115以降）</td>
+</tr>
+<tr>
 <td align="left">CoeFontの設定</td>
 <td align="left">CoeFontの仕様変更により、<br/><code>残念ながらCoeFont社の仕様変更によりCoeFont企業契約者以外はご利用いただけなくなりました</code></td>
 </tr>
@@ -1226,6 +1268,13 @@
 <p class="admonition-title">音源を標準のフォルダ以外に導入すると動かない場合があります</p>
 <ul>
 <li>A.I.Voiceなどは、インストールフォルダを変更すると連動できないことがあります。</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">音声パラメータについて</p>
+<ul>
+<li>初期値として、デフォルトで使用される音源の設定値を採用します</li>
+<li>途中で音声を切り替える場合は、パラメータ不一致が起きる可能性があります。設定項目で値を設定してください。</li>
 </ul>
 </div>
 <h2 id="_7">条件変更<a class="headerlink" href="#_7" title="Permanent link">¶</a></h2>
@@ -1363,7 +1412,8 @@
 <h2 id="_10">ブラウザ連携<a class="headerlink" href="#_10" title="Permanent link">¶</a></h2>
 <ul>
 <li>従来通り、ブラウザがサポートする機械音声を使うことができます。</li>
-<li>ブラウザを起動して音声を選ぶと、ブラウザ経由で声が再生されます。
+<li>ブラウザを起動して音声を選ぶと、ブラウザ経由で声が再生されます。</li>
+<li>内蔵コントローラ使用中のみ利用可能です。
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/plugin_playvoice_p3.png"><img alt="音声" src="../images/plugin_playvoice_p3.png"/></a></li>
 </ul>
 <h2 id="_11">読み上げしている文章の取り込み<a class="headerlink" href="#_11" title="Permanent link">¶</a></h2>
@@ -1372,12 +1422,31 @@
 <li>OBS Studio のテキストソースで参照することで、リアルタイム表示ができます。
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/plugin_playvoice_p4.png"><img alt="音声" src="../images/plugin_playvoice_p4.png"/></a></li>
 </ul>
+<h2 id="recottestudio">RecotteStudioプラグイン連携<a class="headerlink" href="#recottestudio" title="Permanent link">¶</a></h2>
+<ul>
+<li>RecotteStudioプラグインを使って発話ができます。</li>
+<li>このモードは、ゆかコネ内蔵コントローラの時のみ使用可能です。</li>
+<li>たとえば、<a href="https://vtool.booth.pm/items/4591912">りんなプラグイン</a>などを連携させて使うことが可能です。
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/plugin_playvoice_p6.png"><img alt="音声" src="../images/plugin_playvoice_p6.png"/></a></li>
+</ul>
+<h2 id="_12">一括置換<a class="headerlink" href="#_12" title="Permanent link">¶</a></h2>
+<ul>
+<li>TwiChaDashに搭載されていた機能です</li>
+<li>インストールフォルダに サンプルとして、<code>bsr.txt</code>があります。</li>
+<li>正規表現ページにフォーマットを作成するためのツールが用意されています</li>
+</ul>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/plugin_playvoice_p7.png"><img alt="音声" src="../images/plugin_playvoice_p7.png"/></a></p>
+<h2 id="_13">コントローラ設定<a class="headerlink" href="#_13" title="Permanent link">¶</a></h2>
+<ul>
+<li>内蔵コントローラの通信先や再起動指示を出せる枠になります</li>
+</ul>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/plugin_playvoice_p8.png"><img alt="音声" src="../images/plugin_playvoice_p8.png"/></a></p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年3月26日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年3月27日</span>
 </small>
 </div>
 </article>
