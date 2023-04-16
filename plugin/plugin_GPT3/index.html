@@ -11,7 +11,7 @@
 <link href="../plugin_exporter/" rel="next"/>
 <link href="../../images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.1.6" name="generator"/>
-<title>GPT3プロンプト - ゆかりねっとコネクターNEO｜リアルタイム字幕・翻訳・連携ツール</title>
+<title>GPT3整形/AIアシスタント - ゆかりねっとコネクターNEO｜リアルタイム字幕・翻訳・連携ツール</title>
 <link href="../../assets/stylesheets/main.ded33207.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -64,7 +64,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              GPT3プロンプト
+              GPT3整形/AIアシスタント
             
           </span>
 </div>
@@ -303,6 +303,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../cs/cs_streamdeck/">
         StreamDeckで操作する
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cs/cs_aiassistant/">
+        AIアシスタントを作る
       </a>
 </li>
 </ul>
@@ -725,11 +730,11 @@
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-          GPT3プロンプト
+          GPT3整形/AIアシスタント
           <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
-        GPT3プロンプト
+        GPT3整形/AIアシスタント
       </a>
 <nav aria-label="目次" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -760,6 +765,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_5">
     使い方
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ai">
+    AIアシスタントをつくるには
   </a>
 </li>
 </ul>
@@ -1048,6 +1058,11 @@
     使い方
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ai">
+    AIアシスタントをつくるには
+  </a>
+</li>
 </ul>
 </nav>
 </div>
@@ -1055,7 +1070,7 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>GPT3プロンプト</h1>
+<h1>GPT3整形/AIアシスタント</h1>
 <div class="admonition info">
 <p class="admonition-title">前提条件</p>
 <ul>
@@ -1083,6 +1098,7 @@
 <ul>
 <li>会話内容を判断しマスクする機能</li>
 <li>会話内容に応じて画像を生成する機能</li>
+<li>AIアシスタント応答をする機能</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">会話内容のマスクについて</p>
@@ -1099,14 +1115,6 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">写真画面</td>
-<td align="left">写真を表示するための画面を表示します</td>
-</tr>
-<tr>
-<td align="left">いつまで出すか</td>
-<td align="left">画像表示をどれぐらい行うか決めます</td>
-</tr>
-<tr>
 <td align="left">APIキー</td>
 <td align="left">OpenAIのページで取得したキーを入れます</td>
 </tr>
@@ -1120,7 +1128,7 @@
 </tr>
 </tbody>
 </table>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/plugin_gpt3_p3.png"><img alt="再生" src="../images/plugin_gpt3_p3.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/plugin_gpt3_p4.png"><img alt="再生" src="../images/plugin_gpt3_p4.png"/></a></p>
 <table>
 <thead>
 <tr>
@@ -1129,6 +1137,50 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td align="left">文章を加工させる</td>
+<td align="left">音声認識結果をAIに修正させます</td>
+</tr>
+<tr>
+<td align="left">プロンプト</td>
+<td align="left">どの様に修正させるかを指示します。「$」と書くと、音声認識結果がそこにはいります</td>
+</tr>
+<tr>
+<td align="left">AIの役割</td>
+<td align="left">AIの口調、人格を設定します。具体的な方が行動に移しやすいです。</td>
+</tr>
+<tr>
+<td align="left">パラメータ</td>
+<td align="left">GPTに指示するパラメータを指示します。</td>
+</tr>
+<tr>
+<td align="left">実行下限文字数</td>
+<td align="left">音声認識結果がこの文字数を下回った場合、実行しません</td>
+</tr>
+</tbody>
+</table>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/plugin_gpt3_p3.png"><img alt="再生" src="../images/plugin_gpt3_p3.png"/></a>
+|設定|意味|
+|:--|:---|
+|発言を削除|音声認識結果が該当する場合に字幕をけします。|
+|閾値|AIは発言として何割そのニュアンスが含まれているか判断するため、どこで実行に移すかを指示します|</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/plugin_gpt3_p5.png"><img alt="再生" src="../images/plugin_gpt3_p5.png"/></a></p>
+<table>
+<thead>
+<tr>
+<th align="left">設定</th>
+<th align="left">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">写真画面</td>
+<td align="left">写真を表示するための画面を表示します</td>
+</tr>
+<tr>
+<td align="left">いつまで出すか</td>
+<td align="left">画像表示をどれぐらい行うか決めます</td>
+</tr>
 <tr>
 <td align="left">場合によって発言を削除</td>
 <td align="left">特定のレートを超えた場合に、文を「***」に置き換えます</td>
@@ -1151,16 +1203,30 @@
 </tr>
 </tbody>
 </table>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../images/plugin_gpt3_p6.png"><img alt="再生" src="../images/plugin_gpt3_p6.png"/></a>
+|設定|意味|
+|:--|:---|
+|問い合わせに応じる|AIアシスタント機能をONにします|
+|- 起動ワード|AIアシスタントを呼び出すキーワードを指定します|
+|- AIの名前|AIに自認させる名前を設定します|
+|過去の問い合わせを記憶|過去5会話を記憶します。引き続き話す場合に有用です|
+|問い合わせ結果をVRM_AIに出力|<a href="https://note.com/tori29umai/n/n81f3dd2343f3">とりにくさん製作のツール</a>と連動させる場合にONにします|
+|- 送信先|VRM_AIの通信ポートを設定します|
+|表情をOSCで送信|ばもきゃプラグインをつかって、表情データを送ります（プロンプトに表情指示をした場合のみ）|</p>
 <h2 id="_5">使い方<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
 <ol>
 <li>音声認識させると自動的に処理されます。</li>
 </ol>
+<h2 id="ai">AIアシスタントをつくるには<a class="headerlink" href="#ai" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="../../cs/cs_aiassistant/">AIアシスタントをつくる手順</a>を参考に設定してみてください。</li>
+</ul>
 <hr/>
 <div class="md-source-file">
 <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年4月10日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年4月16日</span>
 </small>
 </div>
 </article>
