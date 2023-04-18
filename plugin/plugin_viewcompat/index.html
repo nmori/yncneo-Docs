@@ -8,7 +8,7 @@
 <meta content="音声認識型多言語翻訳字幕ツール「ゆかりねっとコネクターNEO」のドキュメントページです" name="description"/>
 <meta content="nao" name="author"/>
 <link href="../plugin_ruby/" rel="prev"/>
-<link href="../plugin_browser/" rel="next"/>
+<link href="../plugin_GPT3/" rel="next"/>
 <link href="../../images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.1.6" name="generator"/>
 <title>ゆかコネ互換 - ゆかりねっとコネクターNEO｜リアルタイム字幕・翻訳・連携ツール</title>
@@ -505,13 +505,13 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_6_5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_6_5" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_6_5" id="__nav_2_6_5_label" tabindex="0">
           認識の修正や変換
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_6_5_label" class="md-nav" data-md-level="3">
+<nav aria-expanded="true" aria-labelledby="__nav_2_6_5_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_2_6_5">
 <span class="md-nav__icon md-icon"></span>
           認識の修正や変換
@@ -532,21 +532,6 @@
         ノムリッシュ変換
       </a>
 </li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_6_6" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_6_6" id="__nav_2_6_6_label" tabindex="0">
-          見た目の補正
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_2_6_6_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_2_6_6">
-<span class="md-nav__icon md-icon"></span>
-          見た目の補正
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../plugin_ConvertString/">
         文字変換
@@ -600,17 +585,22 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plugin_GPT3/">
+        GPT3整形/AIアシスタント
+      </a>
+</li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_6_7" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_6_7" id="__nav_2_6_7_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_2_6_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_6_6" id="__nav_2_6_6_label" tabindex="0">
           表示関連
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_6_7_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_2_6_7">
+<nav aria-expanded="false" aria-labelledby="__nav_2_6_6_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_6_6">
 <span class="md-nav__icon md-icon"></span>
           表示関連
         </label>
@@ -644,13 +634,13 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_6_8" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_6_8" id="__nav_2_6_8_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_2_6_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_6_7" id="__nav_2_6_7_label" tabindex="0">
           Windows連携
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_6_8_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_2_6_8">
+<nav aria-expanded="false" aria-labelledby="__nav_2_6_7_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_6_7">
 <span class="md-nav__icon md-icon"></span>
           Windows連携
         </label>
@@ -674,13 +664,13 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_6_9" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_6_9" id="__nav_2_6_9_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_2_6_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_6_8" id="__nav_2_6_8_label" tabindex="0">
           配信（OBS・コメント)
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_6_9_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_2_6_9">
+<nav aria-expanded="false" aria-labelledby="__nav_2_6_8_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_6_8">
 <span class="md-nav__icon md-icon"></span>
           配信（OBS・コメント)
         </label>
@@ -709,13 +699,13 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_6_10" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_6_10" id="__nav_2_6_10_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_2_6_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_6_9" id="__nav_2_6_9_label" tabindex="0">
           アプリ連携
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_6_10_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_2_6_10">
+<nav aria-expanded="false" aria-labelledby="__nav_2_6_9_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_6_9">
 <span class="md-nav__icon md-icon"></span>
           アプリ連携
         </label>
@@ -761,11 +751,6 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../plugin_GPT3/">
-        GPT3整形/AIアシスタント
-      </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../plugin_exporter/">
         ファイル出力
       </a>
@@ -774,13 +759,13 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_6_11" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_6_11" id="__nav_2_6_11_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_2_6_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_6_10" id="__nav_2_6_10_label" tabindex="0">
           プラットフォーム連携
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_6_11_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_2_6_11">
+<nav aria-expanded="false" aria-labelledby="__nav_2_6_10_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_6_10">
 <span class="md-nav__icon md-icon"></span>
           プラットフォーム連携
         </label>
@@ -849,13 +834,13 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_6_12" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_6_12" id="__nav_2_6_12_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_2_6_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_6_11" id="__nav_2_6_11_label" tabindex="0">
           つかいやすさ向上
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_6_12_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_2_6_12">
+<nav aria-expanded="false" aria-labelledby="__nav_2_6_11_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_6_11">
 <span class="md-nav__icon md-icon"></span>
           つかいやすさ向上
         </label>
@@ -1100,13 +1085,13 @@
               </div>
 </div>
 </a>
-<a aria-label="次: 内蔵ブラウザ" class="md-footer__link md-footer__link--next" href="../plugin_browser/" rel="next">
+<a aria-label="次: GPT3整形/AIアシスタント" class="md-footer__link md-footer__link--next" href="../plugin_GPT3/" rel="next">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 次
               </span>
 <div class="md-ellipsis">
-                内蔵ブラウザ
+                GPT3整形/AIアシスタント
               </div>
 </div>
 <div class="md-footer__button md-icon">
