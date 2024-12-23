@@ -3846,10 +3846,10 @@
 
 
 <h1 id="_1">サンプルボタン<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p><a class="md-button" href="#" id="postButton">日本語に設定</a></p>
+<p><a class="md-button" href="" id="postButton">日本語に設定</a></p>
 <script>
 document.getElementById('postButton').addEventListener('click', function() {
-    fetch('http://127.0.0.1:15520/setconfig', {
+    fetch('http://127.0.0.1:15520/api/setconfig', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
