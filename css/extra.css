@@ -7,3 +7,306 @@ body header.md-header nav.md-header__inner.md-grid a.md-header__button.md-logo i
     width: 200px;
     height: 60px;
 }
+
+/* モバイル最適化のベース設定 */
+@media screen and (max-width: 600px) {
+  .md-typeset {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  /* タップしやすい大きなボタン */
+  .md-button, 
+  .purpose-card,
+  .step-item .md-button {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.8rem 1.2rem;
+    margin: 0.5rem 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  /* モバイルでの余白調整 */
+  .md-typeset h1, 
+  .md-typeset h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* タップ操作に最適化されたコンポーネント */
+  .step-guide {
+    padding-left: 0;
+  }
+  
+  .step-item {
+    padding-left: 3rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* 目的別ナビゲーション */
+.purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0;
+}
+
+.purpose-card {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* ダークモード対応 */
+[data-md-color-scheme="slate"] .purpose-card {
+  background-color: #2c2c3d;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.05);
+  color: #f5f5f7;
+}
+
+.purpose-card:hover, .purpose-card:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-color: rgba(33, 150, 243, 0.3);
+}
+
+[data-md-color-scheme="slate"] .purpose-card:hover,
+[data-md-color-scheme="slate"] .purpose-card:focus {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  border-color: rgba(33, 150, 243, 0.5);
+}
+
+.purpose-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2196f3;
+}
+
+.purpose-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.purpose-card p {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+[data-md-color-scheme="slate"] .purpose-card p {
+  opacity: 0.9;
+}
+
+/* アノテーション付きスクリーンショット */
+.annotated-image {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.annotated-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.annotation {
+  position: absolute;
+  background-color: rgba(255, 235, 59, 0.9);
+  border-radius: 8px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.6rem;
+  max-width: 200px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  color: #333;
+  font-weight: 500;
+}
+
+.annotation-arrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FF9800"><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ステップバイステップガイド */
+.step-guide {
+  counter-reset: step-counter;
+  margin: 2rem 0;
+}
+
+.step-item {
+  margin-bottom: 2rem;
+  padding-left: 4rem;
+  position: relative;
+}
+
+.step-item::before {
+  content: counter(step-counter);
+  counter-increment: step-counter;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #2196f3;
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.step-item h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+[data-md-color-scheme="slate"] .step-item h3 {
+  color: #e0e0e0;
+}
+
+/* 実践的なヒントやコツのボックス */
+.tips-box {
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196f3;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+/* ダークモード対応 */
+[data-md-color-scheme="slate"] .tips-box {
+  background-color: #1a2233;
+  border-left: 4px solid #2196f3;
+  color: #e0e0e0;
+}
+
+.tips-box h4 {
+  margin-top: 0;
+  color: #0d47a1;
+  font-size: 1.1rem;
+}
+
+[data-md-color-scheme="slate"] .tips-box h4 {
+  color: #64b5f6; /* ダークモードでは明るい青色 */
+}
+
+.tips-box ul {
+  margin-bottom: 0;
+}
+
+/* 用語解説のポップアップスタイル */
+.term-tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+[data-md-color-scheme="slate"] .term-tooltip {
+  border-bottom: 1px dotted #aaa;
+}
+
+.term-tooltip .term-tooltip-text {
+  visibility: hidden;
+  width: 240px;
+  background-color: #555;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 0.8rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -120px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.85rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+[data-md-color-scheme="slate"] .term-tooltip .term-tooltip-text {
+  background-color: #333;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
+.term-tooltip:hover .term-tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* モバイルフレンドリーなナビゲーション */
+@media screen and (max-width: 600px) {
+  .mobile-nav-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 8px 0;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  [data-md-color-scheme="slate"] .mobile-nav-button {
+    background-color: #2c2c3d;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #e0e0e0;
+  }
+  
+  .mobile-nav-button::after {
+    content: "›";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #2196f3;
+  }
+}
+
+/* アノテーション付き画像のダークモード対応 */
+[data-md-color-scheme="slate"] .annotated-image {
+  border: 1px solid #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+[data-md-color-scheme="slate"] .annotation {
+  background-color: rgba(255, 235, 59, 0.85);
+  color: #111;
+}
+
+/* MDボタンのダークモード対応 */
+[data-md-color-scheme="slate"] .md-button {
+  border-color: rgba(255,255,255,0.2);
+}
+
+[data-md-color-scheme="slate"] .md-button:hover {
+  background-color: rgba(33, 150, 243, 0.1);
+  border-color: #2196f3;
+}
