@@ -3811,6 +3811,81 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      使い方の例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="使い方の例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unity連携
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    <span class="md-ellipsis">
+      受信側プログラム例（Python）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      送信モード
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      よくある問題
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="よくある問題">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      データが受信できない場合
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      文字化けする場合
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4839,6 +4914,81 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      使い方の例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="使い方の例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unity連携
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    <span class="md-ellipsis">
+      受信側プログラム例（Python）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      送信モード
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      よくある問題
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="よくある問題">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      データが受信できない場合
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      文字化けする場合
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4865,7 +5015,10 @@
 </div>
 <h2 id="_1">このプラグインで出来ること<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
-<li>音声認識結果をUDP通信で送付することができます。</li>
+<li>音声認識結果をUDP通信で他のアプリに送信できます</li>
+<li>原文または翻訳結果を選んで送信</li>
+<li>Unityなどのゲームアプリ・アプリケーションとの連携に便利</li>
+<li>日本語・英語などの多言語文字に対応</li>
 </ul>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p><img alt="ws" src="../images/plugin_udpunit_p1.png" /></p>
@@ -4902,6 +5055,37 @@
 <li>データはUTF8で、音声認識確定時に送られます。</li>
 </ul>
 </div>
+<h2 id="_4">使い方の例<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="unity">Unity連携<a class="headerlink" href="#unity" title="Permanent link">&para;</a></h3>
+<p>Unityでゲームを作っている場合、音声認識結果をリアルタイムでゲーム内に表示できます。</p>
+<h3 id="python">受信側プログラム例（Python）<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">socket</span>
+
+<span class="c1"># UDP受信設定</span>
+<span class="n">sock</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="o">.</span><span class="n">SOCK_DGRAM</span><span class="p">)</span>
+<span class="n">sock</span><span class="o">.</span><span class="n">bind</span><span class="p">((</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="mi">39538</span><span class="p">))</span>  <span class="c1"># 設定画面と同じIP・ポート</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">data</span><span class="p">,</span> <span class="n">addr</span> <span class="o">=</span> <span class="n">sock</span><span class="o">.</span><span class="n">recvfrom</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;音声認識結果: </span><span class="si">{</span><span class="n">text</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="_5">送信モード<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>設定画面の「送信内容」で以下を選択できます：
+- <strong>母国語</strong>: 音声認識した原文を送信
+- <strong>翻訳1～4</strong>: 各翻訳結果を送信</p>
+<h2 id="_6">よくある問題<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">データが受信できない場合<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>送信先IPアドレス（通常は127.0.0.1）が正しいか確認</li>
+<li>ポート番号が受信側プログラムと一致しているか確認  </li>
+<li>Windowsファイアウォールでポートが開いているか確認</li>
+</ul>
+<h3 id="_8">文字化けする場合<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>受信側プログラムでUTF-8でデコードしているか確認</li>
+<li>日本語・中国語・絵文字などの文字が含まれる場合はUTF-8必須</li>
+</ul>
 
 
 

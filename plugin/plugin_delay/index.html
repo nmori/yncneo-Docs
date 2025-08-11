@@ -2725,14 +2725,71 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      設定可能な範囲
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       使うとき
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      よくある質問
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="よくある質問">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      字幕が表示されない場合
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      音声と字幕のタイミングが合わない場合
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      配信での使い方
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -4846,14 +4903,71 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      設定可能な範囲
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       使うとき
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      よくある質問
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="よくある質問">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      字幕が表示されない場合
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      音声と字幕のタイミングが合わない場合
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      配信での使い方
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -4884,7 +4998,8 @@
 <h2 id="_1">このプラグインで出来ること<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>表示を遅らせることができます</li>
-<li>発話などに合わせるために時間をずらすことができます。</li>
+<li>読み上げ音声に合わせて字幕のタイミングを調整できます</li>
+<li>配信の遅延に合わせて表示タイミングを調整できます</li>
 </ul>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p><img alt="ファイル" src="../images/plugin_delay_p1.png" /></p>
@@ -4903,15 +5018,38 @@
 <tbody>
 <tr>
 <td style="text-align: left;">遅延時間</td>
-<td style="text-align: left;">表示を遅らせる時間をミリ秒で指定します</td>
+<td style="text-align: left;">表示を遅らせる時間をミリ秒で指定します（スライダーで調整可能）</td>
 </tr>
 <tr>
 <td style="text-align: left;">変換過程を遅延させる</td>
 <td style="text-align: left;">変換過程を遅延させます。確定のみ表示ではないかたはこちらを使うとよいですが、全体的な動作が遅延するので相性問題があります。</td>
 </tr>
+<tr>
+<td style="text-align: left;">ヘルプボタン</td>
+<td style="text-align: left;">オンラインヘルプへのアクセス（？マーク）</td>
+</tr>
 </tbody>
 </table>
-<h2 id="_4">使うとき<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="_4">設定可能な範囲<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">遅延時間</td>
+<td style="text-align: left;">0秒～30秒（スライダーで細かく調整可能）</td>
+</tr>
+<tr>
+<td style="text-align: left;">更新タイミング</td>
+<td style="text-align: left;">リアルタイム（0.1秒ごとに確認）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">使うとき<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <ul>
 <li>遅延時間を設定しプラグインを使うチェックをONにするだけで遅延が反映されます。</li>
 </ul>
@@ -4922,6 +5060,22 @@
 <li>一般的には発話プラグインより後ろ側に遅延プラグインを置きます。</li>
 </ul>
 </div>
+<h2 id="_6">よくある質問<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">字幕が表示されない場合<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>遅延時間が長すぎる可能性があります。短く設定してみてください</li>
+<li>プラグインが有効（チェックON）になっているか確認してください</li>
+</ul>
+<h3 id="_8">音声と字幕のタイミングが合わない場合<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>スライダーで遅延時間を細かく調整してください</li>
+<li>読み上げプラグインがある場合は、このプラグインを読み上げプラグインより後に配置してください</li>
+</ul>
+<h3 id="_9">配信での使い方<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>配信ソフトの遅延時間を確認して、それに合わせて遅延時間を設定してください</li>
+<li>YouTube Live、Twitch等、プラットフォームによって遅延時間が異なります</li>
+</ul>
 
 
 

@@ -2151,10 +2151,58 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      読み上げ設定
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      特殊機能
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="特殊機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      棒読みちゃんに従う（Defaultボタン）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      ひらがなベースで読み上げ
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       使うとき
     </span>
@@ -4846,10 +4894,58 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      読み上げ設定
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      特殊機能
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="特殊機能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default" class="md-nav__link">
+    <span class="md-ellipsis">
+      棒読みちゃんに従う（Defaultボタン）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      ひらがなベースで読み上げ
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       使うとき
     </span>
@@ -4893,53 +4989,81 @@
 </ul>
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p><img alt="棒読み" src="../images/plugin_bouyomi_p2.png" /></p>
+<h3 id="_4">読み上げ設定<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">設定</th>
-<th style="text-align: left;">意味</th>
+<th style="text-align: left;">設定項目</th>
+<th style="text-align: left;">説明</th>
+<th style="text-align: left;">設定値</th>
+<th style="text-align: left;">デフォルト</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">読み上げる内容</td>
-<td style="text-align: left;">何を読み上げさせるか指示します</td>
+<td style="text-align: left;">何を読み上げさせるか選択</td>
+<td style="text-align: left;">原文のみ/翻訳のみ/両方</td>
+<td style="text-align: left;">原文のみ</td>
 </tr>
 <tr>
 <td style="text-align: left;">通信方式</td>
-<td style="text-align: left;">HTTPかTCPを選べます。HTTPのほうが安定している報告が多いです</td>
+<td style="text-align: left;">棒読みちゃんとの通信方法</td>
+<td style="text-align: left;">HTTP/TCP</td>
+<td style="text-align: left;">HTTP推奨</td>
 </tr>
 <tr>
 <td style="text-align: left;">ポート</td>
-<td style="text-align: left;">棒読みちゃんの通信ポートを指定します</td>
+<td style="text-align: left;">棒読みちゃんの通信ポート</td>
+<td style="text-align: left;">数値</td>
+<td style="text-align: left;">50001</td>
 </tr>
 <tr>
 <td style="text-align: left;">音声ID</td>
-<td style="text-align: left;">使う声の種類を指定します</td>
+<td style="text-align: left;">使用する音声の種類</td>
+<td style="text-align: left;">数値</td>
+<td style="text-align: left;">0（デフォルト音声）</td>
 </tr>
 <tr>
 <td style="text-align: left;">音量</td>
-<td style="text-align: left;">音量を指定します。-1を指定すると棒読みちゃんの設定を優先します</td>
+<td style="text-align: left;">再生音量</td>
+<td style="text-align: left;">0-100 または -1</td>
+<td style="text-align: left;">50 （-1で棒読みちゃん設定優先）</td>
 </tr>
 <tr>
 <td style="text-align: left;">話速</td>
-<td style="text-align: left;">速さを指定します。-1を指定すると棒読みちゃんの設定を優先します</td>
+<td style="text-align: left;">読み上げ速度</td>
+<td style="text-align: left;">0-200 または -1</td>
+<td style="text-align: left;">100 （-1で棒読みちゃん設定優先）</td>
 </tr>
 <tr>
 <td style="text-align: left;">トーン</td>
-<td style="text-align: left;">トーンを指定します。-1を指定すると棒読みちゃんの設定を優先します</td>
+<td style="text-align: left;">音声のトーン（高さ）</td>
+<td style="text-align: left;">0-200 または -1</td>
+<td style="text-align: left;">100 （-1で棒読みちゃん設定優先）</td>
 </tr>
 <tr>
 <td style="text-align: left;">ディレイ</td>
-<td style="text-align: left;">どれぐらい遅らせて話始めるかを指定します</td>
-</tr>
-<tr>
-<td style="text-align: left;">ひらがなベースで読み上げ</td>
-<td style="text-align: left;">・IME辞書をつかって漢字をすべてひらがなに変換して渡します。<br>・UDトーク併用時は認識時のひらがなに直します</td>
+<td style="text-align: left;">読み上げ開始の遅延時間</td>
+<td style="text-align: left;">ミリ秒</td>
+<td style="text-align: left;">0</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_4">使うとき<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="_5">特殊機能<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h4 id="default">棒読みちゃんに従う（Defaultボタン）<a class="headerlink" href="#default" title="Permanent link">&para;</a></h4>
+<ul>
+<li>全ての音声設定を棒読みちゃんのデフォルト値に一括設定</li>
+<li>音量・話速・トーンが全て -1 に設定される</li>
+<li>棒読みちゃん側の設定で音声を統一制御したい場合に便利</li>
+</ul>
+<h4 id="_6">ひらがなベースで読み上げ<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>チェック時</strong>: IME辞書で漢字を全てひらがなに変換してから送信</li>
+<li><strong>UDトーク併用時</strong>: 認識時のひらがな読みを直接使用</li>
+<li>読み間違いの軽減に効果的</li>
+</ul>
+<h2 id="_7">使うとき<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <ol>
 <li>棒読みちゃんを立ち上げます。</li>
 <li>ゆかコネNEOで音声認識をしましょう。</li>

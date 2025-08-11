@@ -2434,7 +2434,58 @@
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      使うとき
+      よく使うパターン例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="よく使うパターン例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      言い間違いの修正
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      専門用語の分かりやすい言葉への変更
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      不適切な言葉のフィルタ
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本的な使い方
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      よくある質問
     </span>
   </a>
   
@@ -4887,7 +4938,58 @@
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      使うとき
+      よく使うパターン例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="よく使うパターン例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      言い間違いの修正
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      専門用語の分かりやすい言葉への変更
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      不適切な言葉のフィルタ
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本的な使い方
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      よくある質問
     </span>
   </a>
   
@@ -4919,7 +5021,9 @@
 </div>
 <h2 id="_1">このプラグインで出来ること<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
-<li>認識後の文字を強制的に置き換えることができます</li>
+<li>認識された文字を自動的に置き換えることができます</li>
+<li>言い間違いや不適切な言葉を修正できます</li>
+<li>専門用語を分かりやすい言葉に変換できます</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">この置換機能について</p>
@@ -4952,11 +5056,11 @@
 </tr>
 <tr>
 <td style="text-align: left;">置換前</td>
-<td style="text-align: left;">正規表現を使って適用条件をきめます。正規表現以外でもつかえます</td>
+<td style="text-align: left;">置き換えたい文字や言葉を入力します</td>
 </tr>
 <tr>
 <td style="text-align: left;">置換後</td>
-<td style="text-align: left;">一致した条件を置きかえる文字を指定します</td>
+<td style="text-align: left;">置き換え後の文字や言葉を入力します</td>
 </tr>
 <tr>
 <td style="text-align: left;">モード</td>
@@ -4974,10 +5078,41 @@
 <ul>
 <li>ゆかりねっとが入っている場合は、インポートボタンを押すことで自動取り込みします。</li>
 </ul>
-<h2 id="_6">使うとき<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h2 id="_6">よく使うパターン例<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">言い間違いの修正<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>「です」→「だ」（関西弁風に変更）</li>
+<li>「えー」→「」（削除）</li>
+<li>「あの」→「」（削除）</li>
+</ul>
+<h3 id="_8">専門用語の分かりやすい言葉への変更<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>「API」→「アプリの接続機能」</li>
+<li>「レスポンシブ」→「画面サイズに合わせて表示を変える」</li>
+<li>「UI」→「画面デザイン」</li>
+</ul>
+<h3 id="_9">不適切な言葉のフィルタ<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>特定の言葉を「****」に置き換える</li>
+</ul>
+<h2 id="_10">基本的な使い方<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
 <ol>
-<li>音声認識と同時に置換されます。</li>
+<li>「置換前」に変更したい言葉を入力</li>
+<li>「置換後」に変更後の言葉を入力</li>
+<li>「有効」にチェックを入れる</li>
+<li>「テスト」で動作を確認</li>
 </ol>
+<div class="admonition tip">
+<p class="admonition-title">初心者の方へ</p>
+<p>複雑な正規表現は使わずに、そのまま文字を入力するだけでも十分に機能します。例：「です」→「だ」</p>
+</div>
+<h2 id="_11">よくある質問<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<p><strong>Q: 正規表現って何ですか？</strong><br />
+A: 文字列の検索パターンを指定する書き方ですが、普通の文字をそのまま入力するだけでも使えます。</p>
+<p><strong>Q: うまく置換されません</strong><br />
+A: 「テスト」機能で確認してみてください。大文字・小文字や全角・半角の違いも確認してください。</p>
+<p><strong>Q: 設定がたくさんあって分かりません</strong><br />
+A: まずは簡単な例（「です」→「だ」など）から始めてみてください。</p>
 
 
 

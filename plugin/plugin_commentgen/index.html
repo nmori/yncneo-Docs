@@ -2933,10 +2933,58 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      書き出し先設定
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      出力タイプ設定
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      動作について
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="動作について">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      自動更新機能
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       使い方
     </span>
@@ -4846,10 +4894,58 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      書き出し先設定
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      出力タイプ設定
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      動作について
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="動作について">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      自動更新機能
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       使い方
     </span>
@@ -4891,20 +4987,100 @@
 <li>プラグインを使うチェックをONにしてください。</li>
 </ul>
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<ol>
-<li>コメントジェネレータを入手します</li>
-<li>コメントジェネレータのあるフォルダを書き出し先に指定します。</li>
-<li>表示する言語を設定します。</li>
-</ol>
 <p><img alt="再生" src="../images/plugin_commentgen_p2.png" /></p>
+<h3 id="_4">書き出し先設定<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">設定項目</th>
+<th style="text-align: left;">説明</th>
+<th style="text-align: left;">操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">出力ディレクトリ</td>
+<td style="text-align: left;">comment.xmlを出力するフォルダパス</td>
+<td style="text-align: left;">テキスト入力またはフォルダ選択</td>
+</tr>
+<tr>
+<td style="text-align: left;">フォルダ選択ボタン（…）</td>
+<td style="text-align: left;">ディレクトリを参照選択</td>
+<td style="text-align: left;">ダイアログでフォルダを選択</td>
+</tr>
+</tbody>
+</table>
 <div class="admonition info">
-<p class="admonition-title">書き出し先</p>
+<p class="admonition-title">書き出し先について</p>
 <ul>
-<li>指定したフォルダに comment.xmlを吐き出します。</li>
-<li>すでにあるファイルに上書きします（が、通常問題ありません）</li>
+<li>指定したフォルダに <code>comment.xml</code> を出力します</li>
+<li>既存ファイルは自動的に上書きされます（通常問題なし）</li>
+<li>コメントジェネレータと同じフォルダを指定してください</li>
 </ul>
 </div>
-<h2 id="_4">使い方<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="_5">出力タイプ設定<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">設定項目</th>
+<th style="text-align: left;">モード番号</th>
+<th style="text-align: left;">説明</th>
+<th style="text-align: left;">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">母国語 (Native)</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">音声認識した原文のみ</td>
+<td style="text-align: left;">日本語配信</td>
+</tr>
+<tr>
+<td style="text-align: left;">翻訳1 (Translation 1)</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">翻訳1の結果のみ</td>
+<td style="text-align: left;">単一言語配信</td>
+</tr>
+<tr>
+<td style="text-align: left;">翻訳2 (Translation 2)</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">翻訳2の結果のみ</td>
+<td style="text-align: left;">単一言語配信</td>
+</tr>
+<tr>
+<td style="text-align: left;">翻訳3 (Translation 3)</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">翻訳3の結果のみ</td>
+<td style="text-align: left;">単一言語配信</td>
+</tr>
+<tr>
+<td style="text-align: left;">翻訳4 (Translation 4)</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">翻訳4の結果のみ</td>
+<td style="text-align: left;">単一言語配信</td>
+</tr>
+<tr>
+<td style="text-align: left;">両方 (Native + Translation 1)</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">母国語と翻訳1を同時出力</td>
+<td style="text-align: left;">バイリンガル配信</td>
+</tr>
+<tr>
+<td style="text-align: left;">読み上げAPI (Speech API)</td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">音声合成用テキスト</td>
+<td style="text-align: left;">読み上げ連携</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">動作について<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h4 id="_7">自動更新機能<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>リアルタイム更新</strong>: 音声認識結果が1秒ごとに字幕ファイルに反映</li>
+<li><strong>履歴管理</strong>: 過去の音声認識結果から最新40件を自動管理</li>
+<li><strong>配信対応</strong>: OBSなどの配信ソフトでそのまま表示可能</li>
+</ul>
+<h2 id="_8">使い方<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
 <ol>
 <li>コメントジェネレータを入手します</li>
 <li>CommentGenerator.html　を　配信ソフトなどで読み込みます<ul>
