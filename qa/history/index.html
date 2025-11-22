@@ -5184,6 +5184,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v231" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.0
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v2270" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -11235,6 +11257,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v231" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v230" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.0
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v2270" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -16785,6 +16829,80 @@
 
 
 <h1 id="_1">更新履歴<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="v231">v2.3.1<a class="headerlink" href="#v231" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>・本体
+　ゆーかねすぴれこの重複起動を修正
+</code></pre></div>
+<h2 id="v230">v2.3.0<a class="headerlink" href="#v230" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>・スタートアップ登録の機能を追加
+・タスクトレイへの機能追加
+・UDトークIDのコピーができるように
+・わんコメWordPartyをつかって、音声認識結果にもとづく演出をできるようにしました。
+・わんコメ連携プラグインのUIを調整
+・ブラウザを管理者権限で起動できるオプション追加
+・ソフトウェア部品のアップデート（脆弱性対応）
+・ブラウザの位置再現性（これは調整中。まだうまくいかないかも）
+・ゆかコネ４期生を追加
+・マルチディスプレイ時のブラウザウィンドウ位置復帰をアップデート
+・わんコメ連携プラグイン
+　①WordPartyのアクションID指定をする方向に実装変更
+　②発話途中でのアクション起動などに対応
+・ローカルエンジンの選択を追加
+・OSC送信周りをちょっと修正
+・起動時にOBSで字幕が出ず、毎回テンプレを
+　張りなおさないといけない状況が
+　起きているケースへの緩和処理を追加
+・AivisSpeech /AivisSpeech Cloud の認識・制御周りを修正
+・ローカル翻訳エンジンの通信フォーマットにOpenAI互換を追加
+・ローカル翻訳エンジンの動作を修正
+　LM Studioと連動して翻訳できるようにした。
+・読み上げ応答系の調整を実施（応答が速くなっているはず）
+・会話の履歴プラグインを追加
+　履歴蓄積のほか、要約機能およびアドバイス機能を追加
+・やさしい日本語翻訳モードを追加
+・ソフトウェア部品のセキュリティアップデートで動かなくなったところを修正
+・日本語名入りのわんコメテンプレートが動かないケースがある件の修正
+・支援版翻訳に必要な通信ができなくなっている部分の修正
+　（支援版翻訳がうまく起動しない方はアップデート推奨）
+・一部設定の保存・反映に失敗している点の修正
+・ブラウザ翻訳API（Chrome）に対応。無料で翻訳品質をあげられます
+　[設定方法](https://nao.fanbox.cc/posts/10426129)
+・音源再生時にエラーで発話されない問題への対処
+・連携の通信周りの応答改善
+・UDトーク文字入力併用時にエラーが出る件の修正
+・Twitch プラグインのアップデート
+　－　字幕の転送有無を選択可能に
+　－　ダイジェスト（要約）を転送可能に
+・わんコメ連携プラグインの調整
+　ー　結果のみ送るように（暫定変更。トラブル報告がなくなれば確定仕様へ）
+・やさしい日本語変換の調整
+　ー　簡潔にするよう指示追加
+・Discord音声転送を安定化させました。
+・条件一致して再生を続けるうちに、再生されなくなる不具合の修正
+・条件一致のキューイングを追加
+　※現時点では、最初に一致した条件をキューイングします。
+　（複数条件があった場合は、文章確定時最初に一致する条件が採用されます。
+　　今後リクエストをみながら、動作モードを調整予定）
+・音声認識時、文字確定せずに削除されたパターンを含む文章で
+　文章確定がなされないことがある件を修正
+　・文章確定の判定を見直し
+　・細分化抑制がうまく機能しなかった点を修正
+・音ありテンプレートの追加
+・色変更プラグインの追加
+・GUIの点滅をとめるオプションを追加
+・プラグインのロード失敗に対応
+・Gemini API のモデル選択リストを修正
+・Gemini 翻訳エンジンリストを更新
+・VoiSona Talkに対応
+・翻訳通信エラーの状態をステータス表示に出せるよう調整
+・ブラウザ翻訳を指定している場合は、
+　起動時に自動的にウィンドウを開くように動作変更
+・色ダイアログの表示をわかりやすく
+・透明色設定されているかを色パレットで見やすくした
+・インストール時、導入するプラグインを選択できるように
+・インストールサイズを小さくできるように
+・インストーラ自体も少しサイズダウン 
+</code></pre></div>
 <h2 id="v2270">v2.2.70<a class="headerlink" href="#v2270" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>・本体
 　UDトーク連携時に不要な文字列が混ざる件の修正
