@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../FAQ_TROUBLESHOOTING/">
+      
+      
+        <link rel="next" href="../QUICKSTART_SCENARIOS/">
       
       
         
@@ -23,7 +27,7 @@
     
     
       
-        <title>ゆかコネNEO プラグインリファレンス - ゆかコネ｜リアルタイム字幕・翻訳ツール</title>
+        <title>プラグイン - ゆかコネ｜リアルタイム字幕・翻訳ツール</title>
       
     
     
@@ -121,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ゆかコネNEO プラグインリファレンス
+              プラグイン
             
           </span>
         </div>
@@ -360,11 +364,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../index.md" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../INDEX/" class="md-tabs__link">
           
   
   
@@ -5611,8 +5617,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -5632,17 +5640,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -5660,7 +5671,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -5678,7 +5689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.md" class="md-nav__link">
+      <a href="../INDEX/" class="md-nav__link">
         
   
   
@@ -5706,7 +5717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../faq_troubleshoot.md" class="md-nav__link">
+      <a href="../FAQ_TROUBLESHOOTING/" class="md-nav__link">
         
   
   
@@ -5731,10 +5742,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../plugins_reference.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    プラグイン
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -5750,6 +5788,770 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プラグインアーキテクチャ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="プラグインアーキテクチャ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本構造
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        設定画面の共通パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audiotts-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio/TTS Plugins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Audio/TTS Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plugin_playvoice-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_PlayVoice - 読み上げプラグイン
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_PlayVoice - 読み上げプラグイン">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 6タブ構成
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_bouyomi-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_Bouyomi - 棒読みちゃん連携
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_Bouyomi - 棒読みちゃん連携">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: シンプル(単一GroupBox)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_playsound-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_PlaySound - 効果音再生
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_PlaySound - 効果音再生">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox-datagridview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: GroupBox + DataGridView
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#streaming-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Streaming Plugins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Streaming Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plugin_obs5-obs-studio-v28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_OBS5 - OBS Studio v28+対応
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_OBS5 - OBS Studio v28+対応">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox-statusbar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 複数GroupBox + StatusBar
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_discord-discord" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_Discord - Discord連携
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_Discord - Discord連携">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 複数GroupBox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_twitch-twitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_Twitch - Twitch連携
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_Twitch - Twitch連携">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-2groupbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 2つのGroupBox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vrmetaverse-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VR/Metaverse Plugins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VR/Metaverse Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plugin_vrchat_osc-vrchat-osc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_VRCHAT_OSC - VRChat OSC連携
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_VRCHAT_OSC - VRChat OSC連携">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 3タブ構成
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_vcas-virtualcast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_VCas - VirtualCast連携
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_VCas - VirtualCast連携">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 複数タブ + GroupBox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-processing-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text Processing Plugins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Processing Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plugin_dictionary-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_Dictionary - 辞書プラグイン
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_Dictionary - 辞書プラグイン">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 複数GroupBox + テスト領域
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_regexp-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_RegExp - 正規表現プラグイン
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_RegExp - 正規表現プラグイン">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-3groupbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 3つのGroupBox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_hotkey-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_HotKey - ホットキー対応
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_HotKey - ホットキー対応">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox-datagridview_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 単一GroupBox + DataGridView
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aicloud-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI/Cloud Plugins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI/Cloud Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plugin_gpt3-chatgptgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_GPT3 - ChatGPT/GPT統合
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_GPT3 - ChatGPT/GPT統合">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 7タブ構成
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_httpcall-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_HTTPCall - HTTP呼び出し
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_HTTPCall - HTTP呼び出し">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 単一GroupBox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_notion-notion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_Notion - Notion連携
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_Notion - Notion連携">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: シンプル(単一GroupBox)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_talkhistory-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_TalkHistory - 会話履歴管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_TalkHistory - 会話履歴管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-4groupbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 4つのGroupBox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utility-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utility Plugins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utility Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plugin_exporter-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_Exporter - データエクスポート
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_Exporter - データエクスポート">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 複数GroupBox + ステータスバー
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        共通UI操作パターン
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共通UI操作パターン">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#datagridview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DataGridViewの操作
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSV入出力
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        接続系プラグインの操作
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        テスト機能
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プラグイン別公式ドキュメント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="プラグイン別公式ドキュメント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        読み上げ系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        配信連携系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VR/メタバース系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プラットフォーム連携系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        テキスト処理系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API/ツール系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        関連ドキュメント
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -5762,7 +6564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quickstart_scenarios.md" class="md-nav__link">
+      <a href="../QUICKSTART_SCENARIOS/" class="md-nav__link">
         
   
   
@@ -5790,7 +6592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setting_reference.md" class="md-nav__link">
+      <a href="../SETTINGS_REFERENCE/" class="md-nav__link">
         
   
   
@@ -5818,7 +6620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ync_neo_gui_reference.md" class="md-nav__link">
+      <a href="../YNC_NEO_GUI_REFERENCE/" class="md-nav__link">
         
   
   
@@ -8931,6 +9733,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="フッター" >
+        
+          
+          <a href="../FAQ_TROUBLESHOOTING/" class="md-footer__link md-footer__link--prev" aria-label="前: トラブルシュート">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                前
+              </span>
+              <div class="md-ellipsis">
+                トラブルシュート
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../QUICKSTART_SCENARIOS/" class="md-footer__link md-footer__link--next" aria-label="次: クイックスタート">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                次
+              </span>
+              <div class="md-ellipsis">
+                クイックスタート
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
