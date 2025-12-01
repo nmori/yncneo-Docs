@@ -1,0 +1,8988 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="音声認識と翻訳で多言語配信を支援する「ゆかコネNEO」の公式ガイド">
+      
+      
+        <meta name="author" content="nao">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>ゆかコネNEO プラグインリファレンス - ゆかコネ｜リアルタイム字幕・翻訳ツール</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-8VEJJC6B3D"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-8VEJJC6B3D",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-8VEJJC6B3D",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#neo" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="ゆかコネ｜リアルタイム字幕・翻訳ツール" class="md-header__button md-logo" aria-label="ゆかコネ｜リアルタイム字幕・翻訳ツール" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ゆかコネ｜リアルタイム字幕・翻訳ツール
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ゆかコネNEO プラグインリファレンス
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ライトモードに切り替えます。"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="ライトモードに切り替えます。" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="ダークモードに切り替えます。"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="ダークモードに切り替えます。" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="オートモードに切り替えます。"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="オートモードに切り替えます。" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  ゆかコネ▼
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guide/start/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  カンタンな使い方▼
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../startup/startup_basic/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ドキュメント▼
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ambasador/ambasador_member/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  メンバー▼
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../qa/before_help/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  困ったときは▼
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../index.md" class="md-tabs__link">
+          
+  
+  
+    
+  
+  AIエージェント向け▼
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ゆかコネ｜リアルタイム字幕・翻訳ツール" class="md-nav__button md-logo" aria-label="ゆかコネ｜リアルタイム字幕・翻訳ツール" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    ゆかコネ｜リアルタイム字幕・翻訳ツール
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ゆかコネ▼
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ゆかコネ▼
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about_ync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ゆかコネとは
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spec/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    できること
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../download/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ダウンロード
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usecase/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    利用者の声
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../system_info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    利用規約
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../licensing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ライセンス表記
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qa/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    よくある質問
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    カンタンな使い方▼
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    カンタンな使い方▼
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    使い方ガイド
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    使い方ガイド
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ゆかコネでできること
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5分クイックスタート
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_startup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    はじめての設定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    英語字幕を出す方法
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    英語字幕を出す方法
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_en/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    無料で英語翻訳を出す
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_en_sp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    支援版で高品質翻訳
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配信で使う
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    配信で使う
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_import_obs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配信ソフトに取り込む
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_obs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OBSできれいに出す
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VR連携
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    VR連携
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_vrchat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VRChatのチャットとつなぐ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    他サービス連携
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    他サービス連携
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_onecomme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    わんコメとの連動
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_yukari/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ゆかりねっとと繋ぐ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_tanu3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    たぬえさ３を呼び出す
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    コラボ字幕
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    コラボ字幕
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_colab_discord/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Discord経由でコラボ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_colab_udtalk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UDトーク経由でコラボ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_colab_rd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    画面共有でコラボ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    便利な使い方
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    便利な使い方
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_streamdeck/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    StreamDeckで操作する
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_aiassistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AIアシスタントを作る
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_onetemplate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    わんコメテンプレートを使う
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ドキュメント▼
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ドキュメント▼
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    設定について
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    設定について
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../startup/startup_basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    標準設定項目
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../startup/startup_option/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    オプション設定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../startup/startup_layout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    レイアウト
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../startup/startup_gas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GASの設定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../startup/startup_asr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    音声認識できないとき
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    支援について
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    支援について
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/support_summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    支援の概要
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/support_howto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    支援の仕方
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/support_enabled/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    支援機能の有効化
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    設計思想と仕組み
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    設計思想と仕組み
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/talk_quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    言葉の精度向上方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design/plugin_rule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    プラグインの動作
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../plugin/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    プラグイン
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    プラグイン
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/enabled/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    有効化
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_3" id="__nav_3_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    読み上げ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    読み上げ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_bouyomi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    棒読みちゃん連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_softalk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Softalk読み上げ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_playvoice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    読み上げ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_4" id="__nav_3_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    サウンド
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    サウンド
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_MediaPlayer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    動画再生
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_playsound/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    音源再生
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_5" id="__nav_3_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    認識の修正や変換
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    認識の修正や変換
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_dictionary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    辞書
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_regexp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    正規表現
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_nomlish/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ノムリッシュ変換
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_ConvertString/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    文字変換
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_forcestyle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    強制整形
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_ruby/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ルビ付与
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_viewcompat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ゆかコネ互換
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_GPT3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GPT3整形/AIアシスタント
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_6" id="__nav_3_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    表示関連
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    表示関連
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_browser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    内蔵ブラウザ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_LyricAssist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    歌詞支援
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_photopickup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    フォト読み込み
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_viewextend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    表示拡張(スタンプ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_regexp_color/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    色の変更(β)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_delay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    遅延
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_7" id="__nav_3_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows連携
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Windows連携
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_clipboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    クリップボード連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_midiinput/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MIDI入力
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_hotkey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ホットキー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_8" id="__nav_3_4_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配信（OBS・コメント)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    配信（OBS・コメント)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_commentgen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    コメジェネ連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_OBSFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配信ソフト向けテキスト出力
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_OBS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OBS連携 WSv4（～OBS27)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_OBS5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OBS連携 WSv5（OBS28～)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_9" id="__nav_3_4_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    アプリ連携
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    アプリ連携
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_OCTemplateGen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    わんコメテンプレ連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/Plugin_OCComm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    わんコメ連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_vanii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VaNiiツール連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_vroverlay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VRオーバーレイ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_vmc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ばもきゃ連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_MTGCard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MTGカード支援
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_VtubeStudio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VTubeStudio連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_10" id="__nav_3_4_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    プラットフォーム連携
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    プラットフォーム連携
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_cluster_wtrig/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    clusterウェブトリガ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_clustertransfer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    clusterチャット転送
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_vcas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    バーチャルキャスト連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_vrchat_osc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VRChat OSC連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_neosvr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NeosVR 連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_dicord/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Discord BOT連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_dicordwebhook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Discord Webhook連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_notion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notion連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_twitch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Twitchチャット連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_youtube/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    YouTube Live字幕送信
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_youtubetimecode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    YouTube タイムコード生成
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_zoom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZOOM連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_slackwebhook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Slack Webhook連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_teamswebhook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teams Webhook連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_comscr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    コメントスクリーン連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_11" id="__nav_3_4_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API・ツール拡張
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    API・ツール拡張
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_transSrv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    翻訳・発話連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_httpcall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HTTPコール
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_wscall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WebSocketコール
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_udpunit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UDP通信
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_exporter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ファイル出力
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_talkhistory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    会話の記録
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_pythonunit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_12" id="__nav_3_4_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    つかいやすさ向上
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    つかいやすさ向上
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_directinput/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    直接入力
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_InputAssist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    入力支援
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_startup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    起動支援
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_update/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    アップデート通知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    システムVerUP
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    システムVerUP
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mig/mig_neo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ゆかコネ→NEO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mig/mig_neo_v2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NEO v1.9→v2.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mig/mig_neo_v21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NEO v2.0→v2.1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mig/mig_neo_v22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NEO v2.1→v2.2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mig/mig_neo_v23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NEO v2.2→v2.3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    技術者向け
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    技術者向け
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tech/tech_option_neo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    起動オプション
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tech/tech_api_neo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    本体内蔵API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tech/tech_api_plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    プラグイン系API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qa/history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    開発履歴
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fanbox_supporter/supporter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    支援者
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    メンバー▼
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    メンバー▼
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ambasador/ambasador_member/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    活動メンバー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ambasador/ambasador_expired/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    卒業メンバー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../supporter/supporter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    開発サイド
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qa/collaborator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    協力者
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ambasador/ambasador_report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    活動レポート
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    困ったときは▼
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    困ったときは▼
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qa/before_help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ヘルプが欲しいとき
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qa/reinstall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    再インストール
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qa/report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    不具合を発見した時
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qa/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    こんなときは
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qa/ts_onecomme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    わんコメ連携できない時
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qa/support_lv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    サポートレベル表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AIエージェント向け▼
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AIエージェント向け▼
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    検索インデックス
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq_troubleshoot.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    トラブルシュート
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugins_reference.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    プラグイン
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart_scenarios.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    クイックスタート
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setting_reference.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    設定
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ync_neo_gui_reference.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GUI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プラグインアーキテクチャ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="プラグインアーキテクチャ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本構造
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        設定画面の共通パターン
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audiotts-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audio/TTS Plugins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Audio/TTS Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plugin_playvoice-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_PlayVoice - 読み上げプラグイン
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_PlayVoice - 読み上げプラグイン">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 6タブ構成
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_bouyomi-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_Bouyomi - 棒読みちゃん連携
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_Bouyomi - 棒読みちゃん連携">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: シンプル(単一GroupBox)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_playsound-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_PlaySound - 効果音再生
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_PlaySound - 効果音再生">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox-datagridview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: GroupBox + DataGridView
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#streaming-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Streaming Plugins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Streaming Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plugin_obs5-obs-studio-v28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_OBS5 - OBS Studio v28+対応
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_OBS5 - OBS Studio v28+対応">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox-statusbar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 複数GroupBox + StatusBar
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_discord-discord" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_Discord - Discord連携
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_Discord - Discord連携">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 複数GroupBox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_twitch-twitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_Twitch - Twitch連携
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_Twitch - Twitch連携">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-2groupbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 2つのGroupBox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vrmetaverse-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VR/Metaverse Plugins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VR/Metaverse Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plugin_vrchat_osc-vrchat-osc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_VRCHAT_OSC - VRChat OSC連携
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_VRCHAT_OSC - VRChat OSC連携">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 3タブ構成
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_vcas-virtualcast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_VCas - VirtualCast連携
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_VCas - VirtualCast連携">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 複数タブ + GroupBox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-processing-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text Processing Plugins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Processing Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plugin_dictionary-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_Dictionary - 辞書プラグイン
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_Dictionary - 辞書プラグイン">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 複数GroupBox + テスト領域
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_regexp-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_RegExp - 正規表現プラグイン
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_RegExp - 正規表現プラグイン">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-3groupbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 3つのGroupBox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_hotkey-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_HotKey - ホットキー対応
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_HotKey - ホットキー対応">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox-datagridview_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 単一GroupBox + DataGridView
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aicloud-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI/Cloud Plugins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI/Cloud Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plugin_gpt3-chatgptgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_GPT3 - ChatGPT/GPT統合
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_GPT3 - ChatGPT/GPT統合">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 7タブ構成
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_httpcall-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_HTTPCall - HTTP呼び出し
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_HTTPCall - HTTP呼び出し">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 単一GroupBox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_notion-notion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_Notion - Notion連携
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_Notion - Notion連携">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: シンプル(単一GroupBox)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plugin_talkhistory-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_TalkHistory - 会話履歴管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_TalkHistory - 会話履歴管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-4groupbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 4つのGroupBox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utility-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utility Plugins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utility Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plugin_exporter-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugin_Exporter - データエクスポート
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugin_Exporter - データエクスポート">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configwindow-groupbox_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigWindow構造: 複数GroupBox + ステータスバー
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        共通UI操作パターン
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共通UI操作パターン">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#datagridview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DataGridViewの操作
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSV入出力
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        接続系プラグインの操作
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        テスト機能
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プラグイン別公式ドキュメント
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="プラグイン別公式ドキュメント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        読み上げ系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        配信連携系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VR/メタバース系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プラットフォーム連携系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        テキスト処理系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API/ツール系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        関連ドキュメント
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="neo">ゆかコネNEO プラグインリファレンス<a class="headerlink" href="#neo" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>プラグインの設定は ConfigWindow (設定画面) を通じて行います。
+設定ファイルの直接編集は推奨されません。</p>
+</blockquote>
+<p><strong>公式ドキュメント</strong>: <a href="../../plugin/enabled/">プラグインの使い方</a> / <a href="../../plugin/">プラグイン一覧</a></p>
+<hr />
+<h2 id="_1">プラグインアーキテクチャ<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">基本構造<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>すべてのプラグインは <code>PluginFunction</code> 基底クラスを継承し、以下のライフサイクルメソッドを持ちます：</p>
+<table>
+<thead>
+<tr>
+<th>メソッド</th>
+<th>タイミング</th>
+<th>目的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>onLoad()</code></td>
+<td>起動時</td>
+<td>初期化、設定読み込み、GUI作成</td>
+</tr>
+<tr>
+<td><code>UpdateText(textdata)</code></td>
+<td>テキスト受信時</td>
+<td>テキストの処理・変換</td>
+</tr>
+<tr>
+<td><code>onTrigger(command)</code></td>
+<td>コマンド受信時</td>
+<td>プラグイン間コマンド処理</td>
+</tr>
+<tr>
+<td><code>onTerminate()</code></td>
+<td>終了時</td>
+<td>設定保存、リソース解放</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_3">設定画面の共通パターン<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>全プラグインのConfigWindowは以下の共通要素を持ちます：
+- <strong>OKボタン</strong>: 設定を保存して閉じる
+- <strong>Cancelボタン</strong>: 変更を破棄して閉じる
+- <strong>?ボタン</strong> (openHelp): ヘルプページを開く
+- <strong>Versionラベル</strong>: プラグインバージョン表示</p>
+<hr />
+<h2 id="audiotts-plugins">Audio/TTS Plugins<a class="headerlink" href="#audiotts-plugins" title="Permanent link">&para;</a></h2>
+<h3 id="plugin_playvoice-">Plugin_PlayVoice - 読み上げプラグイン<a class="headerlink" href="#plugin_playvoice-" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Multi-engine text-to-speech synthesis</p>
+<h4 id="configwindow-6">ConfigWindow構造: 6タブ構成<a class="headerlink" href="#configwindow-6" title="Permanent link">&para;</a></h4>
+<p><strong>タブ1: 基本設定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>使う読み上げエンジン</td>
+<td>ComboBox (<code>TTS_EngineDevice</code>)</td>
+<td>TTS エンジン選択</td>
+</tr>
+<tr>
+<td>読み上げ対象</td>
+<td>ComboBox (<code>TTS_SpeakMode</code>)</td>
+<td>母国語/翻訳/両方</td>
+</tr>
+<tr>
+<td>音声出力先</td>
+<td>ComboBox (<code>TTS_SpeakerDevice</code>)</td>
+<td>オーディオデバイス選択</td>
+</tr>
+<tr>
+<td>コントローラ選択</td>
+<td>ComboBox (<code>SelectSoundEngine</code>)</td>
+<td>PlayEngine/AssistantSeika</td>
+</tr>
+<tr>
+<td>ひらがなベース読み上げ</td>
+<td>CheckBox (<code>useHiragana</code>)</td>
+<td>かな変換有効化</td>
+</tr>
+<tr>
+<td>アルファベット読み上げフォロー</td>
+<td>CheckBox (<code>UseSpeakAssist</code>)</td>
+<td>英字読み上げ補助</td>
+</tr>
+<tr>
+<td>かわいい語尾設定</td>
+<td>TextBox (<code>KawaiiFixed</code>)</td>
+<td>語尾変換パターン</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: AssistantSeika接続設定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>アドレス</td>
+<td>TextBox (<code>SeikaAddr</code>)</td>
+<td>AssistantSeika接続先</td>
+</tr>
+<tr>
+<td>ID</td>
+<td>TextBox (<code>SeikaID</code>)</td>
+<td>認証ID</td>
+</tr>
+<tr>
+<td>パスワード</td>
+<td>TextBox (<code>SeikaPW</code>)</td>
+<td>認証パスワード</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: パラメータ設定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>範囲</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pitch</td>
+<td>TrackBar</td>
+<td>-</td>
+<td>音程</td>
+</tr>
+<tr>
+<td>Accent</td>
+<td>TrackBar</td>
+<td>-</td>
+<td>アクセント</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>TrackBar</td>
+<td>-</td>
+<td>話速</td>
+</tr>
+<tr>
+<td>Volume</td>
+<td>TrackBar</td>
+<td>-</td>
+<td>音量</td>
+</tr>
+<tr>
+<td>prePhoneme</td>
+<td>TrackBar</td>
+<td>-</td>
+<td>前音素</td>
+</tr>
+<tr>
+<td>postPhoneme</td>
+<td>TrackBar</td>
+<td>-</td>
+<td>後音素</td>
+</tr>
+<tr>
+<td>Kuten</td>
+<td>TrackBar</td>
+<td>-</td>
+<td>句点間隔</td>
+</tr>
+<tr>
+<td>Toten</td>
+<td>TrackBar</td>
+<td>-</td>
+<td>読点間隔</td>
+</tr>
+<tr>
+<td>Quality</td>
+<td>TrackBar</td>
+<td>-</td>
+<td>品質</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: CoeFont設定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AccessKey</td>
+<td>TextBox (<code>CoeFontAccessKey</code>)</td>
+<td>CoeFont APIキー</td>
+</tr>
+<tr>
+<td>ClientKey</td>
+<td>TextBox (<code>CoeFontClientKey</code>)</td>
+<td>クライアントキー</td>
+</tr>
+<tr>
+<td>プリセット</td>
+<td>ComboBox (<code>VoicePreset</code>)</td>
+<td>音声プリセット選択</td>
+</tr>
+<tr>
+<td>VoiceUUID</td>
+<td>TextBox (<code>CoeFontVoiceUUID</code>)</td>
+<td>音声ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ボタン操作</strong>:
+- <code>RestartEngine</code>: エンジン再起動
+- <code>ParamReset</code>: パラメータリセット
+- <code>ApplyButton</code>: 変更適用</p>
+<hr />
+<h3 id="plugin_bouyomi-">Plugin_Bouyomi - 棒読みちゃん連携<a class="headerlink" href="#plugin_bouyomi-" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Bouyomi-chan TTS integration</p>
+<h4 id="configwindow-groupbox">ConfigWindow構造: シンプル(単一GroupBox)<a class="headerlink" href="#configwindow-groupbox" title="Permanent link">&para;</a></h4>
+<p><strong>GroupBox: 読み上げ設定 (Settings)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>デフォルト</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>読み上げ対象言語</td>
+<td>ComboBox (<code>TTS_SpeakMode</code>)</td>
+<td>-</td>
+<td>母国語/翻訳1～4</td>
+</tr>
+<tr>
+<td>通信方式</td>
+<td>ComboBox (<code>BouyoumiMethod</code>)</td>
+<td>Socket</td>
+<td>Socket通信/HTTP通信</td>
+</tr>
+<tr>
+<td>通信ポート</td>
+<td>NumericUpDown (<code>BouyomiPort</code>)</td>
+<td>50001</td>
+<td>棒読みちゃんポート</td>
+</tr>
+<tr>
+<td>音声ID</td>
+<td>NumericUpDown (<code>BouyomiID</code>)</td>
+<td>0</td>
+<td>0～65535</td>
+</tr>
+<tr>
+<td>音量</td>
+<td>NumericUpDown (<code>BouyomiVolume</code>)</td>
+<td>-1</td>
+<td>-1=デフォルト</td>
+</tr>
+<tr>
+<td>話速</td>
+<td>NumericUpDown (<code>BouyomiSpeed</code>)</td>
+<td>-1</td>
+<td>-1=デフォルト</td>
+</tr>
+<tr>
+<td>トーン</td>
+<td>NumericUpDown (<code>BouyomiTone</code>)</td>
+<td>-1</td>
+<td>-1=デフォルト</td>
+</tr>
+<tr>
+<td>ディレイ(ms)</td>
+<td>NumericUpDown (<code>BouyomiDelay</code>)</td>
+<td>0</td>
+<td>遅延時間</td>
+</tr>
+<tr>
+<td>ひらがなベース</td>
+<td>CheckBox (<code>useHiragana</code>)</td>
+<td>OFF</td>
+<td>かな変換</td>
+</tr>
+</tbody>
+</table>
+<p><strong>音声ID一覧</strong>:
+- 0: 女性1
+- 1: 女性2
+- 2: 男性1
+- 3: 男性2
+- 4: 中性
+- 5: ロボット
+- 6: 機械</p>
+<p><strong>ボタン操作</strong>:
+- <code>setDefault</code>: 棒読みちゃんに従う（デフォルト設定適用）</p>
+<hr />
+<h3 id="plugin_playsound-">Plugin_PlaySound - 効果音再生<a class="headerlink" href="#plugin_playsound-" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Trigger sound effects based on conditions</p>
+<h4 id="configwindow-groupbox-datagridview">ConfigWindow構造: GroupBox + DataGridView<a class="headerlink" href="#configwindow-groupbox-datagridview" title="Permanent link">&para;</a></h4>
+<p><strong>上部設定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>出力先</td>
+<td>ComboBox (<code>TTS_SpeakerDevice</code>)</td>
+<td>オーディオ出力デバイス</td>
+</tr>
+<tr>
+<td>音楽は重複させない</td>
+<td>CheckBox (<code>isOnePlay</code>)</td>
+<td>同時再生制限</td>
+</tr>
+<tr>
+<td>サウンドは直接再生する</td>
+<td>CheckBox (<code>soundDirectly</code>)</td>
+<td>直接再生モード</td>
+</tr>
+</tbody>
+</table>
+<p><strong>DataGridView: 条件設定 (<code>dgv_Sound</code>)</strong></p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>モード(Mode)</td>
+<td>ComboBox</td>
+<td>完全/一部/無効</td>
+</tr>
+<tr>
+<td>起動キーワード(Keyword)</td>
+<td>TextBox</td>
+<td>トリガー文字列</td>
+</tr>
+<tr>
+<td>音源ファイル(File)</td>
+<td>TextBox</td>
+<td>音声ファイルパス</td>
+</tr>
+<tr>
+<td>再生前遅延(Delay[ms])</td>
+<td>TextBox</td>
+<td>再生前待機時間</td>
+</tr>
+<tr>
+<td>再生後遅延(Delay[ms])</td>
+<td>TextBox</td>
+<td>再生後待機時間</td>
+</tr>
+<tr>
+<td>再生モード(Play mode)</td>
+<td>ComboBox</td>
+<td>非同期(Async)/同期(Sync)</td>
+</tr>
+<tr>
+<td>文字差し替え(Replace)</td>
+<td>CheckBox</td>
+<td>テキスト置換有効</td>
+</tr>
+<tr>
+<td>読み上げ文字(Caption)</td>
+<td>TextBox</td>
+<td>置換後テキスト</td>
+</tr>
+<tr>
+<td>後処理(Pre/Post)</td>
+<td>CheckBox</td>
+<td>後処理フラグ</td>
+</tr>
+<tr>
+<td>TTS無効化(No TTS)</td>
+<td>CheckBox</td>
+<td>読み上げスキップ</td>
+</tr>
+</tbody>
+</table>
+<p><strong>CSV操作パネル</strong>:
+- <code>ロード(Load)</code>: CSVから読み込み
+- <code>セーブ(Save)</code>: CSVへ保存
+- <code>クリア(All Clear)</code>: 全削除</p>
+<p><strong>右クリックメニュー</strong>:
+- 行の上に挿入
+- 行の下に挿入
+- 上と入れ替え
+- 下と入れ替え
+- 削除
+- ファイルから読み込み</p>
+<hr />
+<h2 id="streaming-plugins">Streaming Plugins<a class="headerlink" href="#streaming-plugins" title="Permanent link">&para;</a></h2>
+<h3 id="plugin_obs5-obs-studio-v28">Plugin_OBS5 - OBS Studio v28+対応<a class="headerlink" href="#plugin_obs5-obs-studio-v28" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: OBS Studio WebSocket 5.x integration</p>
+<h4 id="configwindow-groupbox-statusbar">ConfigWindow構造: 複数GroupBox + StatusBar<a class="headerlink" href="#configwindow-groupbox-statusbar" title="Permanent link">&para;</a></h4>
+<p><strong>GroupBox: 接続 (Connect to)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>デフォルト</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>通信先アドレス</td>
+<td>TextBox (<code>OBSAddr</code>)</td>
+<td>127.0.0.1</td>
+<td>OBS WebSocket IP</td>
+</tr>
+<tr>
+<td>ポート番号</td>
+<td>NumericUpDown (<code>OBSPort</code>)</td>
+<td>4455</td>
+<td>WebSocket ポート</td>
+</tr>
+<tr>
+<td>パスワード</td>
+<td>TextBox (<code>OBSPass</code>)</td>
+<td>-</td>
+<td>WebSocket パスワード (マスク表示)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>接続ボタン</strong>:
+- <code>接続</code>: OBSに接続
+- <code>切断</code>: 接続解除
+- <code>自動設定</code>: ソース自動検出</p>
+<p><strong>GroupBox: 送信先 (Send to)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>母国語 (Native)</td>
+<td>ComboBox (<code>OBS_Transfer_Source1</code>)</td>
+<td>テキストソース選択</td>
+</tr>
+<tr>
+<td>翻訳1 (Translate1)</td>
+<td>ComboBox (<code>OBS_Transfer_Source2</code>)</td>
+<td>テキストソース選択</td>
+</tr>
+<tr>
+<td>翻訳2 (Translate2)</td>
+<td>ComboBox (<code>OBS_Transfer_Source3</code>)</td>
+<td>テキストソース選択</td>
+</tr>
+<tr>
+<td>翻訳3 (Translate3)</td>
+<td>ComboBox (<code>OBS_Transfer_Source4</code>)</td>
+<td>テキストソース選択</td>
+</tr>
+<tr>
+<td>翻訳4 (Translate4)</td>
+<td>ComboBox (<code>OBS_Transfer_Source5</code>)</td>
+<td>テキストソース選択</td>
+</tr>
+<tr>
+<td>先頭一致で複数送信</td>
+<td>CheckBox (<code>SendToOBS_MultiSupport</code>)</td>
+<td>ソース名前方一致</td>
+</tr>
+<tr>
+<td>発話名付きで送信</td>
+<td>CheckBox (<code>SendToOBS_NameSupport</code>)</td>
+<td>話者名追加</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: トークの見出し・要約生成</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>要約生成有効</td>
+<td>CheckBox (<code>makeTalkSummary</code>)</td>
+<td>要約機能ON/OFF</td>
+</tr>
+<tr>
+<td>要約送信先</td>
+<td>ComboBox (<code>OBS_Transfer_Source_Summary</code>)</td>
+<td>要約用ソース</td>
+</tr>
+<tr>
+<td>要約に使う行数</td>
+<td>NumericUpDown (<code>useSummaryLines</code>)</td>
+<td>5～50行</td>
+</tr>
+<tr>
+<td>フォーマット</td>
+<td>TextBox (<code>summaryFormat</code>)</td>
+<td>例: 「【$title】$summary」</td>
+</tr>
+<tr>
+<td>要約頻度(分)</td>
+<td>NumericUpDown (<code>SummaryCycleTime</code>)</td>
+<td>更新間隔</td>
+</tr>
+<tr>
+<td>翻訳で交互表示</td>
+<td>CheckBox (<code>SummaryLinesMulti</code>)</td>
+<td>多言語ローテーション</td>
+</tr>
+<tr>
+<td>切り替え間隔(秒)</td>
+<td>NumericUpDown (<code>SummaryLinesMultiTime</code>)</td>
+<td>ローテーション間隔</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: オプション (Option)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>テキスト削減有効</td>
+<td>CheckBox (<code>clopEnabled</code>)</td>
+<td>長文カット</td>
+</tr>
+<tr>
+<td>削減文字数</td>
+<td>NumericUpDown (<code>clopTextLen</code>)</td>
+<td>最大文字数</td>
+</tr>
+<tr>
+<td>途中削減方式</td>
+<td>RadioButton (<code>Method_Clop</code>)</td>
+<td>中間カット</td>
+</tr>
+<tr>
+<td>改行処理方式</td>
+<td>RadioButton (<code>Method_Return</code>)</td>
+<td>改行でカット</td>
+</tr>
+<tr>
+<td>ブロック単位削減</td>
+<td>CheckBox (<code>ClopByBlock</code>)</td>
+<td>ブロック処理</td>
+</tr>
+<tr>
+<td>CR/LFコード処理</td>
+<td>CheckBox (<code>Reform_CRdata</code>)</td>
+<td>改行コード変換</td>
+</tr>
+<tr>
+<td>OBSに送らない</td>
+<td>CheckBox (<code>mnu_NoRetToOBS</code>)</td>
+<td>送信無効化</td>
+</tr>
+<tr>
+<td>配信開始/終了検知</td>
+<td>CheckBox (<code>detectStreamingEnd</code>)</td>
+<td>配信状態監視</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: クローズドキャプション</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC送信有効</td>
+<td>CheckBox (<code>SendOBSClosedCaption</code>)</td>
+<td>CC機能ON</td>
+</tr>
+<tr>
+<td>CC送信先</td>
+<td>ComboBox (<code>ClosedCaptionSource</code>)</td>
+<td>CCソース選択</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="plugin_discord-discord">Plugin_Discord - Discord連携<a class="headerlink" href="#plugin_discord-discord" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Discord bot for sending/receiving messages</p>
+<h4 id="configwindow-groupbox_1">ConfigWindow構造: 複数GroupBox<a class="headerlink" href="#configwindow-groupbox_1" title="Permanent link">&para;</a></h4>
+<p><strong>GroupBox: Discord設定 (Setting)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>クライアントID</td>
+<td>TextBox (<code>ClientID</code>)</td>
+<td>Discord App Client ID</td>
+</tr>
+<tr>
+<td>トークン</td>
+<td>TextBox (<code>Token</code>)</td>
+<td>Bot Token (マスク表示)</td>
+</tr>
+<tr>
+<td>チャンネルID</td>
+<td>TextBox (<code>ChannelID</code>)</td>
+<td>対象チャンネルID</td>
+</tr>
+<tr>
+<td>Discord→NEO</td>
+<td>CheckBox (<code>isSend</code>)</td>
+<td>受信有効化</td>
+</tr>
+<tr>
+<td>NEO→Discord</td>
+<td>CheckBox (<code>isRecv</code>)</td>
+<td>送信有効化</td>
+</tr>
+<tr>
+<td>トークセッション対応</td>
+<td>CheckBox (<code>MultiUserMode</code>)</td>
+<td>複数ユーザーモード</td>
+</tr>
+<tr>
+<td>BOTも受信対象</td>
+<td>CheckBox (<code>IncludingBOT</code>)</td>
+<td>BOTメッセージ含む</td>
+</tr>
+<tr>
+<td>Discord標準TTS</td>
+<td>CheckBox (<code>speechTTS</code>)</td>
+<td>Discord TTS使用</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ボタン操作</strong>:
+- <code>接続認証ボタン</code>: OAuth認証実行</p>
+<p><strong>GroupBox: 接続 (Connection)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>接続</td>
+<td>Button (<code>toConnect</code>)</td>
+<td>サーバー接続</td>
+</tr>
+<tr>
+<td>切断</td>
+<td>Button (<code>toDisconnect</code>)</td>
+<td>接続解除</td>
+</tr>
+<tr>
+<td>接続状態</td>
+<td>Panel (<code>ConnectPanel</code>)</td>
+<td>状態表示</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: ユーザを限定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>フィルタ対象ユーザ</td>
+<td>TextBox (Multiline, <code>IncludingWriter</code>)</td>
+<td>ユーザーID一覧 (1行1ID)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: 音声の転送</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>読み上げ音声をDiscordへ</td>
+<td>CheckBox (<code>sendSpeechVoice</code>)</td>
+<td>音声送信</td>
+</tr>
+<tr>
+<td>PC側では読み上げない</td>
+<td>CheckBox (<code>stopSpeechOnPC</code>)</td>
+<td>ローカルミュート</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="plugin_twitch-twitch">Plugin_Twitch - Twitch連携<a class="headerlink" href="#plugin_twitch-twitch" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Twitch chat integration</p>
+<h4 id="configwindow-2groupbox">ConfigWindow構造: 2つのGroupBox<a class="headerlink" href="#configwindow-2groupbox" title="Permanent link">&para;</a></h4>
+<p><strong>GroupBox: Twitch設定 (Setting)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Twitchユーザー名</td>
+<td>TextBox (<code>twitchUser</code>)</td>
+<td>ログインユーザー</td>
+</tr>
+<tr>
+<td>OAuth トークン</td>
+<td>TextBox (<code>twitchPassword</code>)</td>
+<td>認証トークン</td>
+</tr>
+<tr>
+<td>配信者ID</td>
+<td>TextBox (<code>twitchJoinCh</code>)</td>
+<td>接続先チャンネル</td>
+</tr>
+<tr>
+<td>転送パターン</td>
+<td>TextBox (<code>TransferFormat</code>)</td>
+<td>メッセージフォーマット</td>
+</tr>
+<tr>
+<td>トーク転送有効</td>
+<td>CheckBox (<code>useTalkTransfer</code>)</td>
+<td>転送ON/OFF</td>
+</tr>
+</tbody>
+</table>
+<p><strong>転送パターン変数</strong>:
+- <code>%T0～%T4</code>: 翻訳文 (Text)
+- <code>%L0～%L4</code>: 言語名 (Language Name)
+- <code>\n</code>: 改行 (Enter)</p>
+<p><strong>デフォルト</strong>: <code>/me %T0 \n %T1 (%L0&gt;%L1)</code></p>
+<p><strong>ボタン操作</strong>:
+- <code>接続認証(Get a OAuth)</code>: OAuth取得ページへ
+- <code>接続</code>: チャット接続
+- <code>切断</code>: 接続解除</p>
+<p><strong>GroupBox: 要約設定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>要約を有効にする</td>
+<td>CheckBox (<code>useSummary</code>)</td>
+<td>要約機能ON</td>
+</tr>
+<tr>
+<td>要約行数</td>
+<td>NumericUpDown (<code>useSummaryLines</code>)</td>
+<td>対象行数</td>
+</tr>
+<tr>
+<td>要約サイクル時間</td>
+<td>NumericUpDown (<code>SummaryCycleTime</code>)</td>
+<td>更新間隔(分)</td>
+</tr>
+<tr>
+<td>要約フォーマット</td>
+<td>TextBox (<code>summaryFormat</code>)</td>
+<td>出力形式</td>
+</tr>
+<tr>
+<td>翻訳で要約</td>
+<td>CheckBox (<code>useSummaryWithTranslate</code>)</td>
+<td>翻訳版要約</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="vrmetaverse-plugins">VR/Metaverse Plugins<a class="headerlink" href="#vrmetaverse-plugins" title="Permanent link">&para;</a></h2>
+<h3 id="plugin_vrchat_osc-vrchat-osc">Plugin_VRCHAT_OSC - VRChat OSC連携<a class="headerlink" href="#plugin_vrchat_osc-vrchat-osc" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: VRChat avatar control via OSC</p>
+<h4 id="configwindow-3">ConfigWindow構造: 3タブ構成<a class="headerlink" href="#configwindow-3" title="Permanent link">&para;</a></h4>
+<p><strong>GroupBox: VRChat → NEO</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>デフォルト</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ポート番号</td>
+<td>NumericUpDown (<code>VMCPort</code>)</td>
+<td>9001</td>
+<td>受信ポート</td>
+</tr>
+<tr>
+<td>接続</td>
+<td>Button (<code>btVMCConnect</code>)</td>
+<td>-</td>
+<td>受信開始</td>
+</tr>
+<tr>
+<td>切断</td>
+<td>Button (<code>btVMCDisconnect</code>)</td>
+<td>-</td>
+<td>受信停止</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: NEO → VRChat</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>デフォルト</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>送信先アドレス</td>
+<td>TextBox (<code>VMCSendIP_YNC</code>)</td>
+<td>127.0.0.1</td>
+<td>VRChat IP</td>
+</tr>
+<tr>
+<td>送信ポート</td>
+<td>NumericUpDown (<code>VMCSendPort_YNC</code>)</td>
+<td>9000</td>
+<td>OSCポート</td>
+</tr>
+</tbody>
+</table>
+<p><strong>タブ1: VRChat - チャット送信設定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>母国語送信</td>
+<td>CheckBox (<code>vrchatSendText1</code>)</td>
+<td>Native送信</td>
+</tr>
+<tr>
+<td>翻訳送信</td>
+<td>CheckBox (<code>vrchatSendText2</code>)</td>
+<td>翻訳送信</td>
+</tr>
+<tr>
+<td>翻訳1～4</td>
+<td>CheckBox (<code>Trans1</code>～<code>Trans4</code>)</td>
+<td>各言語選択</td>
+</tr>
+<tr>
+<td>VRChat音声ミュート連動</td>
+<td>CheckBox (<code>linkingMute</code>)</td>
+<td>ミュート同期</td>
+</tr>
+<tr>
+<td>左ジェスチャー連動</td>
+<td>CheckBox (<code>linkingStyle</code>)</td>
+<td>ジェスチャー同期</td>
+</tr>
+<tr>
+<td>確定結果のみ送信</td>
+<td>CheckBox (<code>sendOnlyFixed</code>)</td>
+<td>途中結果除外</td>
+</tr>
+<tr>
+<td>テスト送信</td>
+<td>Button (<code>SendTest</code>)</td>
+<td>動作確認</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: オプション</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>対象ユーザ名リスト</td>
+<td>TextBox (Multiline, <code>IncludingUser</code>)</td>
+<td>フィルタ対象</td>
+</tr>
+</tbody>
+</table>
+<p><strong>タブ3: Option - ルール/変換ルール</strong></p>
+<p>DataGridView (<code>DicFix</code>) で条件設定:</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>有効(Enabled)</td>
+<td>CheckBox</td>
+<td>ルール有効化</td>
+</tr>
+<tr>
+<td>モード(Mode)</td>
+<td>ComboBox</td>
+<td>マッチング方式</td>
+</tr>
+<tr>
+<td>対象(Target)</td>
+<td>ComboBox</td>
+<td>判定対象言語</td>
+</tr>
+<tr>
+<td>キーワード(Phrase)</td>
+<td>TextBox</td>
+<td>トリガー文字列</td>
+</tr>
+<tr>
+<td>OSCアドレス</td>
+<td>TextBox</td>
+<td>送信先アドレス</td>
+</tr>
+<tr>
+<td>パラメータ(Parameter)</td>
+<td>TextBox</td>
+<td>OSC値</td>
+</tr>
+<tr>
+<td>対象者(TargetName)</td>
+<td>TextBox</td>
+<td>ユーザー名</td>
+</tr>
+<tr>
+<td>ExternalCallTag</td>
+<td>TextBox</td>
+<td>外部呼び出しタグ</td>
+</tr>
+</tbody>
+</table>
+<p><strong>タブ2: YNC Msg - YNCMessage設定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>母国語送信</td>
+<td>CheckBox (<code>vmcSendText1</code>)</td>
+<td>VMC Native</td>
+</tr>
+<tr>
+<td>翻訳言語送信</td>
+<td>CheckBox (<code>vmcSendText2</code>)</td>
+<td>VMC翻訳</td>
+</tr>
+<tr>
+<td>送信タイプを整数で指定</td>
+<td>CheckBox (<code>SendInt</code>)</td>
+<td>Int型送信</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="plugin_vcas-virtualcast">Plugin_VCas - VirtualCast連携<a class="headerlink" href="#plugin_vcas-virtualcast" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: VirtualCast integration</p>
+<h4 id="configwindow-groupbox_2">ConfigWindow構造: 複数タブ + GroupBox<a class="headerlink" href="#configwindow-groupbox_2" title="Permanent link">&para;</a></h4>
+<p><strong>GroupBox: VMC接続設定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ローカルポート</td>
+<td>NumericUpDown (<code>VMCPort</code>)</td>
+<td>受信ポート</td>
+</tr>
+<tr>
+<td>接続</td>
+<td>Button (<code>btVMCConnect</code>)</td>
+<td>接続開始</td>
+</tr>
+<tr>
+<td>切断</td>
+<td>Button (<code>btVMCDisconnect</code>)</td>
+<td>接続解除</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: VMC送信設定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VMC送信IP</td>
+<td>TextBox (<code>VMCSendIP_YNC</code>)</td>
+<td>送信先IP</td>
+</tr>
+<tr>
+<td>VMC送信ポート</td>
+<td>NumericUpDown (<code>VMCSendPort_YNC</code>)</td>
+<td>送信ポート</td>
+</tr>
+</tbody>
+</table>
+<p><strong>タブ: VCas設定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VCas送信テキスト1</td>
+<td>CheckBox (<code>VCasSendText1</code>)</td>
+<td>Native送信</td>
+</tr>
+<tr>
+<td>VCas送信テキスト2</td>
+<td>CheckBox (<code>VCasSendText2</code>)</td>
+<td>翻訳送信</td>
+</tr>
+<tr>
+<td>翻訳1～4</td>
+<td>CheckBox (<code>Trans1</code>～<code>Trans4</code>)</td>
+<td>言語選択</td>
+</tr>
+<tr>
+<td>ユーザー指定</td>
+<td>TextBox (<code>IncludingUser</code>)</td>
+<td>フィルタ</td>
+</tr>
+<tr>
+<td>テスト送信</td>
+<td>Button (<code>SendTest</code>)</td>
+<td>動作確認</td>
+</tr>
+</tbody>
+</table>
+<p><strong>タブ: ファイル設定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>設定読み込み</td>
+<td>Button (<code>ConfigLoad</code>)</td>
+<td>設定復元</td>
+</tr>
+<tr>
+<td>設定保存</td>
+<td>Button (<code>ConfigSave</code>)</td>
+<td>設定保存</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="text-processing-plugins">Text Processing Plugins<a class="headerlink" href="#text-processing-plugins" title="Permanent link">&para;</a></h2>
+<h3 id="plugin_dictionary-">Plugin_Dictionary - 辞書プラグイン<a class="headerlink" href="#plugin_dictionary-" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Word/phrase replacement using dictionary</p>
+<h4 id="configwindow-groupbox_3">ConfigWindow構造: 複数GroupBox + テスト領域<a class="headerlink" href="#configwindow-groupbox_3" title="Permanent link">&para;</a></h4>
+<p><strong>GroupBox: 音声認識後の補正 (After voice recognition)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>辞書ファイルパス</td>
+<td>TextBox (<code>Dictionary2Name</code>)</td>
+<td>CSVファイルパス</td>
+</tr>
+<tr>
+<td>ファイル選択</td>
+<td>Button (<code>SelectDictionary2</code>)</td>
+<td>ファイル選択ダイアログ</td>
+</tr>
+<tr>
+<td>保存(Save)</td>
+<td>Button (<code>EditCSV_After</code>)</td>
+<td>変更保存</td>
+</tr>
+<tr>
+<td>リロード(Reload)</td>
+<td>Button (<code>Reload1</code>)</td>
+<td>再読み込み</td>
+</tr>
+</tbody>
+</table>
+<p>DataGridView (<code>ReplaceWordsRecogList</code>):</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ItemFrom</td>
+<td>TextBox</td>
+<td>置換元</td>
+</tr>
+<tr>
+<td>ItemTo</td>
+<td>TextBox</td>
+<td>置換先</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: 対訳辞書 (bilingual dictionary)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>対訳辞書ファイルパス</td>
+<td>TextBox (<code>Dictionary1Name</code>)</td>
+<td>CSVファイルパス</td>
+</tr>
+<tr>
+<td>ファイル選択</td>
+<td>Button (<code>SelectDictionary1</code>)</td>
+<td>ファイル選択</td>
+</tr>
+<tr>
+<td>編集(Edit)</td>
+<td>Button (<code>EditCSV_Bilingual</code>)</td>
+<td>外部エディタで開く</td>
+</tr>
+<tr>
+<td>リロード(Reload)</td>
+<td>Button (<code>Reload2</code>)</td>
+<td>再読み込み</td>
+</tr>
+</tbody>
+</table>
+<p><strong>追加オプション</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>翻訳注釈を取り除く</td>
+<td>CheckBox (<code>DeepLFixed</code>)</td>
+<td>DeepL注釈削除</td>
+</tr>
+<tr>
+<td>置換処理の精度向上</td>
+<td>CheckBox (<code>ReplaceAssist</code>)</td>
+<td>マッチング改善</td>
+</tr>
+<tr>
+<td>共用NGワード辞書を適用</td>
+<td>CheckBox (<code>NGWordDic</code>)</td>
+<td>NG辞書有効化</td>
+</tr>
+<tr>
+<td>NG辞書更新</td>
+<td>Button (<code>dictionaly_update</code>)</td>
+<td>辞書更新</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: 辞書のテスト (Trial Run)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>入力文章</td>
+<td>TextBox (<code>Text_Input</code>)</td>
+<td>テスト入力</td>
+</tr>
+<tr>
+<td>テスト実行</td>
+<td>Button (<code>TrialRun</code>)</td>
+<td>変換実行</td>
+</tr>
+<tr>
+<td>翻訳前テキスト</td>
+<td>TextBox (ReadOnly)</td>
+<td>変換結果</td>
+</tr>
+<tr>
+<td>翻訳後テキスト1～4</td>
+<td>TextBox (ReadOnly)</td>
+<td>各言語結果</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="plugin_regexp-">Plugin_RegExp - 正規表現プラグイン<a class="headerlink" href="#plugin_regexp-" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Regex-based text transformation</p>
+<h4 id="configwindow-3groupbox">ConfigWindow構造: 3つのGroupBox<a class="headerlink" href="#configwindow-3groupbox" title="Permanent link">&para;</a></h4>
+<p><strong>GroupBox: 辞書 / Conversion Rule</strong></p>
+<p>DataGridView (<code>DicFix</code>) で正規表現ルール管理:</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>種類</th>
+<th>選択肢/説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>有効(Enabled)</td>
+<td>CheckBox</td>
+<td>ルール有効化</td>
+</tr>
+<tr>
+<td>対象(Target)</td>
+<td>ComboBox</td>
+<td>母国語/翻訳1～4</td>
+</tr>
+<tr>
+<td>置換前(before)</td>
+<td>TextBox</td>
+<td>正規表現パターン</td>
+</tr>
+<tr>
+<td>置換後(after)</td>
+<td>TextBox</td>
+<td>置換文字列</td>
+</tr>
+<tr>
+<td>モード(mode)</td>
+<td>ComboBox</td>
+<td>削除/置換/全体置換/クリア</td>
+</tr>
+</tbody>
+</table>
+<p><strong>モード選択肢</strong>:
+- <code>1:一致部の削除(DELETE)</code>: マッチ部分を削除
+- <code>2:一致部の置換(REPLACE)</code>: マッチ部分を置換
+- <code>3:全体の置換(REPLACEALL)</code>: テキスト全体を置換
+- <code>4:クリア(CLEAR)</code>: テキストをクリア</p>
+<p><strong>右クリックメニュー</strong>: 行の挿入/入れ替え/削除</p>
+<p><strong>GroupBox: 動作テスト (Operation test)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>対象(Target)</td>
+<td>ComboBox (<code>conversionMode</code>)</td>
+<td>テスト対象言語</td>
+</tr>
+<tr>
+<td>入力(Input)</td>
+<td>TextBox (<code>Test_Input</code>)</td>
+<td>テスト文字列</td>
+</tr>
+<tr>
+<td>結果(Result)</td>
+<td>TextBox (<code>Test_Result</code>)</td>
+<td>変換結果</td>
+</tr>
+<tr>
+<td>実行</td>
+<td>Button (<code>Test_Run</code>)</td>
+<td>テスト実行</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: ファイル (File)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ゆかりねっとから読み込み</td>
+<td>Button (<code>ImportRun</code>)</td>
+<td>既存設定インポート</td>
+</tr>
+<tr>
+<td>読み込み(Import)</td>
+<td>Button (<code>settingImport</code>)</td>
+<td>設定ファイル読込</td>
+</tr>
+<tr>
+<td>書き出し(Export)</td>
+<td>Button (<code>settingExport</code>)</td>
+<td>設定ファイル保存</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="plugin_hotkey-">Plugin_HotKey - ホットキー対応<a class="headerlink" href="#plugin_hotkey-" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Global keyboard shortcut triggers</p>
+<h4 id="configwindow-groupbox-datagridview_1">ConfigWindow構造: 単一GroupBox + DataGridView<a class="headerlink" href="#configwindow-groupbox-datagridview_1" title="Permanent link">&para;</a></h4>
+<p><strong>GroupBox: 条件 (operating conditions)</strong></p>
+<p>DataGridView (<code>dgv_Sound</code>) でホットキー設定:</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>種類</th>
+<th>選択肢/説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>モード(S_Patern)</td>
+<td>ComboBox</td>
+<td>完全/一部/消去時/無効</td>
+</tr>
+<tr>
+<td>判定対象言語(JudgeTarget)</td>
+<td>ComboBox</td>
+<td>判定対象</td>
+</tr>
+<tr>
+<td>起動キーワード(S_Keyword)</td>
+<td>TextBox</td>
+<td>トリガー文字列</td>
+</tr>
+<tr>
+<td>送信キー(SendKey)</td>
+<td>TextBox</td>
+<td>送信するキー</td>
+</tr>
+<tr>
+<td>文字差し替え(S_ReplaceWord)</td>
+<td>CheckBox</td>
+<td>置換有効</td>
+</tr>
+<tr>
+<td>読み上げ文字(S_TalkWord)</td>
+<td>TextBox</td>
+<td>置換後テキスト</td>
+</tr>
+<tr>
+<td>後処理(S_Post)</td>
+<td>CheckBox</td>
+<td>後処理フラグ</td>
+</tr>
+<tr>
+<td>TTS無効化(s_NoSpeak)</td>
+<td>CheckBox</td>
+<td>読み上げスキップ</td>
+</tr>
+<tr>
+<td>対象者名(TargetName)</td>
+<td>TextBox</td>
+<td>ユーザー指定</td>
+</tr>
+</tbody>
+</table>
+<p><strong>CSV操作パネル</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ロード(Load)</td>
+<td>Button (<code>openCSV</code>)</td>
+<td>CSV読み込み</td>
+</tr>
+<tr>
+<td>セーブ(Save)</td>
+<td>Button (<code>saveCSV</code>)</td>
+<td>CSV保存</td>
+</tr>
+<tr>
+<td>クリア(All Clear)</td>
+<td>Button (<code>clearCSV</code>)</td>
+<td>全削除</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="aicloud-plugins">AI/Cloud Plugins<a class="headerlink" href="#aicloud-plugins" title="Permanent link">&para;</a></h2>
+<h3 id="plugin_gpt3-chatgptgpt">Plugin_GPT3 - ChatGPT/GPT統合<a class="headerlink" href="#plugin_gpt3-chatgptgpt" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: OpenAI GPT integration for text generation</p>
+<h4 id="configwindow-7">ConfigWindow構造: 7タブ構成<a class="headerlink" href="#configwindow-7" title="Permanent link">&para;</a></h4>
+<p><strong>共通設定 - GPTオプション</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>モデル選択</td>
+<td>ComboBox (<code>GPT3Model</code>)</td>
+<td>gpt-4, gpt-3.5-turbo等 (37種類)</td>
+</tr>
+<tr>
+<td>画像生成モデル</td>
+<td>ComboBox (<code>GPT3ModelImage</code>)</td>
+<td>dall-e-2, dall-e-3等</td>
+</tr>
+<tr>
+<td>APIページを開く</td>
+<td>Button (<code>openAPIPage</code>)</td>
+<td>OpenAI設定ページ</td>
+</tr>
+</tbody>
+</table>
+<p><strong>タブ1: 加工 (Convert)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文章加工有効</td>
+<td>CheckBox (<code>EffectMessage</code>)</td>
+<td>機能ON/OFF</td>
+</tr>
+<tr>
+<td>プロンプト設定</td>
+<td>TextBox (Multiline, <code>ConvertPrompt</code>)</td>
+<td>変換指示</td>
+</tr>
+<tr>
+<td>AI役割設定</td>
+<td>TextBox (Multiline, <code>ConvertRole</code>)</td>
+<td>システムプロンプト</td>
+</tr>
+<tr>
+<td>パラメータ(JSON)</td>
+<td>TextBox (Multiline, <code>ConvertPromptParam</code>)</td>
+<td>API設定</td>
+</tr>
+<tr>
+<td>実行下限文字数</td>
+<td>NumericUpDown (<code>EffectMessageUnderChars</code>)</td>
+<td>最小文字数</td>
+</tr>
+<tr>
+<td>過去結果を読み込む</td>
+<td>CheckBox (<code>useHistoryData_Conv</code>)</td>
+<td>履歴使用</td>
+</tr>
+</tbody>
+</table>
+<p><strong>タブ2: マスク (Filter)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>フィルタリング有効</td>
+<td>CheckBox (<code>MaskWord</code>)</td>
+<td>機能ON/OFF</td>
+</tr>
+<tr>
+<td>悪口フィルタ</td>
+<td>CheckBox (<code>MaskWord_Hate</code>)</td>
+<td>Hate filter</td>
+</tr>
+<tr>
+<td>性的表現フィルタ</td>
+<td>CheckBox (<code>MaskWord_Sexual</code>)</td>
+<td>Sexual filter</td>
+</tr>
+<tr>
+<td>暴力フィルタ</td>
+<td>CheckBox (<code>MaskWord_Violence</code>)</td>
+<td>Violence filter</td>
+</tr>
+<tr>
+<td>自傷フィルタ</td>
+<td>CheckBox (<code>MaskWord_SelfHarm</code>)</td>
+<td>Self-harm filter</td>
+</tr>
+<tr>
+<td>閾値(%)</td>
+<td>NumericUpDown (<code>GPT3_Threthold</code>)</td>
+<td>検出感度</td>
+</tr>
+</tbody>
+</table>
+<p><strong>タブ3: 画像 (Image)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>画像生成有効</td>
+<td>CheckBox (<code>MakePicture</code>)</td>
+<td>機能ON/OFF</td>
+</tr>
+<tr>
+<td>起動ワード</td>
+<td>TextBox (<code>MakePictureWord</code>)</td>
+<td>トリガー文字列</td>
+</tr>
+<tr>
+<td>画像サイズ</td>
+<td>ComboBox (<code>GPT3PictureSize</code>)</td>
+<td>256x256～1024x1792</td>
+</tr>
+<tr>
+<td>クリアタイミング</td>
+<td>RadioButton</td>
+<td>消さない/時間経過で消す</td>
+</tr>
+<tr>
+<td>表示時間(秒)</td>
+<td>TextBox (<code>RemainTimer</code>)</td>
+<td>表示秒数</td>
+</tr>
+<tr>
+<td>写真画面表示</td>
+<td>Button (<code>ShowImageWindow</code>)</td>
+<td>画像ウィンドウ表示</td>
+</tr>
+<tr>
+<td>自動で写真画面を開く</td>
+<td>CheckBox (<code>autoOpenPictureWindow</code>)</td>
+<td>自動表示</td>
+</tr>
+</tbody>
+</table>
+<p><strong>タブ4: 応答 (Action)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>問い合わせに応じる</td>
+<td>CheckBox (<code>responseQuery</code>)</td>
+<td>応答機能ON</td>
+</tr>
+<tr>
+<td>起動キーワード</td>
+<td>TextBox (Multiline, <code>AITriggerKeyword</code>)</td>
+<td>反応ワード</td>
+</tr>
+<tr>
+<td>AI役割プロンプト</td>
+<td>TextBox (Multiline, <code>AIRolePrompt</code>)</td>
+<td>キャラクター設定</td>
+</tr>
+<tr>
+<td>優先指示構文</td>
+<td>TextBox (Multiline, <code>AIRolePromptHighPriority</code>)</td>
+<td>強制指示</td>
+</tr>
+<tr>
+<td>AI名前</td>
+<td>TextBox (<code>AIUserName</code>)</td>
+<td>表示名</td>
+</tr>
+<tr>
+<td>VRM_AIに出力</td>
+<td>CheckBox (<code>outputToVRMAI</code>)</td>
+<td>VRM連携</td>
+</tr>
+<tr>
+<td>VRM_AI通信先</td>
+<td>TextBox (<code>VRMAI_Port</code>)</td>
+<td>例: 127.0.0.1:5000</td>
+</tr>
+<tr>
+<td>表情をOSC送信</td>
+<td>CheckBox (<code>useVMC</code>)</td>
+<td>表情同期</td>
+</tr>
+<tr>
+<td>過去の問い合わせを記憶</td>
+<td>CheckBox (<code>useHistoryData</code>)</td>
+<td>会話履歴保持</td>
+</tr>
+</tbody>
+</table>
+<p><strong>タブ5: オプション (Option)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>処理言語選択</td>
+<td>ComboBox (<code>LanguageMode</code>)</td>
+<td>母国語/翻訳1～4</td>
+</tr>
+<tr>
+<td>無視するプラグイン</td>
+<td>CheckedListBox (<code>IgnorePluginParam</code>)</td>
+<td>スキップ対象</td>
+</tr>
+<tr>
+<td>クエリパラメータ</td>
+<td>TextBox (Multiline, <code>ConvertPromptParamQuery</code>)</td>
+<td>API設定</td>
+</tr>
+<tr>
+<td>失敗時メッセージ</td>
+<td>TextBox (Multiline, <code>failsMessage</code>)</td>
+<td>例: 「・・・。」</td>
+</tr>
+</tbody>
+</table>
+<p><strong>タブ6: 提案 (Suggest)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>提案ページを開く</td>
+<td>Button (<code>openSuggestWnd</code>)</td>
+<td>提案ウィンドウ表示</td>
+</tr>
+<tr>
+<td>提案者の役割</td>
+<td>TextBox (Multiline, <code>SuggestRole</code>)</td>
+<td>提案プロンプト</td>
+</tr>
+<tr>
+<td>対象行数</td>
+<td>NumericUpDown (<code>SuggestTargetLine</code>)</td>
+<td>分析対象行 (デフォルト25)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>タブ7: 拡張 (Fn)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>機能選択</td>
+<td>CheckedListBox (<code>GPTFunctionCallList</code>)</td>
+<td>Wikipedia_JP/EN/Wiki等</td>
+</tr>
+<tr>
+<td>Wiki URL設定</td>
+<td>TextBox (<code>WikiAccessURL</code>)</td>
+<td>Wiki API URL</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="plugin_httpcall-http">Plugin_HTTPCall - HTTP呼び出し<a class="headerlink" href="#plugin_httpcall-http" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Generic HTTP request trigger</p>
+<h4 id="configwindow-groupbox_4">ConfigWindow構造: 単一GroupBox<a class="headerlink" href="#configwindow-groupbox_4" title="Permanent link">&para;</a></h4>
+<p><strong>GroupBox: ルール / Conversion Rule</strong></p>
+<p>DataGridView (<code>DicFix</code>) でHTTPルール管理:</p>
+<table>
+<thead>
+<tr>
+<th>列名</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>有効(Enabled)</td>
+<td>CheckBox</td>
+<td>ルール有効化</td>
+</tr>
+<tr>
+<td>モード(Mode)</td>
+<td>ComboBox</td>
+<td>完全/一部</td>
+</tr>
+<tr>
+<td>判定対象(Target)</td>
+<td>ComboBox</td>
+<td>母国語/翻訳1～4</td>
+</tr>
+<tr>
+<td>起動フレーズ(Phrase)</td>
+<td>TextBox</td>
+<td>トリガー文字列</td>
+</tr>
+<tr>
+<td>コールURL</td>
+<td>TextBox</td>
+<td>リクエストURL</td>
+</tr>
+<tr>
+<td>対象者(TargetName)</td>
+<td>TextBox</td>
+<td>ユーザー指定</td>
+</tr>
+<tr>
+<td>API用タグ(ExternalCallTag)</td>
+<td>TextBox</td>
+<td>外部呼び出しタグ</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="plugin_notion-notion">Plugin_Notion - Notion連携<a class="headerlink" href="#plugin_notion-notion" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Notion database/page integration</p>
+<h4 id="configwindow-groupbox_5">ConfigWindow構造: シンプル(単一GroupBox)<a class="headerlink" href="#configwindow-groupbox_5" title="Permanent link">&para;</a></h4>
+<p><strong>GroupBox: Notion設定 (Setting)</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Secret Key</td>
+<td>TextBox (<code>NotionSecret</code>)</td>
+<td>APIシークレット (マスク表示)</td>
+</tr>
+<tr>
+<td>転送親ノートURL</td>
+<td>TextBox (<code>TransferTo</code>)</td>
+<td>NotionページURL</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="plugin_talkhistory-">Plugin_TalkHistory - 会話履歴管理<a class="headerlink" href="#plugin_talkhistory-" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Conversation logging and MCP server</p>
+<h4 id="configwindow-4groupbox">ConfigWindow構造: 4つのGroupBox<a class="headerlink" href="#configwindow-4groupbox" title="Permanent link">&para;</a></h4>
+<p><strong>GroupBox: 会話履歴データ管理</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>保存済み会話数</td>
+<td>Label (<code>labelDataCount</code>)</td>
+<td>統計表示</td>
+</tr>
+<tr>
+<td>データをインポート</td>
+<td>Button (<code>buttonImport</code>)</td>
+<td>ファイル読込</td>
+</tr>
+<tr>
+<td>データをエクスポート</td>
+<td>Button (<code>buttonExport</code>)</td>
+<td>ファイル保存</td>
+</tr>
+<tr>
+<td>全データ削除</td>
+<td>Button (<code>buttonClearData</code>)</td>
+<td>削除 (赤ボタン)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: 会話履歴一覧</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>会話一覧</td>
+<td>ListBox (<code>listBoxConversations</code>)</td>
+<td>セッション一覧</td>
+</tr>
+<tr>
+<td>会話削除</td>
+<td>Button (<code>buttonDeleteConversation</code>)</td>
+<td>選択削除</td>
+</tr>
+<tr>
+<td>サマリー生成</td>
+<td>Button (<code>buttonGenerateSummary</code>)</td>
+<td>要約作成</td>
+</tr>
+<tr>
+<td>アドバイス生成</td>
+<td>Button (<code>buttonGenerateAdvice</code>)</td>
+<td>助言作成</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: 詳細表示</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>詳細内容</td>
+<td>RichTextBox (<code>textBoxDetails</code>)</td>
+<td>選択会話の内容</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: 検索</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>検索キーワード</td>
+<td>TextBox (<code>textBoxSearch</code>)</td>
+<td>検索文字列</td>
+</tr>
+<tr>
+<td>検索実行</td>
+<td>Button (<code>buttonSearch</code>)</td>
+<td>検索開始</td>
+</tr>
+<tr>
+<td>検索結果</td>
+<td>ListBox (<code>listBoxSearchResults</code>)</td>
+<td>結果一覧</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="utility-plugins">Utility Plugins<a class="headerlink" href="#utility-plugins" title="Permanent link">&para;</a></h2>
+<h3 id="plugin_exporter-">Plugin_Exporter - データエクスポート<a class="headerlink" href="#plugin_exporter-" title="Permanent link">&para;</a></h3>
+<p><strong>Purpose</strong>: Export captions to files</p>
+<h4 id="configwindow-groupbox_6">ConfigWindow構造: 複数GroupBox + ステータスバー<a class="headerlink" href="#configwindow-groupbox_6" title="Permanent link">&para;</a></h4>
+<p><strong>エクスポート形式ボタン群</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>ボタン</th>
+<th>出力形式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ExportSRT</td>
+<td>SRT字幕</td>
+</tr>
+<tr>
+<td>ExportSTL</td>
+<td>STL字幕</td>
+</tr>
+<tr>
+<td>ExportXML</td>
+<td>XML</td>
+</tr>
+<tr>
+<td>ExportOxk</td>
+<td>OXK</td>
+</tr>
+<tr>
+<td>ExportText</td>
+<td>プレーンテキスト</td>
+</tr>
+<tr>
+<td>ExportAviUtil</td>
+<td>AviUtl用</td>
+</tr>
+<tr>
+<td>ExportSAMI</td>
+<td>SAMI字幕</td>
+</tr>
+<tr>
+<td>ExportVTT</td>
+<td>WebVTT</td>
+</tr>
+<tr>
+<td>ExportSubViewer</td>
+<td>SubViewer</td>
+</tr>
+<tr>
+<td>ExportRecotteStudio</td>
+<td>Recotte Studio用</td>
+</tr>
+<tr>
+<td>ExportSRV3</td>
+<td>SRV3</td>
+</tr>
+<tr>
+<td>ExportYMM4</td>
+<td>ゆっくりMovieMaker4用</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: 出力設定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>タイムオフセット</td>
+<td>NumericUpDown (<code>OffsetTime</code>)</td>
+<td>オフセット(ms)</td>
+</tr>
+<tr>
+<td>表示時間</td>
+<td>NumericUpDown (<code>ShownTime</code>)</td>
+<td>表示秒数</td>
+</tr>
+<tr>
+<td>最小表示時間</td>
+<td>NumericUpDown (<code>TimerUnderLimit</code>)</td>
+<td>下限(ms)</td>
+</tr>
+<tr>
+<td>時間モード</td>
+<td>CheckBox (<code>TimeMode1</code>)</td>
+<td>時間形式選択</td>
+</tr>
+<tr>
+<td>タイム0オフセット</td>
+<td>CheckBox (<code>ExportTimeZeroOfs</code>)</td>
+<td>ゼロ基準</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: EXO出力設定</strong> (AviUtl用)</p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>レイヤー番号</td>
+<td>NumericUpDown (<code>LayerNo</code>)</td>
+<td>レイヤー1</td>
+</tr>
+<tr>
+<td>表示幅/高さ</td>
+<td>NumericUpDown</td>
+<td>サイズ設定</td>
+</tr>
+<tr>
+<td>位置X/Y</td>
+<td>NumericUpDown</td>
+<td>配置座標</td>
+</tr>
+<tr>
+<td>レイヤー番号2</td>
+<td>NumericUpDown (<code>LayerNo2</code>)</td>
+<td>レイヤー2</td>
+</tr>
+<tr>
+<td>位置X2/Y2</td>
+<td>NumericUpDown</td>
+<td>座標2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: フォント設定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>言語選択</td>
+<td>ComboBox (<code>LanguageName</code>)</td>
+<td>対象言語</td>
+</tr>
+<tr>
+<td>フォント1/2</td>
+<td>ComboBox</td>
+<td>フォントファミリー</td>
+</tr>
+<tr>
+<td>フォントサイズ1/2</td>
+<td>NumericUpDown</td>
+<td>サイズ設定</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GroupBox: 色設定</strong></p>
+<table>
+<thead>
+<tr>
+<th>GUI要素</th>
+<th>種類</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前景色</td>
+<td>Panel (<code>fore_exo_color</code>)</td>
+<td>文字色選択</td>
+</tr>
+<tr>
+<td>影色</td>
+<td>Panel (<code>shadow_exo_color</code>)</td>
+<td>影色選択</td>
+</tr>
+</tbody>
+</table>
+<p><strong>その他</strong>:
+- <code>ClearData</code>: データクリア
+- <code>SaveLog</code>: ログ保存チェック
+- <code>ResultText</code>: 処理状況表示(ステータスバー)</p>
+<hr />
+<h2 id="ui">共通UI操作パターン<a class="headerlink" href="#ui" title="Permanent link">&para;</a></h2>
+<h3 id="datagridview">DataGridViewの操作<a class="headerlink" href="#datagridview" title="Permanent link">&para;</a></h3>
+<p>多くのプラグインで条件・ルール設定に使用:</p>
+<ol>
+<li><strong>行の追加</strong>: 最下行の空行に入力</li>
+<li><strong>行の編集</strong>: セルをクリックして直接編集</li>
+<li><strong>行の削除</strong>: 右クリック→「削除」</li>
+<li><strong>行の並べ替え</strong>: 右クリック→「上/下と入れ替え」</li>
+<li><strong>行の挿入</strong>: 右クリック→「上/下に挿入」</li>
+</ol>
+<h3 id="csv">CSV入出力<a class="headerlink" href="#csv" title="Permanent link">&para;</a></h3>
+<p>Plugin_PlaySound, Plugin_HotKey, Plugin_RegExp等で使用:</p>
+<ol>
+<li><strong>ロード(Load)</strong>: CSVファイルから設定を読み込み</li>
+<li><strong>セーブ(Save)</strong>: 現在の設定をCSVに保存</li>
+<li><strong>クリア(All Clear)</strong>: 全ルールを削除</li>
+</ol>
+<h3 id="_4">接続系プラグインの操作<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>Plugin_Discord, Plugin_OBS5, Plugin_VRCHAT_OSC等:</p>
+<ol>
+<li>接続情報(IP/Port/Token等)を入力</li>
+<li>「接続」ボタンで接続開始</li>
+<li>ステータスバー/パネルで接続状態確認</li>
+<li>「切断」ボタンで接続解除</li>
+</ol>
+<h3 id="_5">テスト機能<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>Plugin_Dictionary, Plugin_RegExp等:</p>
+<ol>
+<li>テスト入力欄にサンプル文字列を入力</li>
+<li>「実行」ボタンでテスト実行</li>
+<li>結果欄で変換結果を確認</li>
+</ol>
+<hr />
+<h2 id="_6">プラグイン別公式ドキュメント<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">読み上げ系<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../../plugin/plugin_playvoice/">読み上げ</a></li>
+<li><a href="../../plugin/plugin_bouyomi/">棒読みちゃん連携</a></li>
+</ul>
+<h3 id="_8">配信連携系<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../../plugin/plugin_OBS5/">OBS連携 WSv5</a> (OBS28以降)</li>
+<li><a href="../../plugin/plugin_OBS/">OBS連携 WSv4</a> (OBS27以前)</li>
+<li><a href="../../plugin/plugin_OBSFile/">配信ソフト向けテキスト出力</a></li>
+</ul>
+<h3 id="vr">VR/メタバース系<a class="headerlink" href="#vr" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../../plugin/plugin_vrchat_osc/">VRChat OSC連携</a></li>
+<li><a href="../../plugin/plugin_vcas/">バーチャルキャスト連携</a></li>
+<li><a href="../../plugin/plugin_vroverlay/">VRオーバーレイ</a></li>
+</ul>
+<h3 id="_9">プラットフォーム連携系<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../../plugin/plugin_dicord/">Discord BOT連携</a></li>
+<li><a href="../../plugin/plugin_dicordwebhook/">Discord Webhook連携</a></li>
+<li><a href="../../plugin/plugin_twitch/">Twitch連携</a></li>
+<li><a href="../../plugin/plugin_youtube/">YouTube Live字幕送信</a></li>
+</ul>
+<h3 id="_10">テキスト処理系<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../../plugin/plugin_dictionary/">辞書</a></li>
+<li><a href="../../plugin/plugin_regexp/">正規表現</a></li>
+<li><a href="../../plugin/plugin_GPT3/">GPT3整形/AIアシスタント</a></li>
+</ul>
+<h3 id="api">API/ツール系<a class="headerlink" href="#api" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../../plugin/plugin_httpcall/">HTTPコール</a></li>
+<li><a href="../../plugin/plugin_wscall/">WebSocketコール</a></li>
+<li><a href="../../plugin/plugin_exporter/">ファイル出力</a></li>
+</ul>
+<hr />
+<h2 id="_11">関連ドキュメント<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../INDEX/">INDEX</a> - 全体案内</li>
+<li><a href="../QUICKSTART_SCENARIOS/">クイックスタートシナリオ</a> - ユースケース別設定例</li>
+<li><a href="../SETTINGS_REFERENCE/">設定リファレンス</a> - 全設定項目の詳細</li>
+<li><a href="../YNC_NEO_GUI_REFERENCE/">GUIリファレンス</a> - 本体GUI操作</li>
+<li><a href="../../plugin/enabled/">公式: プラグインの使い方</a></li>
+<li><a href="../../plugin/">公式: プラグイン一覧</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  ページトップへ戻る
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2020 -  N,Mori/*nao*
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://x.com/yncneo" target="_blank" rel="noopener" title="x.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section", "navigation.footer", "navigation.indexes", "navigation.tracking", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
