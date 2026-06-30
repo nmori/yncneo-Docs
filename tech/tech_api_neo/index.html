@@ -6252,6 +6252,16 @@
 <td>ユーザ名</td>
 <td>さいとう</td>
 </tr>
+<tr>
+<td>fixedText</td>
+<td>確定したか (v2.3.104～)</td>
+<td>true</td>
+</tr>
+<tr>
+<td>textID</td>
+<td>テキスト固有ID (v2.3.104～)</td>
+<td>4C6E8172-2048-4995-BF36-3893EF31FA67</td>
+</tr>
 </tbody>
 </table>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Query</label><label for="__tabbed_2_2">Body</label></div>
@@ -6268,7 +6278,11 @@
 <span class="w">    </span><span class="p">[</span>
 <span class="w">        </span><span class="s2">&quot;Plugin_GPT3&quot;</span>
 <span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;Text&quot;</span><span class="p">:</span><span class="s2">&quot;おはよう!天気がいいね&quot;</span>
+<span class="w">    </span><span class="nt">&quot;Text&quot;</span><span class="p">:</span><span class="s2">&quot;おはよう!天気がいいね&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;fixedText&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;textID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;4C6E8172-2048-4995-BF36-3893EF31FA67&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;UserID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0001-002-0003-00005&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;TalkerName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;さいとう&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
 </div>
@@ -6280,6 +6294,7 @@
 <li>UserIDは、ユーザを識別するものなので、ユーザに対して一意となるものにしてください。(一般的には配信サイトから提供されるユニークなユーザIDなどを使います)</li>
 <li>ingorePlugin は、実行しないプラグインを指定できます。（なお、
 プラグイン名は大文字・小文字を区別する点に注意してください)</li>
+<li>途中経過を送る場合には、fixedTextを使います。最初はfalse で経過を送り、最後に確定として True を送ります。IDごとに、かならず 最後にtrueが送られるようにしましょう。</li>
 </ul>
 <h2 id="_3">認識のミュート<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
