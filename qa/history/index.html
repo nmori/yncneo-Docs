@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -31,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -5174,6 +5174,83 @@
       目次
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v23119" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.119
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v23117" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.117
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v23116" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.116
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v23115" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.115
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v23114" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.114
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v23110" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.110
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v23109" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.109
+      
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#v23108" class="md-nav__link">
@@ -12423,6 +12500,83 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v23119" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.119
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v23117" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.117
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v23116" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.116
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v23115" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.115
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v23114" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.114
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v23110" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.110
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v23109" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        v2.3.109
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v23108" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -18930,6 +19084,48 @@
 
 
 <h1 id="_1">更新履歴<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="v23119">v2.3.119<a class="headerlink" href="#v23119" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>・字幕が遅れて表示される／数分前の発話が繰り返し表示されるケースの修正
+　（サーバ時刻取得で通信待ちが発生していた問題を解消）
+・字幕の消えるタイミングを本体とブラウザで同期するように修正
+　（プラグイン指定の保持時間で消えない／早く消えるケースの対策）
+・VRChat(OSC)：チャットボックス送信の整理と音声コマンド機能を追加
+・内部ライブラリの一括アップデート（セキュリティ対応）
+</code></pre></div>
+<h2 id="v23117">v2.3.117<a class="headerlink" href="#v23117" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>・高負荷時（ゲーム配信など）にブラウザ翻訳が止まってしまうケースの修正
+　（一時的な遅延では止めず、翻訳ウィンドウの処理優先度も調整）
+・ゆかりねっと連携で送信が詰まったときに字幕・読み上げが
+　抜け落ちにくくなるよう改善（詰まり気味のときは警告も表示）
+</code></pre></div>
+<h2 id="v23116">v2.3.116<a class="headerlink" href="#v23116" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>・プラグインのON/OFF切り替え時にフリーズすることがある問題の修正
+・DiscordプラグインのON/OFF切り替えで画面が固まる問題の修正と
+　設定保存の確実化
+</code></pre></div>
+<h2 id="v23115">v2.3.115<a class="headerlink" href="#v23115" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>・読み上げエンジンのメモリの使い方を是正（メモリ消費低減）
+・内部設定ファイルの整理（不要になっていた設定の削除）
+</code></pre></div>
+<h2 id="v23114">v2.3.114<a class="headerlink" href="#v23114" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>・ゆかりねっと連携時、ブラウザ音声認識の出力が遅れる問題の修正
+・v2.2と比べて応答が遅くなっていた部分の修正（応答性の改善）
+・コメント処理の高速化（長時間配信でも動作が重くならないように）
+・ウィンドウ枠色が設定インポートやアップデートで復元されない不具合の修正
+・.ync設定インポートがうまくいかないケースの修正
+</code></pre></div>
+<h2 id="v23110">v2.3.110<a class="headerlink" href="#v23110" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>・プラグインで指定した字幕の保持時間が反映されず、
+　標準の保持時間で字幕が消えてしまうケースの修正
+・字幕の消去処理まわりの安定化（高負荷時の詰まり対策）
+</code></pre></div>
+<h2 id="v23109">v2.3.109<a class="headerlink" href="#v23109" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>・Claude Fableから指摘のあったプラグインの設計課題を修正（続き）
+　（Twitch、Discord、OBS、通信系プラグインの安定化）
+・メモリ使用量が時間経過につれ大きくなるケースの修正（コメント管理まわり）
+・OBS5プラグイン：認証失敗時に接続リトライが止まらない問題の修正
+・ログ出力の調整（不要なログの抑制、誤表示の修正）
+</code></pre></div>
 <h2 id="v23108">v2.3.108<a class="headerlink" href="#v23108" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>・Parapper/API経由で文字転送時に、読み上げされなくなる問題の修正
 ・LLMブラウザウィンドウが終了時に閉じない問題の修正
@@ -23958,7 +24154,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section", "navigation.footer", "navigation.indexes", "navigation.tracking", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
