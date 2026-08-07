@@ -2018,6 +2018,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#parapper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parapper翻訳
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6123,6 +6134,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#parapper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parapper翻訳
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6251,6 +6273,42 @@
 <li>使いたい翻訳エンジンが決まったら、当該エンジン提供メーカーと契約を行い、キーを入手してください。</li>
 <li>入手したキーを設定しチェックをONにすると、指定した翻訳エンジンを個人のAPIキーを用いて動かせるようになります。</li>
 </ul>
+<h2 id="parapper">Parapper翻訳<a class="headerlink" href="#parapper" title="Permanent link">&para;</a></h2>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>ゆかコネNEO v2.3.128～</li>
+</ul>
+</div>
+<ul>
+<li>Parapper は、お使いのPCの中で動くローカル翻訳です。APIキーの契約は不要で、翻訳の通信が外に出ません。</li>
+<li>接続先・通信の形式・モデル名は自動で決まるため、<strong>設定するのはポート番号だけ</strong>です。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">設定</th>
+<th style="text-align: left;">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Port</td>
+<td style="text-align: left;">Parapper が待ち受けているポート番号です。既定は <code>18081</code> （1～65535）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>数字でない値や範囲外の値を入れた場合は、いまの値をそのまま保持します。</li>
+<li>設定したら、翻訳エンジンの一覧から <code>Parapper翻訳</code> を選ぶと使えるようになります。</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Parapper 本体を起動しておいてください</p>
+<ul>
+<li>ゆかコネNEO側は、すでに動いている Parapper へ接続しにいくだけです。</li>
+<li>Parapper が起動していない、またはポートが違う場合は翻訳されません。</li>
+</ul>
+</div>
 <h2 id="_7">翻訳キャッシュ<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <p><img alt="翻訳キャッシュ" src="../images/startup_option7.png" /></p>
 <table>

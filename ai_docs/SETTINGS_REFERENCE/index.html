@@ -6877,7 +6877,7 @@ GUI操作方法の詳細は <a href="../YNC_NEO_GUI_REFERENCE/">YNC_NEO_GUI_REFE
 <tr>
 <td><code>Translator1</code></td>
 <td>int</td>
-<td>10</td>
+<td>27</td>
 <td>翻訳エンジン1のID</td>
 </tr>
 <tr>
@@ -6899,70 +6899,187 @@ GUI操作方法の詳細は <a href="../YNC_NEO_GUI_REFERENCE/">YNC_NEO_GUI_REFE
 <td>翻訳エンジン4のID</td>
 </tr>
 <tr>
-<td><code>Translator1s</code>～<code>Translator4s</code></td>
+<td><code>Translator5</code></td>
+<td>int</td>
+<td>10</td>
+<td>翻訳エンジン5のID</td>
+</tr>
+<tr>
+<td><code>Translator1s</code>～<code>Translator5s</code></td>
 <td>string</td>
 <td>""</td>
-<td>カスタム翻訳エンジン名</td>
+<td>翻訳エンジンの表示名（空でなければこちらが優先されます）</td>
 </tr>
 </tbody>
 </table>
 <h3 id="id">翻訳エンジンID一覧<a class="headerlink" href="#id" title="Permanent link">&para;</a></h3>
+<p><code>MainWindow.xaml</code> の <code>ComboBoxItem</code> の <code>Tag</code> が正です。<code>engine</code> 列は <code>/api/setTranslationParam</code> に渡す値です（<a href="../../tech/tech_api_neo/#engine">本体内蔵API</a>）。</p>
 <table>
 <thead>
 <tr>
 <th>ID</th>
 <th>エンジン名</th>
-<th>特徴</th>
+<th><code>engine</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>0</td>
+<td>Google 翻訳v2(支援①～)</td>
+<td><code>google</code></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Microsoft翻訳システム(支援①～)</td>
+<td><code>microsoft</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>DeepL API Pro翻訳エンジン(支援③～)</td>
+<td><code>deeplpro</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>DeepL API Free翻訳エンジン(個人でKey取得)</td>
+<td><code>deeplfree</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Amazon 翻訳システム(Asia向け/支援③～)</td>
+<td><code>amazon</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Amazon 翻訳システム(EU圏向け/支援③～)</td>
+<td><code>amazon-eu</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td>（廃止／欠番）</td>
+<td>—</td>
+</tr>
+<tr>
+<td>7</td>
+<td>（廃止／欠番）</td>
+<td>—</td>
+</tr>
+<tr>
+<td>8</td>
+<td>NAVER Papago 翻訳システム(支援③～)</td>
+<td><code>papago</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td>NAVER Papago 翻訳システム(個人キー)</td>
+<td><code>papago-app</code></td>
+</tr>
+<tr>
 <td>10</td>
-<td>Google翻訳</td>
-<td>高品質、多言語対応</td>
+<td>共用翻訳(m2m100/無料)</td>
+<td><code>share</code></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Google Apps Script 翻訳（個人で用意）</td>
+<td><code>gas</code></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Google 翻訳V3 (支援③～)</td>
+<td><code>googlev3</code></td>
+</tr>
+<tr>
+<td>13</td>
+<td>OpenAI GPT4.1 API翻訳(支援③～/β)</td>
+<td><code>gpt4.1</code></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Tencent Cloud Translator(個人キー)</td>
+<td><code>tencent</code></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Baidu(百度)Translator (個人キー)</td>
+<td><code>baidu</code></td>
+</tr>
+<tr>
+<td>16</td>
+<td>Microsoftローマ字変換（支援①～)</td>
+<td><code>roman</code></td>
+</tr>
+<tr>
+<td>17</td>
+<td>Alibaba クラウド翻訳(個人キー)</td>
+<td><code>alibaba</code></td>
+</tr>
+<tr>
+<td>18</td>
+<td>共用翻訳(Algos/より良い翻訳/支援①～)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>19</td>
+<td>OpenAI GPT-4.1-mini(支援③～/β)</td>
+<td><code>gpt4.1mini</code></td>
+</tr>
+<tr>
+<td>20</td>
+<td>OpenAI GPT-4.1-nano(支援③～/β)</td>
+<td><code>gpt4.1nano</code></td>
+</tr>
+<tr>
+<td>21</td>
+<td>Google Gemini 2.5 flash Lite API翻訳(個人キー)</td>
+<td><code>gemini25flash</code></td>
+</tr>
+<tr>
+<td>22</td>
+<td>Google Gemini API翻訳(個人キー)</td>
+<td><code>gemini25pro</code></td>
 </tr>
 <tr>
 <td>23</td>
-<td>無効(TransOFF)</td>
-<td>翻訳しない</td>
+<td>Anthropic Claude （個人キー)</td>
+<td><code>claude</code></td>
 </tr>
 <tr>
-<td>-</td>
-<td>Microsoft Azure</td>
-<td>Azure翻訳API</td>
+<td>24</td>
+<td>OpenRouter API (個人キー)</td>
+<td><code>openrouter</code></td>
 </tr>
 <tr>
-<td>-</td>
-<td>DeepL</td>
-<td>高品質（支援プラン③以上）</td>
+<td>25</td>
+<td>Grok AI 翻訳(個人キー)</td>
+<td><code>grok</code></td>
 </tr>
 <tr>
-<td>-</td>
-<td>IBM Watson</td>
-<td>Watson翻訳</td>
+<td>26</td>
+<td>ローカル翻訳（個人API）</td>
+<td><code>custom</code></td>
 </tr>
 <tr>
-<td>-</td>
-<td>Papago</td>
-<td>韓国語特化</td>
+<td>27</td>
+<td>ブラウザ翻訳</td>
+<td>—</td>
 </tr>
 <tr>
-<td>-</td>
-<td>GPT-3/4</td>
-<td>OpenAI翻訳</td>
+<td>28</td>
+<td>OFF（翻訳しない）</td>
+<td><code>off</code></td>
 </tr>
 <tr>
-<td>-</td>
-<td>Gemini</td>
-<td>Google AI</td>
-</tr>
-<tr>
-<td>-</td>
-<td>Claude</td>
-<td>Anthropic AI</td>
+<td>29</td>
+<td>Parapper翻訳</td>
+<td><code>parapper</code></td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p><strong>注意</strong>: 「翻訳しない」は <strong>ID28</strong> です。ID23 は Anthropic Claude です。
+ID19 と ID20 は、アプリの一覧の表示名が実際に使われるモデルと入れ替わっています。上の表は実際に使われるモデルを示しています。
+ID21 / ID22 は <code>engine</code> の値の名前と実際のエンジンが一致していません。</p>
+</blockquote>
 <p><strong>公式ドキュメント</strong>: <a href="../../cs/cs_en/">無料で英語翻訳を出す</a> / <a href="../../cs/cs_en_sp/">支援版で高品質翻訳</a></p>
 <h3 id="api">APIキー設定<a class="headerlink" href="#api" title="Permanent link">&para;</a></h3>
 <table>
@@ -7053,6 +7170,26 @@ GUI操作方法の詳細は <a href="../YNC_NEO_GUI_REFERENCE/">YNC_NEO_GUI_REFE
 <td><code>GAS_URL</code></td>
 <td>string</td>
 <td>Google Apps Script URL</td>
+</tr>
+<tr>
+<td><code>URL_CustomAPI</code></td>
+<td>string</td>
+<td>ローカル翻訳(ID26)の接続先URL</td>
+</tr>
+<tr>
+<td><code>MODEL_CustomAPI</code></td>
+<td>string</td>
+<td>ローカル翻訳(ID26)のモデル名</td>
+</tr>
+<tr>
+<td><code>CustomAPI_Mode</code></td>
+<td>string</td>
+<td>ローカル翻訳(ID26)の通信フォーマット（<code>POST(form)</code> / <code>POST(JSON)</code> / <code>OpenAI Format</code> / <code>plamo-2-translate</code>）</td>
+</tr>
+<tr>
+<td><code>Parapper_TransPort</code></td>
+<td>int</td>
+<td>Parapper翻訳(ID29)の接続先ポート（既定 18081 / 1～65535）。ホストは <code>127.0.0.1</code> 固定</td>
 </tr>
 </tbody>
 </table>
@@ -7538,7 +7675,7 @@ GUI操作方法の詳細は <a href="../YNC_NEO_GUI_REFERENCE/">YNC_NEO_GUI_REFE
 <td><code>KeepTime</code></td>
 <td>double</td>
 <td>4</td>
-<td>字幕表示時間(秒)</td>
+<td>字幕表示時間(秒)。確定した字幕が画面に出た時点から数えます(v2.3.128～)</td>
 </tr>
 <tr>
 <td><code>ScrollTime</code></td>

@@ -6528,7 +6528,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">保持時間</td>
-<td style="text-align: left;">何ミリ秒間字幕をキープするか？を設定します。</td>
+<td style="text-align: left;">確定した字幕を何秒間キープするか？を設定します。（1～30秒。最大にすると消去しなくなります）</td>
 </tr>
 <tr>
 <td style="text-align: left;">スクロール時間</td>
@@ -6544,6 +6544,13 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition info">
+<p class="admonition-title">保持時間の数え方</p>
+<ul>
+<li>保持時間は、<strong>確定した字幕が画面に出た時点</strong>から数えます。(v2.3.128～)</li>
+<li>v2.3.127以前は翻訳が終わった時点から数えていたため、翻訳にかかった時間のぶんだけ、実際の表示が設定より長くなっていました。</li>
+</ul>
+</div>
 <h2 id="_4">そのほか機能<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <h3 id="1_2">1.クイックボタン<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
 <p><img alt="クイックボタン" src="../images/startup_menu9.png" /></p>

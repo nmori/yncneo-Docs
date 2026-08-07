@@ -5166,10 +5166,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="翻訳表示設定の変更">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        engine に指定できる値
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        設定の変更
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         プラグインコマンド
@@ -6097,10 +6125,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="翻訳表示設定の変更">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        engine に指定できる値
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        設定の変更
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         プラグインコマンド
@@ -6402,7 +6458,7 @@
 <tr>
 <td style="text-align: left;">engine</td>
 <td style="text-align: left;">翻訳エンジン設定</td>
-<td style="text-align: left;"><code>google</code>,<code>microsoft</code>,<code>deeplpro</code>,<code>deeplfree</code>,<code>amazon</code>,<code>amazon-eu</code>,<code>googletrans</code>,<code>watson</code>,<code>Papago</code>,<code>papago-app</code>,<code>share</code>,<code>gas</code>,<code>off</code></td>
+<td style="text-align: left;">下表を参照</td>
 </tr>
 </tbody>
 </table>
@@ -6417,7 +6473,323 @@
 <ul>
 <li>選択・認知可能な言語であれば変更を反映します</li>
 </ul>
-<h2 id="_6">プラグインコマンド<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="engine">engine に指定できる値<a class="headerlink" href="#engine" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><code>engine</code></th>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">翻訳エンジン</th>
+<th style="text-align: left;">状態</th>
+<th style="text-align: left;">備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>google</code></td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">Google 翻訳v2(支援①～)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>microsoft</code></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Microsoft翻訳システム(支援①～)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>deeplpro</code></td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">DeepL API Pro翻訳エンジン(支援③～)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>deeplfree</code></td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">DeepL API Free翻訳エンジン(個人でKey取得)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>amazon</code></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Amazon 翻訳システム(Asia向け/支援③～)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>amazon-eu</code></td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Amazon 翻訳システム(EU圏向け/支援③～)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>googletrans</code></td>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">廃止</td>
+<td style="text-align: left;">v2.3.128でエンジン一覧から削除しました。指定しても選択は変わりません</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>watson</code></td>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">廃止</td>
+<td style="text-align: left;">v2.3.128でエンジン一覧から削除しました。指定しても選択は変わりません</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>papago</code></td>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">NAVER Papago 翻訳システム(支援③～)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>papago-app</code></td>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;">NAVER Papago 翻訳システム(個人キー)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>share</code></td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">共用翻訳(m2m100/無料)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>gas</code></td>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">Google Apps Script 翻訳（個人で用意）</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>googlev3</code></td>
+<td style="text-align: left;">12</td>
+<td style="text-align: left;">Google 翻訳V3 (支援③～)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>gpt4.1</code></td>
+<td style="text-align: left;">13</td>
+<td style="text-align: left;">OpenAI GPT4.1 API翻訳(支援③～/β)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>tencent</code></td>
+<td style="text-align: left;">14</td>
+<td style="text-align: left;">Tencent Cloud Translator(個人キー)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>baidu</code></td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">Baidu(百度)Translator (個人キー)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>roman</code></td>
+<td style="text-align: left;">16</td>
+<td style="text-align: left;">Microsoftローマ字変換（支援①～)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>alibaba</code></td>
+<td style="text-align: left;">17</td>
+<td style="text-align: left;">Alibaba クラウド翻訳(個人キー)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>gpt4.1mini</code></td>
+<td style="text-align: left;">19</td>
+<td style="text-align: left;">OpenAI GPT-4.1-mini(支援③～/β)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;">アプリの一覧では19と20の表示名が入れ替わっています。実際に使われるモデルはこの表のとおりです</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>gpt4.1nano</code></td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">OpenAI GPT-4.1-nano(支援③～/β)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;">同上</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>gemini25flash</code></td>
+<td style="text-align: left;">21</td>
+<td style="text-align: left;">Google Gemini 2.5 flash Lite API翻訳(個人キー)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;">値の名前と実際のエンジンが一致していません</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>gemini25pro</code></td>
+<td style="text-align: left;">22</td>
+<td style="text-align: left;">Google Gemini API翻訳(個人キー)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;">使うモデルは翻訳APIタブの MODEL で決まります。値の名前と実際のエンジンが一致していません</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>claude</code></td>
+<td style="text-align: left;">23</td>
+<td style="text-align: left;">Anthropic Claude （個人キー)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>openrouter</code></td>
+<td style="text-align: left;">24</td>
+<td style="text-align: left;">OpenRouter API (個人キー)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>grok</code></td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">Grok AI 翻訳(個人キー)</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>custom</code></td>
+<td style="text-align: left;">26</td>
+<td style="text-align: left;">ローカル翻訳（個人API）</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>off</code></td>
+<td style="text-align: left;">28</td>
+<td style="text-align: left;">OFF（翻訳しない）</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>parapper</code></td>
+<td style="text-align: left;">29</td>
+<td style="text-align: left;">Parapper翻訳</td>
+<td style="text-align: left;">利用可</td>
+<td style="text-align: left;">v2.3.128～</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">この表の基準</p>
+<ul>
+<li>ゆかコネNEO <strong>v2.3.128</strong> 時点の一覧です。</li>
+<li>値は <strong>大文字・小文字を区別します</strong>。<code>Papago</code> は無効で、<code>papago</code> が正しい表記です。</li>
+<li>一覧にない文字列を指定した場合、翻訳エンジンの選択は変更されません。</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">値の変更履歴</p>
+<ul>
+<li>v2.3.128：<code>gemini15flash</code> → <code>gemini25flash</code>、<code>gemini15pro</code> → <code>gemini25pro</code> に改名しました（旧名は使えません）</li>
+<li>v2.3.128：<code>parapper</code> を追加しました</li>
+<li>v2.3.128：<code>googletrans</code> <code>watson</code> を廃止しました</li>
+</ul>
+</div>
+<h2 id="_6">設定の変更<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<ul>
+<li>設定項目を外部から書き換えます。</li>
+</ul>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li><code>Parapper_TransPort</code> の対応は ゆかコネNEO v2.3.128～</li>
+</ul>
+</div>
+<ul>
+<li>送付方式：POST（<code>Content-Type: application/json</code>）</li>
+<li>送付先 : /api/setconfig</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">キー</th>
+<th style="text-align: left;">型</th>
+<th style="text-align: left;">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">NativeLanguage</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">母国語の選択番号</td>
+</tr>
+<tr>
+<td style="text-align: left;">TranslateLanguage1 ～ TranslateLanguage4</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">翻訳先の言語名</td>
+</tr>
+<tr>
+<td style="text-align: left;">Translator1String ～ Translator5String</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">翻訳エンジンの表示名</td>
+</tr>
+<tr>
+<td style="text-align: left;">KeepTime</td>
+<td style="text-align: left;">double</td>
+<td style="text-align: left;">字幕の保持時間（秒）</td>
+</tr>
+<tr>
+<td style="text-align: left;">ScrollTime</td>
+<td style="text-align: left;">double</td>
+<td style="text-align: left;">スクロール時間（秒）</td>
+</tr>
+<tr>
+<td style="text-align: left;">Parapper_TransPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Parapper翻訳の接続先ポート（1～65535）</td>
+</tr>
+</tbody>
+</table>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Query</label><label for="__tabbed_6_2">Body</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">POST</span><span class="w"> </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:15520/api/setconfig</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;YNC-NEO&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Parapper_TransPort&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">18081</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<ul>
+<li>受け付けると <code>200</code> が返ります。</li>
+<li>POST 以外のメソッド、JSONとして解釈できない本文は <code>400</code> を返します。</li>
+<li>一覧にないキーは無視されます。エラーにはなりません。</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">200は「反映が終わった」という意味ではありません</p>
+<ul>
+<li>設定の反映は、受け付けたあとに非同期で行われます。</li>
+<li><code>/api/setconfig</code> を送った直後に <code>/api/setTranslationParam</code> などを送ると、反映の順序が入れ替わることがあります。続けて送る場合は少し間隔をあけてください。</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">扱えるキーについて</p>
+<ul>
+<li>ここに載せているキーだけが動作を保証している範囲です。</li>
+<li>本文の <code>"YNC-NEO"</code> は省略して <code>{"Parapper_TransPort": 18081}</code> と書くこともできますが、将来の互換性のため付けることを推奨します。</li>
+</ul>
+</div>
+<h2 id="_7">プラグインコマンド<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <ul>
 <li>プラグイン特有のコマンドを送付します</li>
 </ul>
@@ -6512,7 +6884,7 @@
 <li>リファクタリングが進んだ暁には、このフォーマットは使わなくなるかもしれません</li>
 </ul>
 </div>
-<div class="tabbed-set tabbed-alternate" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Query</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Query</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="w">        </span><span class="p">{</span>
@@ -6639,7 +7011,7 @@
 <li>前述のAPIと異なり、内容がかなり絞られています</li>
 </ul>
 </div>
-<div class="tabbed-set tabbed-alternate" data-tabs="7:3"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><input id="__tabbed_7_3" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Query</label><label for="__tabbed_7_2">意味</label><label for="__tabbed_7_3">特性</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:3"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><input id="__tabbed_8_3" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Query</label><label for="__tabbed_8_2">意味</label><label for="__tabbed_8_3">特性</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p">{</span>
@@ -6730,7 +7102,7 @@
 <li>文のみです</li>
 </ul>
 </div>
-<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Query</label><label for="__tabbed_8_2">特性</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Query</label><label for="__tabbed_9_2">特性</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">今日はよい天気です</span>

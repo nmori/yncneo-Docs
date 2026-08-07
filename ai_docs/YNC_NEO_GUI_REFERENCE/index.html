@@ -7287,9 +7287,11 @@
 </tbody>
 </table>
 <p><strong>翻訳エンジン一覧</strong>:</p>
+<p>ID は <code>ComboBoxItem</code> の <code>Tag</code> で、設定 <code>Translator1</code>～<code>Translator5</code> に保存される値です。ID とAPI名の対応は <a href="../SETTINGS_REFERENCE/">設定リファレンス</a> の「翻訳エンジンID一覧」を参照してください。</p>
 <table>
 <thead>
 <tr>
+<th>ID</th>
 <th>エンジン名</th>
 <th>特徴</th>
 <th>APIキー必要</th>
@@ -7297,117 +7299,179 @@
 </thead>
 <tbody>
 <tr>
-<td>Google Translate</td>
+<td>0</td>
+<td>Google 翻訳v2</td>
 <td>高品質、多言語対応</td>
-<td>要（有料）</td>
+<td>支援①～</td>
 </tr>
 <tr>
-<td>Google Translate Free</td>
-<td>無料版、制限あり</td>
+<td>1</td>
+<td>Microsoft翻訳システム</td>
+<td>Azure翻訳</td>
+<td>支援①～</td>
+</tr>
+<tr>
+<td>2</td>
+<td>DeepL API Pro</td>
+<td>高品質翻訳</td>
+<td>支援③～</td>
+</tr>
+<tr>
+<td>3</td>
+<td>DeepL API Free</td>
+<td>無料枠DeepL</td>
+<td>個人でKey取得</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Amazon 翻訳システム (Asia向け)</td>
+<td>AWS翻訳</td>
+<td>支援③～</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Amazon 翻訳システム (EU圏向け)</td>
+<td>AWS翻訳</td>
+<td>支援③～</td>
+</tr>
+<tr>
+<td>8</td>
+<td>NAVER Papago 翻訳システム</td>
+<td>韓国語特化</td>
+<td>支援③～</td>
+</tr>
+<tr>
+<td>9</td>
+<td>NAVER Papago 翻訳システム</td>
+<td>韓国語特化</td>
+<td>個人キー</td>
+</tr>
+<tr>
+<td>10</td>
+<td>共用翻訳 (m2m100)</td>
+<td>無料の共用サーバ</td>
 <td>不要</td>
 </tr>
 <tr>
-<td>Google Translate V3</td>
+<td>11</td>
+<td>Google Apps Script 翻訳</td>
+<td>個人で用意</td>
+<td>個人で用意</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Google 翻訳V3</td>
 <td>最新API</td>
-<td>要（有料）</td>
+<td>支援③～</td>
 </tr>
 <tr>
-<td>Microsoft Translator</td>
-<td>Azure翻訳</td>
-<td>要（有料）</td>
-</tr>
-<tr>
-<td>DeepL Pro</td>
-<td>高品質翻訳</td>
-<td>要（有料）</td>
-</tr>
-<tr>
-<td>DeepL Free</td>
-<td>無料版DeepL</td>
-<td>要（無料枠）</td>
-</tr>
-<tr>
-<td>Amazon Translate (Asia/EU)</td>
-<td>AWS翻訳</td>
-<td>要（有料）</td>
-</tr>
-<tr>
-<td>IBM Translator</td>
-<td>Watson翻訳</td>
-<td>要（有料）</td>
-</tr>
-<tr>
-<td>NAVER Translator</td>
-<td>Papago</td>
-<td>要</td>
-</tr>
-<tr>
-<td>GPT-3</td>
+<td>13</td>
+<td>OpenAI GPT4.1 API翻訳</td>
 <td>OpenAI翻訳</td>
-<td>要（有料）</td>
+<td>支援③～/β</td>
 </tr>
 <tr>
-<td>GPT-4o</td>
-<td>最新GPT</td>
-<td>要（有料）</td>
+<td>14</td>
+<td>Tencent Cloud Translator</td>
+<td>中国語特化</td>
+<td>個人キー</td>
 </tr>
 <tr>
-<td>GPT-4o Mini</td>
+<td>15</td>
+<td>Baidu(百度)Translator</td>
+<td>中国語特化</td>
+<td>個人キー</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Microsoftローマ字変換</td>
+<td>ローマ字化</td>
+<td>支援①～</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Alibaba クラウド翻訳</td>
+<td>中国語特化</td>
+<td>個人キー</td>
+</tr>
+<tr>
+<td>18</td>
+<td>共用翻訳 (Algos/より良い翻訳)</td>
+<td>共用サーバ</td>
+<td>支援①～</td>
+</tr>
+<tr>
+<td>19</td>
+<td>OpenAI GPT-4.1-mini</td>
 <td>軽量GPT</td>
-<td>要（有料）</td>
+<td>支援③～/β</td>
 </tr>
 <tr>
-<td>Gemini</td>
-<td>Google AI</td>
-<td>要</td>
+<td>20</td>
+<td>OpenAI GPT-4.1-nano</td>
+<td>最軽量GPT</td>
+<td>支援③～/β</td>
 </tr>
 <tr>
-<td>Gemini 2.5 Flash Lite</td>
+<td>21</td>
+<td>Google Gemini 2.5 flash Lite API翻訳</td>
 <td>高速版</td>
-<td>要</td>
+<td>個人キー</td>
 </tr>
 <tr>
-<td>Claude</td>
+<td>22</td>
+<td>Google Gemini API翻訳</td>
+<td>モデルは翻訳APIタブのMODELで選択</td>
+<td>個人キー</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Anthropic Claude</td>
 <td>Anthropic AI</td>
-<td>要（有料）</td>
+<td>個人キー</td>
 </tr>
 <tr>
-<td>Grok</td>
-<td>xAI</td>
-<td>要</td>
-</tr>
-<tr>
-<td>OpenRouter</td>
+<td>24</td>
+<td>OpenRouter API</td>
 <td>複数AI統合</td>
-<td>要</td>
+<td>個人キー</td>
 </tr>
 <tr>
-<td>Tencent Translator</td>
-<td>中国語特化</td>
-<td>要</td>
+<td>25</td>
+<td>Grok AI 翻訳</td>
+<td>xAI</td>
+<td>個人キー</td>
 </tr>
 <tr>
-<td>BAIDU Translator</td>
-<td>中国語特化</td>
-<td>要</td>
-</tr>
-<tr>
-<td>Alibaba Translator</td>
-<td>中国語特化</td>
-<td>要</td>
-</tr>
-<tr>
-<td>Custom Translator</td>
-<td>カスタム設定</td>
+<td>26</td>
+<td>ローカル翻訳（個人API）</td>
+<td>OpenAI互換など。LM Studio等</td>
 <td>設定による</td>
 </tr>
 <tr>
-<td>TransOFF</td>
+<td>27</td>
+<td>ブラウザ翻訳</td>
+<td>ブラウザ内蔵の翻訳を使う</td>
+<td>不要</td>
+</tr>
+<tr>
+<td>28</td>
+<td>OFF（翻訳しない）</td>
 <td>翻訳無効</td>
+<td>不要</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Parapper翻訳</td>
+<td>ローカル翻訳。ポートのみ設定 (v2.3.128～)</td>
 <td>不要</td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>ID6 / ID7 は廃止された欠番です。
+ID19 / ID20 は、アプリの一覧の表示名が実際に使われるモデルと入れ替わっています。上の表は実際に使われるモデルを示しています。</p>
+</blockquote>
 <hr />
 <h3 id="4-expandcommonsetting">4. 共通設定 (ExpandCommonSetting)<a class="headerlink" href="#4-expandcommonsetting" title="Permanent link">&para;</a></h3>
 <p><strong>目的</strong>: アプリケーション全体の動作設定</p>
