@@ -1795,6 +1795,8 @@
       
         
       
+        
+      
     
     
     
@@ -1909,6 +1911,34 @@
     
   
     レイアウト
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../startup/startup_profile.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    設定の保存・復元
   
 
     
@@ -2668,6 +2698,8 @@
       
         
       
+        
+      
     
     
     
@@ -2914,6 +2946,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../plugin_replacefwords/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    不適切語の置換
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../plugin_GPT3/" class="md-nav__link">
         
   
@@ -2951,6 +3011,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -3162,6 +3226,62 @@
     
   
     遅延
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_dynamickeeptime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    表示時間の自動調整
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_infographics.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    インフォグラフィックス(実験的)
   
 
     
@@ -3822,6 +3942,8 @@
       
         
       
+        
+      
     
     
     
@@ -4104,6 +4226,34 @@
     
   
     Twitchチャット連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_niconama.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ニコニコ生放送連携
   
 
     
@@ -6364,6 +6514,20 @@
 </tr>
 </tbody>
 </table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">パラメータは自動でURLエンコードされます</p>
+<ul>
+<li>差し込まれる値は URLエンコード（パーセントエンコード）されます。日本語は <code>%E3%81%82</code> のような形になります。</li>
+<li>受け取る側でデコードが必要です。</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">APIタグで呼び出した場合は空になります</p>
+<ul>
+<li>APIタグ経由（<code>/api/command</code>）で発火したときは、発話にひもづいていないため<strong>すべてのパラメータが空文字</strong>になります。</li>
+<li>パラメータを使いたい場合は、起動フレーズによって発火するルールとして設定してください。</li>
+</ul>
 </div>
 <div class="admonition tips">
 <p class="admonition-title">URLの設定例</p>

@@ -1797,6 +1797,8 @@
       
         
       
+        
+      
     
     
     
@@ -1911,6 +1913,34 @@
     
   
     レイアウト
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../startup_profile.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    設定の保存・復元
   
 
     
@@ -2843,6 +2873,8 @@
       
         
       
+        
+      
     
     
     
@@ -3089,6 +3121,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../plugin/plugin_replacefwords/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    不適切語の置換
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../plugin/plugin_GPT3/" class="md-nav__link">
         
   
@@ -3126,6 +3186,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -3337,6 +3401,62 @@
     
   
     遅延
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_dynamickeeptime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    表示時間の自動調整
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_infographics.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    インフォグラフィックス(実験的)
   
 
     
@@ -3997,6 +4117,8 @@
       
         
       
+        
+      
     
     
     
@@ -4279,6 +4401,34 @@
     
   
     Twitchチャット連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_niconama.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ニコニコ生放送連携
   
 
     
@@ -6232,7 +6382,29 @@
 </div>
 
 <h2 id="_2">ブラウザ音声認識について<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>ブラウザ音声認識は、Edgeやスマートフォンに搭載されている音声認識機能を使って、あなたの声を文字に変換するシンプルな方法です。</p>
+<p>ブラウザ音声認識は、ブラウザに搭載されている音声認識機能を使って、あなたの声を文字に変換するシンプルな方法です。使うブラウザによって、次の2種類から選べます。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">選択肢</th>
+<th style="text-align: left;">使われる音声認識</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ブラウザ（Chrome / Google音声認識）</td>
+<td style="text-align: left;">Googleの音声認識</td>
+</tr>
+<tr>
+<td style="text-align: left;">ブラウザ（Edge / Microsoft音声認識）</td>
+<td style="text-align: left;">Microsoftの音声認識</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>どちらもインターネット接続が必要です。</li>
+<li>認識の癖が違うので、片方でうまくいかないときはもう片方を試してみてください。</li>
+</ul>
 <p><img alt="音声認識モード選択画面" src="../images/startup_asr_p01.png" /></p>
 <h2 id="_3">よくある問題と解決法<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <h3 id="_4">マイク設定の確認<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
@@ -6296,16 +6468,23 @@
   </div>
 
   <div class="step-item">
-    <h3>ブラウザの設定変更</h3>
-    <p>ゆかコネのオプション設定で使用するブラウザを変更できます</p>
+    <h3>認識に使うブラウザを変更する</h3>
+    <p>音声認識に使うブラウザは「音声入力の設定」画面で切り替えます</p>
     <ol>
-      <li>ゆかコネの設定画面を開く</li>
-      <li>オプションタブを選択</li>
-      <li>「ブラウザ」の項目で別のブラウザを選択</li>
+      <li>左メニューの「音声入力の設定」を開く</li>
+      <li>「ブラウザ（Chrome / Google音声認識）」か「ブラウザ（Edge / Microsoft音声認識）」を選ぶ</li>
+      <li>音声認識ウィンドウを開き直す</li>
     </ol>
   </div>
 </div>
 
+<div class="admonition warning">
+<p class="admonition-title">「ブラウザのオプション」画面とは別の設定です</p>
+<ul>
+<li>「ブラウザのオプション」画面にあるChrome / Edgeの選択は、<strong>字幕を表示するため</strong>に使うブラウザの設定です。音声認識には影響しません。</li>
+<li><strong>音声認識</strong>に使うブラウザは「音声入力の設定」画面で選びます。ここを間違えると、いくら切り替えても認識の挙動が変わりません。</li>
+</ul>
+</div>
 <h2 id="_7">その他のよくある問題<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <h3 id="_8">認識はされるが非常に遅い場合<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <div class="tips-box">

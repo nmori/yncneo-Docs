@@ -1917,6 +1917,8 @@
       
         
       
+        
+      
     
     
     
@@ -2031,6 +2033,34 @@
     
   
     レイアウト
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../startup/startup_profile.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    設定の保存・復元
   
 
     
@@ -2788,6 +2818,8 @@
       
         
       
+        
+      
     
     
     
@@ -3034,6 +3066,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../plugin/plugin_replacefwords/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    不適切語の置換
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../plugin/plugin_GPT3/" class="md-nav__link">
         
   
@@ -3071,6 +3131,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -3282,6 +3346,62 @@
     
   
     遅延
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_dynamickeeptime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    表示時間の自動調整
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_infographics.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    インフォグラフィックス(実験的)
   
 
     
@@ -3942,6 +4062,8 @@
       
         
       
+        
+      
     
     
     
@@ -4224,6 +4346,34 @@
     
   
     Twitchチャット連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_niconama.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ニコニコ生放送連携
   
 
     
@@ -6124,8 +6274,9 @@
 <div class="admonition tips">
 <p class="admonition-title">制御用のアドレスについて</p>
 <ul>
+<li>下記の例では既定のポート番号 <code>11900</code> を使っています。</li>
 <li>パソコンで起動しているアプリが占有しているなどで使えない場合は番号が変わるときがあります。</li>
-<li>うまく動かないときは、番号を確認してください。</li>
+<li>うまく動かないときは、ゆかコネNEOの「レイアウトデザインの選択」画面に表示されているアドレスで番号を確認してください。</li>
 </ul>
 </div>
 <ul>
@@ -6150,11 +6301,11 @@
 <tbody>
 <tr>
 <td style="text-align: left;">受け取る</td>
-<td style="text-align: left;"><a href="http://127.0.0.1:15520/api/mute-off">http://127.0.0.1:15520/api/mute-off</a></td>
+<td style="text-align: left;"><a href="http://127.0.0.1:11900/api/mute-off">http://127.0.0.1:11900/api/mute-off</a></td>
 </tr>
 <tr>
 <td style="text-align: left;">受け取らない</td>
-<td style="text-align: left;"><a href="http://127.0.0.1:15520/api/mute-on">http://127.0.0.1:15520/api/mute-on</a></td>
+<td style="text-align: left;"><a href="http://127.0.0.1:11900/api/mute-on">http://127.0.0.1:11900/api/mute-on</a></td>
 </tr>
 </tbody>
 </table>
@@ -6176,7 +6327,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="http://localhost:15520/api/input?text=あいうえお">http://localhost:15520/api/input?text=あいうえお</a></td>
+<td style="text-align: left;"><a href="http://localhost:11900/api/input?text=あいうえお">http://localhost:11900/api/input?text=あいうえお</a></td>
 </tr>
 </tbody>
 </table>
@@ -6198,7 +6349,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="http://localhost:15520/api/setTranslationParam?slot=1&amp;engine=off">http://localhost:15520/api/setTranslationParam?slot=1&amp;engine=off</a></td>
+<td style="text-align: left;"><a href="http://localhost:11900/api/setTranslationParam?slot=1&amp;engine=off">http://localhost:11900/api/setTranslationParam?slot=1&amp;engine=off</a></td>
 </tr>
 </tbody>
 </table>
@@ -6234,7 +6385,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="http://localhost:15520/api/setTranslationParam?slot=1&amp;engine=deeplpro&amp;language=en">http://localhost:15520/api/setTranslationParam?slot=1&amp;engine=deeplpro&amp;language=en</a></td>
+<td style="text-align: left;"><a href="http://localhost:11900/api/setTranslationParam?slot=1&amp;engine=deeplpro&amp;language=en">http://localhost:11900/api/setTranslationParam?slot=1&amp;engine=deeplpro&amp;language=en</a></td>
 </tr>
 </tbody>
 </table>

@@ -1795,6 +1795,8 @@
       
         
       
+        
+      
     
     
     
@@ -1909,6 +1911,34 @@
     
   
     レイアウト
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../startup/startup_profile.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    設定の保存・復元
   
 
     
@@ -2668,6 +2698,8 @@
       
         
       
+        
+      
     
     
     
@@ -2914,6 +2946,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../plugin_replacefwords/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    不適切語の置換
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../plugin_GPT3/" class="md-nav__link">
         
   
@@ -2951,6 +3011,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -3162,6 +3226,62 @@
     
   
     遅延
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_dynamickeeptime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    表示時間の自動調整
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_infographics.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    インフォグラフィックス(実験的)
   
 
     
@@ -3523,6 +3643,17 @@
     <span class="md-ellipsis">
       
         使うとき
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#http" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HTTP経由で読み込む
       
     </span>
   </a>
@@ -3911,6 +4042,8 @@
       
         
       
+        
+      
     
     
     
@@ -4193,6 +4326,34 @@
     
   
     Twitchチャット連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_niconama.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ニコニコ生放送連携
   
 
     
@@ -6018,6 +6179,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#http" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HTTP経由で読み込む
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -6046,11 +6218,8 @@
 <h2 id="_1">このプラグインで出来ること<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>テキスト読み込み対応の配信ソフトで字幕を表示できます</li>
-<li>WebSocketサーバー機能によるリアルタイム通信</li>
-<li>レジストリ連携による設定永続化</li>
-<li>ファイル監視の高度な制御機能</li>
-<li>複数ファイル同時監視システム</li>
-<li>自動状態復元機能</li>
+<li>字幕をテキストファイルとして書き出します</li>
+<li>書き出した内容を、ゆかコネNEOのWebサーバ経由でも取得できます</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">OBS Studioの場合</p>
@@ -6105,27 +6274,99 @@
 <td style="text-align: left;">ファイル名の指定</td>
 <td style="text-align: left;">ツールでファイル名が指定されているときは、これで名前を合わせます</td>
 </tr>
+<tr>
+<td style="text-align: left;">要約を書き出す</td>
+<td style="text-align: left;">会話の要約を <code>Summary.txt</code> に書き出します</td>
+</tr>
+<tr>
+<td style="text-align: left;">要約フォーマット</td>
+<td style="text-align: left;">要約の書き方を指定します（既定 <code>【$title】$summary</code>）</td>
+</tr>
+<tr>
+<td style="text-align: left;">脚注を書き出す</td>
+<td style="text-align: left;">脚注を <code>Footnote.txt</code> に書き出します</td>
+</tr>
+<tr>
+<td style="text-align: left;">HTTPで公開する</td>
+<td style="text-align: left;">ファイルの内容をゆかコネNEOのWebサーバからも取得できるようにします</td>
+</tr>
+<tr>
+<td style="text-align: left;">書き出し先を使わない</td>
+<td style="text-align: left;">ファイルの書き出しを止めて、HTTP経由だけで使います</td>
+</tr>
 </tbody>
 </table>
+<div class="admonition info">
+<p class="admonition-title">要約フォーマットで使えるパラメータ</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">パラメータ</th>
+<th style="text-align: left;">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>$title</code></td>
+<td style="text-align: left;">要約の見出し</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>$summary</code></td>
+<td style="text-align: left;">要約の本文</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h2 id="_4">使うとき<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>音声認識と同時にファイルが生成されます。</p>
 </li>
 <li>
-<p>標準ファイル名と内容は以下の通りです。
-|ファイル名|意味|
-|:--|:---|
-|Native.txt|母国語|
-|Translate1.txt|翻訳語１|
-|Translate2.txt|翻訳語２|
-|Translate3.txt|翻訳語３|
-|Translate4.txt|翻訳語４|</p>
+<p>標準ファイル名と内容は以下の通りです。</p>
 </li>
-<li>
-<p>これらのファイルを配信ソフトで読み込みます。
-<img alt="OBS" src="../images/plugin_obsfile_p3.png" /></p>
-</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ファイル名</th>
+<th style="text-align: left;">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Native.txt</td>
+<td style="text-align: left;">母国語</td>
+</tr>
+<tr>
+<td style="text-align: left;">Translate1.txt</td>
+<td style="text-align: left;">翻訳語１</td>
+</tr>
+<tr>
+<td style="text-align: left;">Translate2.txt</td>
+<td style="text-align: left;">翻訳語２</td>
+</tr>
+<tr>
+<td style="text-align: left;">Translate3.txt</td>
+<td style="text-align: left;">翻訳語３</td>
+</tr>
+<tr>
+<td style="text-align: left;">Translate4.txt</td>
+<td style="text-align: left;">翻訳語４</td>
+</tr>
+<tr>
+<td style="text-align: left;">Summary.txt</td>
+<td style="text-align: left;">会話の要約（「要約を書き出す」がONのとき）</td>
+</tr>
+<tr>
+<td style="text-align: left;">Footnote.txt</td>
+<td style="text-align: left;">脚注（「脚注を書き出す」がONのとき）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>これらのファイルを配信ソフトで読み込みます。
+<img alt="OBS" src="../images/plugin_obsfile_p3.png" /></li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">話者毎に分ける場合</p>
@@ -6134,6 +6375,23 @@
 <li>このファイルを読み込むことで話者毎の表示が実現できます</li>
 <li>話者の名前には、ファイル禁則文字を使わないでください<br>例）<code>*</code>や<code>￥</code>など</li>
 </ul>
+</div>
+<h2 id="http">HTTP経由で読み込む<a class="headerlink" href="#http" title="Permanent link">&para;</a></h2>
+<ul>
+<li>「HTTPで公開する」をONにすると、同じ内容をゆかコネNEOのWebサーバからも取得できます。</li>
+<li>ファイルを経由しないので、配信ソフトのブラウザソースから直接読み込めます。</li>
+</ul>
+<div class="highlight"><pre><span></span><code>&lt;ベースURL&gt;/Native.txt
+&lt;ベースURL&gt;/Translate1.txt
+</code></pre></div>
+<ul>
+<li>ベースとなるアドレスは、プラグインの設定画面に表示されています。</li>
+<li>話者ごとに分ける設定にしている場合は <code>&lt;ベースURL&gt;/Native_nao.txt</code> のようになります。</li>
+<li>「書き出し先を使わない」をONにすると、フォルダへのファイル出力を止めてHTTPだけで使えます。書き込みが頻繁に起きるのを避けたい場合に向いています。</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">ほかのパソコンから読み込む場合</p>
+<p>既定では同じパソコンの中からしか接続できません。ほかの端末から読みたい場合は「ネットワークの設定」画面の設定が必要です。詳しくは <a href="../../startup/startup_option/">オプション設定</a> をご覧ください。</p>
 </div>
 
 

@@ -1795,6 +1795,8 @@
       
         
       
+        
+      
     
     
     
@@ -1909,6 +1911,34 @@
     
   
     レイアウト
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../startup/startup_profile.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    設定の保存・復元
   
 
     
@@ -2668,6 +2698,8 @@
       
         
       
+        
+      
     
     
     
@@ -2914,6 +2946,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../plugin_replacefwords/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    不適切語の置換
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../plugin_GPT3/" class="md-nav__link">
         
   
@@ -2951,6 +3011,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -3162,6 +3226,62 @@
     
   
     遅延
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_dynamickeeptime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    表示時間の自動調整
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_infographics.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    インフォグラフィックス(実験的)
   
 
     
@@ -3822,6 +3942,8 @@
       
         
       
+        
+      
     
     
     
@@ -4104,6 +4226,34 @@
     
   
     Twitchチャット連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_niconama.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ニコニコ生放送連携
   
 
     
@@ -6091,6 +6241,32 @@
 <p>「設定」ボタンを押すことで、接続先が表示されます。</p>
 </li>
 </ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">接続先</th>
+<th style="text-align: left;">既定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">HTTP</td>
+<td style="text-align: left;"><code>http://127.0.0.1:8080</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">WebSocket</td>
+<td style="text-align: left;"><code>ws://127.0.0.1:32000</code> 前後</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">ポート番号は固定ではありません</p>
+<ul>
+<li>ほかのソフトがポートを使っている場合は、自動的に別のポートに変わります。WebSocketは <code>32000</code> 番台の空きポートから選ばれます。</li>
+<li>実際に使われている番号は「設定」ボタンで確認できます。</li>
+<li>外部ツールから使う場合の詳しい仕様は <a href="../../tech/tech_api_plugin/">プラグイン系API</a> をご覧ください。</li>
+</ul>
+</div>
 <div class="admonition info">
 <p class="admonition-title">下記プラグインが有効な場合は、下記の設定が反映されます</p>
 <p><em><a href="../plugin_dictionary/">辞書プラグイン</a>
@@ -6110,6 +6286,12 @@ A: 他のアプリがゆかコネの機能を使えるようにする橋渡し�
 A: 基本的にプラグインをONにするだけで使えます。詳細な設定が必要な場合は「設定」ボタンから行えます。</p>
 <p><strong>Q: うまく動かない時はどうすればいいですか？</strong><br />
 A: ゆかコネを管理者権限で実行してみてください。それでもうまくいかない場合は、他のアプリがゆかコネに対応しているか確認してください。</p>
+<p><strong>Q: なぜ管理者権限が必要なのですか？</strong><br />
+A: 同じパソコンの中だけで使う場合は必要ありません。<strong>ほかのパソコンやスマホから接続する</strong>場合は、「ネットワークの設定」画面の「すべてのIPアドレスを有効にする」をONにし、さらに管理者としてゆかコネNEOを起動する必要があります。管理者権限がないと、同じパソコンの中だけの通信に戻ります。</p>
+<div class="admonition warning">
+<p class="admonition-title">ほかの端末から接続できるようにする場合</p>
+<p>このプラグインのサーバには認証がありません。信頼できないネットワークでは「すべてのIPアドレスを有効にする」をONにしないでください。詳しくは <a href="../../startup/startup_option/">オプション設定</a> の「ネットワークの設定」をご覧ください。</p>
+</div>
 
 
 

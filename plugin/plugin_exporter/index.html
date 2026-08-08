@@ -1795,6 +1795,8 @@
       
         
       
+        
+      
     
     
     
@@ -1909,6 +1911,34 @@
     
   
     レイアウト
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../startup/startup_profile.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    設定の保存・復元
   
 
     
@@ -2668,6 +2698,8 @@
       
         
       
+        
+      
     
     
     
@@ -2914,6 +2946,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../plugin_replacefwords/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    不適切語の置換
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../plugin_GPT3/" class="md-nav__link">
         
   
@@ -2951,6 +3011,10 @@
   
     
     
+      
+        
+      
+        
       
         
       
@@ -3162,6 +3226,62 @@
     
   
     遅延
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_dynamickeeptime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    表示時間の自動調整
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_infographics.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    インフォグラフィックス(実験的)
   
 
     
@@ -3822,6 +3942,8 @@
       
         
       
+        
+      
     
     
     
@@ -4104,6 +4226,34 @@
     
   
     Twitchチャット連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_niconama.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ニコニコ生放送連携
   
 
     
@@ -6348,6 +6498,14 @@
 </li>
 </ul>
 <div class="admonition info">
+<p class="admonition-title">ログ自動保存が動くタイミング</p>
+<ul>
+<li>保存されるのは、<strong>プラグインを無効にしたとき</strong>（ゆかコネNEOを終了したときを含む）です。</li>
+<li>保存先は設定フォルダの中の <code>VoiceLog</code> フォルダで、<code>MessageLog_（日付）_（連番）.srt</code> という名前になります。</li>
+<li>同じ日に何度も保存した場合は連番が増えていきます。上書きはされません。</li>
+</ul>
+</div>
+<div class="admonition info">
 <p class="admonition-title">翻訳について</p>
 <ul>
 <li>翻訳１の設定が採用されます。</li>
@@ -6426,6 +6584,54 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition info">
+<p class="admonition-title">翻訳文は別ファイルとして同時に出力されます</p>
+<ul>
+<li>母国語のファイルとは別に、翻訳文のファイルが同時に書き出されます。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">形式</th>
+<th style="text-align: left;">翻訳文のファイル名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">SRT</td>
+<td style="text-align: left;"><code>（指定した名前）_tr.srt</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">STL</td>
+<td style="text-align: left;"><code>（指定した名前）_tr.stl</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">XML</td>
+<td style="text-align: left;"><code>（指定した名前）_tr.xml</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">VTT</td>
+<td style="text-align: left;"><code>（指定した名前）_tr.vtt</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">SubViewer</td>
+<td style="text-align: left;"><code>（指定した名前）_tr.sbv</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">SRV3</td>
+<td style="text-align: left;"><code>（指定した名前）_tr.srv3</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">AviUtl</td>
+<td style="text-align: left;"><code>（指定した名前）_lang_1.exo</code> / <code>_lang_2.exo</code>（言語ごと）</td>
+</tr>
+<tr>
+<td style="text-align: left;">YMM4</td>
+<td style="text-align: left;"><code>（指定した名前）_lang_1.ymmp</code> / <code>_lang_2.ymmp</code>（言語ごと）</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h3 id="_5">詳細設定項目<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <h4 id="_6">タイミング制御<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
 <table>
