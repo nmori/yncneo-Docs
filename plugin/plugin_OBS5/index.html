@@ -7129,7 +7129,7 @@
 
 <span class="c">/* 動的テキスト */</span>
 <span class="p">.</span><span class="nc">content</span><span class="p">::</span><span class="nd">before</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{ync.text}&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">"{ync.text}"</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="_7">配信自動連動<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
@@ -7176,17 +7176,17 @@
 <h4 id="api_1">API使用例<a class="headerlink" href="#api_1" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="c1">// シーン切り替え</span>
 <span class="nx">plugin</span><span class="p">.</span><span class="nx">onCommand</span><span class="p">({</span>
-<span class="w">  </span><span class="s2">&quot;target&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Plugin_OBS5&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="s2">&quot;command&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;SetScene&quot;</span><span class="p">,</span><span class="w"> </span>
-<span class="w">  </span><span class="s2">&quot;sceneName&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;ゲーム画面&quot;</span>
+<span class="w">  </span><span class="s2">"target"</span><span class="o">:</span><span class="w"> </span><span class="s2">"Plugin_OBS5"</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">"command"</span><span class="o">:</span><span class="w"> </span><span class="s2">"SetScene"</span><span class="p">,</span><span class="w"> </span>
+<span class="w">  </span><span class="s2">"sceneName"</span><span class="o">:</span><span class="w"> </span><span class="s2">"ゲーム画面"</span>
 <span class="p">});</span>
 
 <span class="c1">// 特定ソースにテキスト設定</span>
 <span class="nx">plugin</span><span class="p">.</span><span class="nx">onCommand</span><span class="p">({</span>
-<span class="w">  </span><span class="s2">&quot;target&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Plugin_OBS5&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="s2">&quot;command&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;SetSourceText&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="s2">&quot;sourceNo&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="s2">&quot;text&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;カスタムメッセージ&quot;</span>
+<span class="w">  </span><span class="s2">"target"</span><span class="o">:</span><span class="w"> </span><span class="s2">"Plugin_OBS5"</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">"command"</span><span class="o">:</span><span class="w"> </span><span class="s2">"SetSourceText"</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">"sourceNo"</span><span class="o">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">"text"</span><span class="o">:</span><span class="w"> </span><span class="s2">"カスタムメッセージ"</span>
 <span class="p">});</span>
 </code></pre></div>
 <h3 id="_10">技術実装詳細<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>

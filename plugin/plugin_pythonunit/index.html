@@ -6371,11 +6371,11 @@
 <span class="c1">#=====================================================</span>
 <span class="c1"># これは、音声認識されるたびに呼び出されます。</span>
 <span class="c1"># ここを書き換えると、母国語の表示を置換できます。</span>
-<span class="c1"># Message[&quot;TextFixed&quot;] が True ならば、音声認識で文が確定した状態です</span>
-<span class="c1"># Message[&quot;isDeleted&quot;] が True ならば、文が取り消されたことを意味します</span>
+<span class="c1"># Message["TextFixed"] が True ならば、音声認識で文が確定した状態です</span>
+<span class="c1"># Message["isDeleted"] が True ならば、文が取り消されたことを意味します</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">PostRecognition</span><span class="p">(</span><span class="n">Message</span><span class="p">):</span>
-    <span class="n">text</span> <span class="o">=</span> <span class="n">Message</span><span class="p">[</span><span class="s2">&quot;Text&quot;</span><span class="p">]</span>
-    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;です&#39;</span><span class="p">,</span> <span class="s1">&#39;にゃん&#39;</span><span class="p">)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">Message</span><span class="p">[</span><span class="s2">"Text"</span><span class="p">]</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'です'</span><span class="p">,</span> <span class="s1">'にゃん'</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">text</span>
 
 <span class="c1">#=====================================================</span>
@@ -6384,13 +6384,13 @@
 <span class="c1"># これは、翻訳を掛ける前の状態を変更できます。</span>
 <span class="c1"># Text1～Text4　は、それぞれ翻訳１～翻訳４に対応する母国語です。</span>
 <span class="c1"># ここを書き換えたあとのものが翻訳されます。</span>
-<span class="c1"># Message[&quot;Language1&quot;] １～４が、翻訳先言語コードです</span>
-<span class="c1"># Message[&quot;Native&quot;] が母国語言語コードです</span>
-<span class="c1"># Message[&quot;ID&quot;] をみると、文章のユニークなIDが得られます</span>
+<span class="c1"># Message["Language1"] １～４が、翻訳先言語コードです</span>
+<span class="c1"># Message["Native"] が母国語言語コードです</span>
+<span class="c1"># Message["ID"] をみると、文章のユニークなIDが得られます</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">PreTranslation</span><span class="p">(</span><span class="n">Message</span><span class="p">):</span>
-    <span class="n">text</span> <span class="o">=</span> <span class="n">Message</span><span class="p">[</span><span class="s2">&quot;Text1&quot;</span><span class="p">]</span>
-    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;今日&#39;</span><span class="p">,</span> <span class="s1">&#39;昨日&#39;</span><span class="p">)</span>
-    <span class="n">Message</span><span class="p">[</span><span class="s2">&quot;Text1&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">text</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">Message</span><span class="p">[</span><span class="s2">"Text1"</span><span class="p">]</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'今日'</span><span class="p">,</span> <span class="s1">'昨日'</span><span class="p">)</span>
+    <span class="n">Message</span><span class="p">[</span><span class="s2">"Text1"</span><span class="p">]</span> <span class="o">=</span> <span class="n">text</span>
     <span class="k">return</span> <span class="n">Message</span>
 
 <span class="c1">#=====================================================</span>
@@ -6400,9 +6400,9 @@
 <span class="c1"># Text1～Text4　は、それぞれ翻訳１～翻訳４に対応する翻訳後文です。</span>
 <span class="c1"># ここを書き換えたあとのものが表示されます。</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">PostTranslation</span><span class="p">(</span><span class="n">Message</span><span class="p">):</span>
-    <span class="n">text</span> <span class="o">=</span> <span class="n">Message</span><span class="p">[</span><span class="s2">&quot;Text1&quot;</span><span class="p">]</span>
-    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;weather&#39;</span><span class="p">,</span> <span class="s1">&#39;❤&#39;</span><span class="p">)</span>
-    <span class="n">Message</span><span class="p">[</span><span class="s2">&quot;Text1&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">text</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">Message</span><span class="p">[</span><span class="s2">"Text1"</span><span class="p">]</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'weather'</span><span class="p">,</span> <span class="s1">'❤'</span><span class="p">)</span>
+    <span class="n">Message</span><span class="p">[</span><span class="s2">"Text1"</span><span class="p">]</span> <span class="o">=</span> <span class="n">text</span>
     <span class="k">return</span> <span class="n">Message</span>
 </code></pre></div>
 <h2 id="_7">プログラミングが初めての方へ<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>

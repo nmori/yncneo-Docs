@@ -7361,6 +7361,11 @@ ID21 / ID22 は <code>engine</code> の値の名前と実際のエンジンが�
 <td>OpenAI連携を有効化</td>
 </tr>
 <tr>
+<td><code>ChangeAPIKey_GoogleGemini</code></td>
+<td>string</td>
+<td>Google Gemini APIキー（翻訳ID21/ID22 とAI機能で共用）。モデルは <code>Gemini_MODEL</code></td>
+</tr>
+<tr>
 <td><code>GAS_URL</code></td>
 <td>string</td>
 <td>Google Apps Script URL</td>
@@ -8599,8 +8604,8 @@ ID21 / ID22 は <code>engine</code> の値の名前と実際のエンジンが�
 <tr>
 <td><code>Gemini_MODEL</code></td>
 <td>string</td>
-<td>"2.5 Flash"</td>
-<td>Geminiのモデル</td>
+<td>"3.5 Flash Lite"</td>
+<td>Geminiのモデル。選択肢は <code>2.5 Flash</code> / <code>2.5 Flash Lite</code> / <code>2.5 Pro</code> / <code>3.1 Pro</code> / <code>3.1 Flash Lite</code> / <code>3.5 Flash</code> / <code>3.5 Flash Lite</code> / <code>3.6 Flash</code> / <code>3.7 Flash</code> / <code>3.8 Flash</code>。廃止済みの値（<code>2.0 Flash</code> / <code>2.0 Flash Lite</code> / <code>3.1 Flash</code> / <code>3.6 Flash Lite</code>）や未知の値は起動時に自動で読み替えられる</td>
 </tr>
 <tr>
 <td><code>claude_MODEL</code></td>

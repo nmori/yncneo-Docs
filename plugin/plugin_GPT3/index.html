@@ -3194,6 +3194,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#gemini-404" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gemini で 404 が返るとき
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6654,6 +6665,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#gemini-404" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gemini で 404 が返るとき
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -7088,6 +7110,22 @@
 </tr>
 </tbody>
 </table>
+<h3 id="gemini-404">Gemini で 404 が返るとき<a class="headerlink" href="#gemini-404" title="Permanent link">&para;</a></h3>
+<p>Gemini は「モデルが見つからない」ときに 404 を返します。キーが正しくても発生するので、次の順に確認してください。</p>
+<ol>
+<li><strong>モデルが古い</strong>：一番多い原因です。Google はモデルを比較的短い周期で終了します（例：Gemini 2.0 系は 2026年6月1日に終了）。オプション設定の Gemini の <code>MODEL</code> を、一覧の新しいものに選び直してください。ゆかコネ側でも、廃止されたモデルが設定に残っている場合は起動時に自動で現行のものへ読み替えます。</li>
+<li>
+<p><strong>キーで使えるモデルを確認する</strong>：ブラウザで次のURLを開くと、そのキーで実際に使えるモデルの一覧が返ります（<code>YOUR_KEY</code> は自分のAPIキーに置き換え）。</p>
+<div class="highlight"><pre><span></span><code>https://generativelanguage.googleapis.com/v1beta/models?key=YOUR_KEY
+</code></pre></div>
+<p>ここに出てこないモデルを選んでいると 404 になります。</p>
+</li>
+<li>
+<p><strong>Google Cloud Console で払い出したキーの場合</strong>：キーは特定のプロジェクトに紐づきます。プロジェクトに支払い方法が設定されていない、または提供対象外の地域からの利用だと、新しいモデルが一覧に出てこず 404 になることがあります。手軽に済ませたい場合は <a href="https://aistudio.google.com/">Google AI Studio</a> で払い出したキーをお使いください。</p>
+</li>
+<li><strong>Vertex AI とは別物です</strong>：Vertex AI 用の設定・認証情報はゆかコネでは使えません。Gemini API（AI Studio / Generative Language API）のキーが必要です。</li>
+</ol>
+<p>404 のときは、ゆかコネのログに Google が返した理由（<code>models/... is not found for API version v1beta</code> など）がそのまま記録されます。原因の切り分けにはログを確認してください。</p>
 <h3 id="_9">コスト最適化のコツ<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <h4 id="_10">設定調整<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
 <ul>
@@ -7097,7 +7135,7 @@
 </ul>
 <h4 id="_11">無料・安価な代替案<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
 <ol>
-<li><strong>Gemini無料枠</strong>: 月60回まで無料</li>
+<li><strong>Geminiの無料枠</strong>: 無料で使える範囲があります（上限はモデルごとに異なり、随時変わります）</li>
 <li><strong>ローカルAI</strong>: OllamaなどでオフラインAI</li>
 <li><strong>支援版機能</strong>: ゆかコネ支援版のAI機能活用</li>
 </ol>
