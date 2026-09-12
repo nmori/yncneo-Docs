@@ -7085,7 +7085,15 @@
 <tbody>
 <tr>
 <td style="text-align: left;">VRChat音声ミュート連動(linking Mute)</td>
-<td style="text-align: left;">VRChat側でマイクをミュートしたら、字幕の送信も止めます</td>
+<td style="text-align: left;">VRChat側のマイクのミュートに合わせて、字幕のミュートを切り替えます</td>
+</tr>
+<tr>
+<td style="text-align: left;">連動のしかた</td>
+<td style="text-align: left;"><code>そのまま</code> はVRChatでミュートしたら字幕もミュートします。<code>反転</code> は逆で、VRChatでミュートしている間だけ字幕を出します</td>
+</tr>
+<tr>
+<td style="text-align: left;">ミュートしたらチャットの字幕も消す(Clear chatbox)</td>
+<td style="text-align: left;">字幕を出したままミュートしたときに、VRChatのチャットボックスに残った字幕を消します</td>
 </tr>
 <tr>
 <td style="text-align: left;">左ジェスチャー連動(linking Left Gesture)</td>
@@ -7093,6 +7101,20 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition info">
+<p class="admonition-title">連動のしかた</p>
+<ul>
+<li><code>VRChat音声ミュート連動</code> がONのときだけ選べます。</li>
+<li><code>反転</code> は、VRChatではしゃべらずに字幕だけで会話したいときに使います。</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">ミュートしたらチャットの字幕も消す</p>
+<ul>
+<li>VRChatのミュートだけでなく、YNC_Neo本体でミュートしたときにも消えます。</li>
+<li>送信待ちの字幕が残っていた場合も、まとめて取り消します。</li>
+</ul>
+</div>
 <div class="admonition info">
 <p class="admonition-title">左ジェスチャー連動</p>
 <ul>
