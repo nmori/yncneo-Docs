@@ -6886,6 +6886,11 @@
 <td style="text-align: left;">発話の由来名（省略時は <code>API</code>）</td>
 <td style="text-align: left;">MyTool</td>
 </tr>
+<tr>
+<td style="text-align: left;">forceInput</td>
+<td style="text-align: left;">ミュート中でも入力する（省略時は <code>false</code>）</td>
+<td style="text-align: left;">true / 1</td>
+</tr>
 </tbody>
 </table>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Query</label><label for="__tabbed_1_2">Query（名前つき）</label></div>
@@ -6907,6 +6912,14 @@
 <ul>
 <li>成功すると ok が返ってきます。</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">ミュート中は入力されません</p>
+<ul>
+<li><code>/api/input</code> は<strong>ミュートに従います</strong>。ミュート中は表示も読み上げもされず、<code>ok</code> の代わりに <code>mute</code> が返ります（ステータスは 200 のままです）。</li>
+<li>以前はミュート中でも表示されていました。ミュート中でも出したい場合は <code>forceInput=true</code> を付けてください。</li>
+<li><code>true</code> のほかに <code>1</code> <code>on</code> <code>yes</code> も使えます。</li>
+</ul>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">name を付けないと名前が反映されません</p>
 <ul>
@@ -6973,6 +6986,11 @@
 <td>テキスト固有ID (v2.3.104～)</td>
 <td>4C6E8172-2048-4995-BF36-3893EF31FA67</td>
 </tr>
+<tr>
+<td>forceInput</td>
+<td>ミュート中でも入力する（省略時は <code>false</code>）</td>
+<td>true</td>
+</tr>
 </tbody>
 </table>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Query</label><label for="__tabbed_2_2">Body</label></div>
@@ -7007,6 +7025,8 @@
 <li>ingorePlugin は、実行しないプラグインを指定できます。（なお、
 プラグイン名は大文字・小文字を区別する点に注意してください)</li>
 <li>途中経過を送る場合には、fixedTextを使います。最初はfalse で経過を送り、最後に確定として True を送ります。IDごとに、かならず 最後にtrueが送られるようにしましょう。</li>
+<li>ミュート中は送らずに <code>mute</code> が返ります。ミュート中でも入力したい場合は forceInput を <code>true</code> にします。ボディでの指定が優先され、無ければ URL のクエリを見ます。</li>
+<li>確定（fixedText が <code>true</code>）で textID が空のときは、本体が ID を振って受け付けます。途中経過（<code>false</code>）で textID が空のときは捨てられます。</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">ignorePlugin は配列で指定してください</p>
@@ -7014,8 +7034,15 @@
 </div>
 <h2 id="_5">認識のミュート<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <ul>
-<li>すべての入力をシャットアウトします</li>
+<li>入力をシャットアウトします</li>
 </ul>
+<div class="admonition info">
+<p class="admonition-title">API からの入力もミュートに従います</p>
+<ul>
+<li>UDトーク・IPtalk・ブラウザ音声認識からの入力に加えて、<code>/api/input</code> から入れた文字も捨てられます。</li>
+<li>ミュート中でも <code>/api/input</code> から出したい場合は <code>forceInput=true</code> を付けてください。</li>
+</ul>
+</div>
 <div class="admonition tech">
 <p class="admonition-title">使用条件</p>
 <ul>
