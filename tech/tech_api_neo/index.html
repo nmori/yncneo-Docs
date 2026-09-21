@@ -6991,6 +6991,11 @@
 <td>ミュート中でも入力する（省略時は <code>false</code>）</td>
 <td>true</td>
 </tr>
+<tr>
+<td>Morph</td>
+<td>ルビ（読み）の指定 (v3.0.0 beta 22～)（<strong>JSON配列で指定</strong>）</td>
+<td>[{"writtenForm":"形態素","spokenForm":"けいたいそ"}]</td>
+</tr>
 </tbody>
 </table>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Query</label><label for="__tabbed_2_2">Body</label></div>
@@ -7012,7 +7017,12 @@
 <span class="w">    </span><span class="nt">"textID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4C6E8172-2048-4995-BF36-3893EF31FA67"</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">"UserID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0001-002-0003-00005"</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">"TalkerName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"さいとう"</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">"ServiceName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MyTool"</span>
+<span class="w">    </span><span class="nt">"ServiceName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MyTool"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"Morph"</span><span class="p">:</span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"writtenForm"</span><span class="p">:</span><span class="w"> </span><span class="s2">"今日"</span><span class="p">,</span><span class="w"> </span><span class="nt">"spokenForm"</span><span class="p">:</span><span class="w"> </span><span class="s2">"きょう"</span><span class="w"> </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"writtenForm"</span><span class="p">:</span><span class="w"> </span><span class="s2">"天気"</span><span class="p">,</span><span class="w"> </span><span class="nt">"spokenForm"</span><span class="p">:</span><span class="w"> </span><span class="s2">"てんき"</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 </div>
@@ -7031,6 +7041,18 @@
 <div class="admonition warning">
 <p class="admonition-title">ignorePlugin は配列で指定してください</p>
 <p><code>"ignorePlugin": "Plugin_GPT3"</code> のように文字列を直接書くとエラーになります。1つだけ指定する場合も <code>["Plugin_GPT3"]</code> と書いてください。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Morph でルビ（読み）を指定できます</p>
+<ul>
+<li><strong>POST のときだけ</strong>受け取ります。GET のクエリにはありません。</li>
+<li><code>writtenForm</code>（文字）と <code>spokenForm</code>（読み）の組を、<strong>文中に現れる順</strong>で並べた配列です。</li>
+<li>ルビを実際に付けるのは<strong>ルビ付与プラグイン (Plugin_Ruby)</strong> です。プラグインが無効なときは、渡しても何も起きません。</li>
+<li>指定した組は、その言語の<strong>形態素解析（MeCab）の代わり</strong>に使われます。渡した組だけがルビになり、残りの文字にはルビが付きません。</li>
+<li>当たるのは<strong>入力した文が表示される段</strong>だけです。翻訳後の段には、これまでどおり解析結果のルビが付きます。</li>
+<li>文中に見つからない <code>writtenForm</code> は読み飛ばされます（エラーにはなりません）。</li>
+<li><code>spokenForm</code> を空にすると、その文字はルビ無しで表示されます。</li>
+</ul>
 </div>
 <h2 id="_5">認識のミュート<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <ul>
