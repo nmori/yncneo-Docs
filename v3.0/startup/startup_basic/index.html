@@ -4446,6 +4446,8 @@
       
         
       
+        
+      
     
     
     
@@ -4644,6 +4646,34 @@
     
   
     会話の記録
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_captionshare.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    字幕共有
   
 
     
@@ -11155,7 +11185,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>表示内容</strong></td>
-<td style="text-align: left;">母国語をどこに出すか・言語名を出すか</td>
+<td style="text-align: left;">母国語をどこに出すか・言語名を出すか・話者名／枠／ルビを出すか</td>
 </tr>
 </tbody>
 </table>
@@ -11598,7 +11628,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">表示内容</td>
-<td style="text-align: left;">母国語の表示位置・母国語表示の仕方・言語名の表示・追加スタイルシート</td>
+<td style="text-align: left;">母国語の表示位置・母国語表示の仕方・言語名の表示・話者名を出す・テンプレートの枠を出す・ルビの表示・追加スタイルシート</td>
 </tr>
 </tbody>
 </table>
@@ -11727,7 +11757,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_13">表示内容<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<h4 id="display-content">表示内容<a class="headerlink" href="#display-content" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -11752,8 +11782,32 @@
 <td style="text-align: left;">字幕に言語名を添えるかどうか</td>
 <td style="text-align: left;">ON／OFF（既定OFF）</td>
 </tr>
+<tr>
+<td style="text-align: left;">話者名を出す</td>
+<td style="text-align: left;">字幕に話者名を添えます。名前を置く場所を持たないテンプレートでは効きません</td>
+<td style="text-align: left;">ON／OFF（既定ON）</td>
+</tr>
+<tr>
+<td style="text-align: left;">テンプレートの枠を出す</td>
+<td style="text-align: left;">テンプレートが文字の後ろに描く板・吹き出し・縁を出します。外すと映像の上に文字だけが残ります</td>
+<td style="text-align: left;">ON／OFF（既定ON）</td>
+</tr>
+<tr>
+<td style="text-align: left;">ルビの表示（対応している場合）</td>
+<td style="text-align: left;">日本語と中国語の字幕にルビ（読み）を付けます (v3.0.0 beta 23～)</td>
+<td style="text-align: left;">ON／OFF（既定OFF）</td>
+</tr>
 </tbody>
 </table>
+<div class="admonition info">
+<p class="admonition-title">ルビの表示（対応している場合）について</p>
+<ul>
+<li>UDトークや API（<code>/api/input</code> の <code>Morph</code>）から読みが届いた文はその読みを、届かない文は<a href="../../plugin/plugin_ruby/">ルビ付与プラグイン</a>が有効なら自動で作った読みを使います。</li>
+<li>ルビに対応していないテンプレートでは表示されません。</li>
+<li>ルビ付与プラグインを有効にしていた方は、beta 23 に上げて最初に起動したときだけ自動で ON になります。</li>
+<li>外部からは <code>/api/ruby-on</code> <code>/api/ruby-off</code> で切り替えられます。詳しくは <a href="../../tech/tech_api_neo/">本体内蔵API</a> をご覧ください。</li>
+</ul>
+</div>
 <div class="admonition info">
 <p class="admonition-title">追加設定（スタイルシート）について</p>
 <ul>
@@ -11825,7 +11879,7 @@ v3.0 では、その場に「効かない」旨が表示されます。</p>
 <p class="admonition-title">言語ごとに別々に取り込みたい場合</p>
 <p>「応用パターン（１言語ごとの取り込み）」を開くと、母国語・翻訳1～翻訳4を<strong>それぞれ別のブラウザソースとして</strong>取り込めます。言語ごとに位置やサイズを変えたいときに使います。</p>
 </div>
-<h2 id="_14">反映される設定の対応表<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<h2 id="_13">反映される設定の対応表<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
 <p>テンプレートによって、効く設定と効かない設定があります。</p>
 <table>
 <thead>
@@ -11889,7 +11943,7 @@ v3.0 では、その場に「効かない」旨が表示されます。</p>
 </tr>
 </tbody>
 </table>
-<h2 id="_15">コックピット<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<h2 id="_14">コックピット<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
 <!-- TODO(screenshot): images/startup_cockpit.png (未撮影) コックピット画面 -->
 
 <p>左メニューの先頭にある、<strong>配信中によく使うものだけを集めた画面</strong>です（v3.0 で追加）。</p>
@@ -11917,7 +11971,7 @@ v3.0 では、その場に「効かない」旨が表示されます。</p>
 同じ判定を 2 か所に出すと、障害のときに頼る画面のほうが危うくなるためです。
 状態を見たいときは「動作チェック」を開いてください。</p>
 </div>
-<h2 id="_16">クイックボタン<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<h2 id="_15">クイックボタン<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
 <!-- TODO(screenshot): images/startup_menu9.png は v2.3.59 時点。並びが変わっているため撮り直す -->
 <!-- ![クイックボタン](images/startup_menu9.png) -->
 
@@ -12014,19 +12068,19 @@ v3.0 では、その場に「効かない」旨が表示されます。</p>
 <li>「サポートｃｈをひらく」「マニュアルを開く」は左メニューの「その他」に移りました。</li>
 </ul>
 </div>
-<h2 id="_17">動作チェック<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<h2 id="_16">動作チェック<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
 <ul>
 <li>「動作チェック」を選び「チェックする」を押すと、各機能の状態をランプで確認できます。</li>
 <li>翻訳1～4、翻訳サーバ、わんコメ翻訳、FANBOX支援、音声認識、入力モード、出力モード、ゆかりねっと連動、翻訳の呼び出しと最終処理が並びます。</li>
 <li>うまく動かないときは、まずここでどこが赤くなっているかを確認してください。</li>
 </ul>
-<h2 id="_18">手動入力枠と入力リスト<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<h2 id="_17">手動入力枠と入力リスト<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
 <ul>
 <li>キーボードから字幕を入れられます。音声認識が使えない場面や、決まった文言を出したいときに使います。</li>
 <li>「入力リスト」には定型文を5つ登録でき、ボタン1つで送れます。</li>
 </ul>
 <hr />
-<h2 id="_19">関連ページ<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
+<h2 id="_18">関連ページ<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../startup_option/">オプション設定</a> — ブラウザ／翻訳API／ネットワーク／フォルダ／起動時</li>
 <li><a href="../startup_layout/">レイアウト</a> — テンプレートの一覧</li>

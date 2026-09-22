@@ -4434,6 +4434,8 @@
       
         
       
+        
+      
     
     
     
@@ -4632,6 +4634,34 @@
     
   
     会話の記録
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_captionshare.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    字幕共有
   
 
     
@@ -5490,10 +5520,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#58" class="md-nav__link">
+  <a href="#59" class="md-nav__link">
     <span class="md-ellipsis">
       
-        対象プラグイン（58 本）
+        対象プラグイン（59 本）
       
     </span>
   </a>
@@ -5793,10 +5823,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configwindow-3" class="md-nav__link">
+  <a href="#wpf-7-v27-v300-beta-24" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ConfigWindow構造: 3タブ構成
+        設定画面: WPF 共通土台・7 ページ（v2.7 / v3.0.0 beta 24〜）
       
     </span>
   </a>
@@ -11863,10 +11893,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#58" class="md-nav__link">
+  <a href="#59" class="md-nav__link">
     <span class="md-ellipsis">
       
-        対象プラグイン（58 本）
+        対象プラグイン（59 本）
       
     </span>
   </a>
@@ -12166,10 +12196,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configwindow-3" class="md-nav__link">
+  <a href="#wpf-7-v27-v300-beta-24" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ConfigWindow構造: 3タブ構成
+        設定画面: WPF 共通土台・7 ページ（v2.7 / v3.0.0 beta 24〜）
       
     </span>
   </a>
@@ -12687,8 +12717,8 @@
 </ol>
 </div>
 <h2 id="v30-wpf">v3.0 の設定画面（WPF 共通土台）<a class="headerlink" href="#v30-wpf" title="Permanent link">&para;</a></h2>
-<h3 id="58">対象プラグイン（58 本）<a class="headerlink" href="#58" title="Permanent link">&para;</a></h3>
-<p>Bouyomi / Browser / ClipBoard / ClusterTransfer / ClusterTrigger / CommentGen / ComScr / ConvertString / Delay / Dictionary / Discord / DiscordWebHook / DynamicKeepTime / Exporter / ForceStyle / GPT3 / HotKey / HTTPCall / InfoGraphics / LyricAssist / MediaPlayer / MidiInput / MTGCard / NEOSVR / NicoNama / Nomlish / Notion / OBS / OBS5 / OBSFile / OCComm / OCTemplateGen / PhotoPickUP / PlaySound / PlayVoice / PythonUnit / RegExp / RegExpColor / replaceFWords / Ruby / SlackWebHook / Softalk / Startup / TeamsWebHook / Twitch / UDPUnit / Update / VaNii / VCas / ViewCompat / ViewExtend / VMC / VRCHAT_OSC / VROverlay / VtubeStudio / WSCall / Youtube / Zoom</p>
+<h3 id="59">対象プラグイン（59 本）<a class="headerlink" href="#59" title="Permanent link">&para;</a></h3>
+<p>Bouyomi / Browser / CaptionShare / ClipBoard / ClusterTransfer / ClusterTrigger / CommentGen / ComScr / ConvertString / Delay / Dictionary / Discord / DiscordWebHook / DynamicKeepTime / Exporter / ForceStyle / GPT3 / HotKey / HTTPCall / InfoGraphics / LyricAssist / MediaPlayer / MidiInput / MTGCard / NEOSVR / NicoNama / Nomlish / Notion / OBS / OBS5 / OBSFile / OCComm / OCTemplateGen / PhotoPickUP / PlaySound / PlayVoice / PythonUnit / RegExp / RegExpColor / replaceFWords / Ruby / SlackWebHook / Softalk / Startup / TeamsWebHook / Twitch / UDPUnit / Update / VaNii / VCas / ViewCompat / ViewExtend / VMC / VRCHAT_OSC / VROverlay / VtubeStudio / WSCall / Youtube / Zoom</p>
 <p>作業用の窓（会話の記録 / YouTube タイムコード）も WPF になりました。直接入力・入力支援・翻訳発話連携は設定画面を持ちません。</p>
 <p>独自の画面を持つもの（共通土台の宣言ではなく、専用の XAML）：Dictionary / OBS5 / PlayVoice。</p>
 <h3 id="_1">共通の振る舞い<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
@@ -12802,6 +12832,7 @@
 <h2 id="audiotts-plugins">Audio/TTS Plugins<a class="headerlink" href="#audiotts-plugins" title="Permanent link">&para;</a></h2>
 <h3 id="plugin_playvoice">Plugin_PlayVoice - 読み上げプラグイン<a class="headerlink" href="#plugin_playvoice" title="Permanent link">&para;</a></h3>
 <p><strong>Purpose</strong>: Multi-engine text-to-speech synthesis</p>
+<p><strong>v5.2（v3.0.0 beta 24～）</strong>: 「読み上げと出力」に「パラメータを Jev に調整させる」（既定 OFF）／強さ 0～100%（既定 50%）。文ごとに勢い・気分・声の大きさを Jev に判定させ、話速・高さ・抑揚・音量を少し動かす。4 秒で間に合わなければいつもの調整で読む、失敗が続くと 1 分休止。Jev の鍵は本体の API キー画面で入れる。AssistantSeika のパスワード・CoeFont のアクセスキーも伏せ字になった。</p>
 <h4 id="configwindow-6">ConfigWindow構造: 6タブ構成<a class="headerlink" href="#configwindow-6" title="Permanent link">&para;</a></h4>
 <p><strong>タブ1: 基本設定</strong></p>
 <table>
@@ -13588,207 +13619,53 @@
 <h2 id="vrmetaverse-plugins">VR/Metaverse Plugins<a class="headerlink" href="#vrmetaverse-plugins" title="Permanent link">&para;</a></h2>
 <h3 id="plugin_vrchat_osc">Plugin_VRCHAT_OSC - VRChat OSC連携<a class="headerlink" href="#plugin_vrchat_osc" title="Permanent link">&para;</a></h3>
 <p><strong>Purpose</strong>: VRChat avatar control via OSC</p>
-<h4 id="configwindow-3">ConfigWindow構造: 3タブ構成<a class="headerlink" href="#configwindow-3" title="Permanent link">&para;</a></h4>
-<p><strong>GroupBox: VRChat → NEO</strong></p>
+<h4 id="wpf-7-v27-v300-beta-24">設定画面: WPF 共通土台・7 ページ（v2.7 / v3.0.0 beta 24〜）<a class="headerlink" href="#wpf-7-v27-v300-beta-24" title="Permanent link">&para;</a></h4>
+<p>つなぐ／送るもの／VRChat に合わせる／音声コマンド／OSC コマンド／シナリオロール／YNC Msg。詳細は <a href="../../plugin/plugin_vrchat_osc/">VRChat OSC連携</a>。</p>
 <table>
 <thead>
 <tr>
-<th>GUI要素</th>
-<th>種類</th>
-<th>デフォルト</th>
-<th>説明</th>
+<th style="text-align: left;">ページ</th>
+<th style="text-align: left;">要点</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>ポート番号</td>
-<td>NumericUpDown (<code>VMCPort</code>)</td>
-<td>9001</td>
-<td>受信ポート</td>
+<td style="text-align: left;">つなぐ</td>
+<td style="text-align: left;">宛先 (Address) / 宛先の口 (Port)、受け取り口の決め方（OSCQuery でさがす など）</td>
 </tr>
 <tr>
-<td>接続</td>
-<td>Button (<code>btVMCConnect</code>)</td>
-<td>-</td>
-<td>受信開始</td>
+<td style="text-align: left;">送るもの</td>
+<td style="text-align: left;">チャットボックスへ送る字幕（話した言葉・訳 1〜4）、確定だけ送る など</td>
 </tr>
 <tr>
-<td>切断</td>
-<td>Button (<code>btVMCDisconnect</code>)</td>
-<td>-</td>
-<td>受信停止</td>
+<td style="text-align: left;">VRChat に合わせる</td>
+<td style="text-align: left;">ミュート・ジェスチャー連動など</td>
+</tr>
+<tr>
+<td style="text-align: left;">音声コマンド</td>
+<td style="text-align: left;">用意された「やること」（写真・カメラ・身長・アバター・歩く…）を言葉で動かす表。列：使う／やること／きっかけの言葉／値／当て方／基準（そのままの値／原点からの差）。行ボタン：説明／値を作る／ためす。<strong>原点（カメラの位置、X・Y・Z・向きの個別欄、いま届いている値、いまの値を入れる）もこのページ</strong>。「ためす」は編集中の原点で動かす。「最後に動かした結果」を表示</td>
+</tr>
+<tr>
+<td style="text-align: left;">OSC コマンド</td>
+<td style="text-align: left;">起動フレーズが字幕に出たら任意の OSC アドレスへ値を送る表（<code>Plugin_VRChat_OSC_rule.config</code>、v2.3 の Option タブ「ルール」と同じファイル・同じ書式）。列：使う／当て方（そっくり同じ・含まれる・正規表現）／判定する字幕（話した言葉・訳 1〜4）／起動フレーズ／OSC アドレス／送る値／話した人／API タグ + ためす</td>
+</tr>
+<tr>
+<td style="text-align: left;">シナリオロール</td>
+<td style="text-align: left;">台本を F1 で 1 行ずつ送る。続けて送るときの行間</td>
+</tr>
+<tr>
+<td style="text-align: left;">YNC Msg</td>
+<td style="text-align: left;"><code>/YNC/Text/(言語)/[Int または String]</code> で他の OSC 受け手へ字幕を流す</td>
 </tr>
 </tbody>
 </table>
-<p><strong>GroupBox: NEO → VRChat</strong></p>
-<table>
-<thead>
-<tr>
-<th>GUI要素</th>
-<th>種類</th>
-<th>デフォルト</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>送信先アドレス</td>
-<td>TextBox (<code>VMCSendIP_YNC</code>)</td>
-<td>127.0.0.1</td>
-<td>VRChat IP</td>
-</tr>
-<tr>
-<td>送信ポート</td>
-<td>NumericUpDown (<code>VMCSendPort_YNC</code>)</td>
-<td>9000</td>
-<td>OSCポート</td>
-</tr>
-</tbody>
-</table>
-<p><strong>タブ1: VRChat - チャット送信設定</strong></p>
-<table>
-<thead>
-<tr>
-<th>GUI要素</th>
-<th>種類</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>母国語送信</td>
-<td>CheckBox (<code>vrchatSendText1</code>)</td>
-<td>Native送信</td>
-</tr>
-<tr>
-<td>翻訳送信</td>
-<td>CheckBox (<code>vrchatSendText2</code>)</td>
-<td>翻訳送信</td>
-</tr>
-<tr>
-<td>翻訳1～4</td>
-<td>CheckBox (<code>Trans1</code>～<code>Trans4</code>)</td>
-<td>各言語選択</td>
-</tr>
-<tr>
-<td>VRChat音声ミュート連動</td>
-<td>CheckBox (<code>linkingMute</code>)</td>
-<td>ミュート同期</td>
-</tr>
-<tr>
-<td>左ジェスチャー連動</td>
-<td>CheckBox (<code>linkingStyle</code>)</td>
-<td>ジェスチャー同期</td>
-</tr>
-<tr>
-<td>確定結果のみ送信</td>
-<td>CheckBox (<code>sendOnlyFixed</code>)</td>
-<td>途中結果除外</td>
-</tr>
-<tr>
-<td>テスト送信</td>
-<td>Button (<code>SendTest</code>)</td>
-<td>動作確認</td>
-</tr>
-</tbody>
-</table>
-<p><strong>GroupBox: オプション</strong></p>
-<table>
-<thead>
-<tr>
-<th>GUI要素</th>
-<th>種類</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>対象ユーザ名リスト</td>
-<td>TextBox (Multiline, <code>IncludingUser</code>)</td>
-<td>フィルタ対象</td>
-</tr>
-</tbody>
-</table>
-<p><strong>タブ3: Option - ルール/変換ルール</strong></p>
-<p>DataGridView (<code>DicFix</code>) で条件設定:</p>
-<table>
-<thead>
-<tr>
-<th>列名</th>
-<th>種類</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>有効(Enabled)</td>
-<td>CheckBox</td>
-<td>ルール有効化</td>
-</tr>
-<tr>
-<td>モード(Mode)</td>
-<td>ComboBox</td>
-<td>マッチング方式</td>
-</tr>
-<tr>
-<td>対象(Target)</td>
-<td>ComboBox</td>
-<td>判定対象言語</td>
-</tr>
-<tr>
-<td>キーワード(Phrase)</td>
-<td>TextBox</td>
-<td>トリガー文字列</td>
-</tr>
-<tr>
-<td>OSCアドレス</td>
-<td>TextBox</td>
-<td>送信先アドレス</td>
-</tr>
-<tr>
-<td>パラメータ(Parameter)</td>
-<td>TextBox</td>
-<td>OSC値</td>
-</tr>
-<tr>
-<td>対象者(TargetName)</td>
-<td>TextBox</td>
-<td>ユーザー名</td>
-</tr>
-<tr>
-<td>ExternalCallTag</td>
-<td>TextBox</td>
-<td>外部呼び出しタグ</td>
-</tr>
-</tbody>
-</table>
-<p><strong>タブ2: YNC Msg - YNCMessage設定</strong></p>
-<table>
-<thead>
-<tr>
-<th>GUI要素</th>
-<th>種類</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>母国語送信</td>
-<td>CheckBox (<code>vmcSendText1</code>)</td>
-<td>VMC Native</td>
-</tr>
-<tr>
-<td>翻訳言語送信</td>
-<td>CheckBox (<code>vmcSendText2</code>)</td>
-<td>VMC翻訳</td>
-</tr>
-<tr>
-<td>送信タイプを整数で指定</td>
-<td>CheckBox (<code>SendInt</code>)</td>
-<td>Int型送信</td>
-</tr>
-</tbody>
-</table>
+<p><strong>注意</strong></p>
+<ul>
+<li>beta 24 より前の画面では OSC コマンドの表が誤って「言い換え」と表示されていた。消すと自作の OSC コマンドを失う。判定する字幕が「原文」「訳文」の行はそれぞれ「話した言葉」「訳 1」として動く。</li>
+<li>判定する字幕はファイル上 <code>1:母国語(Native)</code> の綴りで保存される（最古の「0」〜「4」の綴りも読める）。</li>
+<li>正規表現は行ごとに 1 回だけ組み立て、照合の期限は 100ms。壊れた式はその行だけ止めてログに出す。</li>
+<li>API タグ付きの行は <code>/api/command?target=Plugin_VRChat_OSC&amp;command=exec&amp;tag=(タグ)</code> で呼べる。</li>
+</ul>
 <hr />
 <h3 id="plugin_vcas-virtualcast">Plugin_VCas - VirtualCast連携<a class="headerlink" href="#plugin_vcas-virtualcast" title="Permanent link">&para;</a></h3>
 <p><strong>Purpose</strong>: VirtualCast integration</p>
@@ -15004,6 +14881,7 @@
 <li><a href="../../plugin/plugin_httpcall/">HTTPコール</a></li>
 <li><a href="../../plugin/plugin_wscall/">WebSocketコール</a></li>
 <li><a href="../../plugin/plugin_exporter/">ファイル出力</a></li>
+<li><a href="../plugin/plugin_captionshare.md">字幕共有</a> (v3.0 新規。Pusher 経由で字幕を送受信)</li>
 </ul>
 <hr />
 <h2 id="_13">関連ドキュメント<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>

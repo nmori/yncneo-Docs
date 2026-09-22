@@ -4564,6 +4564,8 @@
       
         
       
+        
+      
     
     
     
@@ -4762,6 +4764,34 @@
     
   
     会話の記録
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_captionshare.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    字幕共有
   
 
     
@@ -11293,11 +11323,11 @@
 </tr>
 <tr>
 <td style="text-align: left;">ログインの証 (user_session)</td>
-<td style="text-align: left;">—</td>
+<td style="text-align: left;">入力は伏せ字で表示されます。「表示」を押すと中身を確かめられます（もう一度押すと伏せます）</td>
 </tr>
 <tr>
 <td style="text-align: left;">API の鍵 (csrfToken)</td>
-<td style="text-align: left;">空でも構いません。送るときに配信ページから取り直します。</td>
+<td style="text-align: left;">空でも構いません。送るときに配信ページから取り直します。入力は伏せ字で表示されます。「表示」を押すと中身を確かめられます（もう一度押すと伏せます）</td>
 </tr>
 <tr>
 <td style="text-align: left;">「API の鍵を取り直す」ボタン</td>
@@ -11362,17 +11392,26 @@ v3.0 では <strong>WebView2 だけ</strong>になりました。
 <h2 id="_7">使うとき<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <ol>
 <li>ニコニコ生放送で配信を開始します。</li>
-<li>配信URLを設定画面に貼り付けます。</li>
-<li>「セッション自動取得」→「APIキー自動取得」の順に押します。</li>
-<li>送信する字幕を選び、OKを押します。</li>
-<li>音声認識を始めると、確定した字幕がコメントとして送られます。</li>
+<li>設定画面の「ログイン」ページで、配信の URL を貼り付けます。</li>
+<li><strong>「ログインして証を取る」</strong> を押します（API の鍵は空でも構いません。送るときに配信ページから取り直します。先に取っておきたいときは <strong>「API の鍵を取り直す」</strong> を押します）。</li>
+<li>「送る」ページで送る字幕を選び、OK を押します。</li>
+<li>「送る」ページの <strong>「送り始める」</strong> を押し、音声認識を始めると、確定した字幕がコメントとして送られます。</li>
 </ol>
 <div class="admonition info">
-<p class="admonition-title">自動取得がうまくいかないとき</p>
+<p class="admonition-title">証が取れないとき</p>
 <ul>
-<li>自動取得は、選んだブラウザにニコニコへログインした状態が残っていることを前提にしています。</li>
-<li>ブラウザでニコニコにログインし直してから、もう一度お試しください。</li>
-<li>それでも取得できない場合は、APIキーとユーザセッションを手で入力することもできます。</li>
+<li>Firefox の証を借りる場合は、Firefox にニコニコへログインした状態が残っていることが前提です。Firefox でログインし直してから、もう一度お試しください。</li>
+<li>それでも取れない場合は、ログインの証 (user_session) と API の鍵 (csrfToken) を手で入力することもできます。</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">コメントが送れなくなったとき</p>
+<ul>
+<li>送っている途中で API の鍵を断られたとき（401 / 403）は、<strong>鍵を配信ページから自動で取り直し、同じコメントをもう 1 回送ります</strong>。コメントは落としません。</li>
+<li>取り直した鍵は設定へ書き戻されるので、次に「送り始める」を押したときも、設定画面の「API の鍵 (csrfToken)」も新しい鍵になります。</li>
+<li>送っている途中でログインし直したり、配信の URL・鍵を直したりした場合も、OK か「適用」を押せば次のコメントから新しい証と鍵で送ります。「送り始める」を押し直す必要はありません。</li>
+<li>取り直しても断られることが続くときは、ログインの証が切れています。「送る」ページの「いまの様子」に <strong>「再ログインしてください (401)」</strong> と出るので、「ログインして証を取る」でログインし直してください。</li>
+<li>内蔵ブラウザが自動で開くことはありません。「いまの様子」は、設定画面を開いたままでも新しい様子に変わります。</li>
 </ul>
 </div>
 <div class="admonition warning">

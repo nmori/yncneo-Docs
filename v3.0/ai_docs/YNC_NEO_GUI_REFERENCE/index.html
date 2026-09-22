@@ -4434,6 +4434,8 @@
       
         
       
+        
+      
     
     
     
@@ -4632,6 +4634,34 @@
     
   
     会話の記録
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_captionshare.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    字幕共有
   
 
     
@@ -11954,7 +11984,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">表示内容</td>
-<td style="text-align: left;">母国語の表示位置 / 母国語表示の仕方 / 言語名の表示 / 追加スタイルシート</td>
+<td style="text-align: left;">母国語の表示位置 / 母国語表示の仕方 / 言語名の表示 / 話者名を出す / テンプレートの枠を出す / ルビの表示（対応している場合） / 追加スタイルシート</td>
 </tr>
 </tbody>
 </table>
@@ -12525,6 +12555,7 @@
 </tbody>
 </table>
 <blockquote>
+<p>Jev (TypeSafe) は翻訳エンジンではありません。API キー画面（Parapper翻訳の下）に API Key と MODEL（既定 <code>jev-latest</code>）の欄があり、文章を生成せず score / choice を数値で返す判定専用のモデルです。読み上げ連携の「パラメータを Jev に調整させる」が本体経由で使います。キーは本体が DPAPI で保存し、プラグインへは渡りません（v3.0.0 beta 24～）。</p>
 <p>ID6 / ID7 は廃止された欠番です。
 ID18 / ID27 は、画面からは選べますが <strong>APIからは指定できません</strong>。</p>
 </blockquote>
@@ -12741,6 +12772,24 @@ ID18 / ID27 は、画面からは選べますが <strong>APIからは指定で�
 <td>チェック</td>
 <td>既定OFF</td>
 <td>字幕に言語名を添える</td>
+</tr>
+<tr>
+<td>話者名を出す</td>
+<td>チェック</td>
+<td>既定ON</td>
+<td>字幕に話者名を出す（テンプレートが対応している場合）</td>
+</tr>
+<tr>
+<td>テンプレートの枠を出す</td>
+<td>チェック</td>
+<td>既定ON</td>
+<td>テンプレートの枠を出す</td>
+</tr>
+<tr>
+<td>ルビの表示（対応している場合）</td>
+<td>チェック</td>
+<td>既定OFF（beta 22 以前にルビ付与プラグインを有効にしていた人は初回だけ ON）</td>
+<td>日本語・中国語の字幕にルビを付ける。描くのは本体（v3.0.0 beta 23〜）。読みが届かない文はルビ付与プラグインが有効なときだけ付く。API: <code>/api/ruby-on</code> <code>/api/ruby-off</code> <code>/api/ruby-status</code></td>
 </tr>
 <tr>
 <td>追加設定（スタイルシート）</td>
