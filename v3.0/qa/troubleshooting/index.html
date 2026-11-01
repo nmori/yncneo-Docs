@@ -4438,6 +4438,8 @@
       
         
       
+        
+      
     
     
     
@@ -4720,6 +4722,34 @@
     
   
     Python連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_countertrigger/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    カウンター・トリガー
   
 
     
@@ -5426,6 +5456,39 @@
     <span class="md-ellipsis">
       
         翻訳に失敗する
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        オフライン翻訳（無料）で訳されない
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ほかのPC・自作ツールから字幕を送れなくなった
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aimcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AIアシスタント（MCP）からつながらない
       
     </span>
   </a>
@@ -11323,6 +11386,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        オフライン翻訳（無料）で訳されない
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ほかのPC・自作ツールから字幕を送れなくなった
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aimcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AIアシスタント（MCP）からつながらない
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v30" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -11448,6 +11544,30 @@
 <li>たとえば、ゆかりねっとを併用する設定なのにゆかりねっとが起動していないなどありませんか</li>
 </ul>
 </div>
+<div class="admonition note">
+<p class="admonition-title">ブラウザ音声認識が「接続中」のまま止まっていませんか（Chrome）</p>
+<ul>
+<li>新しい Chrome では、音声認識画面からゆかコネNEO へつなぐのに「このデバイス上のアプリ」「ローカル ネットワーク」へのアクセスの許可が要ります。</li>
+<li>音声認識画面に「ゆかコネNEO への接続を許可してください」「ゆかコネNEO への接続がブラウザに止められています」と出ていたら、許可してください。
+→ <a href="../../startup/startup_asr/#chrome-local-network">Chrome の接続の許可</a></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">音声認識画面で選んでいるマイクは合っていますか</p>
+<ul>
+<li>音声認識画面の「マイク」の欄で、第1入力・第2入力に使うマイクを選べます。入力レベルのメーターが動いているか確かめてください。</li>
+<li>「マイクの入力が完全に無音です。」と出ているときは、マイクのミュートや OS の録音設定を確認してください。
+→ <a href="../../startup/startup_asr/#browser-recognition">ブラウザ音声認識の画面でできること</a></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">オフライン認識のモデルのダウンロードを断っていませんか</p>
+<ul>
+<li>オフライン認識の窓の「モデル」の状態が「ダウンロードを取りやめました / Download cancelled」になっていたら、ダウンロードの確認で「いいえ」を選んでいます。もう一度「取得」を押して「はい」を選んでください。</li>
+<li>「保存先が見つかりません / Model folder not found」と出るときは、モデルの保存先にしたドライブ（外付けなど）が見つかりません。ドライブをつなぐか、ゆかコネNEO の「モデルの保存先と管理」で保存先を変えてください。
+→ <a href="../../startup/startup_option/#model-storage">モデルの保存先と管理</a></li>
+</ul>
+</div>
 <h2 id="_6">翻訳の精度がでない<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
 <p class="admonition-title">共用翻訳サーバをつかっていませんか </p>
@@ -11486,6 +11606,68 @@
 <li>個人でAPIを契約している場合でも、サイト設定側で月の利用上限が設定されている場合があります。</li>
 </ul>
 </div>
+<div class="admonition note">
+<p class="admonition-title">画面の下に「このままでは翻訳されません」と出ていませんか</p>
+<ul>
+<li>「（エンジン名） の API キーが入っていないため、このままでは翻訳されません。」などと出たときは、そのエンジンに要るキーや接続先が入っていません。</li>
+<li>お知らせの <strong>「設定を開く」</strong> を押すと「APIキーの設定」画面へ移れます。</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">利用条件の画面で「使わない」を押しませんでしたか</p>
+<ul>
+<li>PLaMo翻訳・みらい翻訳・みんなの自動翻訳＠TexTra・オフライン翻訳（無料）は、選んだときに利用条件の画面が出ます。「使わない」を押すと、別のエンジン（オフライン翻訳は共用翻訳、ほかは「翻訳しない」）に戻ります。</li>
+<li>使う場合は、もう一度一覧から選んで「同意して使う」を押してください。
+→ <a href="../../startup/startup_option/#engine-terms-consent">一覧から選んだときの同意</a></li>
+</ul>
+</div>
+<h2 id="_8">オフライン翻訳（無料）で訳されない<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">モデルの準備中ではありませんか</p>
+<ul>
+<li>初めて使うときは、モデルのダウンロードと起動が済むまで、<strong>ほかの翻訳エンジンで</strong>訳します。画面の下のステータスバーに「オフライン翻訳 56%・残り約 20 秒」のような進み具合が出ているあいだは、お待ちください。</li>
+<li>英語⇔日本語以外の言語では、約 2.8GB のモデルをダウンロードします。</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">ライセンスの同意チェックは ON になっていますか</p>
+<ul>
+<li>「APIキーの設定」画面のオフライン翻訳（無料）の欄で、同意のチェックが OFF だと、ダウンロードも翻訳もしません。</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">保存先のドライブはつながっていますか</p>
+<ul>
+<li>モデルの保存先を外付けドライブなどにしていて、そのドライブが見つからないときは、新しいモデルをダウンロードしません。
+→ <a href="../../startup/startup_option/#offline-translation">オフライン翻訳（無料）</a></li>
+</ul>
+</div>
+<h2 id="pc">ほかのPC・自作ツールから字幕を送れなくなった<a class="headerlink" href="#pc" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">v3.0.8 から、LAN からの操作にはトークンが要ります</p>
+<ul>
+<li>別のPC（LAN）から字幕を送ったり設定を変えたりするには、「ネットワークの設定」画面の <strong>「LAN からの操作に使うトークン」</strong> が要ります。「コピー」で写して、送る側でヘッダー <code>X-YNC-Token</code> か URL の <code>?token=…</code> で付けてください。</li>
+<li>ブラウザで開いたページから操作している場合、知らないページからの操作は断ります。そのページのアドレスを「Web許可ホスト」に書いてください。</li>
+<li>Tailscale や hosts の別名でこの PC を開いているときは、その名前を「Web許可ホスト」に書いてください。</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">アクセス状況を見てみましょう</p>
+<ul>
+<li>「ネットワークの設定」画面の <strong>アクセス状況</strong> に、直近 20 件の許可・拒否と理由（許可していない IP／許可していないホスト名／知らない Web ページから／トークンなし／トークン違い など）が出ます。
+→ <a href="../../startup/startup_option/#access-log">アクセス状況</a>・<a href="../../tech/tech_api_neo/#access-control">本体内蔵API（アクセス制御について）</a></li>
+</ul>
+</div>
+<h2 id="aimcp">AIアシスタント（MCP）からつながらない<a class="headerlink" href="#aimcp" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">MCP サーバー プラグインの「接続の記録」を見てみましょう</p>
+<ul>
+<li>MCP サーバー プラグインの設定画面の <strong>「接続の記録」</strong> に、つながった・断った（理由つき）・呼ばれた記録が出ます。</li>
+<li>ブラウザのページからつなぐときは、「ブラウザと上限」の「接続を許すページ (Origin)」にそのページが書かれているか確かめてください。</li>
+<li>LAN やインターネット上のページからつなぐときは、接続キーが要ります。
+→ <a href="../../tech/tech_api_neo/#mcp">AIアシスタント（MCP）からゆかコネを操作する</a></li>
+</ul>
+</div>
 <h2 id="v30">v3.0 にしてからうまくいかない<a class="headerlink" href="#v30" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
 <p class="admonition-title">設定が全部消えたように見える</p>
@@ -11518,7 +11700,7 @@
 <div class="admonition note">
 <p class="admonition-title">設定項目が見つからない</p>
 <p>「母国語と言語の表示」「フォント設定と配置」「色（表示色や背景色）」は左メニューから外れ、
-<strong>「レイアウトデザインの選択」→「見た目を調整する」</strong>の中に移りました。</p>
+上のタブ <strong>「字幕デザイン」→「デザイン」</strong> の分類のタブ（文字／色／縁取り／表示／表記…）と <strong>「詳しい調整」</strong> の中に移りました。</p>
 <p>それでも見つからないときは、左メニューの <strong>「設定をさがす」</strong> に
 項目名（例：<code>保持時間</code>）を入れて Enter を押してください。</p>
 </div>

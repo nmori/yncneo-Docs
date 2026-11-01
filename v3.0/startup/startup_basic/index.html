@@ -4450,6 +4450,8 @@
       
         
       
+        
+      
     
     
     
@@ -4732,6 +4734,34 @@
     
   
     Python連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_countertrigger/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    カウンター・トリガー
   
 
     
@@ -11170,9 +11200,10 @@
 </table>
 <div class="admonition tip">
 <p class="admonition-title">うまくいったか確かめる</p>
-<p>左メニューのいちばん上の <strong>コックピット</strong> を開くと、
-「いま出ている字幕」と「配信ソフトに貼るアドレス」が 1 画面で見られます。
-字幕が出ていないときは <strong>表示テスト</strong> ボタンで試せます。</p>
+<p>上のタブ <strong>操作パネル</strong> → <strong>いまの状態</strong> を開くと、
+「いま出ている字幕（字幕ログ）」と「配信ソフトに貼るアドレス」が 1 画面で見られます。
+字幕が出ていないときは、画面の右下の <strong>表示テスト</strong> ボタンで試せます。
+→ <a href="#cockpit">いまの状態（ホーム画面）</a></p>
 </div>
 <h2 id="_3">設定が見つからないとき<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>v3.0 には、設定を探すための入口が 3 つあります。</p>
@@ -11196,72 +11227,135 @@
 <td style="text-align: left;">すべての設定を 1 画面に並べます。ブラウザの検索（Ctrl+F）も使えます</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>コックピット</strong></td>
-<td style="text-align: left;">左メニューの先頭</td>
-<td style="text-align: left;">配信中によく使うものだけを集めた画面</td>
+<td style="text-align: left;"><strong>いまの状態</strong></td>
+<td style="text-align: left;">上のタブ「操作パネル」→「いまの状態」（左メニューでは先頭）</td>
+<td style="text-align: left;">配信中によく使うものだけを集めた画面（以前の「コックピット」）</td>
 </tr>
 </tbody>
 </table>
+<h3 id="_4">上のタブの並び<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>v3.0 の画面は、上に並んだ <strong>タブ</strong> から行き先を選び、左に出る縦の並びで画面を選ぶ作りです。
+左メニュー（下の「左メニューの全体図」）は、右上の ⋮ →「すべての項目（目次）」から開ける<strong>目次</strong>として残っています。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">タブ</th>
+<th style="text-align: left;">中にある画面</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>ホーム</strong></td>
+<td style="text-align: left;">ようこそ／はじめての設定／すべての設定</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>操作パネル</strong></td>
+<td style="text-align: left;">いまの状態／手動入力／<strong>ライブ設定</strong>（配信中に触るものだけを集めたタブ。v3.0.12 で追加）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>音声と翻訳</strong></td>
+<td style="text-align: left;">音声の入れ方／翻訳する言語／話す言語と名前／翻訳の細かい設定／APIキーの設定</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>字幕デザイン</strong></td>
+<td style="text-align: left;">デザイン／配信ソフトへ</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>プラグイン</strong></td>
+<td style="text-align: left;">プラグイン一覧</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>支援</strong></td>
+<td style="text-align: left;">支援版の翻訳</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>設定</strong></td>
+<td style="text-align: left;">ブラウザと字幕ウィンドウ／ネットワーク／画面と動作／保存と復元</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>困ったとき</strong></td>
+<td style="text-align: left;">動作チェック／トラブルシュート／不具合を知らせる／ログを作る／マニュアル／サポート／このソフトについて／ライセンス</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">v3.0.11 以前から上げた方へ</p>
+<p>「いまの状態」はホームのタブから、「手動入力」は音声と翻訳のタブから、<strong>操作パネル</strong> のタブへ移りました。
+設定（配信前に決めるもの）と、操作（配信中に押すもの）を分けるためです。</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">v2.3 から来た方へ</p>
 <p>v2.3 にあった「母国語と言語の表示」「フォント設定と配置」「色（表示色や背景色）」は、
 左メニューから無くなりました。<strong>「レイアウトデザインの選択」の中</strong>に移っています。
 → <a href="../../../mig/mig_neo_v3.0/">v2.3 から v3.0 への移行</a></p>
 </div>
-<h2 id="_4">見た目を変えたいとき<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>文字・色・配置・タイミングは、すべて <strong>「レイアウトデザインの選択」</strong> の中にあります。</p>
+<h2 id="_5">見た目を変えたいとき<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>文字・色・配置・タイミングは、すべて <strong>字幕デザイン</strong> の画面の中にあります。</p>
 <ol>
-<li>左メニュー → <strong>レイアウトに関する設定</strong> → <strong>レイアウトデザインの選択</strong></li>
-<li><strong>「見た目を調整する」</strong> を押す（これを押すまで調整用のボタンは出てきません）</li>
-<li>上に出てくるボタンから、直したいものを選びます</li>
+<li>上のタブ <strong>字幕デザイン</strong> → <strong>デザイン</strong>（左メニューでは <strong>レイアウトに関する設定</strong> → <strong>レイアウトデザインの選択</strong>）</li>
+<li>見た目の一覧（タイル）から、テンプレートかプリセットを押して選びます</li>
+<li>右に並ぶ <strong>分類のタブ</strong> から、直したいものを選びます</li>
 </ol>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">ボタン</th>
+<th style="text-align: left;">分類のタブ</th>
 <th style="text-align: left;">直せるもの</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>テンプレ</strong></td>
-<td style="text-align: left;">字幕のデザイン（テンプレート）を選ぶ</td>
+<td style="text-align: left;"><strong>操作</strong></td>
+<td style="text-align: left;">配信ソフトへドラッグ・URL をコピー・字幕ウィンドウで開く</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>文字</strong></td>
-<td style="text-align: left;">フォント種類・サイズ・寄せ方</td>
+<td style="text-align: left;">フォント・大きさ・揃え</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>色</strong></td>
-<td style="text-align: left;">文字色・背景色・縁取り</td>
+<td style="text-align: left;">文字・背景・縁取り・枠線・話者名／言語名の色</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>縁取り</strong></td>
+<td style="text-align: left;">縁取りの太さ・内側の縁取り・枠線の形</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>配置</strong></td>
-<td style="text-align: left;">行間・段落間・文字間隔・枠の高さ・整形モード</td>
+<td style="text-align: left;">行間・段落の間・文字の間隔・枠の高さ・表示する行数</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>タイミング</strong></td>
-<td style="text-align: left;">保持時間・スクロール速度</td>
+<td style="text-align: left;">表示しておく秒数・流れる速さ</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>表示内容</strong></td>
-<td style="text-align: left;">母国語をどこに出すか・言語名を出すか・話者名／枠／ルビを出すか</td>
+<td style="text-align: left;"><strong>表示</strong></td>
+<td style="text-align: left;">話者名／言語名／テンプレートの枠／ルビを出すか・話した言葉の位置と出し方</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>表記</strong></td>
+<td style="text-align: left;">字幕に出す言語名を、好きな書き方に変える</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>このテンプレート</strong></td>
+<td style="text-align: left;">そのテンプレートだけが持つ設定（持っているテンプレートのときだけ出ます）。→ <a href="../startup_layout/#template-options">テンプレートごとの設定</a></td>
 </tr>
 </tbody>
 </table>
-<p>調整が終わったら <strong>「調整を終える」</strong>（元は「見た目を調整する」だったボタン）を押します。
-押したときに復元ポイントが自動で作られるので、あとから戻せます。</p>
+<p>変えた見た目は、<strong>「マイプリセットとして保存」</strong> ボタンで残せます。
+くわしくは後半の「<a href="#design">5. 字幕デザイン（レイアウトデザインの選択）</a>」をご覧ください。</p>
 <div class="admonition info">
 <p class="admonition-title">調整しても変わらないとき</p>
 <p>テンプレートによっては、その項目を持っていないことがあります
 （例：ウィンドウ枠の高さは「トークセッション」でしか効きません）。
+使われない分類を開くと、頭に「選んでいるテンプレートでは使われない設定です。」と出ます。
 どのテンプレートで何が効くかは、後半の「反映される設定の対応表」を見てください。</p>
 </div>
 <hr />
-<h1 id="_5">後半：項目ごとの説明<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h1>
+<h1 id="_6">後半：項目ごとの説明<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h1>
 <p>ここから先は、設定項目を 1 つずつ説明します。
 上から順に読む必要はありません。必要なところだけ見てください。</p>
-<h2 id="_6">左メニューの全体図<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h2 id="_7">左メニューの全体図<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <!-- TODO(screenshot): images/startup_menu1.png は v2.3.59 時点。v3.0 の左メニュー(コックピット/設定をさがし/OBSからの参照設定あり)で撮り直す -->
 <!-- ![メニュー](images/startup_menu1.png) -->
 
@@ -11277,8 +11371,13 @@
 <tbody>
 <tr>
 <td style="text-align: left;">（先頭）</td>
-<td style="text-align: left;">コックピット</td>
-<td style="text-align: left;">配信中によく使うものだけを 1 枚にまとめた画面</td>
+<td style="text-align: left;">いまの状態</td>
+<td style="text-align: left;">配信中によく使うものだけを 1 枚にまとめた画面（以前の「コックピット」）</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">ライブ設定</td>
+<td style="text-align: left;">プラグインの「配信ごとに変わる値」をまとめて入れる画面 (v3.0.12～)</td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
@@ -11357,8 +11456,8 @@
 </tr>
 <tr>
 <td style="text-align: left;"></td>
-<td style="text-align: left;">フォルダの指定</td>
-<td style="text-align: left;">話し手の絵や外部ツールの場所</td>
+<td style="text-align: left;">フォルダの指定（廃止）</td>
+<td style="text-align: left;">項目は各画面へ移りました → <a href="../startup_option/#folders">オプション設定「フォルダの指定」</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
@@ -11467,15 +11566,15 @@
 </tr>
 <tr>
 <td style="text-align: left;">音声認識モデル(Whisper)</td>
-<td style="text-align: left;">●音声認識AIをパソコンにダウンロードして動かすパターンを使うときに選びます。<br>●別途、実行ファイルの場所を「フォルダの指定」で設定します。</td>
+<td style="text-align: left;">●音声認識AIをパソコンにダウンロードして動かすパターンを使うときに選びます。<br>●別途、実行ファイルの場所を、この入れ方を選んだときの右の欄で設定します。</td>
 </tr>
 <tr>
 <td style="text-align: left;">ゆーかねすぴれこ</td>
-<td style="text-align: left;">●HARU_Keiさんが公開しているオフライン認識ツールと連携します。<br>●別途ツールの導入と、「フォルダの指定」での設定が必要です。</td>
+<td style="text-align: left;">●HARU_Keiさんが公開しているオフライン認識ツールと連携します。<br>●別途ツールの導入と、この入れ方を選んだときの右の欄での設定が必要です。</td>
 </tr>
 <tr>
 <td style="text-align: left;">Parapper</td>
-<td style="text-align: left;">●Parakeet株式会社の軽量な音声認識ツールと連携します。<br>●パソコンの中だけで認識できます。<br>●別途ツールの導入と、「フォルダの指定」での設定が必要です。</td>
+<td style="text-align: left;">●Parakeet株式会社の軽量な音声認識ツールと連携します。<br>●パソコンの中だけで認識できます。<br>●別途ツールの導入と、この入れ方を選んだときの右の欄での設定が必要です。</td>
 </tr>
 <tr>
 <td style="text-align: left;">Windows11音声認識</td>
@@ -11540,6 +11639,18 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition tip">
+<p class="admonition-title">認識用画面を開く (v3.0.11～)</p>
+<p>上のタブ <strong>音声と翻訳</strong> → <strong>音声の入れ方</strong> の右欄に、<strong>音声認識画面</strong> の区画と <strong>「認識用画面を開く」</strong> ボタンがあります。
+ブラウザやオフラインなど、認識用の画面を使う方式では、<strong>この画面を開いているあいだ認識します</strong>。
+（UDトーク・ゆかりねっとプラグインは開く画面が無いので、この区画は出ません）</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">起動時に開くウィンドウは「設定」タブにもあります</p>
+<p>上のタブ <strong>設定</strong> → <strong>ブラウザと字幕ウィンドウ</strong> の先頭の <strong>起動時に開くウィンドウ</strong> に、
+「起動時に音声認識ウィンドウを開く」「起動時に字幕ウィンドウを開く」が並んでいます。
+元の場所のスイッチとつながっていて、どちらで切り替えても同じです（変更はすぐ保存されます）。</p>
+</div>
 <h3 id="ud">UDトークとの接続パネル<a class="headerlink" href="#ud" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -11605,12 +11716,12 @@
 <p>提供が終わったエンジン（<strong>Google 無料翻訳</strong> / <strong>IBM Watson</strong>）を選んでいた枠は、
 移行のときに「翻訳しない」に置き換わります。ここで選び直してください。</p>
 </div>
-<h3 id="_7">翻訳失敗時に使うエンジン<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h3 id="_8">翻訳失敗時に使うエンジン<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <ul>
 <li>5つ目のエンジン選択欄です。指定したエンジンで翻訳できなかったときの、予備のエンジンを決めます。</li>
 <li>既定は「共用翻訳(m2m100/無料)」です。</li>
 </ul>
-<h3 id="_8">連携アプリで使う翻訳エンジン<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h3 id="_9">連携アプリで使う翻訳エンジン<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <ul>
 <li>わんコメなど、ほかのアプリからの翻訳依頼に使うエンジンを、優先順位1～4の順に決められます。</li>
 <li>先頭の「音声翻訳Nの設定を使います」を選ぶと、字幕用の設定と同じエンジンを使います。</li>
@@ -11625,14 +11736,54 @@
 <li>選んだあと、右の「この設定を適用する」を押すと反映されます。</li>
 <li>適用する前に復元ポイントが作られるので、気に入らなければ戻せます。</li>
 </ul>
-<h2 id="5_1">5. レイアウトデザインの選択<a class="headerlink" href="#5_1" title="Permanent link">&para;</a></h2>
-<!-- TODO(screenshot): images/startup_menu3.png は v2.3.59 時点。レイアウト36種と「見た目を調整する」ボタンを含めて撮り直す -->
+<h2 id="design">5. 字幕デザイン（レイアウトデザインの選択）<a class="headerlink" href="#design" title="Permanent link">&para;</a></h2>
+<!-- TODO(screenshot): images/startup_menu3.png は v2.3.59 時点。字幕デザイン → デザイン（プレビュー・タイルの一覧・右の分類タブ）で撮り直す -->
 <!-- ![レイアウト](images/startup_menu3.png) -->
 
+<p>上のタブ <strong>字幕デザイン</strong> → <strong>デザイン</strong> で開きます（左メニューでは <strong>レイアウトに関する設定</strong> → <strong>レイアウトデザインの選択</strong>）。
+選べるテンプレートの一覧は <a href="../startup_layout/">レイアウトについて</a> をご覧ください。</p>
+<p>画面は大きく 3 つに分かれています。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">場所</th>
+<th style="text-align: left;">中身</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>プレビュー（配信画面での見え方）</strong></td>
+<td style="text-align: left;">いまの見た目を、配信画面と同じ形で見せます。右上で配信画面の大きさ（OBS のキャンバスと同じもの）を選べます。下に <strong>「マイプリセットとして保存」</strong> などのボタン</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>見た目の一覧（タイル）</strong></td>
+<td style="text-align: left;">★ お気に入り → マイプリセット → テンプレート（分類ごと）の順に並びます。上の欄で <strong>テンプレート・プリセットをさがす</strong> こともできます。押すとその見た目に切り替わります</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>分類のタブ</strong></td>
+<td style="text-align: left;">操作／文字／色／縁取り／配置／タイミング／表示／表記／このテンプレート。選んだ分類の値だけが出ます</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">タイルを OBS へドラッグして取り込む (v3.0.4～)</p>
+<p>一覧のタイルを、マウスでつかんで <strong>OBS のプレビューの上へドラッグ</strong> すると、
+そのテンプレート（またはプリセット）専用のアドレスで <strong>ブラウザソースが追加</strong> されます。</p>
 <ul>
-<li>レイアウトを選んで、右横のボタンをおします。</li>
-<li>選べるレイアウトの一覧は <a href="../startup_layout/">レイアウトについて</a> をご覧ください。</li>
+<li>ソース名は「YNC-NEO （タイルの名前）」、大きさは 1920×1080 で入ります</li>
+<li>落としたときに OBS が確認を出すことがあります（OBS の仕様です）</li>
+<li>ドラッグできるタイルには、マウスを乗せると「OBS へドラッグすると、ブラウザソースとして追加できます（この項目専用の URL）」と出ます</li>
+<li>星（お気に入り）や ⋮ からつかんだときはドラッグになりません。ふつうに押したときは今までどおり切り替えです</li>
 </ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">わんコメのテンプレートでプレビューが出ないとき</p>
+<p>わんコメのテンプレートを選んでいて、わんコメが起動していないと、プレビューに
+「わんコメと通信できません。」と案内が出ます（OBS などの表示先も、わんコメが起動していないと字幕が出ません）。
+わんコメを起動すれば、自動で読み直します。</p>
+</div>
+<h3 id="_10">操作（配信ソフトへ渡す）<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>分類のタブのいちばん左です。見た目を決めたその場で、配信ソフトへ渡せます。</p>
 <table>
 <thead>
 <tr>
@@ -11642,22 +11793,72 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;">配信ソフトへドラッグ</td>
+<td style="text-align: left;">ボタンを押したまま、配信ソフトの画面（OBS ならプレビューの上）へ運んで離すと取り込めます</td>
+</tr>
+<tr>
+<td style="text-align: left;">URL をコピー</td>
+<td style="text-align: left;">配信ソフトに貼るアドレスをコピーします</td>
+</tr>
+<tr>
+<td style="text-align: left;">字幕ウィンドウで開く</td>
+<td style="text-align: left;">字幕ウィンドウで、いまの見た目を開きます</td>
+</tr>
+<tr>
+<td style="text-align: left;">配信ソフトへ（詳しく）</td>
+<td style="text-align: left;"><a href="#obs">OBSからの参照設定</a>（上のタブ「字幕デザイン」→「配信ソフトへ」）を開きます</td>
+</tr>
+<tr>
 <td style="text-align: left;">起動時に字幕ウィンドウを開く</td>
 <td style="text-align: left;">ゆかコネNEOを立ち上げたときに、字幕画面を自動で開きます</td>
 </tr>
 <tr>
-<td style="text-align: left;">テンプレートを再生成</td>
-<td style="text-align: left;">字幕テンプレートを初期状態に戻します。表示がおかしくなったときに使います</td>
-</tr>
-<tr>
-<td style="text-align: left;">見た目を調整する</td>
-<td style="text-align: left;">文字・色・配置・タイミング・表示内容を調整するボタンを出します</td>
+<td style="text-align: left;">見本の字幕を配信先にも出す</td>
+<td style="text-align: left;">オフのときは、見本の字幕はこのプレビューにだけ出ます。オンにすると OBS などの配信先にも出ます（配信中は視聴者にも見えます）</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_9">「見た目を調整する」で出てくるもの<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
-<!-- TODO(screenshot): images/startup_design_chips.png (未撮影) 「見た目を調整する」を押した状態のボタン列 -->
+<div class="admonition warning">
+<p class="admonition-title">配信ソフトへ渡すのは「選んでいるプリセット」のアドレスです (v3.0.5～)</p>
+<p>「配信ソフトへドラッグ」「URL をコピー」で渡すアドレスは、<strong>いま選んでいるプリセット専用</strong>のものです。
+貼った枠には、そのプリセットの<strong>保存済みの見た目</strong>が出ます。</p>
+<ul>
+<li>プリセットを選んだあとに見た目を変えると「保存していない変更があります」と出ます。<strong>上書き保存</strong> すると、貼った枠にも反映されます</li>
+<li>プリセットに保存していない見た目（内蔵のプリセットを変えたときなど）は、そのままでは渡せません。
+  ボタンが <strong>「プリセットとして保存して配信ソフトへ」</strong> に変わるので、保存してから渡してください</li>
+<li>テンプレートを替えて戻すと、外れていたプリセットが選び直されます（同じ見た目のプリセットが増えないように）</li>
+</ul>
+</div>
+<h3 id="v308">数字を手で入れる (v3.0.8～)<a class="headerlink" href="#v308" title="Permanent link">&para;</a></h3>
+<p>分類のタブにある数字（大きさ・行間・秒数など）は、<strong>数字そのものを押すと入力欄</strong>になります。</p>
+<ul>
+<li>数字を打って <strong>Enter</strong>（または欄の外を押す）で反映、<strong>Esc</strong> で取り消し</li>
+<li>範囲の外の数字は、入れられるいちばん近い値に寄せます</li>
+<li>小数も表示します（以前は 198.62 が「199」と見えていました）</li>
+</ul>
+<h3 id="v305">色の見本 (v3.0.5～)<a class="headerlink" href="#v305" title="Permanent link">&para;</a></h3>
+<p>色の見本の後ろには <strong>市松模様</strong> が敷いてあります。透明や半透明の色を選んだときも、どれぐらい透けているかが見て分かります。</p>
+<h3 id="_11">表記（言語名の書き方）<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>分類のタブ <strong>表記</strong> で、テンプレートに出す <strong>言語名</strong> を好きな書き方に変えられます（v3.0.0～）。
+たとえば、字幕に出る「JA」を「日本語」に、「EN」を「English」にできます。</p>
+<ol>
+<li>字幕デザイン → デザイン → 分類のタブ <strong>表記</strong></li>
+<li>「話した言葉」「翻訳 1」～「翻訳 4」の行のうち、変えたい行の <strong>「表記を指定」</strong> を入れます</li>
+<li>
+<p>横の欄に、出したい言語名を入れます</p>
+</li>
+<li>
+<p>「表記を指定」を入れていない行と、欄が空の行は、従来どおりの表記（JA などの言語コード）のままです</p>
+</li>
+<li>各行には「いまの言語」と「従来の表記」が出るので、どの欄がどの言語か確かめながら入れられます</li>
+<li>値は <strong>テンプレートごと</strong> に覚え、字幕プリセットにも入ります</li>
+<li>多くのテンプレートでは、言語名は「表示」タブの <strong>言語名を出す</strong> をオンにしたときに出ます</li>
+</ol>
+<h3 id="_12">詳しい調整<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<!-- TODO(screenshot): images/startup_design_chips.png (未撮影) 「詳しい調整」を押した状態のボタン列 -->
 
+<p>言語ごとのフォント・色・縁取り、追加のスタイルシートなど、細かく作り込みたいときは <strong>「詳しい調整」</strong> を押します。
+押すとボタンの列が出て、もう一度押す（<strong>「詳しい調整を閉じる」</strong>）と畳みます。閉じても調整は残ります。</p>
 <table>
 <thead>
 <tr>
@@ -11667,7 +11868,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">テンプレ</td>
+<td style="text-align: left;">テンプレート</td>
 <td style="text-align: left;">テンプレートの選択</td>
 </tr>
 <tr>
@@ -11688,11 +11889,24 @@
 </tr>
 <tr>
 <td style="text-align: left;">表示内容</td>
-<td style="text-align: left;">母国語の表示位置・母国語表示の仕方・言語名の表示・話者名を出す・テンプレートの枠を出す・ルビの表示・追加スタイルシート</td>
+<td style="text-align: left;">母国語の表示位置・母国語表示の仕方・言語名の表示・話者名を出す・テンプレートの枠・ルビの表示・追加スタイルシート</td>
+</tr>
+<tr>
+<td style="text-align: left;">保存</td>
+<td style="text-align: left;">いまの見た目をプリセットに保存します</td>
+</tr>
+<tr>
+<td style="text-align: left;">テンプレートの見た目に戻す</td>
+<td style="text-align: left;">調整を捨てて、テンプレートの見た目に戻します（調整を捨てる操作はここだけです）</td>
 </tr>
 </tbody>
 </table>
-<h4 id="_10">文字<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">「テンプレートを再生成」の場所</p>
+<p>字幕テンプレートを初期状態に戻す <strong>「テンプレートを再生成」</strong> は、上のタブ <strong>困ったとき</strong> → <strong>トラブルシュート</strong> にあります。
+表示がおかしくなったときに使います。</p>
+</div>
+<h4 id="_13">文字<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -11727,7 +11941,7 @@
 <li>「個別にフォントを調整する」をONにすると、翻訳1～翻訳4のフォントを別々に決められます（既定OFF）。</li>
 </ul>
 </div>
-<h4 id="_11">色<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<h4 id="_14">色<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -11780,7 +11994,7 @@
 移行のときに言語別の太さが残っていれば自動でONに戻しますが、
 そうでない場合は手でONにすると v2.3 で作った太さに戻ります。</p>
 </div>
-<h4 id="_12">配置<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<h4 id="_15">配置<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -11848,9 +12062,9 @@
 <td style="text-align: left;">ON／OFF（既定ON）</td>
 </tr>
 <tr>
-<td style="text-align: left;">テンプレートの枠を出す</td>
-<td style="text-align: left;">テンプレートが文字の後ろに描く板・吹き出し・縁を出します。外すと映像の上に文字だけが残ります</td>
-<td style="text-align: left;">ON／OFF（既定ON）</td>
+<td style="text-align: left;">テンプレートの枠</td>
+<td style="text-align: left;">テンプレートが文字の後ろに描く板・吹き出し・縁の出し方を選びます</td>
+<td style="text-align: left;">常に出す／字幕があるときだけ出す／出さない（既定は常に出す）</td>
 </tr>
 <tr>
 <td style="text-align: left;">ルビの表示（対応している場合）</td>
@@ -11859,6 +12073,15 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition info">
+<p class="admonition-title">テンプレートの枠の 3 つの選びかた (v3.0.0～)</p>
+<ul>
+<li><strong>常に出す</strong>：文字が無いあいだも枠を残します（以前の「テンプレートの枠を出す」ON と同じ）</li>
+<li><strong>字幕があるときだけ出す</strong>：字幕と一緒に枠が出て、字幕が終わると枠も消えます</li>
+<li><strong>出さない</strong>：映像の上に文字だけが残ります</li>
+</ul>
+<p>分類のタブ「表示」にも同じ選択があります。以前の設定やプリセットは「常に出す」として引き継がれます。</p>
+</div>
 <div class="admonition info">
 <p class="admonition-title">ルビの表示（対応している場合）について</p>
 <ul>
@@ -11877,7 +12100,8 @@
 </ul>
 </div>
 <h2 id="6">6. 字幕のタイミング<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
-<p>左メニューの「字幕のタイミング」からも、「見た目を調整する」→「タイミング」からも同じ画面が開きます。</p>
+<p>左メニューの「字幕のタイミング」からも、「詳しい調整」→「タイミング」からも同じ画面が開きます。
+分類のタブ「タイミング」でも同じ値（表示しておく秒数・流れる速さ）を変えられます。</p>
 <table>
 <thead>
 <tr>
@@ -11919,13 +12143,15 @@ v3.0 では、その場に「効かない」旨が表示されます。</p>
 <strong>読み上げが遅れれば字幕も遅れます</strong>。1 枠型のレイアウトでは、待ちが 8 件を超えると
 間の字幕が表示されずに飛びます。詳しくは<a href="../../../mig/mig_neo_v3.0/">移行ページ</a>の「字幕と読み上げの同期について」をご覧ください。</p>
 </div>
-<h2 id="7-obs">7. OBSからの参照設定<a class="headerlink" href="#7-obs" title="Permanent link">&para;</a></h2>
-<p>v3.0 で左メニューに独立した画面です。配信ソフトに貼るアドレスがここにあります。</p>
+<h2 id="obs">7. OBSからの参照設定<a class="headerlink" href="#obs" title="Permanent link">&para;</a></h2>
+<p>v3.0 で独立した画面です。上のタブ <strong>字幕デザイン</strong> → <strong>配信ソフトへ</strong>（左メニューでは <strong>レイアウトに関する設定</strong> → <strong>OBSからの参照設定</strong>）で開きます。配信ソフトに貼るアドレスがここにあります。</p>
 <div class="admonition tip">
 <p class="admonition-title">配信ソフトへ取り込む簡単な方法</p>
 <ul>
-<li>ブラウザ機能がついた配信ソフトをお使いの場合は、「to OBS」の所をマウスでつかみ、配信ソフトにドラック＆ドロップすることで取り込み作業が１発完了します。</li>
+<li>ブラウザ機能がついた配信ソフトをお使いの場合は、<strong>「OBSへ」</strong> の所をマウスでつかみ、配信ソフトにドラック＆ドロップすることで取り込み作業が１発完了します。</li>
 <li>うまくいかない場合は、アドレスが表示されているところをダブルクリックしてください。そうするとアドレスがコピーされます。あとはOBSなどのブラウザソースで表示してください。</li>
+<li>「OBSへ」の右の <strong>「ブラウザで開く」</strong> を押すと、表示用に設定したブラウザ (Edge / Chrome) で字幕を開けます。配信ソフトに貼る前の確認に使えます。</li>
+<li>字幕デザインの画面からも渡せます（分類のタブ「操作」→「配信ソフトへドラッグ」、または一覧のタイルを OBS へドラッグ）。→ <a href="#design">5. 字幕デザイン</a></li>
 </ul>
 </div>
 <div class="admonition info">
@@ -11939,7 +12165,7 @@ v3.0 では、その場に「効かない」旨が表示されます。</p>
 <p class="admonition-title">言語ごとに別々に取り込みたい場合</p>
 <p>「応用パターン（１言語ごとの取り込み）」を開くと、母国語・翻訳1～翻訳4を<strong>それぞれ別のブラウザソースとして</strong>取り込めます。言語ごとに位置やサイズを変えたいときに使います。</p>
 </div>
-<h2 id="_13">反映される設定の対応表<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<h2 id="_16">反映される設定の対応表<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
 <p>テンプレートによって、効く設定と効かない設定があります。</p>
 <table>
 <thead>
@@ -12003,35 +12229,273 @@ v3.0 では、その場に「効かない」旨が表示されます。</p>
 </tr>
 </tbody>
 </table>
-<h2 id="_14">コックピット<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
-<!-- TODO(screenshot): images/startup_cockpit.png (未撮影) コックピット画面 -->
+<h2 id="cockpit">いまの状態（ホーム画面）<a class="headerlink" href="#cockpit" title="Permanent link">&para;</a></h2>
+<!-- TODO(screenshot): images/startup_cockpit.png (未撮影) 操作パネル → いまの状態（中央に字幕ログ・右に選ぶ欄・下に機能ボタン） -->
 
-<p>左メニューの先頭にある、<strong>配信中によく使うものだけを集めた画面</strong>です（v3.0 で追加）。</p>
+<p>上のタブ <strong>操作パネル</strong> → <strong>いまの状態</strong> で開く、<strong>配信中によく使うものだけを集めた画面</strong>です（以前の名前は「コックピット」）。
+v3.0.5 で「<strong>中央にログ・右で選ぶ・下に機能</strong>」の並びに作り直しました。細かく調整しなくても、ここだけで「さっと状態を作る」ことができます。</p>
+<h3 id="_17">中央：字幕ログ<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">区画</th>
+<th style="text-align: left;">項目</th>
 <th style="text-align: left;">中身</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">字幕が出るか確かめる</td>
-<td style="text-align: left;">いま出ている字幕を 1 秒ごとに表示します。<strong>表示テスト</strong>ボタンでダミー字幕を送れます</td>
+<td style="text-align: left;">字幕ログ</td>
+<td style="text-align: left;">いま出ている字幕と、これまでの字幕が並びます。まだ無いときは「まだ字幕は出ていません。「表示テスト」で試せます。」と出ます。<strong>ログを消す</strong> で一覧を空にできます</td>
 </tr>
 <tr>
-<td style="text-align: left;">配信ソフトに出す</td>
-<td style="text-align: left;">ブラウザソースに入れるアドレスと、<strong>アドレスをクリップボードにコピーする</strong>ボタン</td>
+<td style="text-align: left;">字幕を手で入れる 1 行</td>
+<td style="text-align: left;">「字幕にする文を入力して Enter」の欄に文を入れて <strong>Enter</strong>（または右の送信ボタン「字幕として送る」）で、字幕として送ります。手動入力と同じ入口です</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_18">右：その場で選ぶ欄<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p>右に、選ぶものが縦に並びます。各行の右端の小さなボタンで、くわしい設定の画面へ移れます。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">行</th>
+<th style="text-align: left;">その場でできること</th>
+<th style="text-align: left;">右端のボタン</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>音声入力</strong></td>
+<td style="text-align: left;">音声認識のしかたを選びます（音声の入れ方の画面のカードと同じ）</td>
+<td style="text-align: left;">聞き取り設定</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>翻訳</strong></td>
+<td style="text-align: left;">1 つ目の翻訳先の言語を選びます。2 つ目以降があるときは「ほか N 言語 ›」と出ます</td>
+<td style="text-align: left;">翻訳の設定</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>字幕の表示先</strong></td>
+<td style="text-align: left;">いまの表示先（内訳）と、配信ソフトに貼るアドレス・コピーのボタン</td>
+<td style="text-align: left;">配信ソフトへ</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>読み上げ</strong></td>
+<td style="text-align: left;">読み上げのプラグインを、チェックの一覧で入れたり切ったりします</td>
+<td style="text-align: left;">プラグイン一覧</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>効果</strong></td>
+<td style="text-align: left;">遅延・表示効果・ルビ付与・表示時間の自動調整・色の変更など、字幕の出方を変えるプラグインを入切します（重ねて使えます）</td>
+<td style="text-align: left;">プラグイン一覧</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>連携</strong></td>
+<td style="text-align: left;">OBS・VRChat・わんコメなど、ほかのツールへ字幕を渡すプラグインを入切します</td>
+<td style="text-align: left;">プラグイン一覧</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>見た目</strong></td>
+<td style="text-align: left;">テンプレートと、見た目のプリセットを選びます。表示先があるときは「いま表示先に字幕が出ています。ここで選ぶと、配信の見た目がすぐに変わります。」と注意が出ます</td>
+<td style="text-align: left;">くわしく調整（字幕デザインへ）</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">見出しを押すと画面が開きます (v3.0.12～)</p>
+<ul>
+<li><strong>音声入力</strong> の見出し（アイコンと名前）を押すと、上のツールバーの「音声認識画面」と同じく、音声認識の画面が開きます</li>
+<li><strong>字幕の表示先</strong> の見出しを押すと、「字幕ウィンドウを表示」と同じく、字幕ウィンドウが開きます</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">読み上げ・効果・連携の入切について</p>
+<p>チェックの入切は、プラグイン一覧の「使う」と同じ処理です。止めたときに「完全に止めるには再起動」の案内が出ることがあります。</p>
+</div>
+<h3 id="_19">下：配信中の機能<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ボタン</th>
+<th style="text-align: left;">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ミュートにする／ミュートを解除</td>
+<td style="text-align: left;">声を拾うのを止めます（キーボードの <strong>Ctrl+M</strong> でも切り替えられます）</td>
+</tr>
+<tr>
+<td style="text-align: left;">字幕を消す</td>
+<td style="text-align: left;">いま表示中の字幕だけを消します（<strong>Ctrl+Delete</strong> でも消せます）</td>
+</tr>
+<tr>
+<td style="text-align: left;">字幕ウィンドウで開く</td>
+<td style="text-align: left;">字幕ウィンドウを開きます</td>
+</tr>
+<tr>
+<td style="text-align: left;">音声認識画面</td>
+<td style="text-align: left;">音声認識の画面を開きます</td>
+</tr>
+<tr>
+<td style="text-align: left;">表示テスト</td>
+<td style="text-align: left;">テスト用の字幕を出します。右の <strong>配信先にも出す</strong> が切のときは、この画面と字幕デザインのプレビューにだけ出ます（視聴者には出ません）。入にすると、本物の字幕と同じく OBS などの表示先・読み上げ・プラグインへ流れます。このスイッチは起動のたびに切に戻ります</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_20">上：動作チェックのアイコン<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p>題の行の右に、動作チェックの結果が区画ごとのアイコン（<strong>① 音声認識 ② 翻訳 ③ 字幕の表示 ④ 連携</strong>）で出ます。</p>
+<ul>
+<li>アイコンにマウスを乗せると、その区画の各行の結果が出ます。押すと <a href="#diagnostic">動作チェック</a> の画面へ移ります</li>
+<li>横の <strong>チェックする</strong> で、その場でチェックを走らせられます。チェックした時刻（「HH:MM にチェック」）も出ます</li>
+<li>一度チェックしたあとは、× と ! の行を自動で見直し、直れば緑になります</li>
+</ul>
+<h2 id="live-settings">ライブ設定とプラグインの帯<a class="headerlink" href="#live-settings" title="Permanent link">&para;</a></h2>
+<!-- TODO(screenshot): images/startup_live_settings.png (未撮影) 操作パネル → ライブ設定（プラグインごとの欄と「反映」「接続」ボタン） -->
+
+<h3 id="v3012">ライブ設定 (v3.0.12～)<a class="headerlink" href="#v3012" title="Permanent link">&para;</a></h3>
+<p>配信の URL・チャンネル・送る字幕など、<strong>配信ごとに変わるプラグインの値</strong>を、1 枚の画面でまとめて入れてプラグインへ反映する画面です。
+配信のたびにプラグインの設定画面を 1 つずつ開かなくても、ここで済みます。</p>
+<ol>
+<li>上のタブ <strong>操作パネル</strong> → <strong>ライブ設定</strong> を開きます（左メニューでは先頭の <strong>ライブ設定</strong>）</li>
+<li>ライブ設定に対応したプラグインごとに、欄が並びます。値を入れて <strong>反映</strong> を押します</li>
+<li>接続のあるプラグインは、<strong>接続</strong>／<strong>切断</strong> のボタンと、いまの状態（<strong>接続中</strong>／<strong>未接続</strong>）が出ます</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">表示・ボタン</th>
+<th style="text-align: left;">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">反映</td>
+<td style="text-align: left;">入れた値をプラグインへ送ります。「反映しました。」と出れば完了です。範囲の外や数でない値は赤い文で知らせます</td>
+</tr>
+<tr>
+<td style="text-align: left;">元に戻す</td>
+<td style="text-align: left;">プラグイン側で値が変わったとき（「プラグイン側で値が変わりました。」と出ます）に、最新の値を読み込み直します。反映していない入力は消えます</td>
+</tr>
+<tr>
+<td style="text-align: left;">接続／切断</td>
+<td style="text-align: left;">プラグインの接続を切り替えます</td>
+</tr>
+<tr>
+<td style="text-align: left;">このプラグインの設定を開く</td>
+<td style="text-align: left;">そのプラグインの設定画面を開きます</td>
+</tr>
+<tr>
+<td style="text-align: left;">設定済み(変えるときだけ入力)／未設定</td>
+<td style="text-align: left;">配信キーなど秘密の値の欄です。中身は伏せたまま、入っているかどうかだけを出します</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition info">
-<p class="admonition-title">状態ランプは置いていません</p>
-<p>コックピットには動作状況のランプはありません。
-同じ判定を 2 か所に出すと、障害のときに頼る画面のほうが危うくなるためです。
-状態を見たいときは「動作チェック」を開いてください。</p>
+<p class="admonition-title">何も並ばないとき</p>
+<p>「ライブ設定に対応したプラグインが使われていません。」と出るときは、プラグイン一覧で、下の表の対応プラグインを「使う」にしてください。
+「プラグインから応答がありませんでした。」と出るときも、プラグイン一覧で「使う」になっているか確かめてください。</p>
 </div>
-<h2 id="_15">クイックボタン<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<p>ライブ設定に対応しているプラグインと、載っている項目です。各項目のくわしい意味は、それぞれのプラグインのページをご覧ください。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">プラグイン</th>
+<th style="text-align: left;">ライブ設定に載る項目</th>
+<th style="text-align: left;">接続／切断でできること</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../../plugin/plugin_youtube/">YouTube</a></td>
+<td style="text-align: left;">字幕の送り先（伏せ字）・送る字幕・遅らせる秒数</td>
+<td style="text-align: left;">字幕送信の開始／停止</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../../plugin/plugin_twitch/">Twitch</a></td>
+<td style="text-align: left;">参加するチャンネル・話した言葉の転送・チャット翻訳</td>
+<td style="text-align: left;">チャットへの接続／切断</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../../plugin/plugin_niconama/">ニコ生</a></td>
+<td style="text-align: left;">配信の URL・送る字幕</td>
+<td style="text-align: left;">コメント送信の開始／停止</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../../plugin/plugin_zoom/">Zoom</a></td>
+<td style="text-align: left;">字幕の送り先（伏せ字）・送る字幕</td>
+<td style="text-align: left;">字幕送信の開始／停止</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../../plugin/plugin_dicord/">Discord</a></td>
+<td style="text-align: left;">チャンネル・送る／受け取る</td>
+<td style="text-align: left;">Bot の接続／切断</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../../plugin/Plugin_OCComm/">わんコメ連携</a></td>
+<td style="text-align: left;">送る／受け取る・送り先の枠・受け取る枠</td>
+<td style="text-align: left;">わんコメへの接続／切断</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../../plugin/plugin_comscr/">コメントスクリーン</a></td>
+<td style="text-align: left;">部屋の名前</td>
+<td style="text-align: left;">部屋を開く／閉じる</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../../plugin/plugin_captionshare/">字幕共有</a></td>
+<td style="text-align: left;">送る・受け取る</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../../plugin/plugin_OBS5/">OBS 連携 (WebSocket v5)</a></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">接続／切断</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../../plugin/plugin_vrchat_osc/">VRChat OSC</a></td>
+<td style="text-align: left;">送る字幕・自動送信・ミュート連動</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../../plugin/plugin_infographics/">InfoGraphics</a></td>
+<td style="text-align: left;">有効・セッション・埋め込み URL（伏せ字）</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../../plugin/plugin_clustertransfer/">cluster チャット転送</a></td>
+<td style="text-align: left;">イベントの URL・受信・読み上げ・送信・送る字幕</td>
+<td style="text-align: left;">受信の開始／停止</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">自分で切断したら、自動ではつなぎ直しません</p>
+<p>Twitch・OBS 連携 (v5)・わんコメ連携・Discord は、ライブ設定や帯のダブルクリックで<strong>切断</strong>すると、自動ではつなぎ直しません。
+つなぐときは <strong>接続</strong> を押してください。</p>
+</div>
+<h3 id="_21">プラグインの帯（ダブルクリックで接続／切断）<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<p>タイトルの帯と上のタブのあいだに、使っているプラグインのアイコンが 1 列に並んでいます（プラグインの帯）。
+アイコンの色は、そのプラグインの状態を表しています。</p>
+<ul>
+<li><strong>1 回押す</strong>：今までどおり、そのプラグインの設定を開きます</li>
+<li><strong>ダブルクリック</strong>：接続のあるプラグイン（上の表で「接続／切断」があるもの）は、<strong>接続と切断を切り替えます</strong> (v3.0.12～)</li>
+</ul>
+<p>接続を切り替えられるアイコンは、マウスを乗せると「ダブルクリックで接続」または「ダブルクリックで切断」と出ます。
+切り替えの結果は画面の下に「（プラグイン名）: 接続します」のように知らせが出ます。
+続けて押したときは、前の切り替えが終わるまで「接続を切り替えている途中です。少し待ってください。」と出ます。</p>
+<h2 id="_22">ようこそ画面<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
+<p>上のタブ <strong>ホーム</strong> → <strong>ようこそ</strong> の画面です。</p>
+<div class="admonition tip">
+<p class="admonition-title">わんコメと連動しますか？</p>
+<p>ゆかコネNEO を起動したときに <strong>わんコメが起動していると</strong>、ようこそ画面のお知らせの下に
+<strong>「わんコメと連動しますか？」</strong> のカードが出ます。</p>
+<ul>
+<li><strong>「プラグインを追加」</strong> を押すと、わんコメとの連動に要るプラグイン（<strong>わんコメ連携</strong>・<strong>翻訳・発話連携</strong>・<strong>読み上げ連携</strong>）のうち、まだ一覧に無いものをまとめて追加します。追加されるものはカードの「追加するもの:」に出ます</li>
+<li>3 つとも一覧にある（止めているものも含む）ときは、カードは出ません</li>
+<li>わんコメが起動しているかは、起動のときに 1 回だけ見ます（わんコメとは通信しません）</li>
+</ul>
+</div>
+<h2 id="_23">クイックボタン<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
 <!-- TODO(screenshot): images/startup_menu9.png は v2.3.59 時点。並びが変わっているため撮り直す -->
 <!-- ![クイックボタン](images/startup_menu9.png) -->
 
@@ -12086,6 +12550,28 @@ v3.0 では、その場に「効かない」旨が表示されます。</p>
 </tr>
 </tbody>
 </table>
+<div class="admonition tip">
+<p class="admonition-title">キーボードで操作する</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">キー</th>
+<th style="text-align: left;">動き</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Ctrl+M</strong></td>
+<td style="text-align: left;">ミュートの切り替え</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ctrl+Delete</strong></td>
+<td style="text-align: left;">表示中の字幕を消す</td>
+</tr>
+</tbody>
+</table>
+<p>文字の入力欄にカーソルがあるときは効きません（入力欄では、ふだんの文字の操作になります）。</p>
+</div>
 <p>右上の「…」を押すとオプションメニューが出ます。</p>
 <table>
 <thead>
@@ -12128,19 +12614,21 @@ v3.0 では、その場に「効かない」旨が表示されます。</p>
 <li>「サポートｃｈをひらく」「マニュアルを開く」は左メニューの「その他」に移りました。</li>
 </ul>
 </div>
-<h2 id="_16">動作チェック<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<h2 id="diagnostic">動作チェック<a class="headerlink" href="#diagnostic" title="Permanent link">&para;</a></h2>
 <ul>
-<li>「動作チェック」を選び「チェックする」を押すと、各機能の状態をランプで確認できます。</li>
+<li>上のタブ <strong>困ったとき</strong> → <strong>動作チェック</strong>（左メニューでは <strong>トラブルシュート</strong> → <strong>動作チェック</strong>）を選び「チェックする」を押すと、各機能の状態をランプで確認できます。</li>
 <li>翻訳1～4、翻訳サーバ、わんコメ翻訳、FANBOX支援、音声認識、入力モード、出力モード、ゆかりねっと連動、翻訳の呼び出しと最終処理が並びます。</li>
 <li>うまく動かないときは、まずここでどこが赤くなっているかを確認してください。</li>
+<li>一度チェックしたあとは、× と ! の行のうち状態を読むだけで確かめられる行を 10 秒ごとに見直し、直れば緑にします（v3.0.5～）。翻訳 1～4・わんコメ翻訳の行は勝手に翻訳を使わず、ふだんの翻訳が実際に成功したときに緑になります。</li>
+<li>FANBOX の支援分を使い切ったとき（残量 0）は、無料の翻訳で動き続けるので × ではなく ! になります。</li>
 </ul>
-<h2 id="_17">手動入力枠と入力リスト<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<h2 id="_24">手動入力枠と入力リスト<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h2>
 <ul>
 <li>キーボードから字幕を入れられます。音声認識が使えない場面や、決まった文言を出したいときに使います。</li>
 <li>「入力リスト」には定型文を5つ登録でき、ボタン1つで送れます。</li>
 </ul>
 <hr />
-<h2 id="_18">関連ページ<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<h2 id="_25">関連ページ<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../startup_option/">オプション設定</a> — ブラウザ／翻訳API／ネットワーク／フォルダ／起動時</li>
 <li><a href="../startup_layout/">レイアウト</a> — テンプレートの一覧</li>

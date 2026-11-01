@@ -3810,7 +3810,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        わんコメから受ける
+        わんコメから受信
       
     </span>
   </a>
@@ -3821,7 +3821,7 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        応答の規則
+        応答ルール
       
     </span>
   </a>
@@ -3863,6 +3863,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#live" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ライブ設定（配信中にその場で変える）
+      
+    </span>
+  </a>
   
 </li>
       
@@ -4785,6 +4796,8 @@
       
         
       
+        
+      
     
     
     
@@ -5067,6 +5080,34 @@
     
   
     Python連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_countertrigger/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    カウンター・トリガー
   
 
     
@@ -11491,7 +11532,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        わんコメから受ける
+        わんコメから受信
       
     </span>
   </a>
@@ -11502,7 +11543,7 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        応答の規則
+        応答ルール
       
     </span>
   </a>
@@ -11544,6 +11585,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#live" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ライブ設定（配信中にその場で変える）
+      
+    </span>
+  </a>
   
 </li>
       
@@ -11774,6 +11826,7 @@
 <h2 id="_1">このプラグインで出来ること<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>わんコメに字幕データを送信できます</li>
+<li>チャットの命令で、読み上げの読み方を覚えさせられます（読み上げの教育）</li>
 <li>Protocol V4対応による高度な通信制御</li>
 <li>WebSocket通信の自動復旧機能</li>
 </ul>
@@ -11797,7 +11850,7 @@
 </ul>
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>プラグイン一覧で、このプラグインの名前の右にある <strong>「設定」</strong> を押すと開きます。
-画面は <strong>5 ページ</strong>に分かれていて、左の一覧で切り替えます（わんコメへ送る／わんコメから受ける／応答の規則／WordParty／オプション）。</p>
+画面は <strong>5 ページ</strong>に分かれていて、左の一覧で切り替えます（わんコメへ送る／わんコメから受信／応答ルール／WordParty／オプション）。</p>
 <div class="admonition info">
 <p class="admonition-title">閉じるときの 3 択</p>
 <p>設定は<strong>下書き</strong>として持たれ、「OK」か「適用」を押すまで動いているプラグインには効きません。
@@ -11823,8 +11876,8 @@
 <td style="text-align: left;">—</td>
 </tr>
 <tr>
-<td style="text-align: left;">「枠の一覧を取り直す」ボタン</td>
-<td style="text-align: left;">—</td>
+<td style="text-align: left;">「枠の一覧を更新」ボタン</td>
+<td style="text-align: left;">開いたまま、送り先の枠の一覧を取り直します</td>
 </tr>
 <tr>
 <td style="text-align: left;">☑ わんコメへ送ったら、そのあとの字幕処理をしない</td>
@@ -11854,7 +11907,7 @@
 <blockquote>
 <p>ここで指定した枠の発言は、「わんコメ→ゆかコネ」側では拾いません (行って帰ってを繰り返さないため)。</p>
 </blockquote>
-<h3 id="_5">わんコメから受ける<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h3 id="_5">わんコメから受信<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>わんコメのコメントを受け取って、返事をします。</p>
 <table>
 <thead>
@@ -11870,10 +11923,10 @@
 </tr>
 <tr>
 <td style="text-align: left;">受け取る枠</td>
-<td style="text-align: left;">枠の名前そのものか、名前に含まれる文字を書きます。</td>
+<td style="text-align: left;">枠の名前そのものか、名前に含まれる文字を書きます。下に、いまある枠の名前が出ます</td>
 </tr>
 <tr>
-<td style="text-align: left;">☑ 受け取った文からカッコの中を落とす</td>
+<td style="text-align: left;">☑ 受け取った文からカッコ内を削除する</td>
 <td style="text-align: left;">既定：ON</td>
 </tr>
 <tr>
@@ -11881,14 +11934,51 @@
 <td style="text-align: left;">既定：OFF</td>
 </tr>
 <tr>
-<td style="text-align: left;">「わんコメにつなぐ」ボタン</td>
-<td style="text-align: left;">—</td>
+<td style="text-align: left;">「わんコメに接続」ボタン</td>
+<td style="text-align: left;">わんコメへつなぎます。ライブ設定などで自分で切断したときも、これで戻ります</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_6">応答の規則<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p><strong>読み上げの教育</strong>（v3.0.11～）</p>
+<p>チャットの命令で、<a href="../plugin_playvoice/">読み上げ連携</a> に言葉の読みを覚えさせます（棒読みちゃんの教育と同じ書式）。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">☑ 読み上げの教育コマンドを有効にする</td>
+<td style="text-align: left;">「教育(言葉=読み)」か「(Study 言葉=読み)」で覚えさせ、「忘却(言葉)」で忘れさせます。読み上げ連携が「使う」になっているときだけ効きます。（既定：OFF）</td>
+</tr>
+<tr>
+<td style="text-align: left;">教育を有効にする ID (ホワイトリスト)</td>
+<td style="text-align: left;">1 行に 1 つ、ユーザー ID かスクリーン名を入れます。表示名では許しません (表示名は本人が自由に変えられるため)。空なら、だれでも教育できます。</td>
+</tr>
+<tr>
+<td style="text-align: left;">教育を除外する ID (ブラックリスト)</td>
+<td style="text-align: left;">1 行に 1 つ、ユーザー ID か名前を入れます。ホワイトリストに入っていても、こちらが優先します。</td>
+</tr>
+<tr>
+<td style="text-align: left;">☑ 結果をチャットに表示</td>
+<td style="text-align: left;">「〇〇を〇〇と覚えました」のように、結果をわんコメのコメント枠へ返します (送り先は「わんコメへ送る」の「送り先の枠」)。（既定：OFF）</td>
+</tr>
+<tr>
+<td style="text-align: left;">☑ 教育コマンドの文は読み上げない</td>
+<td style="text-align: left;">「教育(…)」「忘却(…)」の部分を抜いて読みます。Twitch 連携で教育を受けているときも、ここで抜きます。（既定：ON）</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Twitch 連携と両方で有効にしない</p>
+<p>わんコメで Twitch のチャットも受けているときは、<strong>Twitch 連携とわんコメ連携のどちらか片方だけ</strong>で有効にしてください（両方だと同じ命令が 2 回届きます）。
+覚えた言葉の確かめ方・忘れさせ方は <a href="../plugin_playvoice/#speech-teach">読み上げ連携 - 読み上げの教育</a> をご覧ください。</p>
+</div>
+<h3 id="_6">応答ルール<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p>受け取ったコメントに、どう返すかを並べます。</p>
-<p><img alt="わんコメ連携の設定 - 応答の規則" src="../images/v30/occomm_3.png" /></p>
+<p><img alt="わんコメ連携の設定 - 応答ルール" src="../images/v30/occomm_3.png" /></p>
 <p><strong>応答の規則</strong>（表）</p>
 <p>列：使う／起動キーワード／応答テキスト／GPT へ／字幕に出す／打ち切る</p>
 <p>「応答テキスト」では $message (受け取った文) / $name_user (コメントの主) / $name_ai (AI の名前) が使えます。「打ち切る」を入にすると、その行で当たったところで先の行を見ません。</p>
@@ -11997,6 +12087,33 @@
 </tr>
 </tbody>
 </table>
+<p><strong>同じ人のコメントが続いたときの翻訳</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">☑ 同じ人のコメントが続いたら翻訳を控える</td>
+<td style="text-align: left;">上限を超えた分は、翻訳せずに原文のまま出します。コメントは捨てません。配信者とモデレーターは対象外です。（既定：ON）</td>
+</tr>
+<tr>
+<td style="text-align: left;">1 人あたりの上限 (1 分間)</td>
+<td style="text-align: left;">1～600件。既定：30</td>
+</tr>
+<tr>
+<td style="text-align: left;">続けて来たときに翻訳する数</td>
+<td style="text-align: left;">短いあいだに続けて来ても、ここまでは翻訳します。（1～100件。既定：15）</td>
+</tr>
+<tr>
+<td style="text-align: left;">翻訳する長さの上限</td>
+<td style="text-align: left;">これより長いコメントは、XSOverlay と読み上げでは前の部分だけを翻訳します。原文はそのまま出します。（50～5000文字。既定：500）</td>
+</tr>
+</tbody>
+</table>
 <p><strong>そのほか</strong></p>
 <table>
 <thead>
@@ -12018,6 +12135,39 @@
 <h3 id="_8">補足<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <p>!!! Info "わんコメ枠について
     わんコメ側での設定を先に行う必要があります。URLを入力していない枠を設定し、書き出しと接続をONとすることで通信準備が完了します。</p>
+<h2 id="live">ライブ設定（配信中にその場で変える）<a class="headerlink" href="#live" title="Permanent link">&para;</a></h2>
+<p>本体の <strong>操作パネル → ライブ設定</strong> に、このプラグインの「配信ごとに変わる値」が並びます。設定画面を開かずに値を入れて <strong>「反映」</strong> を押せば、すぐプラグインに入ります。しくみは <a href="../../startup/startup_basic/#live-settings">標準設定項目 - ライブ設定とプラグインの帯</a> をご覧ください。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">発言をわんコメのコメント枠へ送る</td>
+<td style="text-align: left;">「わんコメへ送る」の同じ名前のスイッチです</td>
+</tr>
+<tr>
+<td style="text-align: left;">送り先の枠</td>
+<td style="text-align: left;">枠が見当たらないときは、設定画面の「枠の一覧を更新」で取り直してください</td>
+</tr>
+<tr>
+<td style="text-align: left;">コメントを受信して応答する</td>
+<td style="text-align: left;">「わんコメから受信」の同じ名前のスイッチです</td>
+</tr>
+<tr>
+<td style="text-align: left;">受け取る枠</td>
+<td style="text-align: left;">枠の名前そのものか、名前に含まれる文字を書きます。空ならすべての枠です</td>
+</tr>
+</tbody>
+</table>
+<p><strong>「接続」／「切断」</strong> ボタンでわんコメへの接続を切り替えます。画面上部のプラグインの帯で、このプラグインのアイコンを<strong>ダブルクリック</strong>しても同じように切り替えられます（1 回のクリックはこれまでどおり設定を開きます）。</p>
+<ul>
+<li>切断すると、コメントの受信と応答が止まります（発言を送るのは切断中も続きます）</li>
+<li>自分で切断したときは、自動ではつなぎ直しません。「接続」（設定画面では「わんコメに接続」）で戻ります</li>
+</ul>
 <h2 id="_9">プラットフォームの指定<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
 <p><img alt="プラットフォーム名" src="../images/plugin_OCComm_p3.png" /></p>
 <ul>

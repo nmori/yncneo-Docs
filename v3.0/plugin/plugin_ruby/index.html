@@ -2955,7 +2955,18 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        補足
+        読み方を登録する（ユーザー辞書）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        表の使い方
       
     </span>
   </a>
@@ -2968,7 +2979,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         使うとき
@@ -4546,6 +4557,8 @@
       
         
       
+        
+      
     
     
     
@@ -4828,6 +4841,34 @@
     
   
     Python連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_countertrigger/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    カウンター・トリガー
   
 
     
@@ -11241,7 +11282,18 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        補足
+        読み方を登録する（ユーザー辞書）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        表の使い方
       
     </span>
   </a>
@@ -11254,7 +11306,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         使うとき
@@ -11291,7 +11343,7 @@
 <p class="admonition-title">前提条件</p>
 <ul>
 <li>日本語もしくは中国語の場合</li>
-<li>本体の「レイアウトデザインの選択」→「見た目を調整する」→「表示内容」で <strong>「ルビの表示（対応している場合）」</strong> が ON になっていること</li>
+<li>本体の「字幕デザイン」→「デザイン」→ 分類のタブ「表示」で <strong>「ルビの表示（対応している場合）」</strong> が ON になっていること</li>
 <li>ルビに対応したテンプレートを使っていること</li>
 </ul>
 </div>
@@ -11303,7 +11355,7 @@
 <div class="admonition info">
 <p class="admonition-title">ルビを字幕に描くのは本体です (v3.0.0 beta 23～)</p>
 <ul>
-<li>ルビを出すかどうかは、本体の「レイアウトデザインの選択」→「見た目を調整する」→「表示内容」にある <strong>「ルビの表示（対応している場合）」</strong> で切り替えます。詳しくは <a href="../../startup/startup_basic/#display-content">標準設定項目の「表示内容」</a> をご覧ください。</li>
+<li>ルビを出すかどうかは、本体の「字幕デザイン」→「デザイン」→ 分類のタブ「表示」にある <strong>「ルビの表示（対応している場合）」</strong> で切り替えます。詳しくは <a href="../../startup/startup_basic/#display-content">標準設定項目の「表示内容」</a> をご覧ください。</li>
 <li>このプラグインは、本体に頼まれて<strong>字幕の文字から語と読みの組を作る係</strong>です。字幕の HTML を書き換えることはしません。</li>
 <li>UDトークや <a href="../../tech/tech_api_neo/">/api/input の Morph</a> から読みが届いた文は、このプラグインを使わずにその読みでルビが付きます。このプラグインが作るのは、読みが届かなかった日本語・中国語の文の分です。</li>
 <li>このプラグインを無効にすると、読みが届かなかった文にはルビが付きません。</li>
@@ -11330,21 +11382,67 @@
 </div>
 <p>読み方を直したい言葉を並べます。ここに書いた読みが、ルビに使われます。ルビを字幕に出すかどうかは、本体の「表示内容」にある「ルビの表示」で切り替えます。</p>
 <p><img alt="ルビ振りの設定 - 単語" src="../images/v30/ruby_1.png" /></p>
+<!-- TODO(screenshot): images/v30/ruby_1.png を v3.0.11 以降の画面で撮り直す。表の上に「セクション」の欄と「絞り込み」の欄、押せる見出し (⇅) が見えている状態 -->
+
 <p><strong>ルビの単語帳</strong>（表）</p>
-<p>列：漢字／まちがった読み／正しい読み</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">列</th>
+<th style="text-align: left;">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">漢字</td>
+<td style="text-align: left;">読み方を直したい言葉</td>
+</tr>
+<tr>
+<td style="text-align: left;">まちがった読み</td>
+<td style="text-align: left;">いまの（まちがった）読み。控え用で、辞書には使いません。空でもかまいません</td>
+</tr>
+<tr>
+<td style="text-align: left;">正しい読み</td>
+<td style="text-align: left;">ルビに出したい読み</td>
+</tr>
+</tbody>
+</table>
 <p>「正しい読み」はカタカナで書きます (半角カタカナは全角に直します)。OK か適用を押すと、MeCab のユーザー辞書を作り直します。</p>
-<p>表の右上の <strong>「行を足す」</strong> で行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／下へ、＋＝この下に足す、×＝この行を消す です。<strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込んで、いまの中身と入れ替えます。</p>
-<h3 id="_4">補足<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h3 id="_4">読み方を登録する（ユーザー辞書）<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li>「ルビ振りの設定」→「単語」の表で <strong>「行を追加」</strong> を押します。</li>
+<li>「漢字」に言葉（例：<code>雪華</code>）、「正しい読み」にカタカナで読み（例：<code>セッカ</code>）を書きます。</li>
+<li>
+<p><strong>「OK」</strong> か <strong>「適用」</strong> を押します。ユーザー辞書が作り直され、すぐに新しい読みでルビが付くようになります（少し時間がかかります）。</p>
+</li>
+<li>
+<p>「漢字」か「正しい読み」が空の行は、辞書に入りません。</p>
+</li>
+<li>表を空にして OK を押すと、ユーザー辞書そのものを外します。</li>
+<li>辞書を作り直せなかったときは、その場で注意が出ます。そのときも、<strong>今まで登録できていた単語はそのまま残っています</strong>。</li>
+</ol>
 <div class="admonition info">
-<p class="admonition-title">辞書編集は必須ではありません。正しくルビが振れない場合は辞書を再構築できます</p>
+<p class="admonition-title">辞書編集は必須ではありません</p>
+<p>ふつうはそのままで正しくルビが振れます。読みがまちがう言葉があるときだけ、単語帳に登録してください。</p>
 </div>
-<div class="admonition success">
-<p class="admonition-title">編集後OKを押すと辞書の再構築が始まります。少し時間がかかります</p>
+<div class="admonition warning">
+<p class="admonition-title">以前の版で「登録した読みが効かない」「辞書のコンパイルが失敗する」「Access to the path is denied」と出ていた方へ</p>
+<p>v3.0.11 までは、ユーザー辞書を作るのに必要なファイルが配られておらず、単語帳に登録した読みが効いていませんでした（v2.3 から同じ状態でした）。
+また、作り直しで「Access to the path is denied」と出て差し替えられないことがありました。
+前者は v3.0.12（ルビ v2.6）、後者は v3.0.13（ルビ v2.7）で直っています。<strong>v3.0.13 以降</strong>に上げてから、設定画面を開いて <strong>「OK」</strong> を押すと、登録してある単語で辞書が作り直されます。</p>
 </div>
-<h2 id="_5">使うとき<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="_5">表の使い方<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>「行を追加」</strong> で、いま開いているセクションに行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／1 つ下へ、＋＝この下に追加、×＝この行を消す です。</li>
+<li><strong>見出しで並べ替え</strong>：列の見出しを押すと、いまのセクションの中で並べ替えます。押すたびに 昇順 → 降順 → 並べ替える前の順 と変わります。</li>
+<li><strong>絞り込み</strong>：表の上の「絞り込み」に文字を入れると、その文字を含む行だけを出します（Ctrl+F で欄へ、Esc で解除）。絞り込むのはいまのセクションの中だけです。</li>
+<li><strong>セクション</strong>：表の上の「セクション」で、単語をまとまりに分けられます（「セクションを追加」「セクションを消す」、名前の欄。空の名前は「基本」）。<strong>セクションは整理のためのもので、どのセクションの単語も同じように効きます</strong>（順番も関係ありません）。行の無いセクションは保存されません。</li>
+<li><strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込みます。新しいセクションとして足す／セクションごとに統合する／今の表と置き換える から選べます。</li>
+</ul>
+<h2 id="_6">使うとき<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <ol>
 <li>このプラグインを有効にします。</li>
-<li>本体の「レイアウトデザインの選択」→「見た目を調整する」→「表示内容」で、<strong>「ルビの表示（対応している場合）」</strong> を ON にします。</li>
+<li>本体の「字幕デザイン」→「デザイン」→ 分類のタブ「表示」で、<strong>「ルビの表示（対応している場合）」</strong> を ON にします。</li>
 <li>音声認識した日本語・中国語の字幕に、ルビが付いて表示されます。</li>
 </ol>
 <div class="admonition info">

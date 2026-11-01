@@ -4438,6 +4438,8 @@
       
         
       
+        
+      
     
     
     
@@ -4720,6 +4722,34 @@
     
   
     Python連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="plugin/plugin_countertrigger/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    カウンター・トリガー
   
 
     
@@ -11131,6 +11161,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#v301v3013" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        最近の更新で増えたこと（v3.0.1～v3.0.13）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -11245,6 +11286,94 @@ v2.3 の手順で読むと合わないところが出るので、<a href="../v2.
 </tr>
 </tbody>
 </table>
+<h2 id="v301v3013">最近の更新で増えたこと（v3.0.1～v3.0.13）<a class="headerlink" href="#v301v3013" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">増えたこと</th>
+<th style="text-align: left;">内容</th>
+<th style="text-align: left;">詳しくは</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ライブ設定</td>
+<td style="text-align: left;">操作パネルのタブ「ライブ設定」で、配信ごとに変わる値（配信URLや部屋の名前など）をその場で入れられます。プラグインの帯をダブルクリックすると接続／切断できます（v3.0.12）</td>
+<td style="text-align: left;"><a href="startup/startup_basic/#live-settings">ライブ設定とプラグインの帯</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">いまの状態</td>
+<td style="text-align: left;">配信中によく見るものを 1 枚にまとめた画面です。見出しから音声認識画面・字幕ウィンドウを開けます（v3.0.12）</td>
+<td style="text-align: left;"><a href="startup/startup_basic/#cockpit">いまの状態</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">字幕デザイン</td>
+<td style="text-align: left;">一覧のタイルを OBS へドラッグするとブラウザソースが入ります。数字の手入力、「表記」タブ、「テンプレートの枠」の 3 択も増えました</td>
+<td style="text-align: left;"><a href="startup/startup_basic/#design">字幕デザイン</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">字幕テンプレート</td>
+<td style="text-align: left;">MMORPG・レトロ系・確定演出・紹介動画テロップ・アバター表示対応・カウンター連動・ワードバトルなど、60 種類になりました</td>
+<td style="text-align: left;"><a href="startup/startup_layout/">レイアウト</a> / <a href="startup/startup_layout/#word-battle">ワードバトル</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">文字強調</td>
+<td style="text-align: left;">効果が大きく増え（光と影・縁取り・動き・タイプライターなど）、重ねがけ・大きさ・文字の色・画像への差し替えができます。触るとすぐ字幕に反映されます（v3.0.13）</td>
+<td style="text-align: left;"><a href="plugin/plugin_viewextend/">表示拡張(文字強調)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">カウンター・トリガー</td>
+<td style="text-align: left;">言葉を数えて、テンプレートや OBS に出したり、条件で動作させたりできます（v3.0.8）</td>
+<td style="text-align: left;"><a href="plugin/plugin_countertrigger/">カウンター・トリガー</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">オフライン翻訳（無料）</td>
+<td style="text-align: left;">PC の中だけで動く翻訳エンジンです</td>
+<td style="text-align: left;"><a href="startup/startup_option/#offline-translation">オプション設定</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">オフライン音声認識</td>
+<td style="text-align: left;">軽量モデル（v3.0.10）と句読点の付与（v3.0.11）を選べます</td>
+<td style="text-align: left;"><a href="startup/startup_asr/#offline-recognition">音声認識できないとき</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">ブラウザ音声認識</td>
+<td style="text-align: left;">マイクの選び直し・入力レベル・2 本同時の認識ができます</td>
+<td style="text-align: left;"><a href="startup/startup_asr/#browser-recognition">音声認識できないとき</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">モデルの保存先</td>
+<td style="text-align: left;">ダウンロードするモデルの置き場所を選び、不要なものを消せます</td>
+<td style="text-align: left;"><a href="startup/startup_option/#model-storage">モデルの保存先と管理</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">アクセス状況</td>
+<td style="text-align: left;">字幕の受け口に来た要求の許可・拒否と理由が見られます（v3.0.9）</td>
+<td style="text-align: left;"><a href="startup/startup_option/#access-log">アクセス状況</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">AIアシスタント（MCP）</td>
+<td style="text-align: left;">Claude などの AI クライアントからゆかコネの状態確認や操作ができます</td>
+<td style="text-align: left;"><a href="tech/tech_api_neo/#mcp">MCP からゆかコネを操作する</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">読み上げ</td>
+<td style="text-align: left;">Irodori-TTS、VoiSona の感情スタイル、読み上げの教育（教育／忘却コマンド）などが増えました</td>
+<td style="text-align: left;"><a href="plugin/plugin_playvoice/">読み上げ</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Twitch・cluster</td>
+<td style="text-align: left;">Twitch のチャット翻訳（v3.0.9）、cluster のコメント受信（v3.0.12）</td>
+<td style="text-align: left;"><a href="plugin/plugin_twitch/">Twitch</a> / <a href="plugin/plugin_clustertransfer/">clusterチャット転送</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">表の使い方</td>
+<td style="text-align: left;">正規表現・色付け・ルビ・辞書の表で、並べ替え・絞り込み・セクションが使えます（v3.0.11）</td>
+<td style="text-align: left;"><a href="plugin/plugin_regexp/">正規表現</a></td>
+</tr>
+</tbody>
+</table>
+<p>細かい変更は <a href="../qa/history/">更新履歴</a> をご覧ください。</p>
 <h2 id="_2">目的から探す<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>英語字幕を出したい</strong> → <a href="cs/cs_en/">無料で英語翻訳を出す</a> / <a href="cs/cs_en_sp/">支援版で高品質翻訳</a></li>
