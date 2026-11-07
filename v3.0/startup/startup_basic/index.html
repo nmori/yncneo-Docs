@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -2680,6 +2680,8 @@
       
         
       
+        
+      
     
     
     
@@ -2962,6 +2964,34 @@
     
   
     GPT3整形/AIアシスタント
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_expressionfilter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    口調チェンジャー
   
 
     
@@ -3450,6 +3480,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3592,6 +3626,62 @@
     
   
     OBS連携 WSv5（OBS28～)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_streamlabsnair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Streamlabs / N Air 連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_setlistplayer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    セットリスト再生
   
 
     
@@ -4452,6 +4542,8 @@
       
         
       
+        
+      
     
     
     
@@ -4762,6 +4854,34 @@
     
   
     カウンター・トリガー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_mcpserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCP サーバー
   
 
     
@@ -11637,6 +11757,14 @@
 <td style="text-align: left;">起動時に音声認識ウィンドウを開く</td>
 <td style="text-align: left;">ゆかコネNEOを立ち上げたときに、認識画面を自動で開きます</td>
 </tr>
+<tr>
+<td style="text-align: left;">SpeechRecognitionWebをつかう(作者：gumbekさん)</td>
+<td style="text-align: left;">「オプション」の欄にあります（ブラウザ音声認識のとき）。ガムベックさん作成の音声認識ページを使います。認識の機能はブラウザに依存します（下の注を参照）</td>
+</tr>
+<tr>
+<td style="text-align: left;">AIモデルで句読点を打ちこむ（日本語のみ）</td>
+<td style="text-align: left;">「オプション」の欄にあります。日本語の確定文に句読点を付けます（既定OFF・v3.0.15～。<a href="#punctuation-restore">下の節</a>を参照）</td>
+</tr>
 </tbody>
 </table>
 <div class="admonition tip">
@@ -11651,6 +11779,43 @@
 「起動時に音声認識ウィンドウを開く」「起動時に字幕ウィンドウを開く」が並んでいます。
 元の場所のスイッチとつながっていて、どちらで切り替えても同じです（変更はすぐ保存されます）。</p>
 </div>
+<div class="admonition info">
+<p class="admonition-title">SpeechRecognitionWebをつかう について (v3.0.14～)</p>
+<ul>
+<li>ON にしているあいだだけ、そのページ（<code>storage.googleapis.com</code>）からの接続を受け付けます。v3.0.8〜v3.0.13 では、ON にするとすぐ接続が切れていました。</li>
+<li>OFF にすると、ページを開いたままでも、そこから届いた文字は使いません。</li>
+</ul>
+</div>
+<h3 id="punctuation-restore">AIモデルで句読点を打ちこむ（日本語のみ）<a class="headerlink" href="#punctuation-restore" title="Permanent link">&para;</a></h3>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>ゆかコネNEO v3.0.15～</li>
+</ul>
+</div>
+<ul>
+<li>「音声の入れ方」の <strong>「オプション」</strong> の欄にある <strong>「AIモデルで句読点を打ちこむ（日本語のみ）」</strong> を ON にすると、音声認識から届いた<strong>日本語の確定文</strong>に「、」「。」「？」を付けます。既定は OFF です。</li>
+<li>ブラウザ音声認識のように、句読点を付けずに文を返す認識で使います。</li>
+<li>付けるのは <strong>確定した文だけ</strong>です。次の文はそのままにします。<ul>
+<li>認識の途中経過</li>
+<li>もう句読点のある文</li>
+<li>日本語以外の文</li>
+<li>読み（ルビ）付きで届いた文や、API から送った文</li>
+</ul>
+</li>
+<li>初めて ON にしたときに、句読点のモデル <strong>hayamimi-punct-ja-4class</strong>（MIT ライセンス・約 44MB）を Hugging Face からダウンロードします。置き場所はオフライン翻訳のモデルと同じフォルダです（<a href="../startup_option/#model-storage">モデルの保存先と管理</a> では種類「句読点の復元」で並びます）。オフライン認識の画面で同じモデルをダウンロード済みなら、それを使います。</li>
+<li>ダウンロードが終わるまでは、句読点を付けずに送ります。準備ができると「句読点のAIモデルの準備ができました。音声認識の日本語の文に句読点を付けます」とお知らせが出ます。</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">出ない・使えないとき</p>
+<ul>
+<li><strong>UDトーク</strong>を選んでいるときは効かないため、欄は出ません。</li>
+<li><strong>オフライン認識</strong>を選んでいるあいだは OFF になり、欄も出ません（v3.0.17～）。オフライン認識は自分の画面の「句読点」で付けるので、二重に付かないようにしています。→ <a href="../startup_asr/#offline-recognition">オフライン認識の句読点</a></li>
+<li>オフライン認識からほかの入れ方に戻しても、自動では ON に戻りません。使うときは入れ直してください。</li>
+</ul>
+</div>
+<!-- TODO(screenshot): 「音声の入れ方」の「オプション」欄（SpeechRecognitionWebをつかう・起動時に音声認識ウィンドウを開く・AIモデルで句読点を打ちこむ（日本語のみ）のスイッチ） -->
+
 <h3 id="ud">UDトークとの接続パネル<a class="headerlink" href="#ud" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -11782,6 +11947,45 @@
 「わんコメと通信できません。」と案内が出ます（OBS などの表示先も、わんコメが起動していないと字幕が出ません）。
 わんコメを起動すれば、自動で読み直します。</p>
 </div>
+<h3 id="design-preview-input">プレビューで文を試す（入力欄とランダム送信）<a class="headerlink" href="#design-preview-input" title="Permanent link">&para;</a></h3>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>ゆかコネNEO v3.0.16～</li>
+</ul>
+</div>
+<p>プレビューの枠の下に、文を入れる欄と <strong>「ランダム送信」</strong> があります。話さなくても、見た目をその場で確かめられます。</p>
+<!-- TODO(screenshot): 字幕デザインのプレビューの下（「プレビューに出す文を入力して Enter」の欄・「プレビューに出す」ボタン・「ランダム送信」と秒数のプルダウン） -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">プレビューに出す文を入力して Enter</td>
+<td style="text-align: left;">入れた文を、確定した字幕としてプレビューに出します。翻訳の設定どおりに<strong>訳も付きます</strong>。右のボタン「プレビューに出す」でも送れます</td>
+</tr>
+<tr>
+<td style="text-align: left;">ランダム送信</td>
+<td style="text-align: left;">見本の文を 1 文字ずつ未確定で送り、1 文を送りきったら確定（訳つき）にして、選んだ秒数あけて次の文へ進みます</td>
+</tr>
+<tr>
+<td style="text-align: left;">秒数（1 / 2 / 3 / 5 / 10 秒ごと）</td>
+<td style="text-align: left;">ランダム送信で文と文のあいだをあける長さです。既定は 3 秒ごと</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>出すのは <strong>このプレビューだけ</strong>です。分類のタブ「操作」の <strong>見本の字幕を配信先にも出す</strong> をオンにしたときだけ、OBS などの配信先にも出ます。</li>
+<li>プラグインには渡しません（読み上げや連携には流れません）。翻訳は回すので、翻訳エンジンの呼び出しにはなります。</li>
+<li>ランダム送信は、<strong>1 分たつか、もう一度押すか、字幕デザインの画面を離れると止まります</strong>。</li>
+<li>未確定の文が出るかどうかは、本物の発話と同じく「母国語表示の仕方」（<a href="#display-content">表示内容</a>）に従います。</li>
+<li>確定した見本は保持時間で消えます。画面を離れると、出した見本はまとめて下げます。</li>
+</ul>
 <h3 id="_10">操作（配信ソフトへ渡す）<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
 <p>分類のタブのいちばん左です。見た目を決めたその場で、配信ソフトへ渡せます。</p>
 <table>
@@ -12344,9 +12548,14 @@ v3.0.5 で「<strong>中央にログ・右で選ぶ・下に機能</strong>」�
 </tbody>
 </table>
 <h3 id="_20">上：動作チェックのアイコン<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
-<p>題の行の右に、動作チェックの結果が区画ごとのアイコン（<strong>① 音声認識 ② 翻訳 ③ 字幕の表示 ④ 連携</strong>）で出ます。</p>
+<p>題の行の右に、動作チェックの結果が区画ごとのアイコン（<strong>音声認識・翻訳・字幕の表示・連携</strong>）で出ます。</p>
 <ul>
-<li>アイコンにマウスを乗せると、その区画の各行の結果が出ます。押すと <a href="#diagnostic">動作チェック</a> の画面へ移ります</li>
+<li>
+<p>まだチェックしていない区画は、中抜きの丸で出ます（v3.0.16 から。以前は「?」でした）。帯の名前には ①〜④ の番号を付けません</p>
+</li>
+<li>
+<p>アイコンにマウスを乗せると、その区画の各行の結果が出ます。押すと <a href="#diagnostic">動作チェック</a> の画面へ移ります</p>
+</li>
 <li>横の <strong>チェックする</strong> で、その場でチェックを走らせられます。チェックした時刻（「HH:MM にチェック」）も出ます</li>
 <li>一度チェックしたあとは、× と ! の行を自動で見直し、直れば緑になります</li>
 </ul>
@@ -12384,6 +12593,10 @@ v3.0.5 で「<strong>中央にログ・右で選ぶ・下に機能</strong>」�
 <tr>
 <td style="text-align: left;">このプラグインの設定を開く</td>
 <td style="text-align: left;">そのプラグインの設定画面を開きます</td>
+</tr>
+<tr>
+<td style="text-align: left;">オン・オフのスイッチ</td>
+<td style="text-align: left;">名前と説明が左、スイッチが右端に並びます（v3.0.16～）</td>
 </tr>
 <tr>
 <td style="text-align: left;">設定済み(変えるときだけ入力)／未設定</td>
@@ -12433,7 +12646,7 @@ v3.0.5 で「<strong>中央にログ・右で選ぶ・下に機能</strong>」�
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../../plugin/Plugin_OCComm/">わんコメ連携</a></td>
-<td style="text-align: left;">送る／受け取る・送り先の枠・受け取る枠</td>
+<td style="text-align: left;">送る／受け取る・送り先の枠・受け取る枠（v3.0.16 からプルダウンで選べます）</td>
 <td style="text-align: left;">わんコメへの接続／切断</td>
 </tr>
 <tr>
@@ -12465,6 +12678,16 @@ v3.0.5 で「<strong>中央にログ・右で選ぶ・下に機能</strong>」�
 <td style="text-align: left;"><a href="../../plugin/plugin_clustertransfer/">cluster チャット転送</a></td>
 <td style="text-align: left;">イベントの URL・受信・読み上げ・送信・送る字幕</td>
 <td style="text-align: left;">受信の開始／停止</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../../plugin/plugin_dictionary/">辞書</a></td>
+<td style="text-align: left;">セクションごとのオン・オフ（v3.0.16～）</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../../plugin/plugin_regexp/">正規表現</a></td>
+<td style="text-align: left;">規則のセクションごとのオン・オフ（v3.0.16～。規則が無いときは出ません）</td>
+<td style="text-align: left;">—</td>
 </tr>
 </tbody>
 </table>
@@ -12758,7 +12981,7 @@ v3.0.5 で「<strong>中央にログ・右で選ぶ・下に機能</strong>」�
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section", "navigation.footer", "navigation.indexes", "navigation.tracking", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>

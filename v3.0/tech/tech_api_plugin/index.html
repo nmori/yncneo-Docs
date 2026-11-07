@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -2668,6 +2668,8 @@
       
         
       
+        
+      
     
     
     
@@ -2950,6 +2952,34 @@
     
   
     GPT3整形/AIアシスタント
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_expressionfilter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    口調チェンジャー
   
 
     
@@ -3438,6 +3468,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3580,6 +3614,62 @@
     
   
     OBS連携 WSv5（OBS28～)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_streamlabsnair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Streamlabs / N Air 連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_setlistplayer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    セットリスト再生
   
 
     
@@ -4440,6 +4530,8 @@
       
         
       
+        
+      
     
     
     
@@ -4750,6 +4842,34 @@
     
   
     カウンター・トリガー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugin/plugin_mcpserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCP サーバー
   
 
     
@@ -5899,6 +6019,45 @@
     <span class="md-ellipsis">
       
         AIに文章を作らせる
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugin-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プラグインから AI を呼ぶ（プラグイン開発者向け）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="プラグインから AI を呼ぶ（プラグイン開発者向け）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-callgptfunctionvia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI を名指しして呼ぶ（CallGPTFunctionVia）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pc-ai-calllocalllmasync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        この PC の AI を呼ぶ（CallLocalLlmAsync）
       
     </span>
   </a>
@@ -12733,6 +12892,45 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#plugin-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プラグインから AI を呼ぶ（プラグイン開発者向け）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="プラグインから AI を呼ぶ（プラグイン開発者向け）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-callgptfunctionvia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI を名指しして呼ぶ（CallGPTFunctionVia）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pc-ai-calllocalllmasync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        この PC の AI を呼ぶ（CallLocalLlmAsync）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#web" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -14048,7 +14246,11 @@
 </div>
 </div>
 <ul>
-<li>GPT3プラグイン自体が有効で、APIキーなどが設定済みであるときに使用可能です。</li>
+<li>GPT3プラグイン（AIフィルタ／AIアシスタント）自体が有効であるときに使用可能です。プラグインの「使う AI」が「ゆかコネの「AI 連携」の設定に従う」のときは、本体に API キーが設定済みである必要があります。この PC・ブラウザ・Ollama / LM Studio で動かすときは不要です。</li>
+<li>プラグインの <code>question</code> 命令として送ります。答えを待つのは <strong>6 秒まで</strong> で、間に合わなかったときや AI が答えなかったときは、<code>text</code> にプラグインの「答えられなかったときの返事」が入ります（空のこともあります）。</li>
+<li><code>premise</code> を省くと、前提なし（人格も使わない）で問い合わせます。人格で答えさせたいときは、下の「<a href="#gpt3">GPT3 プラグイン</a>」の <code>/api/command</code> で <code>premise</code> を付けずに送ってください。</li>
+<li><code>maxtokens</code> <code>temperature</code> は使われません。答えの長さなどは、プラグインの設定で決まります。</li>
+<li>会話の記憶は使わず、記憶へ足しもしません。</li>
 <li>statusがfailureの場合は、プラグインが無効な場合など要求が出せなかった場合にでます。</li>
 </ul>
 <h4 id="operation">知らない operation を送ったとき<a class="headerlink" href="#operation" title="Permanent link">&para;</a></h4>
@@ -14794,9 +14996,9 @@
 <div class="admonition tech">
 <p class="admonition-title">使用条件</p>
 <ul>
-<li>GPT3プラグインをONにしていること</li>
-<li>APIキーが設定済みであること</li>
-<li>ゆかコネNEO v2.0.94～で有効</li>
+<li>GPT3プラグイン（AIフィルタ／AIアシスタント）をONにしていること</li>
+<li>プラグインの「使う AI」が「ゆかコネの「AI 連携」の設定に従う」のときは、本体に APIキーが設定済みであること（この PC・ブラウザ・Ollama / LM Studio で動かすときは不要）</li>
+<li>ゆかコネNEO v2.0.94～で有効。下に書いた動き（<code>question</code> と <code>response</code> の違い・6 秒の上限）は、AIフィルタ／AIアシスタント v3.1（ゆかコネNEO v3.0.18 以降）のものです</li>
 </ul>
 </div>
 <h3 id="ai_1">AIに文章を作らせる<a class="headerlink" href="#ai_1" title="Permanent link">&para;</a></h3>
@@ -14813,37 +15015,291 @@
 <tbody>
 <tr>
 <td style="text-align: left;">prompt</td>
-<td style="text-align: left;">AIに投げる文章</td>
+<td style="text-align: left;">AIに投げる文章。そのまま渡します（「話しかけの包み方」では包みません）</td>
 </tr>
 <tr>
 <td style="text-align: left;">premise</td>
-<td style="text-align: left;">前提（役割や状況の指定）</td>
+<td style="text-align: left;">前提（役割や状況の指定）。AI への指示（system）を丸ごとこれに置き換えます。<code>$name_ai</code> は AI の名前に、<code>$name_user</code> は <code>talkerName</code> に置き換わります。省くと、プラグインの「人格」の設定で答えます</td>
 </tr>
 <tr>
 <td style="text-align: left;">talkerName</td>
-<td style="text-align: left;">相手の名前。プロンプト内の <code>$name_user</code> に入ります</td>
+<td style="text-align: left;">相手の名前。プロンプト内の <code>$name_user</code> に入ります（省略時：視聴者）</td>
 </tr>
 <tr>
 <td style="text-align: left;">maxtokens</td>
-<td style="text-align: left;">返答の最大長</td>
+<td style="text-align: left;">v3.1 からは使いません</td>
 </tr>
 <tr>
 <td style="text-align: left;">temperature</td>
-<td style="text-align: left;">ばらつきの度合い</td>
+<td style="text-align: left;">v3.1 からは使いません</td>
 </tr>
 </tbody>
 </table>
 <div class="tabbed-set tabbed-alternate" data-tabs="43:1"><input checked="checked" id="__tabbed_43_1" name="__tabbed_43" type="radio" /><div class="tabbed-labels"><label for="__tabbed_43_1">実行</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:11900/api/command?target=Plugin_GPT3&amp;command=question&amp;premise=あなたはおじいさん役。&amp;prompt=役割に合わせ発言せよ。「おはよう」&amp;maxtokens=1000&amp;temperature=0.5</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">http</span><span class="o">:</span><span class="c1">//localhost:11900/api/command?target=Plugin_GPT3&amp;command=question&amp;premise=あなたはおじいさん役。&amp;prompt=役割に合わせ発言せよ。「おはよう」</span>
 </code></pre></div>
 </div>
 </div>
 </div>
 <ul>
-<li><code>command</code> には <code>question</code> または <code>response</code> を指定します。どちらも同じ動作です。</li>
-<li>AIが返した文章がそのまま応答本文になります。</li>
+<li><code>command</code> には <code>question</code> または <code>response</code> を指定します。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">command</th>
+<th style="text-align: left;">動き</th>
+<th style="text-align: left;">応答本文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>question</code></td>
+<td style="text-align: left;">答えを作って返します。待つのは <strong>6 秒まで</strong> です</td>
+<td style="text-align: left;">AIが返した文章。間に合わなかったときや失敗したときは、プラグインの「答えられなかったときの返事」</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>response</code></td>
+<td style="text-align: left;">裏で答えを作り、<strong>AI の名前で字幕へ出します</strong>（「答えを VRM_AI へ出す」がオンなら VRM_AI へ）。すぐに戻ります</td>
+<td style="text-align: left;">空</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>「使う AI」で選んだ AI を使います。「この PC で動かす」でモデルを読み込んでいる最中は、<code>question</code> は待たずに失敗します。</li>
+<li>会話の記憶は使わず、記憶へ足しもしません（コメントへの応答で、人格の記憶が埋まらないようにするため）。</li>
+<li><code>response</code> は、同時に 2 つまで答えを作ります。それより多く来たときは、順番に答えます。</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">6 秒で打ち切る理由</p>
+<p>本体は、プラグインへの命令が 8 秒で返らないと打ち切り、3 回続くとそのプラグインへの命令を 120 秒止めます。
+これを避けるため、<code>question</code> は 6 秒で諦め、<code>response</code> は裏で答えてすぐ戻ります。
+ゆっくり答える AI（「この PC で動かす」や大きいモデルの Ollama）で確実に答えさせたいときは、<code>response</code> を使ってください。</p>
+</div>
+<h2 id="plugin-ai">プラグインから AI を呼ぶ（プラグイン開発者向け）<a class="headerlink" href="#plugin-ai" title="Permanent link">&para;</a></h2>
+<ul>
+<li>プラグインの中から、本体の AI を呼ぶ方法です。<code>onLoad</code> の <code>Message</code> に入っています。</li>
+<li>ここに書いた 2 つ（<code>CallGPTFunctionVia</code> と <code>CallLocalLlmAsync</code>）は、ゆかコネNEO v3.0.18 以降で入ります。古い本体ではキーが無いので、<code>null</code> として扱い、機能を薄くしてください。</li>
+<li>開発用の SDK（<code>YNC_PluginSdk</code> の <code>PluginHost</code>）には、まだプロパティがありません。<code>Host.RawMessage["CallLocalLlmAsync"]</code> のように読んでください。</li>
+<li>受け取るときは、下の表と<strong>同じデリゲート型</strong>にしてください。型が違うと <code>as</code> で <code>null</code> になります。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">キー</th>
+<th style="text-align: left;">型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>CallGPTFunction</code></td>
+<td style="text-align: left;"><code>Func&lt;string method, string query, string&gt;</code>（従来からあるもの。本体で選んだ AI を呼びます）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CallGPTFunctionVia</code></td>
+<td style="text-align: left;"><code>Func&lt;string unit, string method, string query, string&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CallLocalLlmAsync</code></td>
+<td style="text-align: left;"><code>Func&lt;string requestJson, int timeoutMs, CancellationToken token, Task&lt;string&gt;&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ai-callgptfunctionvia">AI を名指しして呼ぶ（CallGPTFunctionVia）<a class="headerlink" href="#ai-callgptfunctionvia" title="Permanent link">&para;</a></h3>
+<p>本体の「プラグインで使うAIの種類」で何を選んでいても、決まった AI を名指しして呼べます。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">引数</th>
+<th style="text-align: left;">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">unit</td>
+<td style="text-align: left;">呼ぶ AI。いま名指しできるのは <code>"BrowserLLM"</code>（ブラウザの AI。大文字・小文字は区別しません）だけです。それ以外の値や空は、<code>CallGPTFunction</code> と同じ（本体で選んだ AI）になります</td>
+</tr>
+<tr>
+<td style="text-align: left;">method</td>
+<td style="text-align: left;"><code>CallGPTFunction</code> と同じ。<code>BrowserLLM</code> は <code>"chat/completions"</code> だけに対応します</td>
+</tr>
+<tr>
+<td style="text-align: left;">query</td>
+<td style="text-align: left;">送る JSON（OpenAI の <code>chat/completions</code> の形）。<code>BrowserLLM</code> が読むのは <code>messages</code> だけです</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>戻り値</strong>：JSON の文字列です。<code>BrowserLLM</code> の成功は OpenAI と同じ形（<code>choices[0].message.content</code>）、失敗は <code>{"error":{"message":"…","type":"…"}}</code> です。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">error.type</th>
+<th style="text-align: left;">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>not_connected</code></td>
+<td style="text-align: left;">ブラウザの AI のページが開いていない</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>timeout</code></td>
+<td style="text-align: left;">時間内に答えが返らなかった</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>empty_result</code></td>
+<td style="text-align: left;">答えが空だった（Chrome の内蔵 AI が使えないなど）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>unsupported_method</code></td>
+<td style="text-align: left;"><code>chat/completions</code> 以外を送った</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>invalid_request</code></td>
+<td style="text-align: left;"><code>query</code> が読めない・<code>messages</code> が空</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>internal_error</code></td>
+<td style="text-align: left;">そのほかの失敗</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>時間の上限</strong>：<code>BrowserLLM</code> は既定で 30 秒待ちます（本体の設定 <code>BrowserLLM_TimeoutMs</code> で変わります）。ページが開いていなければ、本体が Chrome でページを開きます。</li>
+<li><strong>呼んだスレッドは、答えが返るまで止まります。</strong> UI スレッドやフック（<code>PostRecognition</code> など。本体は 8 秒で打ち切ります）の中から呼ばず、自分で立てたスレッドから呼んでください。</li>
+<li>API キーの要る AI（OpenAI・Claude・Gemini など）は名指しできません。キーと料金は、利用者が本体で選んだ AI だけに使うためです。</li>
+</ul>
+<h3 id="pc-ai-calllocalllmasync">この PC の AI を呼ぶ（CallLocalLlmAsync）<a class="headerlink" href="#pc-ai-calllocalllmasync" title="Permanent link">&para;</a></h3>
+<p>本体が「オフライン翻訳（無料）」と同じしくみ（llama.cpp）で、この PC の中で AI を動かします。通信はしません。</p>
+<ul>
+<li><strong>引数</strong>：<code>requestJson</code>（下の JSON）・<code>timeoutMs</code>（待つ上限。50〜15000 ミリ秒に丸めます）・<code>token</code>（取り消し）</li>
+<li><strong>戻り値</strong>：JSON の文字列を返す <code>Task</code>。例外は投げません。</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="44:3"><input checked="checked" id="__tabbed_44_1" name="__tabbed_44" type="radio" /><input id="__tabbed_44_2" name="__tabbed_44" type="radio" /><input id="__tabbed_44_3" name="__tabbed_44" type="radio" /><div class="tabbed-labels"><label for="__tabbed_44_1">文章を作る</label><label for="__tabbed_44_2">状態を見る</label><label for="__tabbed_44_3">ダウンロードする</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1">// 送る</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="s2">"model"</span><span class="o">:</span><span class="w"> </span><span class="s2">"light"</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"messages"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="s2">"role"</span><span class="o">:</span><span class="w"> </span><span class="s2">"system"</span><span class="p">,</span><span class="w"> </span><span class="s2">"content"</span><span class="o">:</span><span class="w"> </span><span class="s2">"あなたは猫の女の子です。"</span><span class="w"> </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="s2">"role"</span><span class="o">:</span><span class="w"> </span><span class="s2">"user"</span><span class="p">,</span><span class="w"> </span><span class="s2">"content"</span><span class="o">:</span><span class="w"> </span><span class="s2">"こんにちは"</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="s2">"max_tokens"</span><span class="o">:</span><span class="w"> </span><span class="mf">128</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"temperature"</span><span class="o">:</span><span class="w"> </span><span class="mf">0.2</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"stop"</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"\n"</span><span class="p">]</span>
+<span class="p">}</span>
+<span class="c1">// 成功</span>
+<span class="p">{</span><span class="w"> </span><span class="s2">"ok"</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="s2">"text"</span><span class="o">:</span><span class="w"> </span><span class="s2">"こんにちはにゃ！"</span><span class="p">,</span><span class="w"> </span><span class="s2">"model"</span><span class="o">:</span><span class="w"> </span><span class="s2">"LFM2-1.2B"</span><span class="p">,</span><span class="w"> </span><span class="s2">"ms"</span><span class="o">:</span><span class="w"> </span><span class="mf">412</span><span class="w"> </span><span class="p">}</span>
+<span class="c1">// 失敗</span>
+<span class="p">{</span><span class="w"> </span><span class="s2">"ok"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="s2">"reason"</span><span class="o">:</span><span class="w"> </span><span class="s2">"preparing"</span><span class="p">,</span><span class="w"> </span><span class="s2">"message"</span><span class="o">:</span><span class="w"> </span><span class="s2">"ローカル LLM (LFM2-1.2B) を読み込んでいます。"</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1">// 送る（ダウンロードも起動もしません）</span>
+<span class="p">{</span><span class="w"> </span><span class="s2">"status"</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="s2">"model"</span><span class="o">:</span><span class="w"> </span><span class="s2">"light"</span><span class="w"> </span><span class="p">}</span>
+<span class="c1">// 返る</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="s2">"ok"</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="s2">"installed"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="s2">"terms"</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="s2">"model"</span><span class="o">:</span><span class="w"> </span><span class="s2">"LFM2-1.2B"</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"sizeBytes"</span><span class="o">:</span><span class="w"> </span><span class="mf">730893248</span><span class="p">,</span><span class="w"> </span><span class="s2">"busy"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="s2">"done"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="s2">"total"</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">"loading"</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="s2">"error"</span><span class="o">:</span><span class="w"> </span><span class="s2">""</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1">// 送る（利用者がボタンを押したときだけ）</span>
+<span class="p">{</span><span class="w"> </span><span class="s2">"download"</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="s2">"model"</span><span class="o">:</span><span class="w"> </span><span class="s2">"light"</span><span class="w"> </span><span class="p">}</span>
+<span class="c1">// 返る：「状態を見る」と同じ形。待たずに返るので、進み具合は status で見る</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">キー</th>
+<th style="text-align: left;">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">model</td>
+<td style="text-align: left;"><code>"quality"</code> = Gemma 4 E2B（約 2.8GB・オフライン翻訳と共用）、それ以外（既定 <code>"light"</code>）= LFM2-1.2B（約 0.7GB）</td>
+</tr>
+<tr>
+<td style="text-align: left;">messages</td>
+<td style="text-align: left;"><code>role</code> は <code>system</code> <code>user</code> <code>assistant</code> だけ（ほかは捨てます）。<code>content</code> の合計は 8000 文字まで</td>
+</tr>
+<tr>
+<td style="text-align: left;">max_tokens</td>
+<td style="text-align: left;">1〜256（既定 128）</td>
+</tr>
+<tr>
+<td style="text-align: left;">temperature</td>
+<td style="text-align: left;">0〜1.5（既定 0.2）</td>
+</tr>
+<tr>
+<td style="text-align: left;">stop</td>
+<td style="text-align: left;">止める文字列。4 つまで</td>
+</tr>
+<tr>
+<td style="text-align: left;">status</td>
+<td style="text-align: left;"><code>true</code> で、入っているか・準備中か・同意済みかだけを返します</td>
+</tr>
+<tr>
+<td style="text-align: left;">download</td>
+<td style="text-align: left;"><code>true</code> で、本体がモデルを取ってきて起動を始めます。ライセンスへの同意がまだなら、本体が同意の画面を出します</td>
+</tr>
+<tr>
+<td style="text-align: left;">probe</td>
+<td style="text-align: left;"><code>true</code> で、文章を作らずに使えるかだけを返します（使えるなら起動も始めます）</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">reason</th>
+<th style="text-align: left;">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>not_installed</code></td>
+<td style="text-align: left;">モデルか実行体が入っていない。<code>download</code> で取ってこられます</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>terms</code></td>
+<td style="text-align: left;">「オフライン翻訳（無料）」のライセンスに同意していない</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>preparing</code></td>
+<td style="text-align: left;">読み込み中。少し待ってからもう一度</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>timeout</code></td>
+<td style="text-align: left;"><code>timeoutMs</code> のうちに返らなかった</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>busy</code></td>
+<td style="text-align: left;">ほかの仕事で席が空いていない</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>error</code></td>
+<td style="text-align: left;">そのほか（要求が JSON でない・<code>messages</code> が空・長すぎる など）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>ふだんの呼び出しでは何もダウンロードしません。</strong> そろっていないときは <code>not_installed</code> を返すだけです。取りに行くのは <code>download</code> を送ったときだけにしてください（利用者がボタンを押したときなど）。</li>
+<li>最初の 1 回は読み込みに数秒かかり、その間は <code>preparing</code> が返ります。フックの中では待たずに諦め、元の文を返してください。</li>
+<li>プラグインが使ってから 30 分の間は、翻訳で選ばれていなくても本体は AI を止めません。</li>
+<li>中身は本体がスレッドプールで動かします。UI スレッドから <code>.GetAwaiter().GetResult()</code> で待っても固まりませんが、<code>timeoutMs</code> まで UI が止まるので、<code>await</code> するか自分のスレッドで待ってください。ただし <code>download</code> は同意の画面を本体の UI スレッドで出すので、<strong>UI スレッドから待たないでください</strong>。</li>
+<li>フックの中から呼ぶときは、<code>timeoutMs</code> を本体の打ち切り（8 秒）より短くしてください（例：6000）。</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">JSON形式で送りたい場合</p>
@@ -14949,8 +15405,8 @@
 </tr>
 <tr>
 <td style="text-align: left;">GPT3/AIアシスタント</td>
-<td style="text-align: left;"><code>$name_ai</code> <code>$name_user</code> <code>$message</code></td>
-<td style="text-align: left;">AIロールプロンプト、高優先プロンプト</td>
+<td style="text-align: left;"><code>$name_ai</code> <code>$name_user</code>（<code>$message</code> は「話しかけの包み方」だけ）</td>
+<td style="text-align: left;">「人格」の追加の指示 (上級)、「会話」の話しかけの包み方 (上級)、API の <code>premise</code></td>
 </tr>
 <tr>
 <td style="text-align: left;">Teams Webhook</td>
@@ -15123,7 +15579,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section", "navigation.footer", "navigation.indexes", "navigation.tracking", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>

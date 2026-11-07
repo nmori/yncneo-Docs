@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -2672,6 +2672,8 @@
       
         
       
+        
+      
     
     
     
@@ -2823,6 +2825,34 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        セクション（言い換え・用語集で共通）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="セクション（言い換え・用語集で共通）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#live" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        配信中に切り替える（ライブ設定）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2849,7 +2879,7 @@
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        用語集ファイルの作り方（外で作る場合）
+        辞書ファイルの作り方（外で作る場合）
       
     </span>
   </a>
@@ -3119,6 +3149,34 @@
     
   
     GPT3整形/AIアシスタント
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_expressionfilter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    口調チェンジャー
   
 
     
@@ -3607,6 +3665,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3749,6 +3811,62 @@
     
   
     OBS連携 WSv5（OBS28～)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_streamlabsnair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Streamlabs / N Air 連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_setlistplayer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    セットリスト再生
   
 
     
@@ -4609,6 +4727,8 @@
       
         
       
+        
+      
     
     
     
@@ -4919,6 +5039,34 @@
     
   
     カウンター・トリガー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_mcpserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCP サーバー
   
 
     
@@ -11340,6 +11488,34 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        セクション（言い換え・用語集で共通）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="セクション（言い換え・用語集で共通）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#live" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        配信中に切り替える（ライブ設定）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -11366,7 +11542,7 @@
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        用語集ファイルの作り方（外で作る場合）
+        辞書ファイルの作り方（外で作る場合）
       
     </span>
   </a>
@@ -11452,7 +11628,14 @@
 <li>正規表現による高度なパターンマッチング</li>
 <li>DeepL注記の自動削除機能</li>
 <li>共用の NG ワード辞書で、伏せたい言葉を伏せ字にする（v3.0～）</li>
+<li>言い換え・用語集を<strong>セクション</strong>に分けて、セクションごとにオン・オフする。配信中は操作パネルのライブ設定から切り替えられます（v3.0.16～、辞書 v3.8～）</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">言い換えの CSV の 3 列目にメモを書いていた方へ（v3.0.16～）</p>
+<p>v3.0.16（辞書 v3.8）から、言い換えの CSV の <strong>3 列目はセクションの名前</strong>として読まれます。
+3 列目にメモを書いていた場合は、そのメモがセクションの名前になり、行がメモごとに別々のセクションに分かれます。
+辞書の設定画面の「言い換え」で <a href="#sections">セクション</a> の一覧を確かめ、要らなければ CSV の 3 列目を消してください。</p>
+</div>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p><img alt="辞書" src="../images/plugin_dictionary_p4.png" /></p>
 <ul>
@@ -11531,6 +11714,130 @@
 <li>言い換えと用語集に<strong>同じファイルを指定すると保存できません</strong>（その場で注意が出ます）。</li>
 <li>辞書を切り替えるとき、書いていない変更があれば「先に書いてから切り替える／変更を捨てる／切り替えない」を聞かれます。</li>
 </ul>
+<div class="admonition info">
+<p class="admonition-title">辞書ファイルを決めていなくても保存できます（v3.0.16～）</p>
+<p>辞書ファイルを選ばないまま言葉を登録して「OK」か「適用」を押すと、<strong>設定フォルダに辞書ファイルを作って保存</strong>し、そのファイルを使うように設定します。
+ファイル名の下に「設定フォルダに「（ファイル名）」を作って保存しました」と出ます。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">辞書</th>
+<th style="text-align: left;">作るファイル</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">言い換え</td>
+<td style="text-align: left;"><code>yncneo_dic_replace.csv</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">用語集（対訳）</td>
+<td style="text-align: left;"><code>yncneo_dic.csv</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>同じ名前で中身のあるファイルがすでにあるときは、上書きせずに <code>yncneo_dic_replace (2).csv</code> のように別の名前で作ります。</li>
+<li>設定フォルダに書けなかったときだけ、保存先をたずねる画面が出ます。</li>
+</ul>
+</div>
+<h3 id="sections">セクション（言い換え・用語集で共通）<a class="headerlink" href="#sections" title="Permanent link">&para;</a></h3>
+<p>言い換えの表と用語集の表は、行を<strong>セクション</strong>に分けられます（v3.0.16～、辞書 v3.8～）。
+「大阪弁の言い換え」「この配信の固有名詞の訳語」のように分けておくと、セクションごとにオン・オフできます。</p>
+<!-- TODO(screenshot): images/v30/dictionary_sections.png — 辞書の設定「言い換え」。表の上のセクションの帯（「セクション」の選択欄・名前の欄・「このセクションを使う」・右端の ＋ ▲ ▼ ゴミ箱）が見えている状態 -->
+
+<p>表の上の帯で、表に出すセクションを選んで操作します。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">セクション（選択欄）</td>
+<td style="text-align: left;">表に出すセクションを選びます。表にはこのセクションの行だけが出ます。一覧には「名前 (○ 行)」、オフのセクションは「名前 (○ 行)・オフ」と出ます</td>
+</tr>
+<tr>
+<td style="text-align: left;">セクションの名前</td>
+<td style="text-align: left;">いまのセクションの名前です。空欄は「基本」になります。欄を離れると変わります（60 文字まで）</td>
+</tr>
+<tr>
+<td style="text-align: left;">☑ このセクションを使う</td>
+<td style="text-align: left;">オフにすると、このセクションの行は効きません。「OK」か「適用」で確定します</td>
+</tr>
+<tr>
+<td style="text-align: left;">＋（セクションを追加）</td>
+<td style="text-align: left;">いまのセクションのすぐ後ろに、新しいセクションを作ります（名前は「セクション 2」のように付きます）</td>
+</tr>
+<tr>
+<td style="text-align: left;">▲（セクションを前へ）／▼（セクションを後ろへ）</td>
+<td style="text-align: left;">セクションの順番を変えます。前のセクションほど先に効きます</td>
+</tr>
+<tr>
+<td style="text-align: left;">ゴミ箱（セクションを消す）</td>
+<td style="text-align: left;">いまのセクションを、中の行ごと消します（確認が出ます）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>上のセクションから順に効きます。</strong> 同じ言葉がオンの複数のセクションにあるときは、上のセクションが効きます。</li>
+<li>オフにしたセクションの行は、<strong>字幕にも翻訳にも効きません</strong>。いま開いているセクションがオフのときは、表の上に「このセクションはいまオフです。」と出ます。</li>
+<li>「行を追加」は、いま開いているセクションの最後に行を足します。</li>
+<li>「表の中を探す」で絞り込むのは、いまのセクションの中だけです。ほかのセクションにも当たる行があると「ほかのセクションにも ○ 行あります。」と出ます。</li>
+<li>同じ言葉のダブりの注意は、同じセクションの中だけで出ます。セクションが違えば、同じ言葉を別の言葉に言い換える行を置けます（オン・オフで使い分けるため）。</li>
+<li>ファイルの中で同じセクションの行が離れていたときは、読み込んだときにセクションごとにまとめ直し、その旨が出ます。「OK」か「適用」を押すと、その順番で保存されます（置き換える順番も変わります）。</li>
+<li>行の無いセクションは保存されません（セクションの名前は行の側に書くため）。</li>
+<li>オン・オフは<strong>辞書ファイルではなく、プラグインの設定に覚えます</strong>。辞書ファイルは書き換えません。</li>
+</ul>
+<p><strong>ファイルの中でのセクション</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">辞書</th>
+<th style="text-align: left;">セクションの名前を書く場所</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">言い換え</td>
+<td style="text-align: left;">CSV の <strong>3 列目</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">用語集（対訳）</td>
+<td style="text-align: left;">1 行目（見出し）が <code>#section</code> の列。いちばん右に書きます</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>名前の無いセクション（「基本」）しか使っていないときは、セクションの列は書きません。セクションを使わない人のファイルは、これまでと同じ形のままです。</li>
+</ul>
+<h4 id="live">配信中に切り替える（ライブ設定）<a class="headerlink" href="#live" title="Permanent link">&para;</a></h4>
+<p>本体の <strong>操作パネル → ライブ設定</strong> に、このプラグインのセクションが並びます。設定画面を開かずにオン・オフして <strong>「反映」</strong> を押せば、すぐ効きます。しくみは <a href="../../startup/startup_basic/#live-settings">標準設定項目 - ライブ設定とプラグインの帯</a> をご覧ください。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">言い換え: （セクションの名前）</td>
+<td style="text-align: left;">言い換えの表の、そのセクションのオン・オフです。説明に行の数が出ます</td>
+</tr>
+<tr>
+<td style="text-align: left;">訳語: （セクションの名前）</td>
+<td style="text-align: left;">用語集の、そのセクションのオン・オフです</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>セクションを作る・名前を変えるのは、辞書の設定画面で行います。</li>
+<li>辞書にまだ言葉が無いときは「辞書に言葉がまだありません。」と出ます。</li>
+<li>ライブ設定を出したあとで辞書が読み直され、そのセクションが無くなっていたときは、反映しません（「このセクションはもうありません」と出ます）。</li>
+</ul>
 <h3 id="_5">言い換え<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>聞き取った言葉を、正しい表記へ置き換えます。母国語の字幕にそのまま効きます。</p>
 <p><img alt="辞書の設定 - 言い換え" src="../images/v30/dictionary_1.png" /></p>
@@ -11554,17 +11861,17 @@
 </tbody>
 </table>
 <ul>
-<li><strong>「行を追加」</strong> で行を増やします。行の × で消せます。</li>
-<li>右上の <strong>「表の中を探す」</strong> で、表の中を絞り込めます。</li>
-<li><strong>同じ言葉が 2 つ以上あると、その場で注意が出ます。</strong></li>
-<li>上から順に置き換えます。<strong>短い言葉を先に置くと、長い言葉が先に食われることがあります。</strong></li>
+<li><strong>「行を追加」</strong> で、いま開いている<a href="#sections">セクション</a>に行を増やします。行の × で消せます。</li>
+<li>右上の <strong>「表の中を探す」</strong> で、いまのセクションの中を絞り込めます。</li>
+<li><strong>同じセクションに同じ言葉が 2 つ以上あると、その場で注意が出ます。</strong></li>
+<li>上のセクションから、セクションの中は上の行から順に置き換えます。<strong>短い言葉を先に置くと、長い言葉が先に食われることがあります。</strong></li>
 </ul>
 <p><strong>表の使い方（並べ替え）</strong></p>
 <ul>
-<li>列の見出し（「聞き取った言葉」「出したい言葉」）を押すと、その列で並べ替えます。押すたびに <strong>昇順 → 降順 → 並べ替える前の順</strong> と変わり、見出しの右に ▲／▼ が出ます（並べ替えていない列は薄い ⇅）。</li>
+<li>列の見出し（「聞き取った言葉」「出したい言葉」）を押すと、<strong>いま開いているセクションの中で</strong>、その列で並べ替えます（v3.0.16～。ほかのセクションの行は動きません）。押すたびに <strong>昇順 → 降順 → 並べ替える前の順</strong> と変わり、見出しの右に ▲／▼ が出ます（並べ替えていない列は薄い ⇅）。</li>
 <li>見た目だけでなく<strong>行の順番そのものが変わり、OK／適用でその順にファイルへ書きます</strong>。言い換えは上から順に効くので、<strong>置き換える順番も変わります</strong>。</li>
 <li>空の行は、向きにかかわらずいちばん後ろに並びます。数字だけの言葉は数として比べます。</li>
-<li>元の順に戻したいときは、同じ見出しを続けて押して「並べ替える前の順」にします。</li>
+<li>元の順に戻したいときは、同じ見出しを続けて押して「並べ替える前の順」にします。セクションを切り替えると、並べ替える前の順には戻せなくなります。</li>
 </ul>
 <h3 id="_6">用語集（対訳）<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p>名前や専門用語を、決まった訳語で出します。翻訳するときだけ効きます。</p>
@@ -11574,8 +11881,8 @@
 <li>見出しの欄が、そのまま<strong>言語の列</strong>になっています。<strong>1 列目は母国語</strong>にします。</li>
 <li>列の名前は言語コード（<code>JA</code> / <code>EN</code> / <code>ZH-CN</code> など）で書きます。読めないコードや、同じ言語の列が 2 つあると注意が出ます。</li>
 <li>見出しの右の <strong>＋（言語を追加）</strong> で言語の列を増やし、列の × で消します（その言語の訳語はファイルからも消えます）。</li>
-<li><strong>「語を追加」</strong> で行を増やします。<strong>「表の中を探す」</strong> で絞り込めます。</li>
-<li>見出しの欄の左端にある並べ替えのボタン（⇅）を押すと、その言語の列で並べ替えます。押すたびに <strong>昇順 → 降順 → 並べ替える前の順</strong> と変わります。言い換えの表と同じく、行の順番そのものが変わります。</li>
+<li><strong>「語を追加」</strong> で、いま開いている<a href="#sections">セクション</a>に行を増やします。<strong>「表の中を探す」</strong> で、いまのセクションの中を絞り込めます。</li>
+<li>見出しの欄の左端にある並べ替えのボタン（⇅）を押すと、いまのセクションの中で、その言語の列で並べ替えます。押すたびに <strong>昇順 → 降順 → 並べ替える前の順</strong> と変わります。言い換えの表と同じく、行の順番そのものが変わります。</li>
 </ul>
 <p><strong>翻訳するときの効かせ方</strong></p>
 <table>
@@ -11607,12 +11914,22 @@ v3.0 では言語の増減も含めて画面の中で終わります。これま
 <p>用語集のファイルが 2 列しかない（言い換えの表の形になっている）ときに出ます。
 中身を確かめて、必要ならファイルを選び直してください。</p>
 </div>
-<h4 id="_7">用語集ファイルの作り方（外で作る場合）<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<h4 id="_7">辞書ファイルの作り方（外で作る場合）<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
 <p>1 行目に言語コード、2 行目以降に対訳を書いた CSV（UTF-8）です。</p>
 <div class="highlight"><pre><span></span><code>JA,EN,FR
 ゆかコネ,Yukarinette-Connector,Yukarinette-Connector
 ハローラ,Hello-la!,Hello-la!
 おつあめ,OTSUAME!,OTSUAME!
+</code></pre></div>
+<p>セクションに分けるときは、1 行目のいちばん右に <code>#section</code> の列を足し、各行にセクションの名前を書きます（空欄は「基本」）。</p>
+<div class="highlight"><pre><span></span><code>JA,EN,FR,#section
+ゆかコネ,Yukarinette-Connector,Yukarinette-Connector,
+ハローラ,Hello-la!,Hello-la!,あいさつ
+おつあめ,OTSUAME!,OTSUAME!,あいさつ
+</code></pre></div>
+<p>言い換えの CSV は「聞き取った言葉,出したい言葉」の 2 列で、セクションに分けるときは 3 列目にセクションの名前を書きます。</p>
+<div class="highlight"><pre><span></span><code>ゆかこね,ゆかコネ
+おおきに,ありがとう,大阪弁
 </code></pre></div>
 <p>Excel で作る場合は「CSV UTF-8（コンマ区切り）」で保存してください。</p>
 <h3 id="ng">NG ワード<a class="headerlink" href="#ng" title="Permanent link">&para;</a></h3>
@@ -11783,7 +12100,7 @@ v3.0 では言語の増減も含めて画面の中で終わります。これま
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section", "navigation.footer", "navigation.indexes", "navigation.tracking", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>

@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -2670,6 +2670,8 @@
       
         
       
+        
+      
     
     
     
@@ -2952,6 +2954,34 @@
     
   
     GPT3整形/AIアシスタント
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_expressionfilter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    口調チェンジャー
   
 
     
@@ -3440,6 +3470,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3582,6 +3616,62 @@
     
   
     OBS連携 WSv5（OBS28～)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_streamlabsnair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Streamlabs / N Air 連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_setlistplayer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    セットリスト再生
   
 
     
@@ -4798,6 +4888,8 @@
       
         
       
+        
+      
     
     
     
@@ -5108,6 +5200,34 @@
     
   
     カウンター・トリガー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_mcpserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCP サーバー
   
 
     
@@ -12151,7 +12271,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">送り先の枠</td>
-<td style="text-align: left;">枠が見当たらないときは、設定画面の「枠の一覧を更新」で取り直してください</td>
+<td style="text-align: left;">わんコメの枠の一覧から選びます。「選ばない」にすると送り先を外します</td>
 </tr>
 <tr>
 <td style="text-align: left;">コメントを受信して応答する</td>
@@ -12159,10 +12279,15 @@
 </tr>
 <tr>
 <td style="text-align: left;">受け取る枠</td>
-<td style="text-align: left;">枠の名前そのものか、名前に含まれる文字を書きます。空ならすべての枠です</td>
+<td style="text-align: left;">わんコメの枠の一覧から選びます。「すべての枠」ならすべての枠から受け取ります</td>
 </tr>
 </tbody>
 </table>
+<ul>
+<li>「送り先の枠」「受け取る枠」は、v3.0.16（わんコメ連携 v3.2）から<strong>プルダウンで選ぶ</strong>ようになりました。</li>
+<li>枠の一覧は、<strong>ライブ設定の画面を開くたびと、わんコメに接続したとき</strong>に、わんコメから取り直します。わんコメが起動していないときは取り直しません。</li>
+<li>設定画面の「受け取る枠」に名前の一部だけを書いていたときは、その値が「「○○」を含む枠」として一覧に残ります。名前の一部で照らし合わせたいときは、設定画面の欄に書いてください。</li>
+</ul>
 <p><strong>「接続」／「切断」</strong> ボタンでわんコメへの接続を切り替えます。画面上部のプラグインの帯で、このプラグインのアイコンを<strong>ダブルクリック</strong>しても同じように切り替えられます（1 回のクリックはこれまでどおり設定を開きます）。</p>
 <ul>
 <li>切断すると、コメントの受信と応答が止まります（発言を送るのは切断中も続きます）</li>
@@ -12360,7 +12485,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section", "navigation.footer", "navigation.indexes", "navigation.tracking", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>

@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -2670,6 +2670,8 @@
       
         
       
+        
+      
     
     
     
@@ -2952,6 +2954,34 @@
     
   
     GPT3整形/AIアシスタント
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_expressionfilter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    口調チェンジャー
   
 
     
@@ -3618,6 +3648,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3760,6 +3794,62 @@
     
   
     OBS連携 WSv5（OBS28～)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_streamlabsnair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Streamlabs / N Air 連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_setlistplayer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    セットリスト再生
   
 
     
@@ -4620,6 +4710,8 @@
       
         
       
+        
+      
     
     
     
@@ -4930,6 +5022,34 @@
     
   
     カウンター・トリガー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_mcpserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCP サーバー
   
 
     
@@ -11637,6 +11757,7 @@
 <p>種類ごとにチェックボックスが並んでいます。チェックを入れた効果がすべて重なって付きます（一覧は <a href="#effect-list">効果の一覧</a> をご覧ください）。</p>
 <ul>
 <li>同じ種類の中で <strong>1 つまで</strong> のものがあります（縁取り・色が変わる・フォント・1文字ずつ）。ほかを選ぶと、前に選んでいたものは自動で外れます。</li>
+<li>「フォント」の種類の下には、<a href="#pc-font">PC に入っているフォント</a> を選ぶ欄もあります（v3.0.14～）。</li>
 <li>「光と影」と「縁取り」は、「1文字ずつ」の効果とは重ねられません。</li>
 <li>次の効果を選んでいるときだけ、その下に色の欄が出ます。言葉（行）ごとに色を変えられます。</li>
 </ul>
@@ -11667,6 +11788,37 @@
 </tbody>
 </table>
 <p>それぞれ色見本・「色を選ぶ…」・「決めない」で決めます。効果のチェックを外すと、その色も消えます。</p>
+<p><a id="pc-font"></a>
+<strong>PC に入っているフォント</strong></p>
+<p>効果の「フォント」の下にある欄で、決まったフォント（明朝体・ポップ体など）のほかに、<strong>この PC に入っているフォント</strong>を選べます（v3.0.14～、表示効果 v3.1～）。</p>
+<!-- TODO(screenshot): images/v30/viewextend_pcfont.png — 文字強調の右の編集欄。効果の「フォント」の下に「PC に入っているフォント」の選択欄と「決めない」ボタンが見えている状態 -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">PC に入っているフォント（選択欄）</td>
+<td style="text-align: left;">本体の字幕のフォントと同じく、この PC に入っているフォントから選べます。一覧の行は、そのフォントで見本が出ます</td>
+</tr>
+<tr>
+<td style="text-align: left;">「決めない」ボタン</td>
+<td style="text-align: left;">PC のフォントを外します（既定）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>一覧の最後には、本体のフォントの一覧に足した <strong>Web フォント</strong>（<code>FontList.json</code>）も並びます。Web フォントは字幕を出すときにネットから読み込みます。</li>
+<li>フォントは 1 つまでです。PC のフォントを選ぶと上の決まったフォントのチェックは外れ、決まったフォントにチェックを入れると PC のフォントは外れます。</li>
+<li>選んだフォントの名前は、表の「見た目」の列の先頭に出ます。</li>
+<li>字幕を出す PC にそのフォントが無いときは、ゴシック体で出ます。</li>
+<li>「画像に差し替え」の行では使えません（欄が薄くなります）。</li>
+<li>表を「保存する」で書き出した JSON にも入ります。ほかの PC で読み込んで、その PC に無いフォントのときは、一覧の先頭にその名前が出ます。</li>
+</ul>
 <p><strong>カスタム (CSS クラス)</strong></p>
 <p>自分で作った見た目を付けるときに、クラス名を書きます（例：<code>my-effect</code>）。見た目そのものは「ユーザCSS」のページに書きます（例：<code>.my-effect { color: gold; }</code>）。チェックを入れた効果と一緒に付けることもできます。</p>
 <div class="admonition note">
@@ -11893,8 +12045,16 @@
 </tbody>
 </table>
 <div class="admonition note">
+<p class="admonition-title">縁取りについて（v3.0.14～）</p>
+<ul>
+<li>縁取り（白フチ・黒フチ・二重フチ）は、大きい字幕でも縁がなめらかに出るようにしています。</li>
+<li>縁取りした言葉の前後には、縁の太さぶんの間をあけます。<strong>前後の文字に縁がかぶりません。</strong></li>
+</ul>
+</div>
+<div class="admonition note">
 <p class="admonition-title">フォントについて</p>
-<p>フォントの効果は、<strong>字幕を表示する PC に入っている書体</strong>を使います。入っていなければ、似た系統の別の書体で出ます（ポップ体・丸ゴシックなどの HG 書体は、Office に付いてくることが多い書体です）。</p>
+<p>フォントの効果は、<strong>字幕を表示する PC に入っている書体</strong>を使います。入っていなければ、似た系統の別の書体で出ます（ポップ体・丸ゴシックなどの HG 書体は、Office に付いてくることが多い書体です）。
+決まったフォントに無い書体を使いたいときは、<a href="#pc-font">PC に入っているフォント</a> で選べます（v3.0.14～）。</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">重ねる例</p>
@@ -12117,7 +12277,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section", "navigation.footer", "navigation.indexes", "navigation.tracking", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>

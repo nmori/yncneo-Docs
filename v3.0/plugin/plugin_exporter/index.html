@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -2670,6 +2670,8 @@
       
         
       
+        
+      
     
     
     
@@ -2952,6 +2954,34 @@
     
   
     GPT3整形/AIアシスタント
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_expressionfilter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    口調チェンジャー
   
 
     
@@ -3440,6 +3470,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -3582,6 +3616,62 @@
     
   
     OBS連携 WSv5（OBS28～)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_streamlabsnair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Streamlabs / N Air 連携
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_setlistplayer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    セットリスト再生
   
 
     
@@ -4444,6 +4534,8 @@
       
         
       
+        
+      
     
     
     
@@ -4997,6 +5089,34 @@
     
   
     カウンター・トリガー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugin_mcpserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCP サーバー
   
 
     
@@ -11624,7 +11744,7 @@
 変更したまま閉じようとすると「変更が保存されていません」と聞かれ、<strong>［はい］保存して閉じる／［いいえ］破棄して閉じる／［キャンセル］閉じるのをやめる</strong> から選べます。</p>
 </div>
 <h3 id="_4">書き出す<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<p>ためた字幕を、動画編集ソフトが読める形で書き出します。</p>
+<p>記録した字幕を、動画編集ソフトで読める形式で書き出します。</p>
 <p><img alt="字幕の書き出しの設定 - 書き出す" src="../images/v30/exporter_1.png" /></p>
 <table>
 <thead>
@@ -11636,15 +11756,15 @@
 <tbody>
 <tr>
 <td style="text-align: left;">どの訳を書き出すか</td>
-<td style="text-align: left;">ためた字幕の中に出てきた訳だけが並びます。</td>
+<td style="text-align: left;">記録した字幕に含まれる訳だけが並びます。</td>
 </tr>
 <tr>
-<td style="text-align: left;">「形を選んで書き出す」ボタン</td>
-<td style="text-align: left;">押すと行き先をたずねます。</td>
+<td style="text-align: left;">「形式を選んで書き出す」のボタン</td>
+<td style="text-align: left;">形式ごとにボタンが並びます。押すと保存先を選びます。</td>
 </tr>
 </tbody>
 </table>
-<p><strong>録りかた</strong></p>
+<p><strong>記録</strong></p>
 <table>
 <thead>
 <tr>
@@ -11654,21 +11774,25 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;">「記録した字幕を消す」ボタン</td>
+<td style="text-align: left;">配信前の字幕テストなどを消して、ここから記録し直します。「はじめの行を 0 秒にそろえる」がオンなら、書き出しの時刻もここからの数え直しになります。（確認が出ます。元に戻せません）</td>
+</tr>
+<tr>
 <td style="text-align: left;">☑ 終わるときに字幕を残す</td>
 <td style="text-align: left;">プラグインを止めるときに、その日の字幕を .srt で残します。（既定：OFF）</td>
 </tr>
 <tr>
-<td style="text-align: left;">☑ 文の終わりの句点を落とす</td>
+<td style="text-align: left;">☑ 文末の句点を削除する</td>
 <td style="text-align: left;">既定：OFF</td>
 </tr>
 <tr>
-<td style="text-align: left;">落とす文字の決まり</td>
-<td style="text-align: left;">正規表現で書きます。当たったところが書き出しから消えます。</td>
+<td style="text-align: left;">削除する文字 (正規表現)</td>
+<td style="text-align: left;">正規表現で書きます。一致した部分が書き出しから削除されます。</td>
 </tr>
 </tbody>
 </table>
 <h3 id="_5">時刻<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<p>書き出す時刻の数え方です。</p>
+<p>書き出す時刻の基準です。</p>
 <p><img alt="字幕の書き出しの設定 - 時刻" src="../images/v30/exporter_2.png" /></p>
 <table>
 <thead>
@@ -11680,7 +11804,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">☑ 話し始めた時刻で並べる</td>
-<td style="text-align: left;">切にすると、話し終わった時刻で並べます。（既定：ON）</td>
+<td style="text-align: left;">オフにすると、話し終わった時刻で並べます。（既定：ON）</td>
 </tr>
 <tr>
 <td style="text-align: left;">全体をずらす</td>
@@ -11696,14 +11820,22 @@
 </tr>
 <tr>
 <td style="text-align: left;">☑ はじめの行を 0 秒にそろえる</td>
-<td style="text-align: left;">切にすると、録りはじめからの実時刻のままになります。（既定：ON）</td>
+<td style="text-align: left;">オフにすると、記録を始めてからの実時刻のままになります。（既定：ON）</td>
 </tr>
 </tbody>
 </table>
+<div class="admonition info">
+<p class="admonition-title">書き出す時刻の決め方（v3.0.16～、字幕の書き出し v2.4～）</p>
+<ul>
+<li>1 行の <strong>OUT（消える時刻）は、必ず IN（出る時刻）より後ろ</strong>になります。以前は、認識の記録の時刻が前後で重なると <code>00:00:21,513 --&gt; 00:00:21,316</code> のように OUT が IN より前になることがありました。</li>
+<li>次の行の IN は、直前に書き出した行の OUT より少し（約 0.034 秒）後ろに置きます。前の行と重なりません。</li>
+<li>「はじめの行を 0 秒にそろえる」がオンのとき、IN の時刻が大きくずれる（日付ほど先へ飛ぶ）ことがありました。v3.0.16 で直しています。以前の版で書き出したファイルの時刻がおかしいときは、記録が残っていれば、v3.0.16 以降で書き出し直すと直ります。</li>
+</ul>
+</div>
 <h3 id="aviutl">AviUtl<a class="headerlink" href="#aviutl" title="Permanent link">&para;</a></h3>
 <p>AviUtl の .exo で書き出すときの形です。</p>
 <p><img alt="字幕の書き出しの設定 - AviUtl" src="../images/v30/exporter_3.png" /></p>
-<p><strong>置き場所</strong></p>
+<p><strong>配置</strong></p>
 <table>
 <thead>
 <tr>
@@ -11756,7 +11888,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">話した言葉の書体</td>
+<td style="text-align: left;">話した言葉のフォント</td>
 <td style="text-align: left;">既定：「ＭＳ ゴシック」</td>
 </tr>
 <tr>
@@ -11764,7 +11896,7 @@
 <td style="text-align: left;">既定：「22」</td>
 </tr>
 <tr>
-<td style="text-align: left;">訳した言葉の書体</td>
+<td style="text-align: left;">訳した言葉のフォント</td>
 <td style="text-align: left;">既定：「ＭＳ ゴシック」</td>
 </tr>
 <tr>
@@ -12130,7 +12262,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section", "navigation.footer", "navigation.indexes", "navigation.tracking", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>
