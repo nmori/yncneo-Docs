@@ -11622,15 +11622,16 @@
 </ol>
 <h3 id="1">1. プラグインを使うにする<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
 <ul>
-<li>ゆかコネNEOのプラグイン一覧で、<strong>「AIフィルタ／AIアシスタント」</strong> をONにします。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグイン一覧</strong> で、<strong>「AIフィルタ／AIアシスタント」</strong> の <strong>使う</strong> を ON にします（一覧に無いときは <strong>プラグインを追加</strong> から入れます）。</li>
 <li>ONにしたら、名前の右の <strong>「設定」</strong> を押して開きます。</li>
 </ul>
-<!-- TODO(screenshot): images/cs_aiassistant_p5.png を撮り直す — v3.0 のプラグイン一覧で「AIフィルタ／AIアシスタント」をONにし、「設定」ボタンが見える状態 -->
-
+<p><img alt="プラグイン一覧の「AIフィルタ／AIアシスタント」" src="../images/cs_aiassistant_p5.png" /></p>
 <h3 id="2-ai">2. 使う AI を選ぶ<a class="headerlink" href="#2-ai" title="Permanent link">&para;</a></h3>
 <p>「使う AI」ページの <strong>どの AI を使うか</strong> で、AI を選びます。迷ったら、無料の <strong>この PC で動かす</strong> から始めるのがおすすめです。</p>
-<!-- TODO(screenshot): images/cs_aiassistant_p6.png を撮り直す — 「使う AI」ページで「この PC で動かす (無料・ネット不要)」を選び、「モデルをダウンロードする」を押したあと「… が入りました。」と出た状態 -->
-
+<p><img alt="「使う AI」で「この PC で動かす」を選んだところ" src="../images/cs_aiassistant_p6.png" /></p>
+<ul>
+<li><strong>「入っているか確かめる」</strong> を押すと、モデルが入っているかが下に出ます（例：「Gemma 4 E2B が入っています。」）。</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -11687,7 +11688,7 @@
 </div>
 <p><img alt="pict" src="../images/cs_aiassistant_p4.png" /></p>
 <ul>
-<li>ゆかコネNEOのオプション設定を開き、赤枠に先ほど取得したAPIキーを設定します。<strong>プラグインで使うAIの種類</strong> も、使う AI に合わせます（<a href="../../startup/startup_option/">オプション設定</a>）。</li>
+<li>ゆかコネNEOの上のタブ <strong>音声と翻訳</strong> → <strong>APIキーの設定</strong> を開き、<strong>自分のAPIキーを使う</strong> の <strong>OpenAI ChatGPT API</strong> を押して開き、先ほど取得したAPIキーを設定してスイッチを ON にします。<strong>プラグインで使うAIの種類</strong> も、使う AI に合わせます（<a href="../../startup/startup_option/">オプション設定</a>）。</li>
 </ul>
 <p><img alt="pict" src="../images/cs_aiassistant_p19.png" /></p>
 <ul>
@@ -11695,8 +11696,7 @@
 </ul>
 <h3 id="3">3. 人格を決める<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
 <p>「人格」ページで、AI のキャラクターを決めます。空の欄は使わないので、書きたいところだけで大丈夫です。</p>
-<!-- TODO(screenshot): images/cs_aiassistant_p7.png を撮り直す — 「人格」ページに下の表の例を入れた状態 -->
-
+<p><img alt="「人格」ページに例を入れたところ" src="../images/cs_aiassistant_p7.png" /></p>
 <table>
 <thead>
 <tr>
@@ -11741,8 +11741,7 @@
 </ul>
 <h3 id="4">4. 会話の始め方を決める<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
 <p>「会話」ページで、どう話しかけるかを決めます。</p>
-<!-- TODO(screenshot): images/cs_aiassistant_p8.png を撮り直す — 「会話」ページ。会話モードを選び、起動ワードに「みけ」、下の説明が出ている状態 -->
-
+<p><img alt="「会話」ページ（会話モード・起動ワード「みけ」）" src="../images/cs_aiassistant_p8.png" /></p>
 <table>
 <thead>
 <tr>
@@ -11807,8 +11806,7 @@
 </div>
 <h3 id="5">5. 記憶を持たせる<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
 <p>「記憶」ページで、会話を覚えさせます。</p>
-<!-- TODO(screenshot): images/cs_aiassistant_p9.png を撮り直す — 「記憶」ページで 3 つのスイッチをオンにした状態 -->
-
+<p><img alt="「記憶」ページ" src="../images/cs_aiassistant_p9.png" /></p>
 <table>
 <thead>
 <tr>
@@ -11855,12 +11853,11 @@
 </div>
 <ul>
 <li>
-<p>まず、読み上げプラグインをONにして、設定を開きます。
-<img alt="pict" src="../images/cs_aiassistant_p10.png" /></p>
+<p>まず、読み上げプラグインを入れて（上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong>）、一覧の <strong>設定</strong> から詳細設定を開きます。→ <a href="../../plugin/enabled/">プラグインの有効化</a></p>
 </li>
 <li>
-<p>読み上げの設定をします
-<img alt="pict" src="../images/cs_aiassistant_p11.png" /></p>
+<p>詳細設定の <strong>条件ルール</strong> で、AI の声を決めるルールを 1 件足します。
+<img alt="pict" src="../../plugin/images/v30/playvoice_settings_7.png" /></p>
 </li>
 </ul>
 <table>
@@ -11872,27 +11869,26 @@
 </thead>
 <tbody>
 <tr>
-<td>本文の読み上げを行う</td>
-<td>チェックを入れます（入れないと読み上げできません）</td>
+<td>このルールの当て方</td>
+<td><strong>部分一致</strong> にします</td>
 </tr>
 <tr>
-<td>条件設定</td>
-<td>コチラに設定を追記します。</td>
+<td>話者の名前</td>
+<td>AI の声を決めるときは、人格の <strong>名前</strong>（例：みけ）を入れます</td>
 </tr>
 <tr>
-<td>- 話者名</td>
-<td>誰の音声を設定するか、名前を入れます。AI の声を決めるときは、人格の <strong>名前</strong>（例：みけ）を入れます</td>
+<td>使うボイス</td>
+<td>その話者が話すときのボイスを選びます。</td>
 </tr>
 <tr>
-<td>- エンジン</td>
-<td>その話者が話すときの発話エンジンを選びます。</td>
-</tr>
-<tr>
-<td>- 音声OFF</td>
+<td>この文は読み上げない</td>
 <td>ミュートさせたい場合はチェックをいれます（例えば自分の文は読まないなど）</td>
 </tr>
 </tbody>
 </table>
+<ul>
+<li>詳しくは <a href="../../plugin/plugin_playvoice/">読み上げの条件ルール</a> をご覧ください。</li>
+</ul>
 <div class="admonition info">
 <p class="admonition-title">他ツールと連携しないかたは、ここで設定終了です</p>
 <ul>
@@ -11962,7 +11958,7 @@
 <li>
 <p>また、通信ポートの数字を確認し、AIアシスタントの「通信先」に入力しておきます
 <img alt="pict" src="../images/cs_aiassistant_p13.png" />
-<img alt="pict" src="../images/cs_aiassistant_p14.png" /></p>
+<img alt="pict" src="../../plugin/images/v30/gpt3_3.png" /></p>
 </li>
 <li>
 <p>設定ができたら、VRM_AIを立ち上げます。</p>

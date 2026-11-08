@@ -11470,9 +11470,8 @@
 <li>Softalkをつかって音声認識結果を読み上げできます。</li>
 </ul>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p><img alt="棒読み" src="../images/plugin_softalk_p1.png" /></p>
 <ul>
-<li>プラグインを使うチェックをONにしてください。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> でこのプラグインを選んで <strong>追加する</strong> を押します（一覧の <strong>使う</strong> が ON になります）。→ <a href="../enabled/">プラグインの有効化</a></li>
 </ul>
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>プラグイン一覧で、このプラグインの名前の右にある <strong>「設定」</strong> を押すと開きます。
@@ -11494,7 +11493,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">SofTalk の場所</td>
+<td style="text-align: left;">SofTalk の実行ファイル</td>
 <td style="text-align: left;">SofTalk.exe を選びます。（右の「…」で選べます）</td>
 </tr>
 <tr>
@@ -11502,7 +11501,7 @@
 <td style="text-align: left;">選択肢：母国語／翻訳 1／翻訳 2／翻訳 3／翻訳 4。既定：母国語</td>
 </tr>
 <tr>
-<td style="text-align: left;">読み上げるまでの待ち</td>
+<td style="text-align: left;">読み上げまでの待ち時間</td>
 <td style="text-align: left;">字幕が出てから読み始めるまでの間です。（0～60000ミリ秒。既定：0）</td>
 </tr>
 <tr>
@@ -11524,15 +11523,19 @@
 <tbody>
 <tr>
 <td style="text-align: left;">選び方</td>
-<td style="text-align: left;">選択肢：音声の名前で選ぶ／プリセットの名前で選ぶ。既定：プリセットの名前で選ぶ</td>
+<td style="text-align: left;">選択肢：音声の名前で選ぶ／プリセットの名前で選ぶ。既定：音声の名前で選ぶ</td>
 </tr>
 <tr>
 <td style="text-align: left;">音声の名前</td>
-<td style="text-align: left;">女性01 / 女性02 / 男性01 / 男性02 / ロボット / 中性 など。SofTalk の音声の一覧に出ている名前をそのまま書きます。</td>
+<td style="text-align: left;">女性01 / 女性02 / 男性01 / 男性02 / ロボット / 中性 など。SofTalk の音声の一覧に出ている名前をそのまま書きます。下の「一覧から選ぶ」で選んでも入ります。</td>
 </tr>
 <tr>
 <td style="text-align: left;">プリセットの名前</td>
-<td style="text-align: left;">SofTalk で作って保存したプリセットの名前です。</td>
+<td style="text-align: left;">SofTalk で作って保存したプリセットの名前です。下の「一覧から選ぶ」で選んでも入ります。</td>
+</tr>
+<tr>
+<td style="text-align: left;">声の一覧を読み直す</td>
+<td style="text-align: left;">SofTalk の実行ファイルと同じフォルダの softalk.ini (無ければ softalkw.ini) から、音声とプリセットの一覧を読み直します。</td>
 </tr>
 </tbody>
 </table>

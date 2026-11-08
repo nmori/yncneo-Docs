@@ -11279,25 +11279,26 @@
 <h1 id="on">前半：使いたいプラグインを ON にする<a class="headerlink" href="#on" title="Permanent link">&para;</a></h1>
 <h2 id="_2">手順<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ol>
-<li>左メニュー → <strong>共通設定項目</strong> → <strong>プラグイン一覧</strong> を開きます
-   （画面上部のクイックボタンの「プラグイン一覧」からも開けます）</li>
-<li>使いたいプラグインの <strong>チェックを入れます</strong></li>
-<li><strong>チェックを入れた時点で動きはじめます</strong>（再起動は要りません）</li>
-<li>設定が要るプラグインは、名前の右の <strong>「設定」</strong> ボタンを押します</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグイン一覧</strong> を開きます</li>
+<li>一覧に使いたいプラグインが無いときは、<strong>「プラグインを追加」</strong> を押します</li>
+<li>左の <strong>ジャンル</strong> から選ぶか、上の欄に名前を入れて探し、プラグインを選びます。右の <strong>内容</strong> に、できることと「使う前に必要なもの」が出ます</li>
+<li><strong>「追加する」</strong> を押すと一覧に入り、その場で動きはじめます（再起動は要りません）</li>
+<li>設定が要るプラグインは、一覧の <strong>「設定」</strong> ボタンを押します</li>
 </ol>
-<!-- TODO(screenshot): images/plugin_enabled_p1.png は v2.3 時点。v3.0 のプラグイン一覧で撮り直す -->
-
+<p><img alt="プラグインを追加" src="../images/plugin_enabled_add.png" /></p>
+<p>一覧に入っているプラグインは、<strong>「使う」</strong> のスイッチで止めたり動かしたりできます。止めたものは一覧に薄く残ります（<strong>「使わないものを隠す」</strong> で隠せます）。</p>
+<p><img alt="プラグイン一覧" src="../images/plugin_enabled_list.png" /></p>
 <div class="admonition tip">
 <p class="admonition-title">使うものだけ ON にしましょう</p>
-<p>ON のプラグインが多いほど処理が増えます。使っていないものはチェックを外してください。</p>
+<p>動いているプラグインが多いほど処理が増えます。使っていないものは「使う」を OFF にしてください。</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">v2.3 から移行した方へ</p>
 <p>「v2.3設定を移行」では、<strong>プラグインの ON / OFF は取り込まれません</strong>。
 移行のあとにこの画面を開いて、使っていたものが入っているか確認してください。</p>
 </div>
-<h2 id="_3">プラグインを新しく追加する<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>配布されている ZIP ファイルを、そのまま読み込めます。</p>
+<h2 id="zip">配布されている ZIP から追加する<a class="headerlink" href="#zip" title="Permanent link">&para;</a></h2>
+<p>一覧に無いプラグインは、配布されている ZIP ファイルをそのまま読み込めます。</p>
 <ol>
 <li>プラグイン一覧の <strong>「プラグインを追加」</strong> を開きます</li>
 <li><strong>「ZIP から追加」</strong> を押して ZIP を選びます（画面に ZIP を<strong>ドラッグ＆ドロップ</strong>してもかまいません）</li>
@@ -11326,7 +11327,7 @@
 自作したもの・個人からもらったものは、配布元に v3.0 対応版を出してもらってください。
 → <a href="../../../mig/mig_neo_v3.0/">v2.3 から v3.0 への移行</a></p>
 </div>
-<h2 id="_4">プラグインが動かないときの確認順<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="_3">プラグインが動かないときの確認順<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -11337,11 +11338,11 @@
 <tbody>
 <tr>
 <td style="text-align: left;">1</td>
-<td style="text-align: left;">プラグイン一覧に<strong>名前が出ているか</strong>（出ていなければ、読み込まれていません）</td>
+<td style="text-align: left;">プラグイン一覧に<strong>名前が出ているか</strong>（出ていなければ「プラグインを追加」から入れます）</td>
 </tr>
 <tr>
 <td style="text-align: left;">2</td>
-<td style="text-align: left;"><strong>チェックが入っているか</strong></td>
+<td style="text-align: left;"><strong>「使う」が ON になっているか</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;">3</td>
@@ -11353,13 +11354,13 @@
 </tr>
 <tr>
 <td style="text-align: left;">5</td>
-<td style="text-align: left;">左メニュー → トラブルシュート → <strong>動作チェック</strong> で赤い項目がないか</td>
+<td style="text-align: left;">上のタブ <strong>困ったとき</strong> → <strong>動作チェック</strong> で赤い項目がないか</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h1 id="_5">後半：もう少し細かい話<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h1>
-<h2 id="_6">「有効化」と「読み込み（ロード）」の違い<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h1 id="_4">後半：もう少し細かい話<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h1>
+<h2 id="_5">「有効化」と「読み込み（ロード）」の違い<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>この 2 つは別ものです。</p>
 <table>
 <thead>
@@ -11380,14 +11381,14 @@
 <tr>
 <td style="text-align: left;"><strong>有効化</strong></td>
 <td style="text-align: left;">読み込まれたプラグインを使うかどうか</td>
-<td style="text-align: left;">プラグイン一覧のチェックボックス</td>
+<td style="text-align: left;">プラグイン一覧の「使う」スイッチ</td>
 <td style="text-align: left;">要らない</td>
 </tr>
 </tbody>
 </table>
 <p><strong>読み込んでいないプラグインは、一覧にも出てきません。</strong>
 一覧に名前が無いときは、まず読み込み設定を見てください。</p>
-<h3 id="_7">読み込み設定を変える<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h3 id="_6">読み込み設定を変える<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <ol>
 <li>左メニュー → <strong>トラブルシュート</strong> → <strong>トラブルシュート</strong> を開きます</li>
 <li><strong>「プラグイン編集」</strong> を押します</li>
@@ -11408,14 +11409,14 @@
 <p class="admonition-title">使わないものを外すと軽くなります</p>
 <p>読み込まないようにすると、起動が速くなり、メモリの消費も減ります。</p>
 </div>
-<h2 id="_8">処理の順番<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h2 id="_7">処理の順番<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <p>プラグインは、<strong>一覧の上から順に処理されます</strong>。</p>
 <p>たとえば辞書プラグインが置き換えた結果は、その下にあるプラグインに渡ります。
 逆に、辞書より上にあるプラグインは、置き換える前の文字を見ます。</p>
 <p>「先に効かせたいもの」を上に置いてください。</p>
 <p>v3.0.16 から、<strong>新しく追加したプラグインは一覧の最後（処理の順番も最後）</strong>に入ります。止めていたものを戻したときは並びを変えません。
 くわしくは<a href="../../design/plugin_rule/">プラグインの動作</a>をご覧ください。</p>
-<h2 id="_9">表示タイミングとの関係<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h2 id="_8">表示タイミングとの関係<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
 <p>字幕の保持時間が過ぎると、プラグイン側にも「消して」という指示が出ます。
 文字を消さずに残したい場合は、<a href="../../startup/startup_basic/">字幕のタイミング</a>で保持時間を最大にしてください。</p>
 <h2 id="v30">v3.0 の設定画面について<a class="headerlink" href="#v30" title="Permanent link">&para;</a></h2>
@@ -11443,7 +11444,7 @@
 <p>表のあるページから別のページに切り替えると、その時点で表が書き出されます。
 「適用」の前に「キャンセル」で戻したいときは、表のページを離れる前に操作してください。</p>
 </div>
-<h2 id="_10">組み合わせの例<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h2 id="_9">組み合わせの例<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>

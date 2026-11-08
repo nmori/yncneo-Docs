@@ -11964,9 +11964,8 @@
 </ul>
 </div>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p><img alt="置換" src="../images/plugin_OCComm_p1.png" /></p>
 <ul>
-<li>プラグインを使うチェックをONにしてください。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> でこのプラグインを選んで <strong>追加する</strong> を押します（一覧の <strong>使う</strong> が ON になります）。→ <a href="../enabled/">プラグインの有効化</a></li>
 </ul>
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>プラグイン一覧で、このプラグインの名前の右にある <strong>「設定」</strong> を押すと開きます。
@@ -12025,7 +12024,7 @@
 </tbody>
 </table>
 <blockquote>
-<p>ここで指定した枠の発言は、「わんコメ→ゆかコネ」側では拾いません (行って帰ってを繰り返さないため)。</p>
+<p>ここで指定した枠の発言は、「わんコメ→ゆかコネ」側では拾いません (コメントが往復し続けないようにするため)。</p>
 </blockquote>
 <h3 id="_5">わんコメから受信<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>わんコメのコメントを受け取って、返事をします。</p>
@@ -12043,7 +12042,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">受け取る枠</td>
-<td style="text-align: left;">枠の名前そのものか、名前に含まれる文字を書きます。下に、いまある枠の名前が出ます</td>
+<td style="text-align: left;">枠の名前そのものか、名前に含まれる文字を書きます。下に「いまある枠: …」と、いまある枠の名前が出ます</td>
 </tr>
 <tr>
 <td style="text-align: left;">☑ 受け取った文からカッコ内を削除する</td>
@@ -12071,7 +12070,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">☑ 読み上げの教育コマンドを有効にする</td>
-<td style="text-align: left;">「教育(言葉=読み)」か「(Study 言葉=読み)」で覚えさせ、「忘却(言葉)」で忘れさせます。読み上げ連携が「使う」になっているときだけ効きます。（既定：OFF）</td>
+<td style="text-align: left;">「教育(言葉=読み)」か「(Study 言葉=読み)」で覚えさせ、「忘却(言葉)」で忘れさせます (棒読みちゃんの教育と同じ書式)。読み上げ連携が「使う」になっているときだけ効きます。覚えた言葉は読み上げ連携の「読み方」に並びます。（既定：OFF）</td>
 </tr>
 <tr>
 <td style="text-align: left;">教育を有効にする ID (ホワイトリスト)</td>
@@ -12099,12 +12098,12 @@
 <h3 id="_6">応答ルール<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p>受け取ったコメントに、どう返すかを並べます。</p>
 <p><img alt="わんコメ連携の設定 - 応答ルール" src="../images/v30/occomm_3.png" /></p>
-<p><strong>応答の規則</strong>（表）</p>
+<p><strong>応答ルール</strong>（表）</p>
 <p>列：使う／起動キーワード／応答テキスト／GPT へ／字幕に出す／打ち切る</p>
-<p>「応答テキスト」では $message (受け取った文) / $name_user (コメントの主) / $name_ai (AI の名前) が使えます。「打ち切る」を入にすると、その行で当たったところで先の行を見ません。</p>
-<p>表の右上の <strong>「行を足す」</strong> で行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／下へ、＋＝この下に足す、×＝この行を消す です。<strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込んで、いまの中身と入れ替えます。</p>
+<p>「応答テキスト」では $message (受け取った文) / $name_user (コメントの主) / $name_ai (AI の名前) が使えます。「打ち切る」をオンにすると、その行に一致した時点で、以降の行は判定しません。</p>
+<p>表の右上の <strong>「行を追加」</strong> で行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／下へ、＋＝この下に足す、×＝この行を消す です。<strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込んで、いまの中身と入れ替えます。</p>
 <h3 id="wordparty">WordParty<a class="headerlink" href="#wordparty" title="Permanent link">&para;</a></h3>
-<p>話した言葉をきっかけに、わんコメの WordParty を鳴らします。</p>
+<p>話した言葉をきっかけに、わんコメの WordParty を起動します。</p>
 <p><img alt="わんコメ連携の設定 - WordParty" src="../images/v30/occomm_4.png" /></p>
 <table>
 <thead>
@@ -12116,23 +12115,23 @@
 <tbody>
 <tr>
 <td style="text-align: left;">何を送るか</td>
-<td style="text-align: left;">選択肢：下の表に当たったものだけ送る／すべての発言を送る。既定：下の表に当たったものだけ送る</td>
+<td style="text-align: left;">選択肢：下の表に一致したものだけ送る／すべての発言を送る。既定：下の表に一致したものだけ送る</td>
 </tr>
 <tr>
 <td style="text-align: left;">☑ まだ確定していない文字も送る</td>
-<td style="text-align: left;">同じ合図が何度も出ることがあります。（既定：OFF）</td>
+<td style="text-align: left;">同じ WordParty が何度も起動することがあります。（既定：OFF）</td>
 </tr>
 <tr>
-<td style="text-align: left;">☑ 増えたぶんだけ送る</td>
+<td style="text-align: left;">☑ 追加された部分だけ送る</td>
 <td style="text-align: left;">既定：OFF</td>
 </tr>
 </tbody>
 </table>
-<p><strong>WordParty の規則</strong>（表）</p>
+<p><strong>WordParty のルール</strong>（表）</p>
 <p>列：使う／音声認識の文字／WordParty ID (わんコメ側)</p>
-<p>表の右上の <strong>「行を足す」</strong> で行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／下へ、＋＝この下に足す、×＝この行を消す です。<strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込んで、いまの中身と入れ替えます。</p>
+<p>表の右上の <strong>「行を追加」</strong> で行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／下へ、＋＝この下に足す、×＝この行を消す です。<strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込んで、いまの中身と入れ替えます。</p>
 <h3 id="_7">オプション<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
-<p>そのほかの受け渡しです。</p>
+<p>そのほかの連携です。</p>
 <p><img alt="わんコメ連携の設定 - オプション" src="../images/v30/occomm_5.png" /></p>
 <p><strong>XSOverlay へ流す</strong></p>
 <table>
@@ -12250,7 +12249,7 @@
 </tbody>
 </table>
 <blockquote>
-<p>この設定を入にしているときに、わんコメ側でも読み上げる設定にしていると、二重に読み上げられます。</p>
+<p>この設定をオンにしているときに、わんコメ側でも読み上げる設定にしていると、二重に読み上げられます。</p>
 </blockquote>
 <h3 id="_8">補足<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <p>!!! Info "わんコメ枠について
@@ -12294,11 +12293,11 @@
 <li>自分で切断したときは、自動ではつなぎ直しません。「接続」（設定画面では「わんコメに接続」）で戻ります</li>
 </ul>
 <h2 id="_9">プラットフォームの指定<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
-<p><img alt="プラットフォーム名" src="../images/plugin_OCComm_p3.png" /></p>
+<p><img alt="応答ルール" src="../images/v30/occomm_3.png" /></p>
 <ul>
 <li>リストは上から順に評価され、該当した場合に応答テキストを処理します。</li>
 <li>一度条件が成り立つと、それより下の条件は評価しません。</li>
-<li>GPT送付にチェックを打つとGPTプラグインでAI応答させます。チェックが入っていない場合は字幕として表示されます。</li>
+<li>「GPT へ」にチェックを打つとGPTプラグインでAI応答させます。チェックが入っていない場合は字幕として表示されます。</li>
 <li>起動キーワードには正規表現がつかえます。</li>
 <li>コメントを入れた人の名前は $name 、コメント文自体は $message で置き換えが出来ます。</li>
 </ul>

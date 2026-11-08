@@ -11414,9 +11414,8 @@
 <li>特定の条件でHTTPの通信を呼び出すことができます。</li>
 </ul>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p><img alt="ws" src="../images/plugin_wscall_p1.png" /></p>
 <ul>
-<li>プラグインを使うチェックをONにしてください。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> でこのプラグインを選んで <strong>追加する</strong> を押します（一覧の <strong>使う</strong> が ON になります）。→ <a href="../enabled/">プラグインの有効化</a></li>
 </ul>
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>プラグイン一覧で、このプラグインの名前の右にある <strong>「設定」</strong> を押すと開きます。</p>
@@ -11425,12 +11424,12 @@
 <p>設定は<strong>下書き</strong>として持たれ、「OK」か「適用」を押すまで動いているプラグインには効きません。
 変更したまま閉じようとすると「変更が保存されていません」と聞かれ、<strong>［はい］保存して閉じる／［いいえ］破棄して閉じる／［キャンセル］閉じるのをやめる</strong> から選べます。</p>
 </div>
-<p>話した言葉をきっかけに、決めた宛先へ WebSocket で送ります。</p>
-<p><img alt="WebSocket 呼び出しの規則 - 規則" src="../images/v30/wscall_1.png" /></p>
-<p><strong>呼び出しの規則</strong>（表）</p>
-<p>列：使う／当て方／対象／きっかけの言葉／宛先 URL／送る文字／話した人／API 用のタグ</p>
+<p>話した言葉をきっかけに、指定した宛先へ WebSocket で送ります。</p>
+<p><img alt="WebSocket 呼び出しのルール" src="../images/v30/wscall_1.png" /></p>
+<p><strong>呼び出しルール</strong>（表）</p>
+<p>列：使う／一致方式／判定対象／起動フレーズ／宛先 URL／送る文字／話した人／API タグ</p>
 <p>「話した人」を書くと、その人が話したときだけ送ります。空なら誰でも。</p>
-<p>表の右上の <strong>「行を足す」</strong> で行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／下へ、＋＝この下に足す、×＝この行を消す です。<strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込んで、いまの中身と入れ替えます。</p>
+<p>表の右上の <strong>「行を追加」</strong> で行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／下へ、＋＝この下に追加、×＝この行を消す です。<strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込んで、いまの中身と入れ替えます。</p>
 <h2 id="_4">ルール<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>
 <li>ルールは、条件に一致したときにそのデータを送付することができる「仕掛け」です</li>
@@ -11444,35 +11443,35 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">有効(Enabled)</td>
+<td style="text-align: left;">使う</td>
 <td style="text-align: left;">この条件を有効化します</td>
 </tr>
 <tr>
-<td style="text-align: left;">モード(Mode)</td>
-<td style="text-align: left;">条件の判断モードを指定します</td>
+<td style="text-align: left;">一致方式</td>
+<td style="text-align: left;">条件の判断モードを指定します（完全一致／部分一致）</td>
 </tr>
 <tr>
-<td style="text-align: left;">対象</td>
-<td style="text-align: left;">対象にする言語を決めます（母国語、翻訳１～４）</td>
+<td style="text-align: left;">判定対象</td>
+<td style="text-align: left;">対象にする言語を決めます（母国語、翻訳 1～4）</td>
 </tr>
 <tr>
 <td style="text-align: left;">起動フレーズ</td>
 <td style="text-align: left;">判断に使う起動キーワードです。一致すると起動します</td>
 </tr>
 <tr>
-<td style="text-align: left;">コールURL</td>
+<td style="text-align: left;">宛先 URL</td>
 <td style="text-align: left;">WebSocketコールするときの送付先です (ws://で始まるアドレスになります)</td>
 </tr>
 <tr>
-<td style="text-align: left;">送信文字</td>
+<td style="text-align: left;">送る文字</td>
 <td style="text-align: left;">接続後に送信する文字列です。（送信後、通信を終了します）</td>
 </tr>
 <tr>
-<td style="text-align: left;">対象者</td>
+<td style="text-align: left;">話した人</td>
 <td style="text-align: left;">話者名に指定文字が含まれているときに反応します。空欄の場合は全員が対象です</td>
 </tr>
 <tr>
-<td style="text-align: left;">APIタグ</td>
+<td style="text-align: left;">API タグ</td>
 <td style="text-align: left;">APIから呼び出すときにつかうタグ名です</td>
 </tr>
 </tbody>
@@ -11480,7 +11479,7 @@
 <div class="admonition info">
 <p class="admonition-title">パラメータの記述</p>
 <ul>
-<li>発話がきっかけで呼び出される場合は、<strong>コールURL と 送信文字の両方</strong>の中に下記パラメータが使えます</li>
+<li>発話がきっかけで呼び出される場合は、<strong>宛先 URL と 送る文字の両方</strong>の中に下記パラメータが使えます</li>
 </ul>
 <table>
 <thead>
@@ -11542,7 +11541,7 @@
 <ul>
 <li>差し込まれる値は URLエンコード（パーセントエンコード）されます。日本語は <code>%E3%81%82</code> のような形になります。</li>
 <li>受け取る側でデコードが必要です。</li>
-<li><strong>送信文字の中でもエンコードされます</strong>。そのまま日本語を送りたい場合はご注意ください。</li>
+<li><strong>送る文字の中でもエンコードされます</strong>。そのまま日本語を送りたい場合はご注意ください。</li>
 </ul>
 </div>
 <div class="admonition tech">
@@ -11561,9 +11560,9 @@
 </ul>
 </div>
 <div class="admonition tips">
-<p class="admonition-title">コールURLの設定例</p>
+<p class="admonition-title">宛先 URL の設定例</p>
 <ul>
-<li>VNyanでつかうには、コールURLに下記の用に設定します
+<li>VNyanでつかうには、宛先 URL に下記の用に設定します
 <code>ws://127.0.0.1:8000/vnyan</code></li>
 </ul>
 </div>

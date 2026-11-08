@@ -1688,7 +1688,7 @@
   <a href="#9discord" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9.Discord接続認証を行う
+        9.Discordに接続する
       
     </span>
   </a>
@@ -11628,7 +11628,7 @@
   <a href="#9discord" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9.Discord接続認証を行う
+        9.Discordに接続する
       
     </span>
   </a>
@@ -11779,14 +11779,13 @@
 <li>相手にもらったアドレスは開くものではなく、アプリに設定するものです。開いても何も動作しません。</li>
 </ul>
 </div>
-<p><img alt="Discord" src="../images/cs_colab_discord_p6.png" /></p>
 <ul>
-<li>チェックをONにして、設定画面を開きます。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> で <strong>Discord 連携 (Webhook)</strong> を選んで <strong>追加する</strong> を押し、一覧の <strong>設定</strong> を押して設定画面を開きます。→ <a href="../../plugin/enabled/">プラグインの有効化</a></li>
 </ul>
-<p><img alt="Discord" src="../images/cs_colab_discord_p7.png" /></p>
+<p><img alt="Discord" src="../../plugin/images/v30/discordwebhook_1.png" /></p>
 <ul>
-<li>手順４でもらったURLを「WebHook URL」に入れます。</li>
-<li>Avater URLは空欄で構いません。</li>
+<li>手順４でもらったURLを「Webhook URL」に入れます。</li>
+<li>「アイコンの画像 URL」は空欄で構いません。</li>
 <li>Avater URLに設定するとDiscord書き込み時本人アバターのところに絵が表示されます。</li>
 </ul>
 <h3 id="6">6.【コラボ相手】ゆかコネで音声認識させる<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
@@ -11814,7 +11813,7 @@
 <ul>
 <li>値を入手したら、プラグインに設定します。</li>
 </ul>
-<p><img alt="Discord" src="../images/cs_colab_discord_p12.png" /></p>
+<p><img alt="Discord" src="../../plugin/images/v30/discord_1.png" /></p>
 <ul>
 <li>ChannelIDは、Discordの画面から取得します。</li>
 </ul>
@@ -11824,10 +11823,10 @@
 <p>BOTがメッセージを受信できるように、読み取り権限を設定する必要があります。この項目をONにしておいてください。
 <img alt="Discord" src="../images/cs_colab_discord_p11-3.png" /></p>
 </div>
-<h3 id="9discord">9.Discord接続認証を行う<a class="headerlink" href="#9discord" title="Permanent link">&para;</a></h3>
-<p><img alt="Discord" src="../images/cs_colab_discord_p14.png" /></p>
+<h3 id="9discord">9.Discordに接続する<a class="headerlink" href="#9discord" title="Permanent link">&para;</a></h3>
+<p><img alt="Discord" src="../../plugin/images/v30/discord_1.png" /></p>
 <ul>
-<li>このボタンを押して認証ができると、通信ができるようになります。</li>
+<li>設定の <strong>接続</strong> のページの下にある <strong>接続</strong> ボタンを押して接続できると、通信ができるようになります。</li>
 </ul>
 <h3 id="10discordbot">10.DiscordチャンネルにBOTの読み書き権限を付与<a class="headerlink" href="#10discordbot" title="Permanent link">&para;</a></h3>
 <p><img alt="Discord" src="../images/cs_colab_discord_p15.png" /></p>
@@ -11841,7 +11840,10 @@
 </ul>
 </div>
 <h3 id="11discord">11.ゆかコネ―Discord間のやり取りルールを決める<a class="headerlink" href="#11discord" title="Permanent link">&para;</a></h3>
-<p><img alt="Discord" src="../images/cs_colab_discord_p16.png" /></p>
+<p><img alt="Discord" src="../../plugin/images/v30/discord_2.png" /></p>
+<ul>
+<li>設定の <strong>送受信</strong> のページで、向きを決めます。</li>
+</ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>*このルールを適当に決めると、字幕がループすることがあります。
@@ -11857,27 +11859,27 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Receive</td>
+<td style="text-align: left;">Discord の発言を受け取る</td>
 <td style="text-align: left;">Discordに書かれたメッセージを字幕として取り込む</td>
 <td style="text-align: left;">配信相手の会話を取り込む時に使います</td>
 </tr>
 <tr>
-<td style="text-align: left;">Transfer</td>
+<td style="text-align: left;">話した内容を Discord へ送る</td>
 <td style="text-align: left;">ゆかコネが受け取った字幕をDiscordに転送します</td>
 <td style="text-align: left;">自分の発話もDiscordに乗せるときに使います</td>
 </tr>
 <tr>
-<td style="text-align: left;">トークセッションに対応</td>
+<td style="text-align: left;">トークセッションとして扱う</td>
 <td style="text-align: left;">複数人の発話で字幕を出すモードで動かします</td>
 <td style="text-align: left;">コラボ配信時はON必須</td>
 </tr>
 <tr>
-<td style="text-align: left;">BOTも対象</td>
+<td style="text-align: left;">BOT の発言も受け取る</td>
 <td style="text-align: left;">BOTユーザーの字幕を受信するかどうか</td>
 <td style="text-align: left;">相手がBOT機能で字幕を出しているときはON</td>
 </tr>
 <tr>
-<td style="text-align: left;">Discord標準のTTSで読み上げ</td>
+<td style="text-align: left;">送るときに Discord の読み上げも使う</td>
 <td style="text-align: left;">Discordへ送信時に読み上げ機能を使用</td>
 <td style="text-align: left;">音声での通知が必要な場合に使用</td>
 </tr>
@@ -11920,18 +11922,18 @@
 <div class="admonition tips">
 <p class="admonition-title">自分だけが配信主の場合</p>
 <ul>
-<li>ReceiveとトークセッションをONに、それ以外をOFFに。</li>
+<li>「Discord の発言を受け取る」と「トークセッションとして扱う」をONに、それ以外をOFFに。</li>
 </ul>
 </div>
 <div class="admonition tips">
 <p class="admonition-title">自分以外も配信で字幕をつかう場合</p>
 <ul>
-<li>BOTも対象以外をONに（相手もBOTを使っている場合はすべてON）。</li>
+<li>「BOT の発言も受け取る」以外をONに（相手もBOTを使っている場合はすべてON）。</li>
 </ul>
 </div>
 <h3 id="12">12.字幕を表示<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
 <ul>
-<li>トークセッションで字幕を表示します。</li>
+<li>上のタブ <strong>字幕デザイン</strong> → <strong>デザイン</strong> の一覧の <strong>アバター表示対応</strong> の分類から <strong>トークセッション</strong> を選んで、字幕を表示します。</li>
 </ul>
 <p><img alt="Discord" src="../images/cs_colab_discord_p17.png" /></p>
 <ul>

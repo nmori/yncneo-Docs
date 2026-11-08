@@ -11518,10 +11518,8 @@
 </ul>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul>
-<li>プラグイン一覧から「ニコニコ生放送連携」のチェックをONにしてください。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> で「ニコニコ生放送連携」を選んで <strong>追加する</strong> を押してください（一覧の <strong>使う</strong> が ON になります）。→ <a href="../enabled/">プラグインの有効化</a></li>
 </ul>
-<!-- TODO: スクリーンショット未撮影。撮ったら images/plugin_niconama_p1.png として置き、ここに追加する -->
-
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>プラグイン一覧で、このプラグインの名前の右にある <strong>「設定」</strong> を押すと開きます。
 画面は <strong>2 ページ</strong>に分かれていて、左の一覧で切り替えます（ログイン／送る）。</p>
@@ -11531,7 +11529,7 @@
 変更したまま閉じようとすると「変更が保存されていません」と聞かれ、<strong>［はい］保存して閉じる／［いいえ］破棄して閉じる／［キャンセル］閉じるのをやめる</strong> から選べます。</p>
 </div>
 <h3 id="_4">ログイン<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<p>ニコ生へ書き込むための証を用意します。</p>
+<p>ニコ生へコメントするためのログイン情報を用意します。</p>
 <p><img alt="ニコ生連携の設定 - ログイン" src="../images/v30/niconama_1.png" /></p>
 <table>
 <thead>
@@ -11542,33 +11540,33 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">どこからログインするか</td>
-<td style="text-align: left;">選択肢：Firefox に入っている証を借りる／内蔵ブラウザ (WebView2) でログインする。既定：内蔵ブラウザ (WebView2) でログインする</td>
+<td style="text-align: left;">ログイン方法</td>
+<td style="text-align: left;">選択肢：Firefox のログイン情報を使う／内蔵ブラウザ (WebView2) でログインする。既定：内蔵ブラウザ (WebView2) でログインする</td>
 </tr>
 <tr>
-<td style="text-align: left;">「ログインして証を取る」ボタン</td>
-<td style="text-align: left;">内蔵ブラウザを選んでいるときは、ここでニコニコのログイン画面が開きます。Firefox を選んでいるときは、Firefox にログイン済みの証を借ります。</td>
+<td style="text-align: left;">「ログインして取得」ボタン</td>
+<td style="text-align: left;">内蔵ブラウザを選んでいるときは、ここでニコニコのログイン画面が開きます。Firefox を選んでいるときは、Firefox でログイン済みの情報を使います。</td>
 </tr>
 <tr>
 <td style="text-align: left;">配信の URL</td>
 <td style="text-align: left;">lv から始まる番号を含む URL です。</td>
 </tr>
 <tr>
-<td style="text-align: left;">ログインの証 (user_session)</td>
+<td style="text-align: left;">ログイン情報 (user_session)</td>
 <td style="text-align: left;">入力は伏せ字で表示されます。「表示」を押すと中身を確かめられます（もう一度押すと伏せます）</td>
 </tr>
 <tr>
-<td style="text-align: left;">API の鍵 (csrfToken)</td>
+<td style="text-align: left;">API キー (csrfToken)</td>
 <td style="text-align: left;">空でも構いません。送るときに配信ページから取り直します。入力は伏せ字で表示されます。「表示」を押すと中身を確かめられます（もう一度押すと伏せます）</td>
 </tr>
 <tr>
-<td style="text-align: left;">「API の鍵を取り直す」ボタン</td>
+<td style="text-align: left;">「API キーを取り直す」ボタン</td>
 <td style="text-align: left;">—</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>★ 証と鍵は、このプラグインの設定ファイルへそのままの文字で残ります。あなたのアカウントでコメントを書ける力があるので、共有のパソコンでは使い終わったら空にしてください。</p>
+<p>★ ログイン情報と API キーは、このプラグインの設定ファイルに暗号化されずに保存されます。あなたのアカウントでコメントできてしまうため、共有のパソコンでは使い終わったら空にしてください。</p>
 </blockquote>
 <h3 id="_5">送る<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>話した言葉を、放送者コメントとして出します。</p>
@@ -11587,13 +11585,13 @@
 </tr>
 <tr>
 <td style="text-align: left;">コメントの色</td>
-<td style="text-align: left;">既定：0</td>
+<td style="text-align: left;">(なし)／white／red／pink／… などから選びます。既定：(なし)</td>
 </tr>
 </tbody>
 </table>
 <p><strong>送る</strong></p>
 <blockquote>
-<p>いまの様子: …</p>
+<p>現在の状態: …</p>
 </blockquote>
 <table>
 <thead>
@@ -11604,11 +11602,11 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">「送り始める」ボタン</td>
+<td style="text-align: left;">「送信を開始」ボタン</td>
 <td style="text-align: left;">—</td>
 </tr>
 <tr>
-<td style="text-align: left;">「やめる」ボタン</td>
+<td style="text-align: left;">「停止」ボタン</td>
 <td style="text-align: left;">—</td>
 </tr>
 </tbody>
@@ -11646,25 +11644,25 @@ v3.0 では <strong>WebView2 だけ</strong>になりました。
 <ol>
 <li>ニコニコ生放送で配信を開始します。</li>
 <li>設定画面の「ログイン」ページで、配信の URL を貼り付けます。</li>
-<li><strong>「ログインして証を取る」</strong> を押します（API の鍵は空でも構いません。送るときに配信ページから取り直します。先に取っておきたいときは <strong>「API の鍵を取り直す」</strong> を押します）。</li>
+<li><strong>「ログインして取得」</strong> を押します（API キーは空でも構いません。送るときに配信ページから取り直します。先に取っておきたいときは <strong>「API キーを取り直す」</strong> を押します）。</li>
 <li>「送る」ページで送る字幕を選び、OK を押します。</li>
-<li>「送る」ページの <strong>「送り始める」</strong> を押し、音声認識を始めると、確定した字幕がコメントとして送られます。</li>
+<li>「送る」ページの <strong>「送信を開始」</strong> を押し、音声認識を始めると、確定した字幕がコメントとして送られます。</li>
 </ol>
 <div class="admonition info">
-<p class="admonition-title">証が取れないとき</p>
+<p class="admonition-title">ログイン情報が取れないとき</p>
 <ul>
-<li>Firefox の証を借りる場合は、Firefox にニコニコへログインした状態が残っていることが前提です。Firefox でログインし直してから、もう一度お試しください。</li>
-<li>それでも取れない場合は、ログインの証 (user_session) と API の鍵 (csrfToken) を手で入力することもできます。</li>
+<li>Firefox のログイン情報を使う場合は、Firefox にニコニコへログインした状態が残っていることが前提です。Firefox でログインし直してから、もう一度お試しください。</li>
+<li>それでも取れない場合は、ログイン情報 (user_session) と API キー (csrfToken) を手で入力することもできます。</li>
 </ul>
 </div>
 <div class="admonition info">
 <p class="admonition-title">コメントが送れなくなったとき</p>
 <ul>
-<li>送っている途中で API の鍵を断られたとき（401 / 403）は、<strong>鍵を配信ページから自動で取り直し、同じコメントをもう 1 回送ります</strong>。コメントは落としません。</li>
-<li>取り直した鍵は設定へ書き戻されるので、次に「送り始める」を押したときも、設定画面の「API の鍵 (csrfToken)」も新しい鍵になります。</li>
-<li>送っている途中でログインし直したり、配信の URL・鍵を直したりした場合も、OK か「適用」を押せば次のコメントから新しい証と鍵で送ります。「送り始める」を押し直す必要はありません。</li>
-<li>取り直しても断られることが続くときは、ログインの証が切れています。「送る」ページの「いまの様子」に <strong>「再ログインしてください (401)」</strong> と出るので、「ログインして証を取る」でログインし直してください。</li>
-<li>内蔵ブラウザが自動で開くことはありません。「いまの様子」は、設定画面を開いたままでも新しい様子に変わります。</li>
+<li>送っている途中で API キーを断られたとき（401 / 403）は、<strong>キーを配信ページから自動で取り直し、同じコメントをもう 1 回送ります</strong>。コメントは落としません。</li>
+<li>取り直したキーは設定へ書き戻されるので、次に「送信を開始」を押したときも、設定画面の「API キー (csrfToken)」も新しいキーになります。</li>
+<li>送っている途中でログインし直したり、配信の URL・キーを直したりした場合も、OK か「適用」を押せば次のコメントから新しいログイン情報とキーで送ります。「送信を開始」を押し直す必要はありません。</li>
+<li>取り直しても断られることが続くときは、ログイン情報が切れています。「送る」ページの「現在の状態」に <strong>「再ログインしてください (401)」</strong> と出るので、「ログインして取得」でログインし直してください。</li>
+<li>内蔵ブラウザが自動で開くことはありません。「現在の状態」は、設定画面を開いたままでも新しい様子に変わります。</li>
 </ul>
 </div>
 <div class="admonition warning">

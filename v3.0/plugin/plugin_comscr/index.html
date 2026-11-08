@@ -11886,9 +11886,8 @@
 </ul>
 </div>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p><img alt="置換" src="../images/plugin_comscr_p1.png" /></p>
 <ul>
-<li>プラグインを使うチェックをONにしてください。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> でこのプラグインを選んで <strong>追加する</strong> を押します（一覧の <strong>使う</strong> が ON になります）。→ <a href="../enabled/">プラグインの有効化</a></li>
 </ul>
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>プラグイン一覧で、このプラグインの名前の右にある <strong>「設定」</strong> を押すと開きます。</p>
@@ -11897,8 +11896,8 @@
 <p>設定は<strong>下書き</strong>として持たれ、「OK」か「適用」を押すまで動いているプラグインには効きません。
 変更したまま閉じようとすると「変更が保存されていません」と聞かれ、<strong>［はい］保存して閉じる／［いいえ］破棄して閉じる／［キャンセル］閉じるのをやめる</strong> から選べます。</p>
 </div>
-<p>コメントスクリーンのどの部屋へつなぐかを決めます。</p>
-<p><img alt="コメントスクリーンの設定 - 部屋" src="../images/v30/comscr_1.png" /></p>
+<p>接続するコメントスクリーンの部屋を決めます。</p>
+<p><img alt="コメントスクリーンの設定" src="../images/v30/comscr_1.png" /></p>
 <table>
 <thead>
 <tr>
@@ -11909,15 +11908,15 @@
 <tbody>
 <tr>
 <td style="text-align: left;">部屋の名前</td>
-<td style="text-align: left;">commentscreen.com で作った部屋の名前です。空のままだと入り口を開きます。</td>
+<td style="text-align: left;">commentscreen.com で作った部屋の名前です。空のままだとトップページを開きます。下に「接続先: （URL）」が出ます。</td>
 </tr>
 <tr>
-<td style="text-align: left;">「出してつなぐ」ボタン</td>
+<td style="text-align: left;">「表示して接続」ボタン</td>
 <td style="text-align: left;">はじめて使うときは、空のまま開いてログインしてください。</td>
 </tr>
 </tbody>
 </table>
-<p><strong>見せ方</strong>　コメントスクリーンの窓の出しかたです。</p>
+<p><strong>表示</strong>　コメントスクリーンのウィンドウの表示方法です。</p>
 <table>
 <thead>
 <tr>
@@ -11927,16 +11926,16 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">☑ いつも手前に出す</td>
-<td style="text-align: left;">ほかの窓の後ろに隠れなくなります。（既定：OFF）</td>
+<td style="text-align: left;">☑ 常に手前に表示する</td>
+<td style="text-align: left;">ほかのウィンドウの後ろに隠れなくなります。（既定：OFF）</td>
 </tr>
 <tr>
-<td style="text-align: left;">☑ 枠を出さない</td>
-<td style="text-align: left;">題名の帯と枠が消えます。動かすときは枠を戻してください。（既定：OFF）</td>
+<td style="text-align: left;">☑ 枠を表示しない</td>
+<td style="text-align: left;">タイトルバーと枠が消えます。ウィンドウを動かすときは枠を戻してください。（既定：OFF）</td>
 </tr>
 <tr>
-<td style="text-align: left;">☑ 背景を透かす</td>
-<td style="text-align: left;">本体で決めた背景色のところが抜けます。配信に重ねるときに使います。（既定：OFF）</td>
+<td style="text-align: left;">☑ 背景を透過する</td>
+<td style="text-align: left;">本体で設定した背景色の部分が透明になります。配信画面に重ねるときに使います。（既定：OFF）</td>
 </tr>
 </tbody>
 </table>
@@ -11948,7 +11947,7 @@
 ログイン状態は WebView2 側に保存されるため、<strong>入り直しが必要になることがあります</strong>。</p>
 </div>
 <ul>
-<li>「部屋の名前」を空のままにして <strong>「出してつなぐ」</strong> を押すと、コメントスクリーンの入り口が開きます。はじめて使うときはそこでログインしてください。</li>
+<li>「部屋の名前」を空のままにして <strong>「表示して接続」</strong> を押すと、コメントスクリーンのトップページが開きます。はじめて使うときはそこでログインしてください。</li>
 </ul>
 <h2 id="live">ライブ設定（配信中にその場で変える）<a class="headerlink" href="#live" title="Permanent link">&para;</a></h2>
 <p>本体の <strong>操作パネル → ライブ設定</strong> に、このプラグインの「配信ごとに変わる値」が並びます。設定画面を開かずに値を入れて <strong>「反映」</strong> を押せば、すぐプラグインに入ります。しくみは <a href="../../startup/startup_basic/#live-settings">標準設定項目 - ライブ設定とプラグインの帯</a> をご覧ください。</p>
@@ -11968,7 +11967,7 @@
 </table>
 <p><strong>「部屋を開く」／「閉じる」</strong> ボタンで、コメントスクリーンの部屋を開く・閉じるを切り替えます。画面上部のプラグインの帯で、このプラグインのアイコンを<strong>ダブルクリック</strong>しても同じように切り替えられます（1 回のクリックはこれまでどおり設定を開きます）。</p>
 <ul>
-<li>はじめて使うときは、設定画面の「出してつなぐ」で入り口を開いてログインしてください</li>
+<li>はじめて使うときは、設定画面の「表示して接続」で入り口を開いてログインしてください</li>
 <li>「閉じる」やプラグインの「使う」を切ったときは、窓を隠すだけでなくページも閉じます（隠れたままコメントを受け続けることはありません）</li>
 </ul>
 <h2 id="_5">制約・仕様<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
@@ -11991,14 +11990,14 @@
 <p><strong>ゆかコネ側の設定</strong></p>
 </li>
 <li>プラグインを有効化</li>
-<li>ルーム名を入力（URLの末尾部分のみ）</li>
+<li>「部屋の名前」にルーム名を入力（URLの末尾部分のみ）</li>
 <li>
 <p>必要に応じてウィンドウカスタマイズを設定</p>
 </li>
 <li>
 <p><strong>接続開始</strong></p>
 </li>
-<li>「ログイン」ボタンをクリック</li>
+<li>「表示して接続」ボタンをクリック</li>
 <li>パスワード設定している場合はパスワード入力</li>
 <li>内蔵ブラウザでコメントスクリーンが表示される</li>
 </ol>

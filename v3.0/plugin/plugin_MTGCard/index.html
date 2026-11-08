@@ -11835,9 +11835,8 @@
 </ul>
 </div>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p><img alt="MTGA" src="../images/plugin_MTGCard_p1.png" /></p>
 <ul>
-<li>プラグインを使うチェックをONにしてください。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> でこのプラグインを選んで <strong>追加する</strong> を押します（一覧の <strong>使う</strong> が ON になります）。→ <a href="../enabled/">プラグインの有効化</a></li>
 </ul>
 <h2 id="_3">準備順序<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ol>
@@ -11869,19 +11868,20 @@
 </tr>
 <tr>
 <td style="text-align: left;">カードを探す言語</td>
-<td style="text-align: left;">Scryfall で探すときの言語です。日本語のカード名で出したいなら japanese。（既定：「japanese」）</td>
+<td style="text-align: left;">api.magicthegathering.io で探すときの言語です。日本語のカード名で出したいなら japanese。（既定：「japanese」）</td>
 </tr>
 <tr>
-<td style="text-align: left;">取ってきた画像の置き場</td>
+<td style="text-align: left;">取得した画像の保存先</td>
 <td style="text-align: left;">右の「…」で選べます</td>
 </tr>
 <tr>
-<td style="text-align: left;">☑ 裏で先に取っておく</td>
-<td style="text-align: left;">配信の最中に待たされないよう、あらかじめ集めます。（既定：OFF）</td>
+<td style="text-align: left;">☑ 事前に取得しておく</td>
+<td style="text-align: left;">配信の最中に待たされないよう、有効にしたときに辞書の全カードをあらかじめ集めます (カード情報の取得に同意しているときだけ)。（既定：OFF）</td>
 </tr>
 </tbody>
 </table>
-<p><strong>いつまで出すか</strong></p>
+<p><strong>カード情報の取得</strong></p>
+<p>カードの情報は api.magicthegathering.io から、画像はその情報に書かれた置き場 (gatherer.wizards.com など) から取得し、上の保存先へ置きます。送るのは辞書のカード名と探す言語だけで、認識した文そのものは送りません。</p>
 <table>
 <thead>
 <tr>
@@ -11891,12 +11891,27 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">消すきっかけ</td>
-<td style="text-align: left;">選択肢：文が確定してから、決まった時間で消す／消さない (次のカードが出るまで)。既定：消さない (次のカードが出るまで)</td>
+<td style="text-align: left;">☑ インターネットからカードの情報と画像を取得する</td>
+<td style="text-align: left;">切ると取得しません。取得済みの画像はそのまま出ます。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>表示時間</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">消すタイミング</td>
+<td style="text-align: left;">選択肢：文が確定してから、指定した時間で消す／消さない (次のカードが出るまで)。既定：文が確定してから、指定した時間で消す</td>
 </tr>
 <tr>
 <td style="text-align: left;">消すまでの時間 (秒)</td>
-<td style="text-align: left;">上で「決まった時間で消す」を選んだときに使います。（既定：「2」）</td>
+<td style="text-align: left;">上で「指定した時間で消す」を選んだときに使います。（既定：「2」）</td>
 </tr>
 </tbody>
 </table>
@@ -12027,7 +12042,7 @@
 <li>カード画像を好みのものに差し替えたい場合はキャッシュフォルダの同カード名の画像ファイルを上書きしてください</li>
 </ul>
 </div>
-<p><img alt="VMC" src="../images/plugin_MTGCard_p3.png" /></p>
+<p><img alt="OBS へ渡す" src="../images/v30/mtgcard_2.png" /></p>
 <ul>
 <li>
 <p>OBS用テキストデータは、OBSに直接データを取り込みたい方向けです。</p>

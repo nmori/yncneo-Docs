@@ -12272,9 +12272,8 @@
 <li>外部APIによる拡張制御</li>
 </ul>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p><img alt="ファイル" src="../images/plugin_obs5_p1.png" /></p>
 <ul>
-<li>プラグインを使うチェックをONにしてください。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> でこのプラグインを選んで <strong>追加する</strong> を押します（一覧の <strong>使う</strong> が ON になります）。→ <a href="../enabled/">プラグインの有効化</a></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">OBS WebSocket 4の環境ではこのプラグインは使えません</p>
@@ -12377,7 +12376,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">「接続」「切断」ボタン</td>
-<td style="text-align: left;">その場で繋ぐ／切ります。宛先を変えたときは、OK か「適用」を押した時点で繋ぎ直します</td>
+<td style="text-align: left;">その場で繋ぐ／切ります。接続先を変えたときは、OK か「適用」を押した時点で再接続します</td>
 </tr>
 <tr>
 <td style="text-align: left;">送信先に使えるソース</td>
@@ -12395,7 +12394,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">☑ 配信の開始・終了で読み上げを入切する</td>
+<td style="text-align: left;">☑ 配信の開始・終了で読み上げをオン/オフする</td>
 <td style="text-align: left;">配信を始めたら読み上げを入れ、止めたら切ります</td>
 </tr>
 </tbody>
@@ -12521,7 +12520,7 @@ v3.0 では 1 言語 1 行の表になり、効かせるスイッチも同じペ
 <tbody>
 <tr>
 <td style="text-align: left;">☑ 配信にクローズドキャプションを埋め込む</td>
-<td style="text-align: left;">OBS の配信そのものに字幕を載せます。視聴する側で字幕の入切ができるようになります</td>
+<td style="text-align: left;">OBS の配信そのものに字幕を載せます。視聴する側で字幕のオン/オフを切り替えられます</td>
 </tr>
 <tr>
 <td style="text-align: left;">載せる言語</td>
@@ -12554,7 +12553,7 @@ v3.0 では 1 言語 1 行の表になり、効かせるスイッチも同じペ
 <tbody>
 <tr>
 <td style="text-align: left;">対応表のファイル</td>
-<td style="text-align: left;"><strong>「選ぶ」</strong> で指定します。1 行につき「合い言葉,切り替えたいシーン名」の形で書き、UTF-8 で保存してください（例：<code>休憩,休憩中</code>）</td>
+<td style="text-align: left;"><strong>「選ぶ」</strong> で指定します。1 行につき「キーワード,切り替えたいシーン名」の形で書き、UTF-8 で保存してください（例：<code>休憩,休憩中</code>）</td>
 </tr>
 </tbody>
 </table>
@@ -12730,7 +12729,7 @@ v3.0 では 1 言語 1 行の表になり、効かせるスイッチも同じペ
 <ul>
 <li><strong>開始検出</strong>: OBS配信開始の自動検知</li>
 <li><strong>終了検出</strong>: 配信停止の自動検知  </li>
-<li><strong>読み上げの入切</strong>: 「配信の開始・終了で読み上げを入切する」を ON にすると、配信を始めたら読み上げを入れ、止めたら切ります</li>
+<li><strong>読み上げの入切</strong>: 「配信の開始・終了で読み上げをオン/オフする」を ON にすると、配信を始めたら読み上げを入れ、止めたら切ります</li>
 <li><strong>要約自動化</strong>: 配信終了時の最終要約生成</li>
 </ul>
 <h3 id="api">外部API制御<a class="headerlink" href="#api" title="Permanent link">&para;</a></h3>
@@ -12854,7 +12853,7 @@ v3.0 では 1 言語 1 行の表になり、効かせるスイッチも同じペ
 </ul>
 <h2 id="_23">使うとき<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
 <ul>
-<li>プラグイン画面で「OBSに接続」をおします。</li>
+<li>プラグインの設定画面の「OBS への接続」ページで「接続」をおします。</li>
 <li>音声認識と同時に字幕が転送されます。</li>
 </ul>
 

@@ -1922,7 +1922,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ブラウザウインドウサイズ
+        ブラウザウィンドウサイズ
       
     </span>
   </a>
@@ -1933,7 +1933,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        表示に使うブラウザの設定
+        ブラウザのオプション
       
     </span>
   </a>
@@ -11806,7 +11806,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ブラウザウインドウサイズ
+        ブラウザウィンドウサイズ
       
     </span>
   </a>
@@ -11817,7 +11817,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        表示に使うブラウザの設定
+        ブラウザのオプション
       
     </span>
   </a>
@@ -12354,7 +12354,7 @@
 「フォルダの指定」の画面は無くなりました。中身の移り先は、下の「フォルダの指定」の節をご覧ください。</p>
 </div>
 <h2 id="_2">ブラウザと字幕ウィンドウ<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="_3">ブラウザウインドウサイズ<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="_3">ブラウザウィンドウサイズ<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p><img alt="ウィンドウサイズ" src="../images/startup_option2.png" /></p>
 <ul>
 <li>字幕を表示するウィンドウのサイズを強制的にロックします。</li>
@@ -12386,10 +12386,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_4">表示に使うブラウザの設定<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h3 id="_4">ブラウザのオプション<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p><img alt="オプション" src="../images/startup_option4.png" /></p>
-<!-- TODO: スクリーンショットは v2.3.59 時点のもの。項目が増えているため撮り直しが必要 -->
-
 <ul>
 <li>字幕を表示するために使うブラウザの動作を変更できます。</li>
 <li>ChromeとEdgeのどちらを使うかを設定できます。（既定はEdge）</li>
@@ -12404,8 +12402,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Chrome / Edge</td>
-<td style="text-align: left;">字幕表示に使うブラウザを選びます</td>
+<td style="text-align: left;">レイアウト表示に使うブラウザ</td>
+<td style="text-align: left;">字幕表示に使うブラウザを Chrome / Edge から選びます</td>
 <td style="text-align: left;">Edge</td>
 </tr>
 <tr>
@@ -12414,7 +12412,7 @@
 <td style="text-align: left;">自動</td>
 </tr>
 <tr>
-<td style="text-align: left;">ブラウザ引数</td>
+<td style="text-align: left;">ブラウザ起動引数</td>
 <td style="text-align: left;">ブラウザの動作を切り替えます。<br>例えば --incognito をいれると、シークレットモードで起動します。<br>「推奨設定を入力」ボタンで、おすすめの内容を入れられます</td>
 <td style="text-align: left;">—</td>
 </tr>
@@ -12449,8 +12447,6 @@
 </ul>
 <h3 id="api_1">翻訳APIオプション<a class="headerlink" href="#api_1" title="Permanent link">&para;</a></h3>
 <p><img alt="APIオプション" src="../images/startup_option3.png" /></p>
-<!-- TODO: スクリーンショットは v2.3.59 時点のもの。ラベルの文言が変わっているため撮り直しが必要 -->
-
 <p>翻訳に関する動作を変更できます。翻訳エンジンの呼び出し回数を減らして、費用や制限を節約するための設定です。</p>
 <table>
 <thead>
@@ -12480,12 +12476,15 @@
 </table>
 <h3 id="api_2">自分のAPIキーを使う<a class="headerlink" href="#api_2" title="Permanent link">&para;</a></h3>
 <p><img alt="APIキー" src="../images/startup_option6.png" /></p>
-<!-- TODO: スクリーンショットは v2.3.59 時点のもの。モデル選択とParapperのポート欄が増えているため撮り直しが必要 -->
-
 <ul>
 <li>自分で契約したAPIキーを使うことができます。</li>
 <li>使いたい翻訳エンジンが決まったら、当該エンジン提供メーカーと契約を行い、キーを入手してください。</li>
-<li>入手したキーを設定しチェックをONにすると、指定した翻訳エンジンを個人のAPIキーを用いて動かせるようになります。</li>
+<li>
+<p>エンジン名の左の <strong>＞</strong> を押して欄を開き、入手したキーを設定して右のスイッチを ON にすると、指定した翻訳エンジンを個人のAPIキーを用いて動かせるようになります。</p>
+</li>
+<li>
+<p>いちばん上の <strong>プラグインで使うAIの種類</strong> で、AI を使うプラグイン（AIフィルタ／AIアシスタントなど）が呼び出す AI を選びます。</p>
+</li>
 </ul>
 <p>エンジンごとに、キー以外の設定もここで行います。</p>
 <table>
@@ -12829,10 +12828,14 @@
 <p>設定欄は <strong>「APIキーの設定」</strong> 画面の「自分のAPIキーを使う」グループの中、Parapper翻訳の下にあります。ここでも同意のチェック（「上のモデルのライセンスを確認し、ダウンロードに同意します。」）を ON / OFF できます。<strong>チェックが OFF のあいだは、ダウンロードも翻訳もしません。</strong></p>
 </li>
 <li>欄の下には、ダウンロード先と、実行環境・英日モデル(229MB)・多言語モデル(2.8GB) がそれぞれ「あり」か「なし(使うときにダウンロード)」かが表示されます。</li>
-<li><strong>「フォルダを開く」</strong> でダウンロード先のフォルダを開けます。<strong>「保存先と管理…」</strong> で保存先を変えたり、ダウンロード済みのモデルを消したりできます（下の「<a href="#model-storage">モデルの保存先と管理</a>」を参照）。</li>
+<li>
+<p><strong>「フォルダを開く」</strong> でダウンロード先のフォルダを開けます。<strong>「保存先と管理…」</strong> で保存先を変えたり、ダウンロード済みのモデルを消したりできます（下の「<a href="#model-storage">モデルの保存先と管理</a>」を参照）。</p>
+</li>
+<li>
+<p>何も設定していない会社の欄は畳まれています。見出しの左の矢印を押すと開きます。</p>
+</li>
 </ol>
-<!-- TODO(screenshot): 「APIキーの設定」画面のオフライン翻訳（無料）の欄（注意書き・同意チェック・状態表示・「フォルダを開く」「保存先と管理…」ボタン） -->
-
+<p><img alt="APIキーの設定のオフライン翻訳（無料）の欄" src="../images/startup_option_offlinellm.png" /></p>
 <h4 id="_7">ダウンロードの進み具合<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
 <ul>
 <li>ダウンロードや読み込みのあいだは、画面の下のステータスバーに「オフライン翻訳 56%・残り約 20 秒」のように進み具合が出ます。終わると消えます。</li>
@@ -12907,8 +12910,7 @@
 <li>ダウンロードや読み込みの進み具合は、オフライン翻訳と同じく画面の下のステータスバーに出ます。</li>
 <li>CPU だけで、優先度を下げて動かします。</li>
 </ol>
-<!-- TODO(screenshot): 「APIキーの設定」画面の PLaMo 3 翻訳（オフライン）の欄（説明・ライセンス本文のリンク・同意チェック・モデルの大きさ・「保存先と管理…」「フォルダを開く」・状態表示） -->
-
+<p><img alt="APIキーの設定の PLaMo 3 翻訳（オフライン）の欄" src="../images/startup_option_plamo3.png" /></p>
 <h4 id="_10">訳せる言語<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
 <ul>
 <li>日本語・英語・中国語（簡体字／繁体字）・韓国語など <strong>53 言語</strong> と、<strong>やさしい日本語</strong> へ訳せます。</li>
@@ -12970,15 +12972,15 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">キャッシュを有効化</td>
+<td style="text-align: left;">キャッシュを有効化する</td>
 <td style="text-align: left;">以前の翻訳結果を記憶し、同じ文を翻訳するときに前回の結果を活用します</td>
 </tr>
 <tr>
-<td style="text-align: left;">アプリを終わらせても辞書を保持</td>
+<td style="text-align: left;">アプリを終わらせても辞書を保持する</td>
 <td style="text-align: left;">アプリ再起動しても前回の翻訳結果を活用します</td>
 </tr>
 <tr>
-<td style="text-align: left;">キャッシュをクリア</td>
+<td style="text-align: left;">キャッシュをクリアする</td>
 <td style="text-align: left;">記憶したデータをクリアします。</td>
 </tr>
 </tbody>
@@ -13001,8 +13003,7 @@
 <li><strong>「APIキーの設定」</strong> 画面のオフライン翻訳（無料）・PLaMo 3 翻訳（オフライン）の欄 → <strong>「保存先と管理…」</strong></li>
 <li><strong>「音声入力の設定」</strong>（上のタブでは「音声と翻訳」→「音声の入れ方」）で「オフライン認識」を選んだときの右の欄 →「モデルの保存先と管理」→ <strong>「保存先と管理…」</strong></li>
 </ul>
-<!-- TODO(screenshot): 「モデルの保存先と管理」画面（上に保存先と「変更…」「既定に戻す」、下に「ダウンロード済みのモデル」の一覧が置き場所ごとに並んでいるところ） -->
-
+<p><img alt="モデルの保存先と管理" src="../images/startup_option_models.png" /></p>
 <h4 id="_13">保存先を変える<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
 <ol>
 <li>画面の上の「保存先」の <strong>「変更…」</strong> を押し、保存先にするフォルダを選びます。選んだフォルダの中に <code>YukarinetteConnector</code> フォルダが作られ、そこに置かれます。</li>
@@ -13216,8 +13217,7 @@
 <p class="admonition-title">配信に映さないでください</p>
 <p>アクセス状況には、LAN の機器の名前と IP アドレスが表示されます。</p>
 </div>
-<!-- TODO(screenshot): 「ネットワークの設定」画面の API/Webサーバ設定（Web許可ホスト・LAN からの操作に使うトークンの「コピー」「作り直す」・アクセス状況の一覧）。IP や機器名はぼかすこと -->
-
+<p><img alt="API/Webサーバ設定" src="../images/startup_option_webapi.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">「使える通信ポートを自動で選びます」について</p>
 <ul>
@@ -13240,7 +13240,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;">話し手のイメージデータ</td>
-<td style="text-align: left;">字幕デザインの「表示内容」</td>
+<td style="text-align: left;">字幕デザインの「表示内容」（「ホーム」→「すべての設定」の「表示内容」にもあります）</td>
 </tr>
 <tr>
 <td style="text-align: left;">Whisper・ゆーかねすぴれこ・Parapper の場所</td>

@@ -11684,11 +11684,8 @@
 <li>読みやすさを考慮した最適な表示時間を実現します</li>
 </ul>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<!-- TODO: スクリーンショット未撮影。撮ったら images/plugin_dynamickeeptime_p1.png として置き、次の行を有効にする -->
-<!-- ![画面](images/plugin_dynamickeeptime_p1.png) -->
-
 <ul>
-<li>プラグインを使うチェックをONにしてください。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> でこのプラグインを選んで <strong>追加する</strong> を押します（一覧の <strong>使う</strong> が ON になります）。→ <a href="../enabled/">プラグインの有効化</a></li>
 </ul>
 <h2 id="_3">動作の仕組み<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>このプラグインは、認識された文字列の長さに基づいて、字幕の表示時間（KeepTime）を自動的に調整します。</p>
@@ -11698,10 +11695,8 @@
 <li>文字数が最大文字数以上の場合：最大表示時間</li>
 <li>その間の文字数の場合：比例計算で表示時間を決定</li>
 </ul>
-<p>グラフイメージ：</p>
-<!-- TODO: スクリーンショット未撮影。撮ったら images/plugin_dynamickeeptime_graph.png として置き、次の行を有効にする -->
-<!-- ![画面](images/plugin_dynamickeeptime_graph.png) -->
-
+<p>グラフイメージ（設定画面の上に出るグラフ。10 字まで 5 秒、40 字から 10 秒の例）：</p>
+<p><img alt="文字数と表示時間のグラフ" src="../images/v30/dynamickeeptime_graph.png" /></p>
 <h2 id="_5">設定<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>プラグイン一覧で、このプラグインの名前の右にある <strong>「設定」</strong> を押すと開きます。</p>
 <div class="admonition info">
@@ -11709,7 +11704,7 @@
 <p>設定は<strong>下書き</strong>として持たれ、「OK」か「適用」を押すまで動いているプラグインには効きません。
 変更したまま閉じようとすると「変更が保存されていません」と聞かれ、<strong>［はい］保存して閉じる／［いいえ］破棄して閉じる／［キャンセル］閉じるのをやめる</strong> から選べます。</p>
 </div>
-<p>字幕の文字数に合わせて、出しておく時間を伸ばします。</p>
+<p>字幕の文字数に合わせて、出しておく時間を伸ばします。数えるのは、ふだんは翻訳する前の文（認識した母国語の文）です。</p>
 <p><img alt="表示時間の自動調整 - 長さ" src="../images/v30/dynamickeeptime_1.png" /></p>
 <p><strong>文字数</strong></p>
 <table>
@@ -11752,9 +11747,31 @@
 <blockquote>
 <p>あいだの長さのときは、この 2 つを直線でつないだ時間になります。</p>
 </blockquote>
+<p><strong>数え方</strong>（画面を下へスクロールすると出ます）</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">選べるもの</th>
+<th style="text-align: left;">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">数える文</td>
+<td style="text-align: left;">翻訳する前の文(認識した母国語の文)だけ ／ 翻訳した文も数えて、いちばん長いものに合わせる</td>
+<td style="text-align: left;">翻訳した文も数えると、日本語より英語のほうが長いときなど、読むのに時間がかかる方に合わせて伸びます。短くすることはありません。</td>
+</tr>
+<tr>
+<td style="text-align: left;">半角の文字</td>
+<td style="text-align: left;">全角も半角も 1 文字と数える ／ 半角(英数字・記号・半角カナ)は 0.5 文字と数える</td>
+<td style="text-align: left;">空白や記号も 1 文字（半角なら 0.5 文字）に数えます。英語は単語ではなく文字で数えます。</td>
+</tr>
+</tbody>
+</table>
 <h3 id="_6">補足<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <ul>
-<li>画面の上のグラフは、<strong>いまの設定で何文字のときに何秒出るか</strong>を表しています。数字を変えるとすぐにグラフも変わります。</li>
+<li>画面の上のグラフ（「いまの設定でこうなります」）は、<strong>いまの設定で何文字のときに何秒出るか</strong>を表しています。数字を変えるとすぐにグラフも変わります。</li>
 <li>短いときの時間〜長いときの時間のあいだは、グラフの線のとおりに伸びます。</li>
 </ul>
 <h2 id="_7">使用例<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>

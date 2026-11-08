@@ -13288,8 +13288,7 @@
 </div>
 <h2 id="export">音声ファイルの生成<a class="headerlink" href="#export" title="Permanent link">&para;</a></h2>
 <p>読み上げの声を <strong>WAV ファイルに書き出す</strong> 上級者向けの機能です（v3.0.0～）。詳細設定の左メニューの <strong>上級者向け → 音声ファイルの生成</strong> から開きます。</p>
-<!-- TODO(screenshot): images/v30/playvoice_settings_export.png — 詳細設定「音声ファイルの生成」ページ（上の帯・声・調整・読ませる文・書き出し先・試聴／WAV で保存） -->
-
+<p><img alt="詳細設定 - 音声ファイルの生成" src="../images/v30/playvoice_settings_export.png" /></p>
 <div class="admonition warning">
 <p class="admonition-title">上級者向けの機能です</p>
 <p>ここで選んだ声や調整は、<strong>配信中の読み上げには使われません</strong>。試聴と保存は読み上げの順番待ちに並ぶので、配信中はほかの読み上げの後になります。終わるとエンジンの調整は元に戻ります。</p>
@@ -13498,9 +13497,8 @@
 <li><strong>Windows音声設定で該当デバイスが有効か</strong></li>
 </ol>
 <h2 id="_11">有効化<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
-<p><img alt="音声" src="../images/plugin_playvoice_p1.png" /></p>
 <ul>
-<li>プラグインを使うチェックをONにしてください。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> でこのプラグインを選んで <strong>追加する</strong> を押します（一覧の <strong>使う</strong> が ON になります）。→ <a href="../enabled/">プラグインの有効化</a></li>
 </ul>
 <h2 id="_12">ボイスを選ぶ (ボイスパレット)<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
 <p>設定ボタンを押すと、まず <strong>ボイスパレット</strong> が開きます。
@@ -13596,7 +13594,9 @@
 <li>「調整した値を使う」を外すと、下の調整はすべて無視されてエンジンの既定で鳴ります。</li>
 <li>「感情スタイル (CeVIO / VOICEPEAK / VoiSona)」は、配布物に入っている組み合わせから選びます。CeVIO・VOICEPEAK・VoiSona のボイスにだけ効きます（VoiSona Talk は v3.0.10～。Bright / Dark / Normal / Strong など）。</li>
 <li>「この声で WAV を作る…」で、いま調整中の声と値を写して <a href="#export">音声ファイルの生成</a> を開けます（写すだけで、読み上げの設定は変わりません）。</li>
-<li>「既定に戻す」で調整だけを初期値に戻せます。</li>
+<li>「既定に戻す」で調整だけを既定の値に戻せます（「いまの値を既定にする」で覚えた値があればそれ、無ければ製品の初期値）。OK／適用で確定します。</li>
+<li>「いまの値を既定にする」で、いまの調整をこの系統のボイスの既定として覚えます。「既定を初期化」で、この系統の既定を製品の初期値へ戻します（つまみはいまの値のままです）。この 2 つはその場で確定します（OK／キャンセルとは別）。</li>
+<li>上の帯の「新しいマイボイスとして保存…」で、いまの声と調整を 後述の「マイボイス」として残せます（保存はすぐに確定します。OK／キャンセルとは別）。</li>
 </ul>
 <h3 id="_16">読み上げと出力<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
 <p><img alt="詳細設定 - 読み上げと出力" src="../images/v30/playvoice_settings_3.png" /></p>
@@ -13660,6 +13660,10 @@
 <td style="text-align: left;">強さ</td>
 <td style="text-align: left;">どれだけ動かすか（0～100%）。既定は 50%。チェックを入れたときだけ動かせます</td>
 </tr>
+<tr>
+<td style="text-align: left;">感情プリセット・スタイルも文に合わせて切り替える</td>
+<td style="text-align: left;">感情プリセット (CeVIO・VOICEPEAK) や、同じキャラのスタイル (VOICEVOX など) も文ごとに選び直します。判断に迷ったときは替えません</td>
+</tr>
 </tbody>
 </table>
 <ul>
@@ -13706,8 +13710,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">音声コントローラ</td>
-<td style="text-align: left;">・ゆかコネ内蔵 (PlayEngine) か、外部の <a href="https://hgotoh.jp/wiki/doku.php/documents/voiceroid/assistantseika/assistantseika-001a">AssistantSeika</a> かを選びます<br>・切り替えるとボイスの一覧が入れ替わります。お気に入りもそれぞれ別に覚えます<br>・AssistantSeika連携：（ゆかコネNEO v2.0.115以降）</td>
+<td style="text-align: left;">どの音声コントローラを使うか</td>
+<td style="text-align: left;">・ゆかコネ内蔵 (PlayEngine) か、外部 (AssistantSeika)（<a href="https://hgotoh.jp/wiki/doku.php/documents/voiceroid/assistantseika/assistantseika-001a">AssistantSeika</a>）かを選びます<br>・切り替えるとボイスの一覧が入れ替わります。お気に入りもそれぞれ別に覚えます<br>・AssistantSeika連携：（ゆかコネNEO v2.0.115以降）</td>
 </tr>
 <tr>
 <td style="text-align: left;">発話エンジンのアドレス</td>
@@ -13716,6 +13720,10 @@
 <tr>
 <td style="text-align: left;">起動し直す</td>
 <td style="text-align: left;">音源制御プログラムを立ち上げ直します。ボイスが出てこないときに</td>
+</tr>
+<tr>
+<td style="text-align: left;">動作確認の画面を出す</td>
+<td style="text-align: left;">音源制御プログラムの状態を見る画面（コントローラウィンドウ）を出します</td>
 </tr>
 <tr>
 <td style="text-align: left;">エンジンごとの資格情報</td>
@@ -13737,8 +13745,7 @@
 </div>
 <h4 id="irodori-setup">Irodori-TTS を使う<a class="headerlink" href="#irodori-setup" title="Permanent link">&para;</a></h4>
 <p>Irodori-TTS がプラグインに入っているときだけ、「エンジン接続」ページに <strong>Irodori-TTS</strong> の欄が出ます。</p>
-<!-- TODO(screenshot): images/v30/playvoice_settings_irodori.png — 詳細設定「エンジン接続」の Irodori-TTS 欄（キャラクター作成ページを開く／声の一覧を更新／CPU を使うことを優先する／再生品質） -->
-
+<p><img alt="エンジン接続の Irodori-TTS の欄" src="../images/v30/playvoice_settings_irodori.png" /></p>
 <table>
 <thead>
 <tr>
@@ -13817,7 +13824,7 @@
 <td style="text-align: left;">OBS のテキストソースに取り込むと、いま読んでいる文を配信に出せます</td>
 </tr>
 <tr>
-<td style="text-align: left;">音声連携する実行ファイル</td>
+<td style="text-align: left;">音声連携する実行ファイル (RecotteStudio など)</td>
 <td style="text-align: left;">RecotteStudio プラグインなど。<code>%c</code> が本文、<code>%o</code> が音声ファイルの場所に置き換わります</td>
 </tr>
 </tbody>
@@ -13869,7 +13876,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">ひらがなにして読む</td>
+<td style="text-align: left;">ひらがなにして読む (IME が対応しているときだけ)</td>
 <td style="text-align: left;">・IME辞書をつかって漢字をすべてひらがなに変換して渡します<br>・UDトーク併用時は認識時のひらがなに直します</td>
 </tr>
 <tr>
@@ -13877,20 +13884,24 @@
 <td style="text-align: left;">英語が読めない音源では、それっぽい発音に置き換えます。正しく発音できないこともあります</td>
 </tr>
 <tr>
+<td style="text-align: left;">フォニックス読みをする</td>
+<td style="text-align: left;">アルファベットをフォニックス読み（A→ア、B→ブ など）で読ませます。「アルファベットの読み上げをフォローする」とは同時に使えません（片方を入れるともう片方が外れます）</td>
+</tr>
+<tr>
 <td style="text-align: left;">末尾に足す言葉</td>
 <td style="text-align: left;">読み上げる文の最後に必ず付けます (かわいい語尾)</td>
 </tr>
 <tr>
-<td style="text-align: left;">一括置換の辞書</td>
+<td style="text-align: left;">一括置換の辞書 (ファイル)</td>
 <td style="text-align: left;">「置換前＝置換後」を 1 行ずつ書いたファイル。外から来た文にも効きます</td>
 </tr>
 <tr>
 <td style="text-align: left;">認識のあとに直す</td>
-<td style="text-align: left;">「直す前 / 直したあと」の表。行を足したり消したりできます。長い言葉から先に当てます</td>
+<td style="text-align: left;">「直す前 / 直したあと」の表。「行を足す」「選んだ行を消す」で行を足したり消したりできます。「読み込む」「書き出す」でファイルと受け渡しします。長い言葉から先に当てます</td>
 </tr>
 <tr>
 <td style="text-align: left;">教育で覚えた言葉</td>
-<td style="text-align: left;">チャットの「教育(言葉=読み)」で覚えた言葉の一覧です。下の <a href="#speech-teach">読み上げの教育</a> を見てください</td>
+<td style="text-align: left;">チャットの「教育(言葉=読み)」で覚えた言葉の一覧です。上の <a href="#speech-teach">読み上げの教育</a> を見てください</td>
 </tr>
 </tbody>
 </table>
@@ -14211,9 +14222,10 @@ StreamDeck や API から、ほかのボイスと同じように選べます。�
 <ul>
 <li>従来通り、ブラウザがサポートする機械音声を使うことができます。</li>
 <li>ブラウザを起動して音声を選ぶと、ブラウザ経由で声が再生されます。</li>
-<li>内蔵コントローラ使用中のみ利用可能です。
-<img alt="音声" src="../images/plugin_playvoice_p3.png" /></li>
+<li>内蔵コントローラ使用中のみ利用可能です。</li>
+<li>この機能は、<strong>Shift を押しながら設定ボタン</strong>を押して開く以前の設定画面にあります（下の画像はその画面です）。</li>
 </ul>
+<p><img alt="音声" src="../images/plugin_playvoice_p3.png" /></p>
 <h2 id="_31">一括置換辞書の設定<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h2>
 <p>読み上げ前に特定の文字や単語を自動で置き換える辞書ファイルを設定できます。</p>
 <h3 id="_32">辞書ファイルの作り方<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
@@ -14244,8 +14256,8 @@ www,わらわらわら
 </ol>
 <h3 id="_35">使い方<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h3>
 <ol>
-<li>設定画面で辞書ファイルを指定</li>
-<li>「読み込み」ボタンでファイルを読み込み</li>
+<li>詳細設定の「読み方と補正」→「一括置換の辞書 (ファイル)」の「…」で辞書ファイルを指定</li>
+<li>「OK」か「適用」を押す</li>
 <li>音声認識時に自動で置換が適用される</li>
 </ol>
 <div class="admonition tips">
@@ -14267,13 +14279,13 @@ www,わらわらわら
 <li>RecotteStudioプラグインを使って発話ができます。</li>
 <li>このモードは、ゆかコネ内蔵コントローラの時のみ使用可能です。</li>
 <li>たとえば、<a href="https://vtool.booth.pm/items/4591912">りんなプラグイン</a>などを連携させて使うことが可能です。</li>
-<li>詳細設定の「タイミングと連携」→「音声連携する実行ファイル」で指定します。</li>
+<li>詳細設定の「タイミングと連携」→「音声連携する実行ファイル (RecotteStudio など)」で指定します。</li>
 </ul>
 <h2 id="_37">一括置換<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h2>
 <ul>
 <li>TwiChaDashに搭載されていた機能です</li>
 <li>インストールフォルダに サンプルとして、<code>bsr.txt</code>があります。</li>
-<li>詳細設定の「読み方と補正」→「一括置換の辞書」でファイルを指定します。</li>
+<li>詳細設定の「読み方と補正」→「一括置換の辞書 (ファイル)」でファイルを指定します。</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">フォーマットを作るツールについて</p>
@@ -14350,7 +14362,7 @@ SpeedUp_Ratio = 1.5倍
 <h4 id="_48">動作確認の画面<a class="headerlink" href="#_48" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>コントローラウィンドウ</strong>: 音源制御プログラムの状態を見る専用画面</li>
-<li>詳細設定の「エンジン接続」から出せます</li>
+<li>詳細設定の「エンジン接続」の「動作確認の画面を出す」から出せます</li>
 </ul>
 <h4 id="_49">呼び名について<a class="headerlink" href="#_49" title="Permanent link">&para;</a></h4>
 <p>よく似た名前のものが 3 つあるので、区別できるように呼び分けています。</p>

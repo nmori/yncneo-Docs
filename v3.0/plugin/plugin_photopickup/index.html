@@ -12150,13 +12150,12 @@
 <li>指定した単語を含んでいたら、写真を表示します</li>
 </ul>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p><img alt="再生" src="../images/plugin_PhotoPickup_p1.png" /></p>
 <ul>
-<li>プラグインを使うチェックをONにしてください。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> でこのプラグインを選んで <strong>追加する</strong> を押します（一覧の <strong>使う</strong> が ON になります）。→ <a href="../enabled/">プラグインの有効化</a></li>
 </ul>
 <h2 id="_3">動作の仕組み<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
-<li>認識の基準は表示ルールで決めます。</li>
+<li>認識の基準は「表示ルール」で決めます。</li>
 <li>表示ルールがなければ、ファイル名と同じ言葉を検出したら表示します</li>
 </ul>
 <div class="admonition note">
@@ -12191,16 +12190,16 @@
 <td style="text-align: left;">1 行に「認識した言葉,画像のファイル名」を書いた CSV (UTF-8) です。（右の「…」で選べます）</td>
 </tr>
 <tr>
-<td style="text-align: left;">写真の置き場</td>
+<td style="text-align: left;">写真のフォルダ</td>
 <td style="text-align: left;">上の辞書に書いたファイルを、このフォルダから探します。（右の「…」で選べます）</td>
 </tr>
 <tr>
-<td style="text-align: left;">出し方のルール</td>
+<td style="text-align: left;">表示ルール</td>
 <td style="text-align: left;">どの場面でどう出すかを書いた CSV (UTF-8)。使わないなら空のままで構いません。（右の「…」で選べます）</td>
 </tr>
 </tbody>
 </table>
-<p><strong>いつまで出すか</strong></p>
+<p><strong>表示時間</strong></p>
 <table>
 <thead>
 <tr>
@@ -12210,12 +12209,27 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">消すきっかけ</td>
-<td style="text-align: left;">選択肢：文が確定してから、決まった時間で消す／消さない (次の写真が出るまで)。既定：消さない (次の写真が出るまで)</td>
+<td style="text-align: left;">消すタイミング</td>
+<td style="text-align: left;">選択肢：文が確定してから、指定した時間で消す／消さない (次の写真が出るまで)。既定：文が確定してから、指定した時間で消す</td>
 </tr>
 <tr>
 <td style="text-align: left;">消すまでの時間 (秒)</td>
-<td style="text-align: left;">上で「決まった時間で消す」を選んだときに使います。（既定：「2」）</td>
+<td style="text-align: left;">上で「指定した時間で消す」を選んだときに使います。（既定：「2」）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>画面</strong>（画面を下へスクロールすると出ます）</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">「写真画面 (Photo)」ボタン</td>
+<td style="text-align: left;">写真を映す窓を出します。OBS などで取り込むときに使います。</td>
 </tr>
 </tbody>
 </table>

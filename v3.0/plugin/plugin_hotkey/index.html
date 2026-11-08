@@ -12032,9 +12032,8 @@
 <li>話者フィルタリング機能</li>
 </ul>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p><img alt="再生" src="../images/plugin_hotkey_p1.png" /></p>
 <ul>
-<li>プラグインを使うチェックをONにしてください。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> でこのプラグインを選んで <strong>追加する</strong> を押します（一覧の <strong>使う</strong> が ON になります）。→ <a href="../enabled/">プラグインの有効化</a></li>
 </ul>
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>プラグイン一覧で、このプラグインの名前の右にある <strong>「設定」</strong> を押すと開きます。</p>
@@ -12044,11 +12043,11 @@
 変更したまま閉じようとすると「変更が保存されていません」と聞かれ、<strong>［はい］保存して閉じる／［いいえ］破棄して閉じる／［キャンセル］閉じるのをやめる</strong> から選べます。</p>
 </div>
 <p>話した言葉をきっかけに、キーボードの操作を送ります。</p>
-<p><img alt="キー送信の規則 - 規則" src="../images/v30/hotkey_1.png" /></p>
-<p><strong>キー送信の規則</strong>（表）</p>
-<p>列：当て方／対象／きっかけの言葉／送るキー／字幕の差し替え／読み上げる文字／字幕の後／読ませない／話した人</p>
-<p>「送るキー」は {ENTER} や ^c のような書き方です (SendKeys の綴り)。「字幕の後」を入にすると、字幕を出したあとに送ります。</p>
-<p>表の右上の <strong>「行を足す」</strong> で行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／下へ、＋＝この下に足す、×＝この行を消す です。<strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込んで、いまの中身と入れ替えます。</p>
+<p><img alt="キー送信のルール - ルール" src="../images/v30/hotkey_1.png" /></p>
+<p><strong>キー送信のルール</strong>（表）</p>
+<p>列：一致方式（完全一致／部分一致／字幕が消えたら／使わない）／判定対象（母国語／翻訳 1～4）／起動フレーズ／送るキー／文字差し替え／読み上げ文字／後処理／TTS無効化／話した人</p>
+<p>「送るキー」は {ENTER} や ^c のような書き方です (SendKeys の綴り)。「後処理」をオンにすると、翻訳が終わってから送ります（オフは音声認識の直後）。「話した人」は名前の一部でも当たります。空なら、だれの発話でも動きます。「文字差し替え」をオンにすると、字幕を「読み上げ文字」に置き換えます。「TTS無効化」をオンにすると、その発話を読み上げません。</p>
+<p>表の右上の <strong>「行を追加」</strong> で行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／下へ、＋＝この下に足す、×＝この行を消す です。<strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込んで、いまの中身と入れ替えます。</p>
 <h3 id="_4">補足<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
 <p class="admonition-title">送付キー</p>
@@ -12116,22 +12115,22 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">完全</td>
+<td style="text-align: left;">完全一致（CSV では「完全」）</td>
 <td style="text-align: left;">テキストが完全一致</td>
 <td style="text-align: left;">音声認識確定時</td>
 </tr>
 <tr>
-<td style="text-align: left;">一部</td>
+<td style="text-align: left;">部分一致（CSV では「一部」）</td>
 <td style="text-align: left;">テキストに含まれる</td>
 <td style="text-align: left;">音声認識確定時</td>
 </tr>
 <tr>
-<td style="text-align: left;">消去時</td>
+<td style="text-align: left;">字幕が消えたら（CSV では「消去時」）</td>
 <td style="text-align: left;">テキスト削除時に実行</td>
 <td style="text-align: left;">削除操作時</td>
 </tr>
 <tr>
-<td style="text-align: left;">無効</td>
+<td style="text-align: left;">使わない（CSV では「無効」）</td>
 <td style="text-align: left;">ルールを一時停止</td>
 <td style="text-align: left;">実行されない</td>
 </tr>

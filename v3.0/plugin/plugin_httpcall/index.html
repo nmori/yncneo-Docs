@@ -11609,9 +11609,8 @@
 <li>複数のマッチングモード（完全一致・部分一致）</li>
 </ul>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p><img alt="VRChat" src="../images/plugin_httpcall_p1.png" /></p>
 <ul>
-<li>プラグインを使うチェックをONにしてください。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> でこのプラグインを選んで <strong>追加する</strong> を押します（一覧の <strong>使う</strong> が ON になります）。→ <a href="../enabled/">プラグインの有効化</a></li>
 </ul>
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>プラグイン一覧で、このプラグインの名前の右にある <strong>「設定」</strong> を押すと開きます。</p>
@@ -11620,12 +11619,12 @@
 <p>設定は<strong>下書き</strong>として持たれ、「OK」か「適用」を押すまで動いているプラグインには効きません。
 変更したまま閉じようとすると「変更が保存されていません」と聞かれ、<strong>［はい］保存して閉じる／［いいえ］破棄して閉じる／［キャンセル］閉じるのをやめる</strong> から選べます。</p>
 </div>
-<p>話した言葉をきっかけに、決めた URL を呼びます。</p>
-<p><img alt="URL 呼び出しの規則 - 規則" src="../images/v30/httpcall_1.png" /></p>
-<p><strong>呼び出しの規則</strong>（表）</p>
-<p>列：使う／当て方／対象／きっかけの言葉／呼ぶ URL／話した人／API 用のタグ</p>
-<p>「話した人」を書くと、その人が話したときだけ呼びます。空なら誰でも。「API 用のタグ」は、外から /api/trigger で呼ぶときの名前です。</p>
-<p>表の右上の <strong>「行を足す」</strong> で行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／下へ、＋＝この下に足す、×＝この行を消す です。<strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込んで、いまの中身と入れ替えます。</p>
+<p>話した言葉をきっかけに、指定した URL を呼び出します。</p>
+<p><img alt="URL 呼び出しのルール - ルール" src="../images/v30/httpcall_1.png" /></p>
+<p><strong>呼び出しルール</strong>（表）</p>
+<p>列：使う／一致方式（完全一致／部分一致）／判定対象（母国語／翻訳 1～4）／起動フレーズ／呼び出す URL／話した人／API タグ</p>
+<p>「話した人」を書くと、その人が話したときだけ呼びます。空なら誰でも。「API タグ」は、外から /api/trigger で呼ぶときの名前です。</p>
+<p>表の右上の <strong>「行を追加」</strong> で行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／下へ、＋＝この下に足す、×＝この行を消す です。<strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込んで、いまの中身と入れ替えます。</p>
 <h2 id="_4">ルール<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>
 <li>ルールは、条件に一致したときにそのデータを送付することができる「仕掛け」です</li>
@@ -11639,31 +11638,31 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">有効(Enabled)</td>
+<td style="text-align: left;">使う</td>
 <td style="text-align: left;">この条件を有効化します</td>
 </tr>
 <tr>
-<td style="text-align: left;">モード(Mode)</td>
-<td style="text-align: left;">条件の判断モードを指定します</td>
+<td style="text-align: left;">一致方式</td>
+<td style="text-align: left;">条件の判断モードを指定します（完全一致／部分一致）</td>
 </tr>
 <tr>
-<td style="text-align: left;">対象</td>
-<td style="text-align: left;">対象にする言語を決めます（母国語、翻訳１～４）</td>
+<td style="text-align: left;">判定対象</td>
+<td style="text-align: left;">対象にする言語を決めます（母国語、翻訳 1～4）</td>
 </tr>
 <tr>
 <td style="text-align: left;">起動フレーズ</td>
 <td style="text-align: left;">判断に使う起動キーワードです</td>
 </tr>
 <tr>
-<td style="text-align: left;">アドレス</td>
+<td style="text-align: left;">呼び出す URL</td>
 <td style="text-align: left;">HTTPコールするときの送付先です (httpやhttpsで始まるアドレスになります)</td>
 </tr>
 <tr>
-<td style="text-align: left;">対象者</td>
+<td style="text-align: left;">話した人</td>
 <td style="text-align: left;">話者名に指定文字が含まれているときに反応します。空欄の場合は全員が対象です</td>
 </tr>
 <tr>
-<td style="text-align: left;">APIタグ</td>
+<td style="text-align: left;">API タグ</td>
 <td style="text-align: left;">APIから呼び出すときにつかうタグ名です</td>
 </tr>
 </tbody>
@@ -11760,7 +11759,7 @@
 <h3 id="_6">ルール管理インターフェース<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <h4 id="_7">データグリッド機能<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
 <ul>
-<li><strong>7列の詳細設定</strong>: 有効/無効、モード、判定対象、キーワード、URL、対象者、APIタグ</li>
+<li><strong>7列の詳細設定</strong>: 使う、一致方式、判定対象、起動フレーズ、呼び出す URL、話した人、API タグ</li>
 <li><strong>コンテキストメニュー</strong>:</li>
 <li>行の上/下に挿入（Alt+Up/Down）</li>
 <li>行の交換（Ctrl+Up/Down） </li>
@@ -11784,12 +11783,12 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">完全</td>
+<td style="text-align: left;">完全一致（CSV では「完全」）</td>
 <td style="text-align: left;">テキストが完全に一致</td>
 <td style="text-align: left;">「こんにちは」→完全一致時のみ実行</td>
 </tr>
 <tr>
-<td style="text-align: left;">一部</td>
+<td style="text-align: left;">部分一致（CSV では「一部」）</td>
 <td style="text-align: left;">テキストが含まれる</td>
 <td style="text-align: left;">「こんにちは」→「こんにちは、みなさん」でも実行</td>
 </tr>
@@ -11814,9 +11813,9 @@
 <li>
 <p><strong>ルールが動作しない</strong>:</p>
 </li>
-<li>「有効」チェックボックスがONになっているか確認</li>
-<li>マッチングモードが適切に設定されているか確認</li>
-<li>対象者フィルターが設定されている場合、話者名が一致しているか確認</li>
+<li>「使う」がONになっているか確認</li>
+<li>一致方式が適切に設定されているか確認</li>
+<li>「話した人」が設定されている場合、話者名が一致しているか確認</li>
 </ul>
 
 

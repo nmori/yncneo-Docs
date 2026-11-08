@@ -11630,9 +11630,8 @@
 <li><strong>ウィンドウ指定機能</strong>：対象アプリケーションを指定した確実な入力</li>
 </ul>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p><img alt="再生" src="../images/plugin_clipboard_p1.png" /></p>
 <ul>
-<li>プラグインを使うチェックをONにしてください。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> でこのプラグインを選んで <strong>追加する</strong> を押します（一覧の <strong>使う</strong> が ON になります）。→ <a href="../enabled/">プラグインの有効化</a></li>
 </ul>
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>プラグイン一覧で、このプラグインの名前の右にある <strong>「設定」</strong> を押すと開きます。</p>
@@ -11641,7 +11640,7 @@
 <p>設定は<strong>下書き</strong>として持たれ、「OK」か「適用」を押すまで動いているプラグインには効きません。
 変更したまま閉じようとすると「変更が保存されていません」と聞かれ、<strong>［はい］保存して閉じる／［いいえ］破棄して閉じる／［キャンセル］閉じるのをやめる</strong> から選べます。</p>
 </div>
-<p>字幕をクリップボードへ写し、決めた枠へ貼り付けます。</p>
+<p>字幕をクリップボードへコピーし、指定した入力欄へ貼り付けます。</p>
 <p><img alt="クリップボード連携の設定 - 送る" src="../images/v30/clipboard_1.png" /></p>
 <table>
 <thead>
@@ -11652,11 +11651,11 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">☑ 字幕をクリップボードへ写す</td>
+<td style="text-align: left;">☑ 字幕をクリップボードへコピーする</td>
 <td style="text-align: left;">既定：OFF</td>
 </tr>
 <tr>
-<td style="text-align: left;">どの字幕を写すか</td>
+<td style="text-align: left;">コピーする字幕</td>
 <td style="text-align: left;">選択肢：母国語／翻訳 1／翻訳 2／翻訳 3／翻訳 4／母国語 + 翻訳 1。既定：母国語</td>
 </tr>
 <tr>
@@ -11669,7 +11668,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>貼り付け先</strong>　写したあと、決めた枠へ自分で貼り付けます。</p>
+<p><strong>貼り付け先</strong>　コピーした字幕を貼り付ける入力欄です。</p>
 <table>
 <thead>
 <tr>
@@ -11679,11 +11678,11 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">「入力したい枠を選ぶ」ボタン</td>
-<td style="text-align: left;">押したあと、入れたい枠にカーソルを合わせて F2 を押してください。</td>
+<td style="text-align: left;">「貼り付け先を選ぶ」ボタン</td>
+<td style="text-align: left;">押したあと、貼り付けたい入力欄にカーソルを合わせて F2 キーを押してください。</td>
 </tr>
 <tr>
-<td style="text-align: left;">☑ その枠へ自動で貼り付ける</td>
+<td style="text-align: left;">☑ 貼り付け先へ自動で貼り付ける</td>
 <td style="text-align: left;">既定：OFF</td>
 </tr>
 <tr>
@@ -11692,7 +11691,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">☑ 前に貼ったものを置き換える</td>
-<td style="text-align: left;">切にすると、話すたびに後ろへ足していきます。（既定：OFF）</td>
+<td style="text-align: left;">オフにすると、話すたびに後ろへ追加していきます。（既定：OFF）</td>
 </tr>
 </tbody>
 </table>
@@ -11713,30 +11712,30 @@
 </table>
 <h3 id="_4">補足<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <ul>
-<li>「貼り付け先」の <strong>「入力したい枠を選ぶ」</strong> を押したあと、貼り付けたい入力欄にカーソルを合わせて <strong>F2</strong> を押すと、その枠が決まります。</li>
-<li>決めた枠は「いまの枠」に表示されます。<strong>「その枠へ自動で貼り付ける」</strong> を ON にすると、写すたびに貼り付けます。</li>
+<li>「貼り付け先」の <strong>「貼り付け先を選ぶ」</strong> を押したあと、貼り付けたい入力欄にカーソルを合わせて <strong>F2</strong> キーを押すと、貼り付け先が決まります。</li>
+<li>決めた貼り付け先は「現在の貼り付け先」に表示されます。<strong>「貼り付け先へ自動で貼り付ける」</strong> を ON にすると、コピーするたびに貼り付けます。</li>
 </ul>
 <h2 id="_5">高度な使用例<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <h3 id="1">1. ライブ配信でのコメント自動入力<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>設定：
-- 送信内容：母国語
-- 自動貼り付け：有効
-- 確定時にエンター送信：有効
-- 対象ウィンドウ：配信ソフトのコメント欄を指定
+- コピーする字幕：母国語
+- 貼り付け先へ自動で貼り付ける：ON
+- 貼り付けたら Enter も送る：ON
+- 貼り付け先：配信ソフトのコメント欄を指定
 </code></pre></div>
 <h3 id="2">2. 翻訳結果の文書作成<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>設定：
-- 送信内容：母国語+翻訳1
-- 名前も送る：有効
-- 全選択してから貼り付け：無効（追記モード）
-- 対象ウィンドウ：テキストエディタを指定
+- コピーする字幕：母国語 + 翻訳 1
+- 話した人の名前も入れる：ON
+- 前に貼ったものを置き換える：OFF（後ろへ追加）
+- 貼り付け先：テキストエディタを指定
 </code></pre></div>
 <h3 id="3">3. チャットアプリケーション連携<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>設定：
-- 送信内容：翻訳1
-- 自動貼り付け：有効
-- 確定時にエンター送信：有効
-- 改行を無視：有効（チャット用）
+- コピーする字幕：翻訳 1
+- 貼り付け先へ自動で貼り付ける：ON
+- 貼り付けたら Enter も送る：ON
+- 改行をなくして 1 行にする：ON（チャット用）
 </code></pre></div>
 <h3 id="_6">タイミング制御<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <ul>
@@ -11747,7 +11746,7 @@
 <h2 id="_7">トラブルシューティング<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <h3 id="_8">自動入力が失敗する場合<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <ol>
-<li><strong>ウィンドウ指定の確認</strong>：「特定」ボタンで正しいウィンドウを選択</li>
+<li><strong>ウィンドウ指定の確認</strong>：「貼り付け先を選ぶ」ボタンで正しい入力欄を選択</li>
 <li><strong>アプリケーション権限</strong>：管理者権限で実行が必要な場合あり</li>
 <li><strong>入力フォーカス</strong>：対象アプリがアクティブになっているか確認</li>
 </ol>

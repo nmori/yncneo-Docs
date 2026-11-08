@@ -12040,9 +12040,8 @@
 </ul>
 </div>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p><img alt="再生" src="../images/plugin_midiinput_p1.png" /></p>
 <ul>
-<li>プラグインを使うチェックをONにしてください。</li>
+<li>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> でこのプラグインを選んで <strong>追加する</strong> を押します（一覧の <strong>使う</strong> が ON になります）。→ <a href="../enabled/">プラグインの有効化</a></li>
 </ul>
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>プラグイン一覧で、このプラグインの名前の右にある <strong>「設定」</strong> を押すと開きます。
@@ -12053,7 +12052,7 @@
 変更したまま閉じようとすると「変更が保存されていません」と聞かれ、<strong>［はい］保存して閉じる／［いいえ］破棄して閉じる／［キャンセル］閉じるのをやめる</strong> から選べます。</p>
 </div>
 <h3 id="_4">機器<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<p>つなぐ MIDI の機械を選びます。</p>
+<p>接続する MIDI 機器を選びます。</p>
 <p><img alt="MIDI 入力の設定 - 機器" src="../images/v30/midiinput_1.png" /></p>
 <table>
 <thead>
@@ -12064,12 +12063,12 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">つなぐ機械</td>
-<td style="text-align: left;">つないだあとに機械を足したときは、下の「つなぎ直す」を押してください。</td>
+<td style="text-align: left;">接続する機器</td>
+<td style="text-align: left;">機器をつなぐ・外すと、一覧はひとりでに更新されます。</td>
 </tr>
 <tr>
-<td style="text-align: left;">「つなぎ直す」ボタン</td>
-<td style="text-align: left;">—</td>
+<td style="text-align: left;">「再接続」ボタン</td>
+<td style="text-align: left;">選んだ機器に接続し直します。結果（「接続しました。」など）がボタンの下に出ます。</td>
 </tr>
 </tbody>
 </table>
@@ -12091,7 +12090,7 @@
 <td style="text-align: left;">既定：OFF</td>
 </tr>
 <tr>
-<td style="text-align: left;">☑ 割り当てに従ってアクションをおこす</td>
+<td style="text-align: left;">☑ 割り当てに従ってアクションを実行する</td>
 <td style="text-align: left;">既定：ON</td>
 </tr>
 <tr>
@@ -12101,7 +12100,7 @@
 </tbody>
 </table>
 <h3 id="_5">割り当て<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<p>押した音に、おこしたいアクションを当てます。</p>
+<p>押した音に、実行したいアクションを割り当てます。</p>
 <table>
 <thead>
 <tr>
@@ -12111,20 +12110,20 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">割り当ての置き場</td>
-<td style="text-align: left;">空なら … を使います。置き場を変えたときは、いったん閉じて開き直してください(下の表は開いたときの置き場を見ています)。（右の「…」で選べます）</td>
+<td style="text-align: left;">割り当てファイル</td>
+<td style="text-align: left;">空なら設定フォルダの中の <code>midimap.csv</code> を使います。ファイルを変えると、下の表はそのファイルの中身に切り替わります。（右の「…」で選べます）</td>
 </tr>
 </tbody>
 </table>
 <p><strong>音とアクションの割り当て</strong>（表）</p>
 <p>列：音 (ノート)／アクション／送る文字や設定値</p>
 <p>「音」は C4 のような名前で書きます ([C4] と括弧で囲んでも構いません)。「ゆかコネに送る」は設定値の文字を字幕として送り、「WordParty を起動」は設定値に入れた ID の WordParty をわんコメで起動します。</p>
-<p>表の右上の <strong>「行を足す」</strong> で行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／下へ、＋＝この下に足す、×＝この行を消す です。<strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込んで、いまの中身と入れ替えます。</p>
+<p>表の右上の <strong>「行を追加」</strong> で行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／下へ、＋＝この下に足す、×＝この行を消す です。<strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込んで、いまの中身と入れ替えます。</p>
 <h3 id="_6">補足<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <ul>
-<li>「機器」ページで使う MIDI 機器を選び、<strong>「つなぎ直す」</strong> を押してください。あとから機器を足したときも同じです。</li>
-<li>「割り当て」ページの <strong>割り当ての置き場</strong> を空のままにすると、設定フォルダの中の <code>midimap.csv</code> を使います。
-  置き場を変えたときは、いったん設定画面を閉じて開き直してください（表は開いたときの置き場を見ています）。</li>
+<li>「機器」ページで使う MIDI 機器を選び、<strong>「再接続」</strong> を押してください。</li>
+<li>「割り当て」ページの <strong>割り当てファイル</strong> を空のままにすると、設定フォルダの中の <code>midimap.csv</code> を使います。
+  ファイルを変えると、表はそのファイルの中身に切り替わります。</li>
 <li>「音」は <code>C4</code> のような名前で書きます（<code>[C4]</code> と括弧で囲んでも構いません）。</li>
 </ul>
 <h2 id="_7">高度な機能<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
@@ -12133,7 +12132,7 @@
 <ul>
 <li><strong>デバイス一覧</strong>: システム内の利用可能MIDIデバイスを自動検出</li>
 <li><strong>リアルタイム接続</strong>: プラグイン動作中のデバイス接続・切断</li>
-<li><strong>デバイス更新</strong>: 「デバイス再読込」ボタンで最新状況を反映</li>
+<li><strong>デバイス更新</strong>: 機器をつなぐ・外すと一覧がひとりでに更新されます。「再接続」ボタンで接続し直せます</li>
 <li><strong>接続状態表示</strong>: 現在の接続状況をリアルタイム表示</li>
 </ul>
 <h4 id="_9">対応デバイス<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
@@ -12224,7 +12223,7 @@
 <h4 id="_21">デバイスが認識されない<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>確認事項</strong>: デバイスの接続とドライバ状況</li>
-<li><strong>対処法</strong>: デバイス再読込ボタンの使用</li>
+<li><strong>対処法</strong>: 「再接続」ボタンの使用</li>
 <li><strong>システム設定</strong>: Windows MIDIデバイス設定の確認</li>
 </ul>
 <h4 id="_22">音が出力されない<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h4>

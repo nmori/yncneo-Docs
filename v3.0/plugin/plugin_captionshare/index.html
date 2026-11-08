@@ -11655,7 +11655,7 @@
 輪になって話したいときは、それぞれが自分の Pusher アプリで送り、お互いの共有コードを登録し合ってください。</p>
 </div>
 <h2 id="_2">有効化<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>プラグイン一覧で <strong>字幕共有プラグイン</strong> の「プラグインを使う」チェックを ON にしてください。手順は <a href="../enabled/">プラグインの有効化</a> をご覧ください。</p>
+<p>上のタブ <strong>プラグイン</strong> → <strong>プラグインを追加</strong> で <strong>字幕共有プラグイン</strong> を選んで <strong>追加する</strong> を押してください（一覧の <strong>使う</strong> が ON になります）。手順は <a href="../enabled/">プラグインの有効化</a> をご覧ください。</p>
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>プラグイン一覧で、このプラグインの名前の右にある <strong>「設定」</strong> を押すと開きます。
 画面は <strong>2 ページ</strong>に分かれていて、左の一覧で切り替えます（送る／受け取る）。</p>
@@ -11666,7 +11666,7 @@
 </div>
 <h3 id="_4">送る<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>自分の字幕 (原文と翻訳) を、共有コードを渡した相手へ届けます。</p>
-<p><img alt="字幕共有の設定 - 送る (1)" src="../images/v30/captionshare_1.png" /></p>
+<p><img alt="字幕共有の設定 - 送る" src="../images/v30/captionshare_1.png" /></p>
 <table>
 <thead>
 <tr>
@@ -11682,7 +11682,7 @@
 </tbody>
 </table>
 <p><strong>Pusher のアプリ</strong></p>
-<p>pusher.com で作った無料のアプリ (Channels) の値を入れます。App Keys の画面の中身をまとめて貼り付けるのが簡単です。</p>
+<p>pusher.com で無料のアプリ (Channels) を作り、App Keys の画面の中身をまとめて貼り付けてください。Secret はこの PC の中だけに暗号化して保存し、相手には渡しません。</p>
 <table>
 <thead>
 <tr>
@@ -11717,7 +11717,6 @@
 </tr>
 </tbody>
 </table>
-<p><img alt="字幕共有の設定 - 送る (2)" src="../images/v30/captionshare_2.png" /></p>
 <p><strong>相手に渡すもの</strong></p>
 <table>
 <thead>
@@ -11749,7 +11748,6 @@
 </tr>
 </tbody>
 </table>
-<p><img alt="字幕共有の設定 - 送る (3)" src="../images/v30/captionshare_3.png" /></p>
 <p><strong>送り方</strong></p>
 <table>
 <thead>
@@ -11799,7 +11797,7 @@
 <p><strong>受け取る相手</strong>（表）</p>
 <p>列：使う／共有コード (または閲覧 URL)／表示名</p>
 <p>表示名が空なら、相手が付けた話者名で出します。お互いに登録し合っても、受け取った字幕を送り返すことはありません。「共有コード」の欄には、閲覧 URL をそのまま貼っても読み取れます。「使う」を切った行は受け取りません。</p>
-<p>表の右上の <strong>「行を足す」</strong> で行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／下へ、＋＝この下に足す、×＝この行を消す です。<strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込んで、いまの中身と入れ替えます。</p>
+<p>表の右上の <strong>「行を追加」</strong> で行を増やします。行の右端のボタンは ▲▼＝1 つ上へ／下へ、＋＝この下に足す、×＝この行を消す です。<strong>「保存する」</strong> はいまの中身を CSV へ書き出します（控え用）。<strong>「読み込む」</strong> は CSV から読み込んで、いまの中身と入れ替えます。</p>
 <h2 id="live">ライブ設定（配信中にその場で変える）<a class="headerlink" href="#live" title="Permanent link">&para;</a></h2>
 <p>本体の <strong>操作パネル → ライブ設定</strong> に、このプラグインの「配信ごとに変わる値」が並びます。設定画面を開かずに値を入れて <strong>「反映」</strong> を押せば、すぐプラグインに入ります。しくみは <a href="../../startup/startup_basic/#live-settings">標準設定項目 - ライブ設定とプラグインの帯</a> をご覧ください。</p>
 <table>
@@ -11838,7 +11836,7 @@
 このプラグインが受け取った相手の字幕は送りません。</p>
 <h3 id="neo">受け取る側（ゆかコネNEO）<a class="headerlink" href="#neo" title="Permanent link">&para;</a></h3>
 <ol>
-<li>設定の「受け取る」ページの表で <strong>「行を足す」</strong> を押し、もらった共有コード（閲覧 URL でも可）を貼ります。必要なら表示名も入れます。</li>
+<li>設定の「受け取る」ページの表で <strong>「行を追加」</strong> を押し、もらった共有コード（閲覧 URL でも可）を貼ります。必要なら表示名も入れます。</li>
 <li><strong>☑ 字幕を受け取る</strong> を入れて OK を押します。</li>
 </ol>
 <p>受け取った字幕は、自分の字幕と同じように表示・読み上げされます。相手（送り手）ごとに話者の色が分かれます。</p>
