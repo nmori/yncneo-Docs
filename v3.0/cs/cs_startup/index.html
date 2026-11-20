@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
     
     
       
@@ -5292,6 +5292,8 @@
       
         
       
+        
+      
     
     
     
@@ -5490,6 +5492,34 @@
     
   
     わんコメ連携できない時
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qa/network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    外部と通信をしたくない場合
   
 
     
@@ -11244,7 +11274,7 @@
   </div>
 </div>
 
-<p><strong>「やりたいこと」の 4 つの選択肢</strong></p>
+<p><strong>「やりたいこと」の選択肢</strong></p>
 <table>
 <thead>
 <tr>
@@ -11256,6 +11286,10 @@
 <tr>
 <td style="text-align: left;"><strong>配信で翻訳字幕を出したい</strong></td>
 <td style="text-align: left;">話した内容を訳して、話した言葉と一緒に並べて出します</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>自分の言葉の字幕だけ出したい（翻訳しない）</strong></td>
+<td style="text-align: left;">話した言葉をそのまま配信の字幕にします。翻訳はあとから足せます（v3.2.3～）</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>VRChatなどで会話をサポートしたい</strong></td>
@@ -11274,7 +11308,7 @@
 <div class="admonition tip">
 <p class="admonition-title">自分でレイアウトを選びたい</p>
 <p>「自分でレイアウトを選ぶ」を開くと、テンプレートを直接えらべます。
-4 つのカードは「よく使う組み合わせ」を一発で当てるための近道なので、
+カードは「よく使う組み合わせ」を一発で当てるための近道なので、
 こだわりがある方はこちらからどうぞ。</p>
 </div>
 <div class="admonition info">
@@ -11309,9 +11343,22 @@
 <td style="text-align: left;"><strong>UDトーク を使う</strong>（入っている場合のみ）</td>
 <td style="text-align: left;">認識の精度が高い音声認識です。<strong>使う前に UDトーク側で接続しておく必要があります</strong></td>
 </tr>
+<tr>
+<td style="text-align: left;"><strong>このパソコンの中だけで認識する（声をネットに出しません）</strong></td>
+<td style="text-align: left;">オフライン認識を使います（v3.2.3～）。下の「このパソコンの中だけで認識するとき」を参照</td>
+</tr>
 </tbody>
 </table>
 <p>選んだら <strong>「音声認識の画面をひらく」</strong> を押します。</p>
+<div class="admonition info">
+<p class="admonition-title">このパソコンの中だけで認識するとき（v3.2.3～）</p>
+<p><strong>このパソコンの中だけで認識する</strong> を選ぶと、「翻訳もこのパソコンの中でしますか？」と聞かれます。</p>
+<ul>
+<li><strong>翻訳しない (字幕だけ)</strong>／<strong>オフライン翻訳で訳す</strong>／<strong>PLaMo 3 翻訳で訳す</strong>：翻訳もこのパソコンの中で行います。訳せなかったときの代わりの翻訳も止めます</li>
+<li><strong>いまのまま</strong>：翻訳の設定は変えません</li>
+</ul>
+<p>どこと通信するかは <a href="../../qa/network/">外部と通信をしたくない場合</a> をご覧ください。</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">ブラウザがマイクを聞いてきたら「許可」</p>
 <p>ブラウザがマイクの使用許可を聞いてきます。ここで「許可」を選ばないと認識できません。

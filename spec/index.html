@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
     
     
       
@@ -556,7 +556,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        具体的仕様
+        やりたいことから探す
       
     </span>
   </a>
@@ -565,6 +565,28 @@
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        全体の流れ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        具体的仕様
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
         翻訳の種類について
@@ -5349,6 +5371,8 @@
       
         
       
+        
+      
     
     
     
@@ -5547,6 +5571,34 @@
     
   
     わんコメ連携できない時
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../v3.0/qa/network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    外部と通信をしたくない場合
   
 
     
@@ -11260,7 +11312,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        具体的仕様
+        やりたいことから探す
       
     </span>
   </a>
@@ -11269,6 +11321,28 @@
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        全体の流れ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        具体的仕様
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
         翻訳の種類について
@@ -11296,15 +11370,73 @@
 
 
 <h1 id="_1">何ができるか？<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>ゆかコネNEOは次のことをサポートします。
-<img alt="Image title" src="../images/totalmap.png" /></p>
+<p>ゆかコネNEOは、話した声を字幕にして、配信や VRChat に出すツールです。翻訳はしてもしなくてもかまいません。
+やりたいことから探してください。</p>
+<h2 id="_2">やりたいことから探す<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">やりたいこと</th>
+<th style="text-align: left;">できること</th>
+<th style="text-align: left;">ページ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">日本語の字幕だけ出す</td>
+<td style="text-align: left;">翻訳せずに、話した言葉をそのまま配信の字幕にします。はじめての設定で「自分の言葉の字幕だけ出したい（翻訳しない）」を選ぶだけです</td>
+<td style="text-align: left;"><a href="../v3.0/cs/cs_startup/">はじめての設定</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">聞き間違いを直す（単語登録）</td>
+<td style="text-align: left;">ゲーム名や名前の聞き間違いを、正しい言葉に直します。認識したあとの文を置き換える仕組みです</td>
+<td style="text-align: left;"><a href="../v3.0/plugin/plugin_dictionary/">辞書</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">歌枠で歌詞を出す</td>
+<td style="text-align: left;">リリックモーションで、歌詞を文字PVのように見せます。歌詞表示支援の再生にも合わせられます</td>
+<td style="text-align: left;"><a href="../v3.0/startup/startup_layout/#lyric-motion">リリックモーション</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">コラボ配信で相手の字幕も出す</td>
+<td style="text-align: left;">Discord で相手の字幕を受け取る・通話の相手の声を話した人ごとに字幕にする（試験実装）・同じ場所なら UDトークのサーバモードで受け取る</td>
+<td style="text-align: left;"><a href="../v3.0/cs/cs_colab_discord/">Discord経由でコラボ</a>・<a href="../v3.0/cs/cs_colab_udtalk/">UDトーク経由でコラボ</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">翻訳字幕を出す</td>
+<td style="text-align: left;">話した言葉と、最大 4 か国語の訳を並べて出します。翻訳エンジンは目的に合わせて選べます</td>
+<td style="text-align: left;"><a href="../v3.0/cs/cs_en/">無料で英語翻訳を出す</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">VRChat で会話をサポートする</td>
+<td style="text-align: left;">VRChat のチャットボックスに字幕を出し、OSC でアバターやカメラも動かせます</td>
+<td style="text-align: left;"><a href="../v3.0/cs/cs_vrchat/">VRChatのチャットとつなぐ</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">このパソコンの中だけで動かす</td>
+<td style="text-align: left;">声も文字もネットに出さずに、認識と翻訳をこのパソコンの中で行います。選んだところとだけ通信します</td>
+<td style="text-align: left;"><a href="../v3.0/qa/network/">外部と通信をしたくない場合</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">読み上げる</td>
+<td style="text-align: left;">字幕を VOICEVOX・A.I.VOICE などの声で読み上げます</td>
+<td style="text-align: left;"><a href="../v3.0/plugin/plugin_playvoice/">読み上げ</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">配信の見た目を変える</td>
+<td style="text-align: left;">字幕テンプレートを選び、配信画面に合わせて大きさや位置を合わせます</td>
+<td style="text-align: left;"><a href="../v3.0/startup/startup_layout/">レイアウト</a></td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li>音声認識（との繋ぎ）</li>
-<li>翻訳</li>
-<li>字幕表示</li>
-<li>周辺ツールへの出力</li>
+<li>配信・収益化した配信・動画・切り抜きにご自由にお使いください。連絡は要りません。クレジットの表記は任意です（<a href="../system_info/">利用規約</a>）。</li>
+<li>上の「設定をさがす」に「単語登録」「歌枠」のような作業の言葉を入れると、合うプラグインやテンプレートを探して開きます（v3.2.3～）。</li>
 </ul>
-<h2 id="_2">具体的仕様<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_3">全体の流れ<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>ゆかコネNEOは、音声認識・翻訳・字幕表示・周辺ツールへの出力をつなぎます。
+<img alt="Image title" src="../images/totalmap.png" /></p>
+<h2 id="_4">具体的仕様<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -11322,7 +11454,7 @@
 <tr>
 <td style="text-align: left;">翻訳エンジン</td>
 <td style="text-align: left;">状況による</td>
-<td style="text-align: left;">●Microsoft翻訳エンジン<br>●Google翻訳エンジン<br>●DeepL Free/Pro翻訳エンジン<br>●Amazon翻訳エンジン<br>●NAVER Papago翻訳エンジン<br>●共用翻訳サーバ(m2m100/Algos）<br>●<a href="../v3.0/startup/startup_gas/">Google Apps Script翻訳</a><br>●Google 翻訳v3<br>●Tencentクラウド翻訳<br>●Baidu翻訳<br>●Alibaba翻訳<br>●OpenAI翻訳<br>●Gemini翻訳<br>●Claude翻訳<br>●Grok翻訳<br>●PLaMo翻訳<br>●みらい翻訳<br>●みんなの自動翻訳＠TexTra<br>●Open Router(LM Studio)翻訳<br>●オフラインブラウザ翻訳</td>
+<td style="text-align: left;">●Microsoft翻訳エンジン<br>●Google翻訳エンジン<br>●DeepL Free/Pro翻訳エンジン<br>●Amazon翻訳エンジン<br>●NAVER Papago翻訳エンジン<br>●共用翻訳サーバ(m2m100/Algos）<br>●<a href="../v3.0/startup/startup_gas/">Google Apps Script翻訳</a><br>●Google 翻訳v3<br>●Tencentクラウド翻訳<br>●Baidu翻訳<br>●Alibaba翻訳<br>●OpenAI翻訳<br>●Gemini翻訳<br>●Claude翻訳<br>●Grok翻訳<br>●PLaMo翻訳<br>●みらい翻訳<br>●みんなの自動翻訳＠TexTra<br>●Open Router(LM Studio)翻訳<br>●オフラインブラウザ翻訳<br>●オフライン翻訳（無料）<br>●PLaMo 3 翻訳（オフライン）</td>
 </tr>
 <tr>
 <td style="text-align: left;">音声認識</td>
@@ -11366,7 +11498,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_3">翻訳の種類について<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_5">翻訳の種類について<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p><img alt="翻訳リスト" src="../v3.0/support/images/support_countermap.jpg" /></p>
 <ul>
 <li>支援については、 <a href="../v3.0/support/support_summary/">こちら</a>をご覧ください。</li>

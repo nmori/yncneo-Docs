@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
     
     
       
@@ -2073,6 +2073,17 @@
   
     <nav class="md-nav" aria-label="遊び">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lyric-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        リリックモーションで歌枠をする
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
@@ -5800,6 +5811,8 @@
       
         
       
+        
+      
     
     
     
@@ -5998,6 +6011,34 @@
     
   
     わんコメ連携できない時
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qa/network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    外部と通信をしたくない場合
   
 
     
@@ -11848,6 +11889,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#lyric-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        リリックモーションで歌枠をする
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -12627,6 +12679,38 @@
 <li>自由落下では、話した言葉の書体・大きさ・文字色・縁取りだけが効きます。翻訳・話者名・言語名・ルビは出ません。</li>
 <li>リリックモーションは、文字・色・配置を演出側が決めます。色の設定で効くのは「枠の背景」だけです。字幕画面のアドレスに <code>?lang=1</code> を付けると翻訳1を、<code>?mode=song</code> を付けると <a href="../../plugin/plugin_LyricAssist/">歌詞表示支援</a> の再生に合わせて曲全体を演出します。</li>
 </ul>
+<h3 id="lyric-motion">リリックモーションで歌枠をする<a class="headerlink" href="#lyric-motion" title="Permanent link">&para;</a></h3>
+<div class="admonition tech">
+<p class="admonition-title">使用条件</p>
+<ul>
+<li>ゆかコネNEO v3.2.3～（「見せ方」の設定）</li>
+</ul>
+</div>
+<p>リリックモーションは、分類 <strong>遊び</strong> にあるテンプレートです。歌枠で歌詞を文字PVのように見せられます。
+字幕デザインの <strong>このテンプレート</strong> の <strong>見せ方</strong> で選びます。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">見せ方</th>
+<th style="text-align: left;">動き</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">話した言葉ごと</td>
+<td style="text-align: left;">確定した発話を 1 つずつ演出します</td>
+</tr>
+<tr>
+<td style="text-align: left;">曲モード (歌詞支援に合わせる)</td>
+<td style="text-align: left;"><a href="../../plugin/plugin_LyricAssist/">歌詞表示支援</a> の再生に合わせて、曲全体を演出します（アドレスに <code>?mode=song</code> を付けたときと同じです）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>リリックモーションは書体を Google Fonts から読みます（<a href="../../qa/network/">外部と通信をしたくない場合</a>）。</li>
+</ul>
+<!-- TODO(screenshot): リリックモーションの「このテンプレート」の「見せ方」（v3.2.3 の実機画面。配布後に撮る） -->
+
 <h3 id="_11">確定演出の設定<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
 <p>発話ごとに抽選し、「やった」「最高」「!」などの言葉が入ると熱さが上がります。「このテンプレート」タブで次のように変えられます。</p>
 <table>

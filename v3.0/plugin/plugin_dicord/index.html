@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
     
     
       
@@ -4311,6 +4311,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#voice-receive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        通話の相手の声を字幕にする（試験実装）
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5519,6 +5530,8 @@
       
         
       
+        
+      
     
     
     
@@ -5717,6 +5730,34 @@
     
   
     わんコメ連携できない時
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../qa/network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    外部と通信をしたくない場合
   
 
     
@@ -11482,6 +11523,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#voice-receive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        通話の相手の声を字幕にする（試験実装）
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -11798,6 +11850,21 @@
 <blockquote>
 <p>読み上げる字幕が来たら、ボイスチャンネルに入って話します。しばらく無言が続くと、チャンネルから抜けることがあります。扱える音源は限られます (VOICEVOX 系など)。</p>
 </blockquote>
+<h3 id="voice-receive">通話の相手の声を字幕にする（試験実装）<a class="headerlink" href="#voice-receive" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">試験実装です・全員の同意が要ります</p>
+<ul>
+<li>まだ試験的な機能です。動きが変わることがあります。</li>
+<li>通話に参加している<strong>全員の同意を得てから</strong>使ってください。</li>
+</ul>
+</div>
+<p>コラボ配信で、Discord の通話に入っている相手の声を、<strong>話した人ごとに</strong>字幕にできます。</p>
+<ul>
+<li>場所は、上のタブ <strong>音声と翻訳</strong> の <strong>追加で受け取る</strong> → <strong>Discord音声（試験実装）</strong> です。</li>
+<li>読み上げの声をボイスチャンネルへ流すかは、<strong>流さない／すべて／受け取ったチャットだけ</strong> の 3 つから選べます（v3.2.2～）。</li>
+</ul>
+<!-- TODO(screenshot): 「音声と翻訳」の「追加で受け取る」→「Discord音声（試験実装）」（v3.2.3 の実機画面。配布後に撮る） -->
+
 <h2 id="live">ライブ設定（配信中にその場で変える）<a class="headerlink" href="#live" title="Permanent link">&para;</a></h2>
 <p>本体の <strong>操作パネル → ライブ設定</strong> に、このプラグインの「配信ごとに変わる値」が並びます。設定画面を開かずに値を入れて <strong>「反映」</strong> を押せば、すぐプラグインに入ります。しくみは <a href="../../startup/startup_basic/#live-settings">標準設定項目 - ライブ設定とプラグインの帯</a> をご覧ください。</p>
 <table>
