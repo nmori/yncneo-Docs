@@ -1453,6 +1453,8 @@
       
         
       
+        
+      
     
     
     
@@ -1511,6 +1513,34 @@
     
   
     Discord経由でコラボ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs_colab_discord_voice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Discordの通話の声を字幕にする
   
 
     
@@ -4315,10 +4345,60 @@
   <a href="#voice-receive" class="md-nav__link">
     <span class="md-ellipsis">
       
-        通話の相手の声を字幕にする（試験実装）
+        話者ごと (試験的)
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="話者ごと (試験的)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        開き方
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        項目
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        モデルの欄に出る文
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使い方の例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -4339,7 +4419,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       
         基本設定の手順
@@ -4422,7 +4502,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
         具体的な使い方
@@ -4444,7 +4524,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
       
         トラブルシューティング
@@ -11527,10 +11607,60 @@
   <a href="#voice-receive" class="md-nav__link">
     <span class="md-ellipsis">
       
-        通話の相手の声を字幕にする（試験実装）
+        話者ごと (試験的)
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="話者ごと (試験的)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        開き方
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        項目
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        モデルの欄に出る文
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使い方の例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -11551,7 +11681,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       
         基本設定の手順
@@ -11634,7 +11764,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
         具体的な使い方
@@ -11656,7 +11786,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
       
         トラブルシューティング
@@ -11850,21 +11980,124 @@
 <blockquote>
 <p>読み上げる字幕が来たら、ボイスチャンネルに入って話します。しばらく無言が続くと、チャンネルから抜けることがあります。扱える音源は限られます (VOICEVOX 系など)。</p>
 </blockquote>
-<h3 id="voice-receive">通話の相手の声を字幕にする（試験実装）<a class="headerlink" href="#voice-receive" title="Permanent link">&para;</a></h3>
+<h3 id="voice-receive">話者ごと (試験的)<a class="headerlink" href="#voice-receive" title="Permanent link">&para;</a></h3>
+<p>Discord のボイスチャンネルにいる人の声を、<strong>話した人ごとに</strong>文字にして、名前つきで字幕に出すページです（v3.2.0～）。
+はじめて使うときは、先に <a href="../../cs/cs_colab_discord_voice/">Discord の通話の声を字幕にする（試験実装）</a> の手順で準備してください。</p>
 <div class="admonition warning">
 <p class="admonition-title">試験実装です・全員の同意が要ります</p>
 <ul>
-<li>まだ試験的な機能です。動きが変わることがあります。</li>
-<li>通話に参加している<strong>全員の同意を得てから</strong>使ってください。</li>
+<li>まだ試験中の機能です。動きや設定は、予告なく変わったり無くなったりします。</li>
+<li>通話にいる人の声を文字にします。<strong>使う前に、通話にいる全員の同意を得てください。</strong></li>
 </ul>
 </div>
-<p>コラボ配信で、Discord の通話に入っている相手の声を、<strong>話した人ごとに</strong>字幕にできます。</p>
-<ul>
-<li>場所は、上のタブ <strong>音声と翻訳</strong> の <strong>追加で受け取る</strong> → <strong>Discord音声（試験実装）</strong> です。</li>
-<li>読み上げの声をボイスチャンネルへ流すかは、<strong>流さない／すべて／受け取ったチャットだけ</strong> の 3 つから選べます（v3.2.2～）。</li>
-</ul>
-<!-- TODO(screenshot): 「音声と翻訳」の「追加で受け取る」→「Discord音声（試験実装）」（v3.2.3 の実機画面。配布後に撮る） -->
+<!-- TODO(screenshot): Discord連携の設定「話者ごと (試験的)」のページ全体（v3.2.5 の実機画面。サーバー名・チャンネル名・ユーザー ID はぼかす） -->
 
+<h4 id="_6">開き方<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<ul>
+<li>上のタブ <strong>プラグイン</strong> の左の並びで <strong>Discord連携(bot)</strong> を押し、<strong>設定を開く</strong> を押します。左の一覧で <strong>話者ごと (試験的)</strong> を選びます。</li>
+<li>上のタブ <strong>音声と翻訳</strong> の <strong>Discord音声（試験実装）</strong> の行に <strong>Discord連携の設定を開く</strong> が出ているときは、それを押しても開きます。</li>
+</ul>
+<h4 id="_7">項目<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">☑ ボイスチャンネルの声を話者ごとに受け取る (試験的)</td>
+<td style="text-align: left;">「接続」したときに、<strong>接続</strong> のページで選んだボイスチャンネルへ Bot が入って、声を受け取ります。本体の <strong>音声と翻訳</strong> → <strong>Discord音声（試験実装）</strong> と同じスイッチで、どちらで切り替えても両方が変わります。（既定：OFF）</td>
+</tr>
+<tr>
+<td style="text-align: left;">☑ 話した人ごとに文字にして字幕へ出す</td>
+<td style="text-align: left;">受け取った声を、このパソコンの中で文字にして字幕へ出します。字幕には、Discord のサーバーでの表示名が出ます。声は保存しません。（既定：ON）</td>
+</tr>
+<tr>
+<td style="text-align: left;">文字にするモデル</td>
+<td style="text-align: left;"><strong>精度優先: Haas-ja v1.0</strong>（日本語だけ・約 480MB）／<strong>速度優先: Whisper Base</strong>（英語・スペイン語など多くの言語・約 160MB・軽い）。通話の相手が日本語だけなら精度優先、海外の人がいるなら速度優先を選びます。（既定：精度優先）</td>
+</tr>
+<tr>
+<td style="text-align: left;">「モデルをダウンロードする」ボタン</td>
+<td style="text-align: left;">本体のオフライン認識の画面が、ダウンロードのために開きます。取得元・大きさ・保存先を確かめてから取り、終わったらその画面を閉じます。</td>
+</tr>
+<tr>
+<td style="text-align: left;">☑ 始めたときにチャンネルへ知らせを書く</td>
+<td style="text-align: left;">受け取りを始めたときに 1 回だけ、チャンネルへ「【試験的】ゆかコネNEO が、このボイスチャンネルの声を話した人ごとに文字にしています」と書き込みます。（既定：ON）</td>
+</tr>
+<tr>
+<td style="text-align: left;">受け取らない人のユーザー ID</td>
+<td style="text-align: left;">1 行に 1 人です。<strong>あなた自身</strong>など、ほかの方法で字幕にしている人の Discord のユーザー ID を入れます。</td>
+</tr>
+<tr>
+<td style="text-align: left;">☑ 検証用: 声を wav に保存する</td>
+<td style="text-align: left;">話した人ごとの声を、このプラグインの設定フォルダの <code>DiscordVoiceTest</code> に保存します。うまく文字にならないときの調べもの用です。<strong>ふだんはオフにしてください。</strong>（既定：OFF）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>下の 5 つは、いちばん上のスイッチがオンのときだけ変えられます。</li>
+<li>モデルの 2 つは、<strong>話した人ごとに文字にして字幕へ出す</strong> がオンのときだけ選べます。</li>
+</ul>
+<h4 id="_8">モデルの欄に出る文<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p><strong>文字にするモデル</strong> の下に、選んだモデルの様子が出ます。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">出る文</th>
+<th style="text-align: left;">意味・すること</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">「認識のモデル: ダウンロード済みです。」</td>
+<td style="text-align: left;">そのまま使えます。本体のオフライン認識と同じものを使うので、二重にはダウンロードしません</td>
+</tr>
+<tr>
+<td style="text-align: left;">「★ 認識のモデル「…」がまだありません。」</td>
+<td style="text-align: left;"><strong>モデルをダウンロードする</strong> を押して取ります</td>
+</tr>
+<tr>
+<td style="text-align: left;">「★ 認識のモデルの保存先が見つかりません」</td>
+<td style="text-align: left;">外付けのドライブに置いているときは、つないでください。または、本体の <strong>モデルの保存先と管理</strong> で保存先を選び直します</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_9">使い方の例<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">日本語のコラボ相手</label><label for="__tabbed_1_2">海外の人がいる通話</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ol>
+<li><strong>ボイスチャンネルの声を話者ごとに受け取る</strong> をオン</li>
+<li><strong>文字にするモデル</strong> は <strong>精度優先: Haas-ja v1.0</strong></li>
+<li><strong>受け取らない人のユーザー ID</strong> に、あなたのユーザー ID</li>
+<li><strong>OK</strong> を押して、<strong>接続</strong> のページで <strong>接続</strong></li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ol>
+<li><strong>ボイスチャンネルの声を話者ごとに受け取る</strong> をオン</li>
+<li><strong>文字にするモデル</strong> は <strong>速度優先: Whisper Base</strong></li>
+<li>モデルの欄に「まだありません」と出たら、<strong>モデルをダウンロードする</strong></li>
+<li><strong>受け取らない人のユーザー ID</strong> に、あなたのユーザー ID</li>
+<li><strong>OK</strong> を押して、<strong>接続</strong> のページで <strong>接続</strong></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">あなたのユーザー ID の調べ方</p>
+<p>Discord の <strong>ユーザー設定</strong> → <strong>詳細設定</strong> で <strong>開発者モード</strong> をオンにし、自分の名前を右クリック → <strong>ユーザーIDをコピー</strong> を押します。
+入れないと、あなたの声がマイクと Discord の 2 回、字幕に出ます。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">あわせて使える設定</p>
+<ul>
+<li>話した人の顔を字幕に出すには、<strong>送受信</strong> の <strong>④ 話した人の写真</strong> をオンにします（v3.2.4～）。</li>
+<li>ゆかコネをミュートしている間は、Discord の声も字幕に出ません。</li>
+</ul>
+</div>
 <h2 id="live">ライブ設定（配信中にその場で変える）<a class="headerlink" href="#live" title="Permanent link">&para;</a></h2>
 <p>本体の <strong>操作パネル → ライブ設定</strong> に、このプラグインの「配信ごとに変わる値」が並びます。設定画面を開かずに値を入れて <strong>「反映」</strong> を押せば、すぐプラグインに入ります。しくみは <a href="../../startup/startup_basic/#live-settings">標準設定項目 - ライブ設定とプラグインの帯</a> をご覧ください。</p>
 <table>
@@ -11898,7 +12131,7 @@
 <li>自分で切断したときは、自動ではつなぎ直しません。「接続」で戻ります</li>
 <li>切断している間は、字幕も読み上げの音も Discord へ送りません</li>
 </ul>
-<h2 id="_6">基本設定の手順<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h2 id="_10">基本設定の手順<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
 <h3 id="1">ステップ1：プラグインを有効にする<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
 <div class="step-guide">
   <div class="step-item">
@@ -12109,7 +12342,7 @@
   </div>
 </div>
 
-<h2 id="_7">具体的な使い方<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h2 id="_11">具体的な使い方<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
 <p>設定が完了したら、以下のような使い方ができます：</p>
 <div class="purpose-grid">
   <a href="../../cs/cs_colab_discord/" class="purpose-card">
@@ -12163,7 +12396,7 @@
   </div>
 </div>
 
-<h2 id="_8">トラブルシューティング<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h2 id="_12">トラブルシューティング<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
 <div class="tips-box">
   <h4>BOTがメッセージを取得できない</h4>
   <ul>
